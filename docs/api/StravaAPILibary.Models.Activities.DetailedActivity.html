@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DetailedActivity | StravaAPILibary Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DetailedActivity | StravaAPILibary Documentation ">
+      
+      <meta name="description" content="Represents a detailed Strava activity with extensive metadata, statistics, and related objects.">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Deltatoolbox/StravaAPILibary/new/master/apiSpec/new?filename=StravaAPILibary_Models_Activities_DetailedActivity.md&amp;value=---%0Auid%3A%20StravaAPILibary.Models.Activities.DetailedActivity%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="StravaAPILibary">
+            StravaAPILibary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="StravaAPILibary.Models.Activities.DetailedActivity">
+
+
+
+  <h1 id="StravaAPILibary_Models_Activities_DetailedActivity" data-uid="StravaAPILibary.Models.Activities.DetailedActivity" class="text-break">
+Class DetailedActivity  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="StravaAPILibary.html">StravaAPILibary</a>.<a class="xref" href="StravaAPILibary.Models.html">Models</a>.<a class="xref" href="StravaAPILibary.Models.Activities.html">Activities</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>StravaAPILibary.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a detailed Strava activity with extensive metadata, statistics, and related objects.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DetailedActivity</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DetailedActivity</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_AchievementCount_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.AchievementCount*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_AchievementCount" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.AchievementCount">
+  AchievementCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of achievements gained during this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AchievementCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Athlete_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Athlete*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Athlete" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Athlete">
+  Athlete
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The athlete associated with this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetaAthlete Athlete { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.Athletes.MetaAthlete.html">MetaAthlete</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_AthleteCount_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.AthleteCount*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_AthleteCount" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.AthleteCount">
+  AthleteCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of athletes participating in this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AthleteCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_AverageSpeed_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.AverageSpeed*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_AverageSpeed" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.AverageSpeed">
+  AverageSpeed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The average speed in meters per second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AverageSpeed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_AverageWatts_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.AverageWatts*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_AverageWatts" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.AverageWatts">
+  AverageWatts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Average power output in watts (rides only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? AverageWatts { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_BestEfforts_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.BestEfforts*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_BestEfforts" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.BestEfforts">
+  BestEfforts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Best efforts during this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DetailedSegmentEffort&gt;? BestEfforts { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="StravaAPILibary.Models.Segments.DetailedSegmentEffort.html">DetailedSegmentEffort</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Calories_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Calories*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Calories" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Calories">
+  Calories
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calories burned during the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? Calories { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_CommentCount_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.CommentCount*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_CommentCount" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.CommentCount">
+  CommentCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of comments for this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CommentCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Commute_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Commute*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Commute" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Commute">
+  Commute
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this activity is a commute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Commute { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Description_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Description*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Description" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Description of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_DeviceName_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.DeviceName*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_DeviceName" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.DeviceName">
+  DeviceName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The device used to record this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DeviceName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_DeviceWatts_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.DeviceWatts*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_DeviceWatts" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.DeviceWatts">
+  DeviceWatts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the watts are from a power meter (false if estimated).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? DeviceWatts { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Distance_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Distance*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Distance" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Distance">
+  Distance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The activity's distance in meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Distance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_ElapsedTime_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.ElapsedTime*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_ElapsedTime" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.ElapsedTime">
+  ElapsedTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The activity's elapsed time in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ElapsedTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_ElevHigh_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.ElevHigh*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_ElevHigh" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.ElevHigh">
+  ElevHigh
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The activity's highest elevation in meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ElevHigh { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_ElevLow_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.ElevLow*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_ElevLow" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.ElevLow">
+  ElevLow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The activity's lowest elevation in meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ElevLow { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_EmbedToken_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.EmbedToken*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_EmbedToken" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.EmbedToken">
+  EmbedToken
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The token used to embed this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? EmbedToken { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_EndLatLng_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.EndLatLng*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_EndLatLng" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.EndLatLng">
+  EndLatLng
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The end latitude/longitude of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LatLng? EndLatLng { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.Common.LatLng.html">LatLng</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_ExternalId_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.ExternalId*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_ExternalId" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.ExternalId">
+  ExternalId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The identifier provided at upload time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ExternalId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Flagged_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Flagged*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Flagged" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Flagged">
+  Flagged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this activity is flagged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Flagged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Gear_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Gear*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Gear" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Gear">
+  Gear
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gear summary used during the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SummaryGear? Gear { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.Gears.SummaryGear.html">SummaryGear</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_GearId_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.GearId*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_GearId" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.GearId">
+  GearId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The gear ID used for this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GearId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_HasKudoed_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.HasKudoed*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_HasKudoed" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.HasKudoed">
+  HasKudoed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the logged-in athlete has kudoed this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasKudoed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_HideFromHome_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.HideFromHome*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_HideFromHome" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.HideFromHome">
+  HideFromHome
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this activity is muted in the home feed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HideFromHome { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Id_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Id*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Id" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unique identifier of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Kilojoules_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Kilojoules*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Kilojoules" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Kilojoules">
+  Kilojoules
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total work done in kilojoules during this activity (rides only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? Kilojoules { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_KudosCount_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.KudosCount*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_KudosCount" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.KudosCount">
+  KudosCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of kudos given for this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int KudosCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Laps_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Laps*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Laps" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Laps">
+  Laps
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Laps of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Lap&gt;? Laps { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="StravaAPILibary.Models.Activities.Lap.html">Lap</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Manual_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Manual*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Manual" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Manual">
+  Manual
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this activity was created manually.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Manual { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Map_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Map*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Map" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Map">
+  Map
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The map associated with this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolylineMap Map { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.Maps.PolylineMap.html">PolylineMap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_MaxSpeed_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.MaxSpeed*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_MaxSpeed" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.MaxSpeed">
+  MaxSpeed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The maximum speed in meters per second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxSpeed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_MaxWatts_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.MaxWatts*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_MaxWatts" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.MaxWatts">
+  MaxWatts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum power in watts (rides with power meter only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? MaxWatts { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_MovingTime_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.MovingTime*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_MovingTime" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.MovingTime">
+  MovingTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The activity's moving time in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MovingTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Name_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Name*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Name" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_PhotoCount_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.PhotoCount*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_PhotoCount" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.PhotoCount">
+  PhotoCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of Instagram photos for this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PhotoCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Photos_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Photos*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Photos" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Photos">
+  Photos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Photos associated with the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhotosSummary? Photos { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.Photos.PhotosSummary.html">PhotosSummary</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Private_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Private*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Private" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Private">
+  Private
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this activity is private.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Private { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_SegmentEfforts_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.SegmentEfforts*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_SegmentEfforts" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.SegmentEfforts">
+  SegmentEfforts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Segment efforts during this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DetailedSegmentEffort&gt; SegmentEfforts { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="StravaAPILibary.Models.Segments.DetailedSegmentEffort.html">DetailedSegmentEffort</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_SplitsMetric_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.SplitsMetric*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_SplitsMetric" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.SplitsMetric">
+  SplitsMetric
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Splits of the activity in metric units (for runs).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Split&gt;? SplitsMetric { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="StravaAPILibary.Models.Activities.Split.html">Split</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_SplitsStandard_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.SplitsStandard*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_SplitsStandard" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.SplitsStandard">
+  SplitsStandard
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Splits of the activity in imperial units (for runs).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Split&gt;? SplitsStandard { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="StravaAPILibary.Models.Activities.Split.html">Split</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_SportType_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.SportType*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_SportType" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.SportType">
+  SportType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The sport type of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SportType SportType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.Enums.SportType.html">SportType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_StartDate_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.StartDate*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_StartDate" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.StartDate">
+  StartDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UTC time when the activity was started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime StartDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_StartDateLocal_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.StartDateLocal*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_StartDateLocal" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.StartDateLocal">
+  StartDateLocal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The local time when the activity was started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime StartDateLocal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_StartLatLng_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.StartLatLng*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_StartLatLng" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.StartLatLng">
+  StartLatLng
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The start latitude/longitude of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LatLng? StartLatLng { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.Common.LatLng.html">LatLng</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Timezone_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Timezone*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Timezone" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Timezone">
+  Timezone
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The timezone of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Timezone { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_TotalElevationGain_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.TotalElevationGain*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_TotalElevationGain" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.TotalElevationGain">
+  TotalElevationGain
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The activity's total elevation gain in meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TotalElevationGain { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_TotalPhotoCount_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.TotalPhotoCount*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_TotalPhotoCount" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.TotalPhotoCount">
+  TotalPhotoCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total number of photos (Instagram + Strava) for this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalPhotoCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Trainer_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Trainer*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Trainer" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Trainer">
+  Trainer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this activity was recorded on a training machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Trainer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_Type_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Type*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_Type" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.Type">
+  Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deprecated. Prefer to use <a class="xref" href="StravaAPILibary.Models.Activities.DetailedActivity.html#StravaAPILibary_Models_Activities_DetailedActivity_SportType">SportType</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityType Type { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.Enums.ActivityType.html">ActivityType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_UploadId_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.UploadId*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_UploadId" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.UploadId">
+  UploadId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The identifier of the upload that resulted in this activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long UploadId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_UploadIdStr_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.UploadIdStr*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_UploadIdStr" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.UploadIdStr">
+  UploadIdStr
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The upload identifier in string format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? UploadIdStr { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_WeightedAverageWatts_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.WeightedAverageWatts*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_WeightedAverageWatts" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.WeightedAverageWatts">
+  WeightedAverageWatts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Weighted average watts (Normalized Power) for rides with power data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? WeightedAverageWatts { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_Activities_DetailedActivity_WorkoutType_" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.WorkoutType*"></a>
+
+  <h3 id="StravaAPILibary_Models_Activities_DetailedActivity_WorkoutType" data-uid="StravaAPILibary.Models.Activities.DetailedActivity.WorkoutType">
+  WorkoutType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The workout type of the activity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? WorkoutType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
