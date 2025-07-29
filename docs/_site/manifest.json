@@ -1201,6 +1201,16 @@
       "Summary": null
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "docs/api/toc.yml",
       "output": {
