@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Explorer
+  commentId: N:StravaAPILibary.Models.Explorer
+  id: StravaAPILibary.Models.Explorer
+  children:
+  - StravaAPILibary.Models.Explorer.ExplorerResponse
+  - StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Explorer
+  nameWithType: StravaAPILibary.Models.Explorer
+  fullName: StravaAPILibary.Models.Explorer
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Explorer.ExplorerResponse
+  commentId: T:StravaAPILibary.Models.Explorer.ExplorerResponse
+  href: StravaAPILibary.Models.Explorer.ExplorerResponse.html
+  name: ExplorerResponse
+  nameWithType: ExplorerResponse
+  fullName: StravaAPILibary.Models.Explorer.ExplorerResponse
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment
+  commentId: T:StravaAPILibary.Models.Explorer.ExplorerSegment
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html
+  name: ExplorerSegment
+  nameWithType: ExplorerSegment
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment

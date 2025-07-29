@@ -1,0 +1,518 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Common.LatLng
+  commentId: T:StravaAPILibary.Models.Common.LatLng
+  id: LatLng
+  parent: StravaAPILibary.Models.Common
+  children:
+  - StravaAPILibary.Models.Common.LatLng.#ctor
+  - StravaAPILibary.Models.Common.LatLng.#ctor(System.Single,System.Single)
+  - StravaAPILibary.Models.Common.LatLng.Latitude
+  - StravaAPILibary.Models.Common.LatLng.Longitude
+  - StravaAPILibary.Models.Common.LatLng.ToArray
+  langs:
+  - csharp
+  - vb
+  name: LatLng
+  nameWithType: LatLng
+  fullName: StravaAPILibary.Models.Common.LatLng
+  type: Class
+  source:
+    id: LatLng
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    startLine: 5
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Common
+  summary: Represents a geographical coordinate as a pair of latitude and longitude.
+  example: []
+  syntax:
+    content: public class LatLng
+    content.vb: Public Class LatLng
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Common.LatLng.Latitude
+  commentId: P:StravaAPILibary.Models.Common.LatLng.Latitude
+  id: Latitude
+  parent: StravaAPILibary.Models.Common.LatLng
+  langs:
+  - csharp
+  - vb
+  name: Latitude
+  nameWithType: LatLng.Latitude
+  fullName: StravaAPILibary.Models.Common.LatLng.Latitude
+  type: Property
+  source:
+    id: Latitude
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    startLine: 10
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Common
+  summary: Latitude component of the coordinate.
+  example: []
+  syntax:
+    content: public float Latitude { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Latitude As Single
+  overload: StravaAPILibary.Models.Common.LatLng.Latitude*
+- uid: StravaAPILibary.Models.Common.LatLng.Longitude
+  commentId: P:StravaAPILibary.Models.Common.LatLng.Longitude
+  id: Longitude
+  parent: StravaAPILibary.Models.Common.LatLng
+  langs:
+  - csharp
+  - vb
+  name: Longitude
+  nameWithType: LatLng.Longitude
+  fullName: StravaAPILibary.Models.Common.LatLng.Longitude
+  type: Property
+  source:
+    id: Longitude
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    startLine: 15
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Common
+  summary: Longitude component of the coordinate.
+  example: []
+  syntax:
+    content: public float Longitude { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Longitude As Single
+  overload: StravaAPILibary.Models.Common.LatLng.Longitude*
+- uid: StravaAPILibary.Models.Common.LatLng.#ctor
+  commentId: M:StravaAPILibary.Models.Common.LatLng.#ctor
+  id: '#ctor'
+  parent: StravaAPILibary.Models.Common.LatLng
+  langs:
+  - csharp
+  - vb
+  name: LatLng()
+  nameWithType: LatLng.LatLng()
+  fullName: StravaAPILibary.Models.Common.LatLng.LatLng()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    startLine: 20
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Common
+  summary: Initializes a new instance of <xref href="StravaAPILibary.Models.Common.LatLng" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LatLng()
+    content.vb: Public Sub New()
+  overload: StravaAPILibary.Models.Common.LatLng.#ctor*
+  nameWithType.vb: LatLng.New()
+  fullName.vb: StravaAPILibary.Models.Common.LatLng.New()
+  name.vb: New()
+- uid: StravaAPILibary.Models.Common.LatLng.#ctor(System.Single,System.Single)
+  commentId: M:StravaAPILibary.Models.Common.LatLng.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: StravaAPILibary.Models.Common.LatLng
+  langs:
+  - csharp
+  - vb
+  name: LatLng(float, float)
+  nameWithType: LatLng.LatLng(float, float)
+  fullName: StravaAPILibary.Models.Common.LatLng.LatLng(float, float)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    startLine: 27
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Common
+  summary: Initializes a new instance of <xref href="StravaAPILibary.Models.Common.LatLng" data-throw-if-not-resolved="false"></xref> with specified latitude and longitude.
+  example: []
+  syntax:
+    content: public LatLng(float latitude, float longitude)
+    parameters:
+    - id: latitude
+      type: System.Single
+      description: The latitude component.
+    - id: longitude
+      type: System.Single
+      description: The longitude component.
+    content.vb: Public Sub New(latitude As Single, longitude As Single)
+  overload: StravaAPILibary.Models.Common.LatLng.#ctor*
+  nameWithType.vb: LatLng.New(Single, Single)
+  fullName.vb: StravaAPILibary.Models.Common.LatLng.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: StravaAPILibary.Models.Common.LatLng.ToArray
+  commentId: M:StravaAPILibary.Models.Common.LatLng.ToArray
+  id: ToArray
+  parent: StravaAPILibary.Models.Common.LatLng
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: LatLng.ToArray()
+  fullName: StravaAPILibary.Models.Common.LatLng.ToArray()
+  type: Method
+  source:
+    id: ToArray
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    startLine: 36
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Common
+  summary: Returns the coordinate as an array of floats [latitude, longitude].
+  example: []
+  syntax:
+    content: public float[] ToArray()
+    return:
+      type: System.Single[]
+    content.vb: Public Function ToArray() As Single()
+  overload: StravaAPILibary.Models.Common.LatLng.ToArray*
+references:
+- uid: StravaAPILibary.Models.Common
+  commentId: N:StravaAPILibary.Models.Common
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Common
+  nameWithType: StravaAPILibary.Models.Common
+  fullName: StravaAPILibary.Models.Common
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Common
+    name: Common
+    href: StravaAPILibary.Models.Common.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Common
+    name: Common
+    href: StravaAPILibary.Models.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Common.LatLng.Latitude*
+  commentId: Overload:StravaAPILibary.Models.Common.LatLng.Latitude
+  href: StravaAPILibary.Models.Common.LatLng.html#StravaAPILibary_Models_Common_LatLng_Latitude
+  name: Latitude
+  nameWithType: LatLng.Latitude
+  fullName: StravaAPILibary.Models.Common.LatLng.Latitude
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: StravaAPILibary.Models.Common.LatLng.Longitude*
+  commentId: Overload:StravaAPILibary.Models.Common.LatLng.Longitude
+  href: StravaAPILibary.Models.Common.LatLng.html#StravaAPILibary_Models_Common_LatLng_Longitude
+  name: Longitude
+  nameWithType: LatLng.Longitude
+  fullName: StravaAPILibary.Models.Common.LatLng.Longitude
+- uid: StravaAPILibary.Models.Common.LatLng
+  commentId: T:StravaAPILibary.Models.Common.LatLng
+  parent: StravaAPILibary.Models.Common
+  href: StravaAPILibary.Models.Common.LatLng.html
+  name: LatLng
+  nameWithType: LatLng
+  fullName: StravaAPILibary.Models.Common.LatLng
+- uid: StravaAPILibary.Models.Common.LatLng.#ctor*
+  commentId: Overload:StravaAPILibary.Models.Common.LatLng.#ctor
+  href: StravaAPILibary.Models.Common.LatLng.html#StravaAPILibary_Models_Common_LatLng__ctor
+  name: LatLng
+  nameWithType: LatLng.LatLng
+  fullName: StravaAPILibary.Models.Common.LatLng.LatLng
+  nameWithType.vb: LatLng.New
+  fullName.vb: StravaAPILibary.Models.Common.LatLng.New
+  name.vb: New
+- uid: StravaAPILibary.Models.Common.LatLng.ToArray*
+  commentId: Overload:StravaAPILibary.Models.Common.LatLng.ToArray
+  href: StravaAPILibary.Models.Common.LatLng.html#StravaAPILibary_Models_Common_LatLng_ToArray
+  name: ToArray
+  nameWithType: LatLng.ToArray
+  fullName: StravaAPILibary.Models.Common.LatLng.ToArray
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )

@@ -1,0 +1,1187 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Routes.Route
+  commentId: T:StravaAPILibary.Models.Routes.Route
+  id: Route
+  parent: StravaAPILibary.Models.Routes
+  children:
+  - StravaAPILibary.Models.Routes.Route.Athlete
+  - StravaAPILibary.Models.Routes.Route.CreatedAt
+  - StravaAPILibary.Models.Routes.Route.Description
+  - StravaAPILibary.Models.Routes.Route.Distance
+  - StravaAPILibary.Models.Routes.Route.ElevationGain
+  - StravaAPILibary.Models.Routes.Route.EstimatedMovingTime
+  - StravaAPILibary.Models.Routes.Route.Id
+  - StravaAPILibary.Models.Routes.Route.IdStr
+  - StravaAPILibary.Models.Routes.Route.Map
+  - StravaAPILibary.Models.Routes.Route.Name
+  - StravaAPILibary.Models.Routes.Route.Private
+  - StravaAPILibary.Models.Routes.Route.Segments
+  - StravaAPILibary.Models.Routes.Route.Starred
+  - StravaAPILibary.Models.Routes.Route.SubType
+  - StravaAPILibary.Models.Routes.Route.Timestamp
+  - StravaAPILibary.Models.Routes.Route.Type
+  - StravaAPILibary.Models.Routes.Route.UpdatedAt
+  - StravaAPILibary.Models.Routes.Route.Waypoints
+  langs:
+  - csharp
+  - vb
+  name: Route
+  nameWithType: Route
+  fullName: StravaAPILibary.Models.Routes.Route
+  type: Class
+  source:
+    id: Route
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 11
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: Represents a Strava route, including its metadata and associated details.
+  example: []
+  syntax:
+    content: public class Route
+    content.vb: Public Class Route
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Routes.Route.Athlete
+  commentId: P:StravaAPILibary.Models.Routes.Route.Athlete
+  id: Athlete
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Athlete
+  nameWithType: Route.Athlete
+  fullName: StravaAPILibary.Models.Routes.Route.Athlete
+  type: Property
+  source:
+    id: Athlete
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 16
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The athlete who created the route.
+  example: []
+  syntax:
+    content: public SummaryAthlete Athlete { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Athletes.SummaryAthlete
+    content.vb: Public Property Athlete As SummaryAthlete
+  overload: StravaAPILibary.Models.Routes.Route.Athlete*
+- uid: StravaAPILibary.Models.Routes.Route.Description
+  commentId: P:StravaAPILibary.Models.Routes.Route.Description
+  id: Description
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Route.Description
+  fullName: StravaAPILibary.Models.Routes.Route.Description
+  type: Property
+  source:
+    id: Description
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 21
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The description of the route.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: StravaAPILibary.Models.Routes.Route.Description*
+- uid: StravaAPILibary.Models.Routes.Route.Distance
+  commentId: P:StravaAPILibary.Models.Routes.Route.Distance
+  id: Distance
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: Route.Distance
+  fullName: StravaAPILibary.Models.Routes.Route.Distance
+  type: Property
+  source:
+    id: Distance
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 26
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The distance of the route, in meters.
+  example: []
+  syntax:
+    content: public float Distance { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Distance As Single
+  overload: StravaAPILibary.Models.Routes.Route.Distance*
+- uid: StravaAPILibary.Models.Routes.Route.ElevationGain
+  commentId: P:StravaAPILibary.Models.Routes.Route.ElevationGain
+  id: ElevationGain
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: ElevationGain
+  nameWithType: Route.ElevationGain
+  fullName: StravaAPILibary.Models.Routes.Route.ElevationGain
+  type: Property
+  source:
+    id: ElevationGain
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 31
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The elevation gain of the route, in meters.
+  example: []
+  syntax:
+    content: public float ElevationGain { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ElevationGain As Single
+  overload: StravaAPILibary.Models.Routes.Route.ElevationGain*
+- uid: StravaAPILibary.Models.Routes.Route.Id
+  commentId: P:StravaAPILibary.Models.Routes.Route.Id
+  id: Id
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Route.Id
+  fullName: StravaAPILibary.Models.Routes.Route.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 36
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The unique identifier of this route.
+  example: []
+  syntax:
+    content: public long Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Id As Long
+  overload: StravaAPILibary.Models.Routes.Route.Id*
+- uid: StravaAPILibary.Models.Routes.Route.IdStr
+  commentId: P:StravaAPILibary.Models.Routes.Route.IdStr
+  id: IdStr
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: IdStr
+  nameWithType: Route.IdStr
+  fullName: StravaAPILibary.Models.Routes.Route.IdStr
+  type: Property
+  source:
+    id: IdStr
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 41
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The unique identifier of this route in string format.
+  example: []
+  syntax:
+    content: public string IdStr { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdStr As String
+  overload: StravaAPILibary.Models.Routes.Route.IdStr*
+- uid: StravaAPILibary.Models.Routes.Route.Map
+  commentId: P:StravaAPILibary.Models.Routes.Route.Map
+  id: Map
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Map
+  nameWithType: Route.Map
+  fullName: StravaAPILibary.Models.Routes.Route.Map
+  type: Property
+  source:
+    id: Map
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 46
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The polyline map of the route.
+  example: []
+  syntax:
+    content: public PolylineMap Map { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Maps.PolylineMap
+    content.vb: Public Property Map As PolylineMap
+  overload: StravaAPILibary.Models.Routes.Route.Map*
+- uid: StravaAPILibary.Models.Routes.Route.Name
+  commentId: P:StravaAPILibary.Models.Routes.Route.Name
+  id: Name
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Route.Name
+  fullName: StravaAPILibary.Models.Routes.Route.Name
+  type: Property
+  source:
+    id: Name
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 51
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The name of the route.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: StravaAPILibary.Models.Routes.Route.Name*
+- uid: StravaAPILibary.Models.Routes.Route.Private
+  commentId: P:StravaAPILibary.Models.Routes.Route.Private
+  id: Private
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Private
+  nameWithType: Route.Private
+  fullName: StravaAPILibary.Models.Routes.Route.Private
+  type: Property
+  source:
+    id: Private
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 56
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: Whether this route is private.
+  example: []
+  syntax:
+    content: public bool Private { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property [Private] As Boolean
+  overload: StravaAPILibary.Models.Routes.Route.Private*
+- uid: StravaAPILibary.Models.Routes.Route.Starred
+  commentId: P:StravaAPILibary.Models.Routes.Route.Starred
+  id: Starred
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Starred
+  nameWithType: Route.Starred
+  fullName: StravaAPILibary.Models.Routes.Route.Starred
+  type: Property
+  source:
+    id: Starred
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 61
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: Whether this route is starred by the logged-in athlete.
+  example: []
+  syntax:
+    content: public bool Starred { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Starred As Boolean
+  overload: StravaAPILibary.Models.Routes.Route.Starred*
+- uid: StravaAPILibary.Models.Routes.Route.Timestamp
+  commentId: P:StravaAPILibary.Models.Routes.Route.Timestamp
+  id: Timestamp
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Timestamp
+  nameWithType: Route.Timestamp
+  fullName: StravaAPILibary.Models.Routes.Route.Timestamp
+  type: Property
+  source:
+    id: Timestamp
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 66
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: An epoch timestamp of when the route was created.
+  example: []
+  syntax:
+    content: public int Timestamp { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Timestamp As Integer
+  overload: StravaAPILibary.Models.Routes.Route.Timestamp*
+- uid: StravaAPILibary.Models.Routes.Route.Type
+  commentId: P:StravaAPILibary.Models.Routes.Route.Type
+  id: Type
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Route.Type
+  fullName: StravaAPILibary.Models.Routes.Route.Type
+  type: Property
+  source:
+    id: Type
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 71
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: This route's type (1 for ride, 2 for run).
+  example: []
+  syntax:
+    content: public int Type { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Type As Integer
+  overload: StravaAPILibary.Models.Routes.Route.Type*
+- uid: StravaAPILibary.Models.Routes.Route.SubType
+  commentId: P:StravaAPILibary.Models.Routes.Route.SubType
+  id: SubType
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: SubType
+  nameWithType: Route.SubType
+  fullName: StravaAPILibary.Models.Routes.Route.SubType
+  type: Property
+  source:
+    id: SubType
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 76
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: This route's sub-type (1 for road, 2 for mountain bike, 3 for cross, 4 for trail, 5 for mixed).
+  example: []
+  syntax:
+    content: public int SubType { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SubType As Integer
+  overload: StravaAPILibary.Models.Routes.Route.SubType*
+- uid: StravaAPILibary.Models.Routes.Route.CreatedAt
+  commentId: P:StravaAPILibary.Models.Routes.Route.CreatedAt
+  id: CreatedAt
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: Route.CreatedAt
+  fullName: StravaAPILibary.Models.Routes.Route.CreatedAt
+  type: Property
+  source:
+    id: CreatedAt
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 81
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The time at which the route was created.
+  example: []
+  syntax:
+    content: public DateTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedAt As Date
+  overload: StravaAPILibary.Models.Routes.Route.CreatedAt*
+- uid: StravaAPILibary.Models.Routes.Route.UpdatedAt
+  commentId: P:StravaAPILibary.Models.Routes.Route.UpdatedAt
+  id: UpdatedAt
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: UpdatedAt
+  nameWithType: Route.UpdatedAt
+  fullName: StravaAPILibary.Models.Routes.Route.UpdatedAt
+  type: Property
+  source:
+    id: UpdatedAt
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 86
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The time at which the route was last updated.
+  example: []
+  syntax:
+    content: public DateTime UpdatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property UpdatedAt As Date
+  overload: StravaAPILibary.Models.Routes.Route.UpdatedAt*
+- uid: StravaAPILibary.Models.Routes.Route.EstimatedMovingTime
+  commentId: P:StravaAPILibary.Models.Routes.Route.EstimatedMovingTime
+  id: EstimatedMovingTime
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: EstimatedMovingTime
+  nameWithType: Route.EstimatedMovingTime
+  fullName: StravaAPILibary.Models.Routes.Route.EstimatedMovingTime
+  type: Property
+  source:
+    id: EstimatedMovingTime
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 91
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: Estimated time in seconds for the authenticated athlete to complete the route.
+  example: []
+  syntax:
+    content: public int EstimatedMovingTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property EstimatedMovingTime As Integer
+  overload: StravaAPILibary.Models.Routes.Route.EstimatedMovingTime*
+- uid: StravaAPILibary.Models.Routes.Route.Segments
+  commentId: P:StravaAPILibary.Models.Routes.Route.Segments
+  id: Segments
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Segments
+  nameWithType: Route.Segments
+  fullName: StravaAPILibary.Models.Routes.Route.Segments
+  type: Property
+  source:
+    id: Segments
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 96
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The segments traversed by this route.
+  example: []
+  syntax:
+    content: public List<SummarySegment> Segments { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{StravaAPILibary.Models.Segments.SummarySegment}
+    content.vb: Public Property Segments As List(Of SummarySegment)
+  overload: StravaAPILibary.Models.Routes.Route.Segments*
+- uid: StravaAPILibary.Models.Routes.Route.Waypoints
+  commentId: P:StravaAPILibary.Models.Routes.Route.Waypoints
+  id: Waypoints
+  parent: StravaAPILibary.Models.Routes.Route
+  langs:
+  - csharp
+  - vb
+  name: Waypoints
+  nameWithType: Route.Waypoints
+  fullName: StravaAPILibary.Models.Routes.Route.Waypoints
+  type: Property
+  source:
+    id: Waypoints
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    startLine: 101
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Routes
+  summary: The custom waypoints along this route.
+  example: []
+  syntax:
+    content: public List<Waypoint> Waypoints { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{StravaAPILibary.Models.Routes.Waypoint}
+    content.vb: Public Property Waypoints As List(Of Waypoint)
+  overload: StravaAPILibary.Models.Routes.Route.Waypoints*
+references:
+- uid: StravaAPILibary.Models.Routes
+  commentId: N:StravaAPILibary.Models.Routes
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Routes
+  nameWithType: StravaAPILibary.Models.Routes
+  fullName: StravaAPILibary.Models.Routes
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Routes
+    name: Routes
+    href: StravaAPILibary.Models.Routes.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Routes
+    name: Routes
+    href: StravaAPILibary.Models.Routes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Routes.Route.Athlete*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Athlete
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Athlete
+  name: Athlete
+  nameWithType: Route.Athlete
+  fullName: StravaAPILibary.Models.Routes.Route.Athlete
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete
+  commentId: T:StravaAPILibary.Models.Athletes.SummaryAthlete
+  parent: StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html
+  name: SummaryAthlete
+  nameWithType: SummaryAthlete
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete
+- uid: StravaAPILibary.Models.Athletes
+  commentId: N:StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Athletes
+  nameWithType: StravaAPILibary.Models.Athletes
+  fullName: StravaAPILibary.Models.Athletes
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+- uid: StravaAPILibary.Models.Routes.Route.Description*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Description
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Description
+  name: Description
+  nameWithType: Route.Description
+  fullName: StravaAPILibary.Models.Routes.Route.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Models.Routes.Route.Distance*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Distance
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Distance
+  name: Distance
+  nameWithType: Route.Distance
+  fullName: StravaAPILibary.Models.Routes.Route.Distance
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: StravaAPILibary.Models.Routes.Route.ElevationGain*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.ElevationGain
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_ElevationGain
+  name: ElevationGain
+  nameWithType: Route.ElevationGain
+  fullName: StravaAPILibary.Models.Routes.Route.ElevationGain
+- uid: StravaAPILibary.Models.Routes.Route.Id*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Id
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Id
+  name: Id
+  nameWithType: Route.Id
+  fullName: StravaAPILibary.Models.Routes.Route.Id
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: StravaAPILibary.Models.Routes.Route.IdStr*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.IdStr
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_IdStr
+  name: IdStr
+  nameWithType: Route.IdStr
+  fullName: StravaAPILibary.Models.Routes.Route.IdStr
+- uid: StravaAPILibary.Models.Routes.Route.Map*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Map
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Map
+  name: Map
+  nameWithType: Route.Map
+  fullName: StravaAPILibary.Models.Routes.Route.Map
+- uid: StravaAPILibary.Models.Maps.PolylineMap
+  commentId: T:StravaAPILibary.Models.Maps.PolylineMap
+  parent: StravaAPILibary.Models.Maps
+  href: StravaAPILibary.Models.Maps.PolylineMap.html
+  name: PolylineMap
+  nameWithType: PolylineMap
+  fullName: StravaAPILibary.Models.Maps.PolylineMap
+- uid: StravaAPILibary.Models.Maps
+  commentId: N:StravaAPILibary.Models.Maps
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Maps
+  nameWithType: StravaAPILibary.Models.Maps
+  fullName: StravaAPILibary.Models.Maps
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Maps
+    name: Maps
+    href: StravaAPILibary.Models.Maps.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Maps
+    name: Maps
+    href: StravaAPILibary.Models.Maps.html
+- uid: StravaAPILibary.Models.Routes.Route.Name*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Name
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Name
+  name: Name
+  nameWithType: Route.Name
+  fullName: StravaAPILibary.Models.Routes.Route.Name
+- uid: StravaAPILibary.Models.Routes.Route.Private*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Private
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Private
+  name: Private
+  nameWithType: Route.Private
+  fullName: StravaAPILibary.Models.Routes.Route.Private
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: StravaAPILibary.Models.Routes.Route.Starred*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Starred
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Starred
+  name: Starred
+  nameWithType: Route.Starred
+  fullName: StravaAPILibary.Models.Routes.Route.Starred
+- uid: StravaAPILibary.Models.Routes.Route.Timestamp*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Timestamp
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Timestamp
+  name: Timestamp
+  nameWithType: Route.Timestamp
+  fullName: StravaAPILibary.Models.Routes.Route.Timestamp
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: StravaAPILibary.Models.Routes.Route.Type*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Type
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Type
+  name: Type
+  nameWithType: Route.Type
+  fullName: StravaAPILibary.Models.Routes.Route.Type
+- uid: StravaAPILibary.Models.Routes.Route.SubType*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.SubType
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_SubType
+  name: SubType
+  nameWithType: Route.SubType
+  fullName: StravaAPILibary.Models.Routes.Route.SubType
+- uid: StravaAPILibary.Models.Routes.Route.CreatedAt*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.CreatedAt
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_CreatedAt
+  name: CreatedAt
+  nameWithType: Route.CreatedAt
+  fullName: StravaAPILibary.Models.Routes.Route.CreatedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: StravaAPILibary.Models.Routes.Route.UpdatedAt*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.UpdatedAt
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_UpdatedAt
+  name: UpdatedAt
+  nameWithType: Route.UpdatedAt
+  fullName: StravaAPILibary.Models.Routes.Route.UpdatedAt
+- uid: StravaAPILibary.Models.Routes.Route.EstimatedMovingTime*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.EstimatedMovingTime
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_EstimatedMovingTime
+  name: EstimatedMovingTime
+  nameWithType: Route.EstimatedMovingTime
+  fullName: StravaAPILibary.Models.Routes.Route.EstimatedMovingTime
+- uid: StravaAPILibary.Models.Routes.Route.Segments*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Segments
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Segments
+  name: Segments
+  nameWithType: Route.Segments
+  fullName: StravaAPILibary.Models.Routes.Route.Segments
+- uid: System.Collections.Generic.List{StravaAPILibary.Models.Segments.SummarySegment}
+  commentId: T:System.Collections.Generic.List{StravaAPILibary.Models.Segments.SummarySegment}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SummarySegment>
+  nameWithType: List<SummarySegment>
+  fullName: System.Collections.Generic.List<StravaAPILibary.Models.Segments.SummarySegment>
+  nameWithType.vb: List(Of SummarySegment)
+  fullName.vb: System.Collections.Generic.List(Of StravaAPILibary.Models.Segments.SummarySegment)
+  name.vb: List(Of SummarySegment)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: StravaAPILibary.Models.Segments.SummarySegment
+    name: SummarySegment
+    href: StravaAPILibary.Models.Segments.SummarySegment.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StravaAPILibary.Models.Segments.SummarySegment
+    name: SummarySegment
+    href: StravaAPILibary.Models.Segments.SummarySegment.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: StravaAPILibary.Models.Routes.Route.Waypoints*
+  commentId: Overload:StravaAPILibary.Models.Routes.Route.Waypoints
+  href: StravaAPILibary.Models.Routes.Route.html#StravaAPILibary_Models_Routes_Route_Waypoints
+  name: Waypoints
+  nameWithType: Route.Waypoints
+  fullName: StravaAPILibary.Models.Routes.Route.Waypoints
+- uid: System.Collections.Generic.List{StravaAPILibary.Models.Routes.Waypoint}
+  commentId: T:System.Collections.Generic.List{StravaAPILibary.Models.Routes.Waypoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Waypoint>
+  nameWithType: List<Waypoint>
+  fullName: System.Collections.Generic.List<StravaAPILibary.Models.Routes.Waypoint>
+  nameWithType.vb: List(Of Waypoint)
+  fullName.vb: System.Collections.Generic.List(Of StravaAPILibary.Models.Routes.Waypoint)
+  name.vb: List(Of Waypoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: StravaAPILibary.Models.Routes.Waypoint
+    name: Waypoint
+    href: StravaAPILibary.Models.Routes.Waypoint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StravaAPILibary.Models.Routes.Waypoint
+    name: Waypoint
+    href: StravaAPILibary.Models.Routes.Waypoint.html
+  - name: )

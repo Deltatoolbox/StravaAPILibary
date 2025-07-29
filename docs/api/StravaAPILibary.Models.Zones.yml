@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Zones
+  commentId: N:StravaAPILibary.Models.Zones
+  id: StravaAPILibary.Models.Zones
+  children:
+  - StravaAPILibary.Models.Zones.HeartRateZoneRanges
+  - StravaAPILibary.Models.Zones.PowerZoneRanges
+  - StravaAPILibary.Models.Zones.ZoneRange
+  - StravaAPILibary.Models.Zones.ZoneRanges
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Zones
+  nameWithType: StravaAPILibary.Models.Zones
+  fullName: StravaAPILibary.Models.Zones
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Zones.HeartRateZoneRanges
+  commentId: T:StravaAPILibary.Models.Zones.HeartRateZoneRanges
+  href: StravaAPILibary.Models.Zones.HeartRateZoneRanges.html
+  name: HeartRateZoneRanges
+  nameWithType: HeartRateZoneRanges
+  fullName: StravaAPILibary.Models.Zones.HeartRateZoneRanges
+- uid: StravaAPILibary.Models.Zones.PowerZoneRanges
+  commentId: T:StravaAPILibary.Models.Zones.PowerZoneRanges
+  href: StravaAPILibary.Models.Zones.PowerZoneRanges.html
+  name: PowerZoneRanges
+  nameWithType: PowerZoneRanges
+  fullName: StravaAPILibary.Models.Zones.PowerZoneRanges
+- uid: StravaAPILibary.Models.Zones.ZoneRange
+  commentId: T:StravaAPILibary.Models.Zones.ZoneRange
+  href: StravaAPILibary.Models.Zones.ZoneRange.html
+  name: ZoneRange
+  nameWithType: ZoneRange
+  fullName: StravaAPILibary.Models.Zones.ZoneRange
+- uid: StravaAPILibary.Models.Zones.ZoneRanges
+  commentId: T:StravaAPILibary.Models.Zones.ZoneRanges
+  parent: StravaAPILibary.Models.Zones
+  href: StravaAPILibary.Models.Zones.ZoneRanges.html
+  name: ZoneRanges
+  nameWithType: ZoneRanges
+  fullName: StravaAPILibary.Models.Zones.ZoneRanges
+- uid: StravaAPILibary.Models.Zones
+  commentId: N:StravaAPILibary.Models.Zones
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Zones
+  nameWithType: StravaAPILibary.Models.Zones
+  fullName: StravaAPILibary.Models.Zones
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Zones
+    name: Zones
+    href: StravaAPILibary.Models.Zones.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Zones
+    name: Zones
+    href: StravaAPILibary.Models.Zones.html

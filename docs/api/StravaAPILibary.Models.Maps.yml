@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Maps
+  commentId: N:StravaAPILibary.Models.Maps
+  id: StravaAPILibary.Models.Maps
+  children:
+  - StravaAPILibary.Models.Maps.PolylineMap
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Maps
+  nameWithType: StravaAPILibary.Models.Maps
+  fullName: StravaAPILibary.Models.Maps
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Maps.PolylineMap
+  commentId: T:StravaAPILibary.Models.Maps.PolylineMap
+  parent: StravaAPILibary.Models.Maps
+  href: StravaAPILibary.Models.Maps.PolylineMap.html
+  name: PolylineMap
+  nameWithType: PolylineMap
+  fullName: StravaAPILibary.Models.Maps.PolylineMap
+- uid: StravaAPILibary.Models.Maps
+  commentId: N:StravaAPILibary.Models.Maps
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Maps
+  nameWithType: StravaAPILibary.Models.Maps
+  fullName: StravaAPILibary.Models.Maps
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Maps
+    name: Maps
+    href: StravaAPILibary.Models.Maps.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Maps
+    name: Maps
+    href: StravaAPILibary.Models.Maps.html

@@ -1,0 +1,728 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment
+  commentId: T:StravaAPILibary.Models.Explorer.ExplorerSegment
+  id: ExplorerSegment
+  parent: StravaAPILibary.Models.Explorer
+  children:
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.Distance
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.Id
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.Name
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.Points
+  - StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng
+  langs:
+  - csharp
+  - vb
+  name: ExplorerSegment
+  nameWithType: ExplorerSegment
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment
+  type: Class
+  source:
+    id: ExplorerSegment
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 7
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: Represents a segment returned from the Explorer API.
+  example: []
+  syntax:
+    content: public class ExplorerSegment
+    content.vb: Public Class ExplorerSegment
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.Id
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.Id
+  id: Id
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ExplorerSegment.Id
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 12
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The unique identifier of this segment.
+  example: []
+  syntax:
+    content: public long Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Id As Long
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.Id*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.Name
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.Name
+  id: Name
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ExplorerSegment.Name
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Name
+  type: Property
+  source:
+    id: Name
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 17
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The name of this segment.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.Name*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory
+  id: ClimbCategory
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: ClimbCategory
+  nameWithType: ExplorerSegment.ClimbCategory
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory
+  type: Property
+  source:
+    id: ClimbCategory
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 23
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: >-
+    The category of the climb [0, 5].
+
+    Higher is harder (e.g. 5 = Hors catégorie, 0 = uncategorized).
+  example: []
+  syntax:
+    content: public int ClimbCategory { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ClimbCategory As Integer
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc
+  id: ClimbCategoryDesc
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: ClimbCategoryDesc
+  nameWithType: ExplorerSegment.ClimbCategoryDesc
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc
+  type: Property
+  source:
+    id: ClimbCategoryDesc
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 28
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The description for the category of the climb (NC, 4, 3, 2, 1, HC).
+  example: []
+  syntax:
+    content: public string ClimbCategoryDesc { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClimbCategoryDesc As String
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade
+  id: AvgGrade
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: AvgGrade
+  nameWithType: ExplorerSegment.AvgGrade
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade
+  type: Property
+  source:
+    id: AvgGrade
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 33
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The segment's average grade in percents.
+  example: []
+  syntax:
+    content: public float AvgGrade { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AvgGrade As Single
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng
+  id: StartLatLng
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: StartLatLng
+  nameWithType: ExplorerSegment.StartLatLng
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng
+  type: Property
+  source:
+    id: StartLatLng
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 38
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The starting latitude/longitude of the segment.
+  example: []
+  syntax:
+    content: public LatLng StartLatLng { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Common.LatLng
+    content.vb: Public Property StartLatLng As LatLng
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng
+  id: EndLatLng
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: EndLatLng
+  nameWithType: ExplorerSegment.EndLatLng
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng
+  type: Property
+  source:
+    id: EndLatLng
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 43
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The ending latitude/longitude of the segment.
+  example: []
+  syntax:
+    content: public LatLng EndLatLng { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Common.LatLng
+    content.vb: Public Property EndLatLng As LatLng
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference
+  id: ElevDifference
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: ElevDifference
+  nameWithType: ExplorerSegment.ElevDifference
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference
+  type: Property
+  source:
+    id: ElevDifference
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 48
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The segment's elevation difference in meters.
+  example: []
+  syntax:
+    content: public float ElevDifference { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ElevDifference As Single
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.Distance
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.Distance
+  id: Distance
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: ExplorerSegment.Distance
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Distance
+  type: Property
+  source:
+    id: Distance
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 53
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The segment's distance in meters.
+  example: []
+  syntax:
+    content: public float Distance { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Distance As Single
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.Distance*
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.Points
+  commentId: P:StravaAPILibary.Models.Explorer.ExplorerSegment.Points
+  id: Points
+  parent: StravaAPILibary.Models.Explorer.ExplorerSegment
+  langs:
+  - csharp
+  - vb
+  name: Points
+  nameWithType: ExplorerSegment.Points
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Points
+  type: Property
+  source:
+    id: Points
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    startLine: 58
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Explorer
+  summary: The polyline of the segment.
+  example: []
+  syntax:
+    content: public string Points { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Points As String
+  overload: StravaAPILibary.Models.Explorer.ExplorerSegment.Points*
+references:
+- uid: StravaAPILibary.Models.Explorer
+  commentId: N:StravaAPILibary.Models.Explorer
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Explorer
+  nameWithType: StravaAPILibary.Models.Explorer
+  fullName: StravaAPILibary.Models.Explorer
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Explorer
+    name: Explorer
+    href: StravaAPILibary.Models.Explorer.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Explorer
+    name: Explorer
+    href: StravaAPILibary.Models.Explorer.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.Id*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.Id
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_Id
+  name: Id
+  nameWithType: ExplorerSegment.Id
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Id
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.Name*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.Name
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_Name
+  name: Name
+  nameWithType: ExplorerSegment.Name
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_ClimbCategory
+  name: ClimbCategory
+  nameWithType: ExplorerSegment.ClimbCategory
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_ClimbCategoryDesc
+  name: ClimbCategoryDesc
+  nameWithType: ExplorerSegment.ClimbCategoryDesc
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_AvgGrade
+  name: AvgGrade
+  nameWithType: ExplorerSegment.AvgGrade
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_StartLatLng
+  name: StartLatLng
+  nameWithType: ExplorerSegment.StartLatLng
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng
+- uid: StravaAPILibary.Models.Common.LatLng
+  commentId: T:StravaAPILibary.Models.Common.LatLng
+  parent: StravaAPILibary.Models.Common
+  href: StravaAPILibary.Models.Common.LatLng.html
+  name: LatLng
+  nameWithType: LatLng
+  fullName: StravaAPILibary.Models.Common.LatLng
+- uid: StravaAPILibary.Models.Common
+  commentId: N:StravaAPILibary.Models.Common
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Common
+  nameWithType: StravaAPILibary.Models.Common
+  fullName: StravaAPILibary.Models.Common
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Common
+    name: Common
+    href: StravaAPILibary.Models.Common.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Common
+    name: Common
+    href: StravaAPILibary.Models.Common.html
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_EndLatLng
+  name: EndLatLng
+  nameWithType: ExplorerSegment.EndLatLng
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_ElevDifference
+  name: ElevDifference
+  nameWithType: ExplorerSegment.ElevDifference
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.Distance*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.Distance
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_Distance
+  name: Distance
+  nameWithType: ExplorerSegment.Distance
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Distance
+- uid: StravaAPILibary.Models.Explorer.ExplorerSegment.Points*
+  commentId: Overload:StravaAPILibary.Models.Explorer.ExplorerSegment.Points
+  href: StravaAPILibary.Models.Explorer.ExplorerSegment.html#StravaAPILibary_Models_Explorer_ExplorerSegment_Points
+  name: Points
+  nameWithType: ExplorerSegment.Points
+  fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Points

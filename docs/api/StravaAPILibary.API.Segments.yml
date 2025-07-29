@@ -1,0 +1,828 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.API.Segments
+  commentId: T:StravaAPILibary.API.Segments
+  id: Segments
+  parent: StravaAPILibary.API
+  children:
+  - StravaAPILibary.API.Segments.GetExploreSegmentsAsync(System.String,System.Single[],System.String,System.Int32,System.Int32)
+  - StravaAPILibary.API.Segments.GetSegmentByIdAsync(System.String,System.String)
+  - StravaAPILibary.API.Segments.GetStarredSegmentsAsync(System.String,System.Int32,System.Int32)
+  - StravaAPILibary.API.Segments.PutStarredSegmentAsync(System.String,System.Int64,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Segments
+  nameWithType: Segments
+  fullName: StravaAPILibary.API.Segments
+  type: Class
+  source:
+    id: Segments
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    startLine: 40
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Provides methods for interacting with Strava's Segments API.
+  remarks: >-
+    This static class includes methods to retrieve, explore, and manage segments for the authenticated athlete.
+
+
+    <p><b>Features:</b></p>
+
+    <ul><li>Retrieve detailed information about a specific segment by its ID.</li><li>Get a list of starred segments for the authenticated athlete.</li><li>Explore top 10 segments within a defined geographical bounding box.</li><li>Star or unstar a segment for the authenticated athlete.</li></ul>
+
+
+    <p><b>Usage Example:</b></p>
+
+
+    <pre><code class="lang-csharp">// Retrieve a segment by ID:
+
+    var segment = await Segments.GetSegmentByIdAsync(accessToken, "12345");
+
+    Console.WriteLine(segment["name"]);
+
+
+    // Star a segment:
+
+    var updatedSegment = await Segments.PutStarredSegmentAsync(accessToken, 12345, true);</code></pre>
+
+
+    <p><b>API Documentation:</b></p>
+
+    Refer to the official Strava API documentation for segments:
+
+    <a href="https://developers.strava.com/docs/reference/#api-Segments">Strava Segments API Reference</a>.
+  example: []
+  syntax:
+    content: public static class Segments
+    content.vb: Public Module Segments
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.API.Segments.GetSegmentByIdAsync(System.String,System.String)
+  commentId: M:StravaAPILibary.API.Segments.GetSegmentByIdAsync(System.String,System.String)
+  id: GetSegmentByIdAsync(System.String,System.String)
+  parent: StravaAPILibary.API.Segments
+  langs:
+  - csharp
+  - vb
+  name: GetSegmentByIdAsync(string, string)
+  nameWithType: Segments.GetSegmentByIdAsync(string, string)
+  fullName: StravaAPILibary.API.Segments.GetSegmentByIdAsync(string, string)
+  type: Method
+  source:
+    id: GetSegmentByIdAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    startLine: 52
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Get a segment by its ID.
+  example: []
+  syntax:
+    content: public static Task<JsonObject> GetSegmentByIdAsync(string accessToken, string segmentId)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The access token for the API.
+    - id: segmentId
+      type: System.String
+      description: The ID of the segment to retrieve.
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+      description: A <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> containing the segment data.
+    content.vb: Public Shared Function GetSegmentByIdAsync(accessToken As String, segmentId As String) As Task(Of JsonObject)
+  overload: StravaAPILibary.API.Segments.GetSegmentByIdAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the access token or segment ID is null or empty.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the request to the API fails.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the JSON response cannot be parsed.
+  nameWithType.vb: Segments.GetSegmentByIdAsync(String, String)
+  fullName.vb: StravaAPILibary.API.Segments.GetSegmentByIdAsync(String, String)
+  name.vb: GetSegmentByIdAsync(String, String)
+- uid: StravaAPILibary.API.Segments.GetStarredSegmentsAsync(System.String,System.Int32,System.Int32)
+  commentId: M:StravaAPILibary.API.Segments.GetStarredSegmentsAsync(System.String,System.Int32,System.Int32)
+  id: GetStarredSegmentsAsync(System.String,System.Int32,System.Int32)
+  parent: StravaAPILibary.API.Segments
+  langs:
+  - csharp
+  - vb
+  name: GetStarredSegmentsAsync(string, int, int)
+  nameWithType: Segments.GetStarredSegmentsAsync(string, int, int)
+  fullName: StravaAPILibary.API.Segments.GetStarredSegmentsAsync(string, int, int)
+  type: Method
+  source:
+    id: GetStarredSegmentsAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    startLine: 99
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Get starred segments for the authenticated athlete.
+  example: []
+  syntax:
+    content: public static Task<JsonArray> GetStarredSegmentsAsync(string accessToken, int page = 1, int perPage = 30)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The OAuth access token.
+    - id: page
+      type: System.Int32
+      description: 'Page number (default: 1).'
+    - id: perPage
+      type: System.Int32
+      description: 'Number of items per page (default: 30).'
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonArray}
+      description: A <xref href="System.Text.Json.Nodes.JsonArray" data-throw-if-not-resolved="false"></xref> containing the starred segments.
+    content.vb: Public Shared Function GetStarredSegmentsAsync(accessToken As String, page As Integer = 1, perPage As Integer = 30) As Task(Of JsonArray)
+  overload: StravaAPILibary.API.Segments.GetStarredSegmentsAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">accessToken</code> is null or empty.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when <code class="paramref">page</code> or <code class="paramref">perPage</code> is less than or equal to zero.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the API request fails or returns a non-success status code.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the API response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the response JSON cannot be parsed as a <xref href="System.Text.Json.Nodes.JsonArray" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Segments.GetStarredSegmentsAsync(String, Integer, Integer)
+  fullName.vb: StravaAPILibary.API.Segments.GetStarredSegmentsAsync(String, Integer, Integer)
+  name.vb: GetStarredSegmentsAsync(String, Integer, Integer)
+- uid: StravaAPILibary.API.Segments.GetExploreSegmentsAsync(System.String,System.Single[],System.String,System.Int32,System.Int32)
+  commentId: M:StravaAPILibary.API.Segments.GetExploreSegmentsAsync(System.String,System.Single[],System.String,System.Int32,System.Int32)
+  id: GetExploreSegmentsAsync(System.String,System.Single[],System.String,System.Int32,System.Int32)
+  parent: StravaAPILibary.API.Segments
+  langs:
+  - csharp
+  - vb
+  name: GetExploreSegmentsAsync(string, float[], string, int, int)
+  nameWithType: Segments.GetExploreSegmentsAsync(string, float[], string, int, int)
+  fullName: StravaAPILibary.API.Segments.GetExploreSegmentsAsync(string, float[], string, int, int)
+  type: Method
+  source:
+    id: GetExploreSegmentsAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    startLine: 153
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Get a list of top 10 segments for the specified query.
+  example: []
+  syntax:
+    content: public static Task<JsonArray> GetExploreSegmentsAsync(string accessToken, float[] bounds, string activityType = "", int minCat = -1, int maxCat = -1)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: Strava access token.
+    - id: bounds
+      type: System.Single[]
+      description: Array of four float values [SW lat, SW lon, NE lat, NE lon].
+    - id: activityType
+      type: System.String
+      description: 'Activity type: "running" or "riding".'
+    - id: minCat
+      type: System.Int32
+      description: Minimum climbing category (-1 for any).
+    - id: maxCat
+      type: System.Int32
+      description: Maximum climbing category (-1 for any).
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonArray}
+      description: A <xref href="System.Text.Json.Nodes.JsonArray" data-throw-if-not-resolved="false"></xref> containing the top 10 segments matching the query.
+    content.vb: Public Shared Function GetExploreSegmentsAsync(accessToken As String, bounds As Single(), activityType As String = "", minCat As Integer = -1, maxCat As Integer = -1) As Task(Of JsonArray)
+  overload: StravaAPILibary.API.Segments.GetExploreSegmentsAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      Thrown when <code class="paramref">accessToken</code> is null or empty,
+
+      or when <code class="paramref">bounds</code> is null or does not contain exactly 4 elements.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the request to the Strava API fails or returns a non-success status code.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the API response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: >-
+      Thrown when the JSON response cannot be parsed 
+
+      or does not contain a 'segments' array.
+  nameWithType.vb: Segments.GetExploreSegmentsAsync(String, Single(), String, Integer, Integer)
+  fullName.vb: StravaAPILibary.API.Segments.GetExploreSegmentsAsync(String, Single(), String, Integer, Integer)
+  name.vb: GetExploreSegmentsAsync(String, Single(), String, Integer, Integer)
+- uid: StravaAPILibary.API.Segments.PutStarredSegmentAsync(System.String,System.Int64,System.Boolean)
+  commentId: M:StravaAPILibary.API.Segments.PutStarredSegmentAsync(System.String,System.Int64,System.Boolean)
+  id: PutStarredSegmentAsync(System.String,System.Int64,System.Boolean)
+  parent: StravaAPILibary.API.Segments
+  langs:
+  - csharp
+  - vb
+  name: PutStarredSegmentAsync(string, long, bool)
+  nameWithType: Segments.PutStarredSegmentAsync(string, long, bool)
+  fullName: StravaAPILibary.API.Segments.PutStarredSegmentAsync(string, long, bool)
+  type: Method
+  source:
+    id: PutStarredSegmentAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    startLine: 202
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Stars or unstars a segment for the authenticated athlete.
+  example: []
+  syntax:
+    content: public static Task<JsonObject> PutStarredSegmentAsync(string accessToken, long segmentId, bool starred)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The OAuth access token.
+    - id: segmentId
+      type: System.Int64
+      description: The ID of the segment to star or unstar.
+    - id: starred
+      type: System.Boolean
+      description: True to star the segment; false to unstar.
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+      description: A <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> containing the updated segment data.
+    content.vb: Public Shared Function PutStarredSegmentAsync(accessToken As String, segmentId As Long, starred As Boolean) As Task(Of JsonObject)
+  overload: StravaAPILibary.API.Segments.PutStarredSegmentAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">accessToken</code> is null or empty, or when <code class="paramref">segmentId</code> is invalid.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the request to the Strava API fails or returns a non-success status code.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the API response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the API response cannot be parsed.
+  nameWithType.vb: Segments.PutStarredSegmentAsync(String, Long, Boolean)
+  fullName.vb: StravaAPILibary.API.Segments.PutStarredSegmentAsync(String, Long, Boolean)
+  name.vb: PutStarredSegmentAsync(String, Long, Boolean)
+references:
+- uid: StravaAPILibary.API
+  commentId: N:StravaAPILibary.API
+  href: StravaAPILibary.html
+  name: StravaAPILibary.API
+  nameWithType: StravaAPILibary.API
+  fullName: StravaAPILibary.API
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.API
+    name: API
+    href: StravaAPILibary.API.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.API
+    name: API
+    href: StravaAPILibary.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json.Nodes.JsonObject
+  commentId: T:System.Text.Json.Nodes.JsonObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  name: JsonObject
+  nameWithType: JsonObject
+  fullName: System.Text.Json.Nodes.JsonObject
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Net.Http.HttpRequestException
+  commentId: T:System.Net.Http.HttpRequestException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception
+  name: HttpRequestException
+  nameWithType: HttpRequestException
+  fullName: System.Net.Http.HttpRequestException
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: StravaAPILibary.API.Segments.GetSegmentByIdAsync*
+  commentId: Overload:StravaAPILibary.API.Segments.GetSegmentByIdAsync
+  href: StravaAPILibary.API.Segments.html#StravaAPILibary_API_Segments_GetSegmentByIdAsync_System_String_System_String_
+  name: GetSegmentByIdAsync
+  nameWithType: Segments.GetSegmentByIdAsync
+  fullName: StravaAPILibary.API.Segments.GetSegmentByIdAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+  commentId: T:System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JsonObject>
+  nameWithType: Task<JsonObject>
+  fullName: System.Threading.Tasks.Task<System.Text.Json.Nodes.JsonObject>
+  nameWithType.vb: Task(Of JsonObject)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Text.Json.Nodes.JsonObject)
+  name.vb: Task(Of JsonObject)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Text.Json.Nodes.JsonObject
+    name: JsonObject
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonObject
+    name: JsonObject
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Text.Json.Nodes.JsonArray
+  commentId: T:System.Text.Json.Nodes.JsonArray
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray
+  name: JsonArray
+  nameWithType: JsonArray
+  fullName: System.Text.Json.Nodes.JsonArray
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: StravaAPILibary.API.Segments.GetStarredSegmentsAsync*
+  commentId: Overload:StravaAPILibary.API.Segments.GetStarredSegmentsAsync
+  href: StravaAPILibary.API.Segments.html#StravaAPILibary_API_Segments_GetStarredSegmentsAsync_System_String_System_Int32_System_Int32_
+  name: GetStarredSegmentsAsync
+  nameWithType: Segments.GetStarredSegmentsAsync
+  fullName: StravaAPILibary.API.Segments.GetStarredSegmentsAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonArray}
+  commentId: T:System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonArray}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JsonArray>
+  nameWithType: Task<JsonArray>
+  fullName: System.Threading.Tasks.Task<System.Text.Json.Nodes.JsonArray>
+  nameWithType.vb: Task(Of JsonArray)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Text.Json.Nodes.JsonArray)
+  name.vb: Task(Of JsonArray)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Text.Json.Nodes.JsonArray
+    name: JsonArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonArray
+    name: JsonArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray
+  - name: )
+- uid: StravaAPILibary.API.Segments.GetExploreSegmentsAsync*
+  commentId: Overload:StravaAPILibary.API.Segments.GetExploreSegmentsAsync
+  href: StravaAPILibary.API.Segments.html#StravaAPILibary_API_Segments_GetExploreSegmentsAsync_System_String_System_Single___System_String_System_Int32_System_Int32_
+  name: GetExploreSegmentsAsync
+  nameWithType: Segments.GetExploreSegmentsAsync
+  fullName: StravaAPILibary.API.Segments.GetExploreSegmentsAsync
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: StravaAPILibary.API.Segments.PutStarredSegmentAsync*
+  commentId: Overload:StravaAPILibary.API.Segments.PutStarredSegmentAsync
+  href: StravaAPILibary.API.Segments.html#StravaAPILibary_API_Segments_PutStarredSegmentAsync_System_String_System_Int64_System_Boolean_
+  name: PutStarredSegmentAsync
+  nameWithType: Segments.PutStarredSegmentAsync
+  fullName: StravaAPILibary.API.Segments.PutStarredSegmentAsync
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

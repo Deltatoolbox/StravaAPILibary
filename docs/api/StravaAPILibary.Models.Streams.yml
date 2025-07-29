@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Streams
+  commentId: N:StravaAPILibary.Models.Streams
+  id: StravaAPILibary.Models.Streams
+  children:
+  - StravaAPILibary.Models.Streams.AltitudeStream
+  - StravaAPILibary.Models.Streams.BaseStream
+  - StravaAPILibary.Models.Streams.CadenceStream
+  - StravaAPILibary.Models.Streams.DistanceStream
+  - StravaAPILibary.Models.Streams.HeartrateStream
+  - StravaAPILibary.Models.Streams.LatLngStream
+  - StravaAPILibary.Models.Streams.MovingStream
+  - StravaAPILibary.Models.Streams.PowerStream
+  - StravaAPILibary.Models.Streams.SmoothGradeStream
+  - StravaAPILibary.Models.Streams.SmoothVelocityStream
+  - StravaAPILibary.Models.Streams.StreamSet
+  - StravaAPILibary.Models.Streams.TemperatureStream
+  - StravaAPILibary.Models.Streams.TimeStream
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Streams
+  nameWithType: StravaAPILibary.Models.Streams
+  fullName: StravaAPILibary.Models.Streams
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Streams.StreamSet
+  commentId: T:StravaAPILibary.Models.Streams.StreamSet
+  href: StravaAPILibary.Models.Streams.StreamSet.html
+  name: StreamSet
+  nameWithType: StreamSet
+  fullName: StravaAPILibary.Models.Streams.StreamSet
+- uid: StravaAPILibary.Models.Streams.AltitudeStream
+  commentId: T:StravaAPILibary.Models.Streams.AltitudeStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.AltitudeStream.html
+  name: AltitudeStream
+  nameWithType: AltitudeStream
+  fullName: StravaAPILibary.Models.Streams.AltitudeStream
+- uid: StravaAPILibary.Models.Streams.BaseStream
+  commentId: T:StravaAPILibary.Models.Streams.BaseStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.BaseStream.html
+  name: BaseStream
+  nameWithType: BaseStream
+  fullName: StravaAPILibary.Models.Streams.BaseStream
+- uid: StravaAPILibary.Models.Streams.CadenceStream
+  commentId: T:StravaAPILibary.Models.Streams.CadenceStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.CadenceStream.html
+  name: CadenceStream
+  nameWithType: CadenceStream
+  fullName: StravaAPILibary.Models.Streams.CadenceStream
+- uid: StravaAPILibary.Models.Streams.DistanceStream
+  commentId: T:StravaAPILibary.Models.Streams.DistanceStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.DistanceStream.html
+  name: DistanceStream
+  nameWithType: DistanceStream
+  fullName: StravaAPILibary.Models.Streams.DistanceStream
+- uid: StravaAPILibary.Models.Streams.HeartrateStream
+  commentId: T:StravaAPILibary.Models.Streams.HeartrateStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.HeartrateStream.html
+  name: HeartrateStream
+  nameWithType: HeartrateStream
+  fullName: StravaAPILibary.Models.Streams.HeartrateStream
+- uid: StravaAPILibary.Models.Streams.LatLngStream
+  commentId: T:StravaAPILibary.Models.Streams.LatLngStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.LatLngStream.html
+  name: LatLngStream
+  nameWithType: LatLngStream
+  fullName: StravaAPILibary.Models.Streams.LatLngStream
+- uid: StravaAPILibary.Models.Streams.MovingStream
+  commentId: T:StravaAPILibary.Models.Streams.MovingStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.MovingStream.html
+  name: MovingStream
+  nameWithType: MovingStream
+  fullName: StravaAPILibary.Models.Streams.MovingStream
+- uid: StravaAPILibary.Models.Streams.PowerStream
+  commentId: T:StravaAPILibary.Models.Streams.PowerStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.PowerStream.html
+  name: PowerStream
+  nameWithType: PowerStream
+  fullName: StravaAPILibary.Models.Streams.PowerStream
+- uid: StravaAPILibary.Models.Streams.SmoothGradeStream
+  commentId: T:StravaAPILibary.Models.Streams.SmoothGradeStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.SmoothGradeStream.html
+  name: SmoothGradeStream
+  nameWithType: SmoothGradeStream
+  fullName: StravaAPILibary.Models.Streams.SmoothGradeStream
+- uid: StravaAPILibary.Models.Streams.SmoothVelocityStream
+  commentId: T:StravaAPILibary.Models.Streams.SmoothVelocityStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.SmoothVelocityStream.html
+  name: SmoothVelocityStream
+  nameWithType: SmoothVelocityStream
+  fullName: StravaAPILibary.Models.Streams.SmoothVelocityStream
+- uid: StravaAPILibary.Models.Streams.TemperatureStream
+  commentId: T:StravaAPILibary.Models.Streams.TemperatureStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.TemperatureStream.html
+  name: TemperatureStream
+  nameWithType: TemperatureStream
+  fullName: StravaAPILibary.Models.Streams.TemperatureStream
+- uid: StravaAPILibary.Models.Streams.TimeStream
+  commentId: T:StravaAPILibary.Models.Streams.TimeStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.TimeStream.html
+  name: TimeStream
+  nameWithType: TimeStream
+  fullName: StravaAPILibary.Models.Streams.TimeStream
+- uid: StravaAPILibary.Models.Streams
+  commentId: N:StravaAPILibary.Models.Streams
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Streams
+  nameWithType: StravaAPILibary.Models.Streams
+  fullName: StravaAPILibary.Models.Streams
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Streams
+    name: Streams
+    href: StravaAPILibary.Models.Streams.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Streams
+    name: Streams
+    href: StravaAPILibary.Models.Streams.html

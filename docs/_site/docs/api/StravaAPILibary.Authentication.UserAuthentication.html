@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+      <title>Class UserAuthentication | StravaAPILibary Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UserAuthentication | StravaAPILibary Documentation ">
+      
+      <meta name="description" content="Handles the OAuth 2.0 authentication flow for Strava users, including authorization, token exchange, and token refresh.">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="StravaAPILibary">
+            StravaAPILibary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="StravaAPILibary.Authentication.UserAuthentication">
+
+
+
+  <h1 id="StravaAPILibary_Authentication_UserAuthentication" data-uid="StravaAPILibary.Authentication.UserAuthentication" class="text-break">
+Class UserAuthentication  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="StravaAPILibary.html">StravaAPILibary</a>.<a class="xref" href="StravaAPILibary.Authentication.html">Authentication</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>StravaAPILibary.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Handles the OAuth 2.0 authentication flow for Strava users, including authorization, token exchange, and token refresh.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserAuthentication</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UserAuthentication</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+  <h2 id="StravaAPILibary_Authentication_UserAuthentication_examples">Examples</h2>
+  <p>Complete authentication flow with error handling:</p>
+<pre><code class="lang-csharp">public async Task&lt;string&gt; AuthenticateAsync()
+{
+    var credentials = new Credentials("client_id", "client_secret", "read,activity:read_all");
+    var userAuth = new UserAuthentication(credentials, "http://localhost:8080/callback", "read,activity:read_all");
+
+    try
+    {
+        userAuth.StartAuthorization();
+        string authCode = await userAuth.WaitForAuthCodeAsync();
+
+        bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
+        if (success)
+        {
+            return credentials.AccessToken;
+        }
+        else
+        {
+            throw new InvalidOperationException("Failed to exchange authorization code for tokens.");
+        }
+    }
+    catch (TimeoutException)
+    {
+        throw new InvalidOperationException("Authorization timed out. Please try again.");
+    }
+    catch (Exception ex)
+    {
+        throw new InvalidOperationException($"Authentication failed: {ex.Message}");
+    }
+}</code></pre>
+
+
+  <h2 id="StravaAPILibary_Authentication_UserAuthentication_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The <code>UserAuthentication</code> class implements the complete OAuth 2.0 authorization code flow for Strava API integration.</p>
+<p><b>OAuth 2.0 Flow:</b></p>
+<ol><li>User is redirected to Strava's authorization page</li><li>User authorizes the application and grants requested scopes</li><li>Strava redirects back with an authorization code</li><li>Application exchanges the code for access and refresh tokens</li><li>Access token is used for API requests (expires in 6 hours)</li><li>Refresh token is used to get new access tokens when needed</li></ol>
+<p><b>Usage Example:</b></p>
+<pre><code class="lang-csharp">// Create credentials
+var credentials = new Credentials("your_client_id", "your_client_secret", "read,activity:read_all");
+
+// Initialize authentication
+var userAuth = new UserAuthentication(credentials, "http://localhost:8080/callback", "read,activity:read_all");
+
+// Start authorization process
+userAuth.StartAuthorization();
+
+// Wait for user to complete authorization
+string authCode = await userAuth.WaitForAuthCodeAsync();
+
+// Exchange code for tokens
+bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
+
+if (success)
+{
+    string accessToken = credentials.AccessToken;
+    // Use accessToken for API calls
+}</code></pre>
+<p><b>Token Management:</b></p>
+<ul><li>Access tokens expire after 6 hours</li><li>Refresh tokens have no expiration (until revoked)</li><li>Use <a class="xref" href="StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync">RefreshAccessTokenAsync()</a> to get new access tokens</li><li>Store tokens securely (environment variables, secure storage)</li></ul>
+<p><b>Security Considerations:</b></p>
+<ul><li>Never expose client secret in client-side code</li><li>Use HTTPS for redirect URIs in production</li><li>Request minimal scopes needed for your application</li><li>Implement proper error handling for token refresh failures</li></ul>
+<p><b>API Documentation:</b></p>
+Refer to the official Strava API documentation for authentication:
+<a href="https://developers.strava.com/docs/authentication/">Strava Authentication Guide</a>.
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="StravaAPILibary_Authentication_UserAuthentication__ctor_" data-uid="StravaAPILibary.Authentication.UserAuthentication.#ctor*"></a>
+
+  <h3 id="StravaAPILibary_Authentication_UserAuthentication__ctor_StravaAPILibary_Authentication_Credentials_System_String_System_String_" data-uid="StravaAPILibary.Authentication.UserAuthentication.#ctor(StravaAPILibary.Authentication.Credentials,System.String,System.String)">
+  UserAuthentication(Credentials, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="StravaAPILibary.Authentication.UserAuthentication.html">UserAuthentication</a> class with the specified credentials and configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserAuthentication(Credentials creds, string redirectUri, string scope)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>creds</code> <a class="xref" href="StravaAPILibary.Authentication.Credentials.html">Credentials</a></dt>
+    <dd><p>The Strava API credentials containing client ID and secret. Must not be null.</p>
+</dd>
+    <dt><code>redirectUri</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The redirect URI registered for the Strava application. Must match the URI configured in your Strava app settings.</p>
+</dd>
+    <dt><code>scope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The requested OAuth scope(s). Multiple scopes can be separated by commas (e.g., <code>read,activity:read_all</code>).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication__ctor_StravaAPILibary_Authentication_Credentials_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The redirect URI must exactly match what is configured in your Strava application settings.</p>
+<p>Common redirect URIs for development:</p>
+<ul><li><code>http://localhost:8080/callback</code></li><li><code>http://localhost:3000/callback</code></li><li><code>http://localhost:5000/callback</code></li></ul>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">creds</code>, <code class="paramref">redirectUri</code>, or <code class="paramref">scope</code> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="StravaAPILibary_Authentication_UserAuthentication_BuildAuthorizationUrl_" data-uid="StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl*"></a>
+
+  <h3 id="StravaAPILibary_Authentication_UserAuthentication_BuildAuthorizationUrl" data-uid="StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl">
+  BuildAuthorizationUrl()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds the Strava OAuth authorization URL with the configured parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BuildAuthorizationUrl()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The complete authorization URL for redirecting the user to Strava's authorization page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_BuildAuthorizationUrl_examples">Examples</h4>
+  <pre><code class="lang-csharp">var userAuth = new UserAuthentication(credentials, "http://localhost:8080/callback", "read,activity:read_all");
+string authUrl = userAuth.BuildAuthorizationUrl();
+Console.WriteLine(authUrl);
+// Output: https://www.strava.com/oauth/authorize?client_id=12345&amp;redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&amp;response_type=code&amp;scope=read%2Cactivity%3Aread_all&amp;approval_prompt=force</code></pre>
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_BuildAuthorizationUrl_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The generated URL includes:</p>
+<ul><li>Client ID from credentials</li><li>Redirect URI (URL-encoded)</li><li>Response type set to "code"</li><li>Requested scope (URL-encoded)</li><li>Approval prompt set to "force" to always show authorization page</li></ul>
+</div>
+
+
+
+
+  <a id="StravaAPILibary_Authentication_UserAuthentication_ExchangeCodeForTokenAsync_" data-uid="StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync*"></a>
+
+  <h3 id="StravaAPILibary_Authentication_UserAuthentication_ExchangeCodeForTokenAsync_System_String_" data-uid="StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(System.String)">
+  ExchangeCodeForTokenAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Exchanges an authorization code for an access token and refresh token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; ExchangeCodeForTokenAsync(string authCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>authCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The authorization code received from the OAuth redirect.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p><code>true</code> if the token exchange was successful; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_ExchangeCodeForTokenAsync_System_String__examples">Examples</h4>
+  <pre><code class="lang-csharp">string authCode = "received_authorization_code";
+bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
+
+if (success)
+{
+    Console.WriteLine($"Access Token: {credentials.AccessToken}");
+    Console.WriteLine($"Refresh Token: {credentials.RefreshToken}");
+    Console.WriteLine($"Expires: {credentials.TokenExpiration}");
+}
+else
+{
+    Console.WriteLine("Token exchange failed.");
+}</code></pre>
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_ExchangeCodeForTokenAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method performs the OAuth 2.0 token exchange by sending a POST request to Strava's token endpoint.
+If successful, the access token, refresh token, and expiration time are stored in the credentials object.</p>
+<p><b>Token Exchange Process:</b></p>
+<ol><li>Send POST request to <code>https://www.strava.com/oauth/token</code></li><li>Include client ID, client secret, authorization code, and grant type</li><li>Parse response to extract tokens and expiration</li><li>Store tokens in the credentials object</li></ol>
+<p><b>Response Fields:</b></p>
+<ul><li><code>access_token</code> - Used for API requests (expires in 6 hours)</li><li><code>refresh_token</code> - Used to get new access tokens</li><li><code>expires_at</code> - Unix timestamp when access token expires</li><li><code>expires_in</code> - Seconds until access token expires</li></ul>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when <code class="paramref">authCode</code> is null or empty.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Thrown when the token exchange request fails or returns a non-success status code.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
+    <dd><p>Thrown when the response JSON cannot be parsed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="StravaAPILibary_Authentication_UserAuthentication_OpenBrowser_" data-uid="StravaAPILibary.Authentication.UserAuthentication.OpenBrowser*"></a>
+
+  <h3 id="StravaAPILibary_Authentication_UserAuthentication_OpenBrowser_System_String_" data-uid="StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(System.String)">
+  OpenBrowser(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens the specified URL in the default browser.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenBrowser(string url)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>url</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The URL to open in the browser.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_OpenBrowser_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses the system's default browser to open the provided URL.
+On Windows, it uses <code>Process.Start</code> with <code>UseShellExecute = true</code>.</p>
+</div>
+
+
+
+
+  <a id="StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync_" data-uid="StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync*"></a>
+
+  <h3 id="StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync" data-uid="StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync">
+  RefreshAccessTokenAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Refreshes the access token using the refresh token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; RefreshAccessTokenAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p><code>true</code> if the token refresh was successful; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync_examples">Examples</h4>
+  <pre><code class="lang-csharp">// Check if token needs refresh
+if (credentials.TokenExpiration &lt;= DateTime.UtcNow.AddMinutes(5))
+{
+    bool refreshSuccess = await userAuth.RefreshAccessTokenAsync();
+    if (refreshSuccess)
+    {
+        Console.WriteLine("Token refreshed successfully.");
+    }
+    else
+    {
+        Console.WriteLine("Token refresh failed. User needs to re-authenticate.");
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses the refresh token to obtain a new access token without requiring user re-authorization.
+The new access token and expiration time are stored in the credentials object.</p>
+<p><b>When to Use:</b></p>
+<ul><li>Access token has expired (6 hours)</li><li>Access token will expire soon (within 5 minutes)</li><li>API calls return 401 Unauthorized errors</li></ul>
+<p><b>Error Handling:</b></p>
+If the refresh token is invalid or has been revoked, this method will return false.
+In such cases, the user will need to re-authenticate using the full OAuth flow.
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when no refresh token is available.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
+    <dd><p>Thrown when the refresh request fails or returns a non-success status code.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
+    <dd><p>Thrown when the response JSON cannot be parsed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="StravaAPILibary_Authentication_UserAuthentication_StartAuthorization_" data-uid="StravaAPILibary.Authentication.UserAuthentication.StartAuthorization*"></a>
+
+  <h3 id="StravaAPILibary_Authentication_UserAuthentication_StartAuthorization" data-uid="StravaAPILibary.Authentication.UserAuthentication.StartAuthorization">
+  StartAuthorization()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the authorization process by opening the browser with the Strava OAuth URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartAuthorization()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_StartAuthorization_examples">Examples</h4>
+  <pre><code class="lang-csharp">var userAuth = new UserAuthentication(credentials, "http://localhost:8080/callback", "read,activity:read_all");
+userAuth.StartAuthorization();
+
+// Option 1: Wait for automatic code capture
+string authCode = await userAuth.WaitForAuthCodeAsync();
+
+// Option 2: Handle redirect manually
+// User will be redirected to http://localhost:8080/callback?code=YOUR_AUTH_CODE
+// Extract the code parameter from the URL</code></pre>
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_StartAuthorization_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method opens the user's default browser and navigates to Strava's authorization page.
+The user will be prompted to log in to Strava (if not already logged in) and authorize your application.</p>
+<p>After authorization, Strava will redirect the user back to your redirect URI with an authorization code.</p>
+<p>Use <a class="xref" href="StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync">WaitForAuthCodeAsync()</a> to automatically capture the authorization code, or handle the redirect manually.</p>
+</div>
+
+
+
+
+  <a id="StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync_" data-uid="StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync*"></a>
+
+  <h3 id="StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync" data-uid="StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync">
+  WaitForAuthCodeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Waits for the user to authorize the application and returns the authorization code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; WaitForAuthCodeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The authorization code from the OAuth redirect.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync_examples">Examples</h4>
+  <pre><code class="lang-csharp">try
+{
+    userAuth.StartAuthorization();
+    string authCode = await userAuth.WaitForAuthCodeAsync();
+    Console.WriteLine($"Authorization code: {authCode}");
+}
+catch (TimeoutException)
+{
+    Console.WriteLine("Authorization timed out. Please try again.");
+}</code></pre>
+
+
+  <h4 class="section" id="StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method starts an HTTP listener on the redirect URI port and waits for the OAuth callback.
+It automatically handles the redirect response and extracts the authorization code.</p>
+<p><b>Important:</b></p>
+<ul><li>The redirect URI must be accessible (localhost for development)</li><li>Port must be available and not blocked by firewall</li><li>Method times out after 5 minutes</li><li>Returns a success page to the user's browser</li></ul>
+<p><b>Alternative:</b></p>
+For production applications, consider handling the redirect manually instead of using this method.
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when the redirect URI is not set or the authorization code is missing in the response.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timeoutexception">TimeoutException</a></dt>
+    <dd><p>Thrown if no authorization is received within 5 minutes.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

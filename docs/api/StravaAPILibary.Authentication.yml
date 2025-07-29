@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Authentication
+  commentId: N:StravaAPILibary.Authentication
+  id: StravaAPILibary.Authentication
+  children:
+  - StravaAPILibary.Authentication.Credentials
+  - StravaAPILibary.Authentication.UserAuthentication
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Authentication
+  nameWithType: StravaAPILibary.Authentication
+  fullName: StravaAPILibary.Authentication
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Authentication.Credentials
+  commentId: T:StravaAPILibary.Authentication.Credentials
+  parent: StravaAPILibary.Authentication
+  href: StravaAPILibary.Authentication.Credentials.html
+  name: Credentials
+  nameWithType: Credentials
+  fullName: StravaAPILibary.Authentication.Credentials
+- uid: StravaAPILibary.Authentication.UserAuthentication
+  commentId: T:StravaAPILibary.Authentication.UserAuthentication
+  href: StravaAPILibary.Authentication.UserAuthentication.html
+  name: UserAuthentication
+  nameWithType: UserAuthentication
+  fullName: StravaAPILibary.Authentication.UserAuthentication
+- uid: StravaAPILibary.Authentication
+  commentId: N:StravaAPILibary.Authentication
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Authentication
+  nameWithType: StravaAPILibary.Authentication
+  fullName: StravaAPILibary.Authentication
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Authentication
+    name: Authentication
+    href: StravaAPILibary.Authentication.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Authentication
+    name: Authentication
+    href: StravaAPILibary.Authentication.html

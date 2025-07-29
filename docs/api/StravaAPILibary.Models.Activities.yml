@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Activities
+  commentId: N:StravaAPILibary.Models.Activities
+  id: StravaAPILibary.Models.Activities
+  children:
+  - StravaAPILibary.Models.Activities.DetailedActivity
+  - StravaAPILibary.Models.Activities.Lap
+  - StravaAPILibary.Models.Activities.MetaActivity
+  - StravaAPILibary.Models.Activities.Split
+  - StravaAPILibary.Models.Activities.SummaryActivity
+  - StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Activities
+  nameWithType: StravaAPILibary.Models.Activities
+  fullName: StravaAPILibary.Models.Activities
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Activities.DetailedActivity
+  commentId: T:StravaAPILibary.Models.Activities.DetailedActivity
+  href: StravaAPILibary.Models.Activities.DetailedActivity.html
+  name: DetailedActivity
+  nameWithType: DetailedActivity
+  fullName: StravaAPILibary.Models.Activities.DetailedActivity
+- uid: StravaAPILibary.Models.Activities.Lap
+  commentId: T:StravaAPILibary.Models.Activities.Lap
+  href: StravaAPILibary.Models.Activities.Lap.html
+  name: Lap
+  nameWithType: Lap
+  fullName: StravaAPILibary.Models.Activities.Lap
+- uid: StravaAPILibary.Models.Activities.MetaActivity
+  commentId: T:StravaAPILibary.Models.Activities.MetaActivity
+  parent: StravaAPILibary.Models.Activities
+  href: StravaAPILibary.Models.Activities.MetaActivity.html
+  name: MetaActivity
+  nameWithType: MetaActivity
+  fullName: StravaAPILibary.Models.Activities.MetaActivity
+- uid: StravaAPILibary.Models.Activities.Split
+  commentId: T:StravaAPILibary.Models.Activities.Split
+  href: StravaAPILibary.Models.Activities.Split.html
+  name: Split
+  nameWithType: Split
+  fullName: StravaAPILibary.Models.Activities.Split
+- uid: StravaAPILibary.Models.Activities.SummaryActivity
+  commentId: T:StravaAPILibary.Models.Activities.SummaryActivity
+  href: StravaAPILibary.Models.Activities.SummaryActivity.html
+  name: SummaryActivity
+  nameWithType: SummaryActivity
+  fullName: StravaAPILibary.Models.Activities.SummaryActivity
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity
+  commentId: T:StravaAPILibary.Models.Activities.UpdatableActivity
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html
+  name: UpdatableActivity
+  nameWithType: UpdatableActivity
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity
+- uid: StravaAPILibary.Models.Activities
+  commentId: N:StravaAPILibary.Models.Activities
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Activities
+  nameWithType: StravaAPILibary.Models.Activities
+  fullName: StravaAPILibary.Models.Activities
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Activities
+    name: Activities
+    href: StravaAPILibary.Models.Activities.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Activities
+    name: Activities
+    href: StravaAPILibary.Models.Activities.html

@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models
+  commentId: N:StravaAPILibary.Models
+  id: StravaAPILibary.Models
+  children:
+  - StravaAPILibary.Models.ActivityStats
+  - StravaAPILibary.Models.ActivityTotal
+  - StravaAPILibary.Models.ActivityZone
+  - StravaAPILibary.Models.Comment
+  - StravaAPILibary.Models.Error
+  - StravaAPILibary.Models.Fault
+  - StravaAPILibary.Models.TimedZoneDistribution
+  - StravaAPILibary.Models.TimedZoneRange
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models
+  nameWithType: StravaAPILibary.Models
+  fullName: StravaAPILibary.Models
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.ActivityStats
+  commentId: T:StravaAPILibary.Models.ActivityStats
+  href: StravaAPILibary.Models.ActivityStats.html
+  name: ActivityStats
+  nameWithType: ActivityStats
+  fullName: StravaAPILibary.Models.ActivityStats
+- uid: StravaAPILibary.Models.ActivityTotal
+  commentId: T:StravaAPILibary.Models.ActivityTotal
+  parent: StravaAPILibary.Models
+  href: StravaAPILibary.Models.ActivityTotal.html
+  name: ActivityTotal
+  nameWithType: ActivityTotal
+  fullName: StravaAPILibary.Models.ActivityTotal
+- uid: StravaAPILibary.Models.ActivityZone
+  commentId: T:StravaAPILibary.Models.ActivityZone
+  href: StravaAPILibary.Models.ActivityZone.html
+  name: ActivityZone
+  nameWithType: ActivityZone
+  fullName: StravaAPILibary.Models.ActivityZone
+- uid: StravaAPILibary.Models.Comment
+  commentId: T:StravaAPILibary.Models.Comment
+  href: StravaAPILibary.Models.Comment.html
+  name: Comment
+  nameWithType: Comment
+  fullName: StravaAPILibary.Models.Comment
+- uid: StravaAPILibary.Models.Error
+  commentId: T:StravaAPILibary.Models.Error
+  href: StravaAPILibary.Models.Error.html
+  name: Error
+  nameWithType: Error
+  fullName: StravaAPILibary.Models.Error
+- uid: StravaAPILibary.Models.Fault
+  commentId: T:StravaAPILibary.Models.Fault
+  href: StravaAPILibary.Models.Fault.html
+  name: Fault
+  nameWithType: Fault
+  fullName: StravaAPILibary.Models.Fault
+- uid: StravaAPILibary.Models.TimedZoneDistribution
+  commentId: T:StravaAPILibary.Models.TimedZoneDistribution
+  href: StravaAPILibary.Models.TimedZoneDistribution.html
+  name: TimedZoneDistribution
+  nameWithType: TimedZoneDistribution
+  fullName: StravaAPILibary.Models.TimedZoneDistribution
+- uid: StravaAPILibary.Models.TimedZoneRange
+  commentId: T:StravaAPILibary.Models.TimedZoneRange
+  href: StravaAPILibary.Models.TimedZoneRange.html
+  name: TimedZoneRange
+  nameWithType: TimedZoneRange
+  fullName: StravaAPILibary.Models.TimedZoneRange
+- uid: StravaAPILibary.Models
+  commentId: N:StravaAPILibary.Models
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models
+  nameWithType: StravaAPILibary.Models
+  fullName: StravaAPILibary.Models
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html

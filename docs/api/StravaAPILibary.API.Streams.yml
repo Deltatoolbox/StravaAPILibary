@@ -1,0 +1,742 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.API.Streams
+  commentId: T:StravaAPILibary.API.Streams
+  id: Streams
+  parent: StravaAPILibary.API
+  children:
+  - StravaAPILibary.API.Streams.GetActivityStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  - StravaAPILibary.API.Streams.GetRouteStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  - StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  - StravaAPILibary.API.Streams.GetSegmentStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Streams
+  nameWithType: Streams
+  fullName: StravaAPILibary.API.Streams
+  type: Class
+  source:
+    id: Streams
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    startLine: 36
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Provides methods for retrieving stream data (detailed time-series data) from Strava.
+  remarks: >-
+    Streams represent detailed data points over time or distance, such as GPS coordinates,
+
+    altitude, speed, heart rate, cadence, power, and more.
+
+
+    <p><b>Features:</b></p>
+
+    <ul><li>Retrieve streams for a specific activity.</li><li>Retrieve streams for a specific segment.</li><li>Retrieve streams for a specific route.</li><li>Retrieve streams for a specific segment effort.</li></ul>
+
+
+    <p><b>Usage Example:</b></p>
+
+
+    <pre><code class="lang-csharp">// Example: Get lat/lng and altitude streams for an activity
+
+    var streams = await Streams.GetActivityStreamsAsync(accessToken, 123456789, "latlng,altitude", true);
+
+    Console.WriteLine(streams["latlng"]);</code></pre>
+
+
+    <p><b>API Documentation:</b></p>
+
+    Refer to the official Strava API documentation for streams:
+
+    <a href="https://developers.strava.com/docs/reference/#api-Streams">Strava Streams API Reference</a>.
+  example: []
+  syntax:
+    content: public static class Streams
+    content.vb: Public Module Streams
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.API.Streams.GetActivityStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  commentId: M:StravaAPILibary.API.Streams.GetActivityStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  id: GetActivityStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  parent: StravaAPILibary.API.Streams
+  langs:
+  - csharp
+  - vb
+  name: GetActivityStreamsAsync(string, long, string?, bool)
+  nameWithType: Streams.GetActivityStreamsAsync(string, long, string?, bool)
+  fullName: StravaAPILibary.API.Streams.GetActivityStreamsAsync(string, long, string?, bool)
+  type: Method
+  source:
+    id: GetActivityStreamsAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    startLine: 58
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Get streams for a specific activity.
+  example: []
+  syntax:
+    content: public static Task<JsonObject> GetActivityStreamsAsync(string accessToken, long activityId, string? keys = null, bool keyByType = false)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The OAuth access token.
+    - id: activityId
+      type: System.Int64
+      description: The ID of the activity.
+    - id: keys
+      type: System.String
+      description: 'Optional: Comma-separated list of stream types to retrieve (e.g., "latlng,altitude").'
+    - id: keyByType
+      type: System.Boolean
+      description: 'Optional: If true, streams will be returned as a map keyed by type.'
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+      description: A <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> containing the streams data.
+    content.vb: Public Shared Function GetActivityStreamsAsync(accessToken As String, activityId As Long, keys As String = Nothing, keyByType As Boolean = False) As Task(Of JsonObject)
+  overload: StravaAPILibary.API.Streams.GetActivityStreamsAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">accessToken</code> is null or empty or <code class="paramref">activityId</code> is invalid.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the request to the Strava API fails or returns a non-success status code.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the API response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the JSON response cannot be parsed as a <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Streams.GetActivityStreamsAsync(String, Long, String, Boolean)
+  fullName.vb: StravaAPILibary.API.Streams.GetActivityStreamsAsync(String, Long, String, Boolean)
+  name.vb: GetActivityStreamsAsync(String, Long, String, Boolean)
+- uid: StravaAPILibary.API.Streams.GetSegmentStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  commentId: M:StravaAPILibary.API.Streams.GetSegmentStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  id: GetSegmentStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  parent: StravaAPILibary.API.Streams
+  langs:
+  - csharp
+  - vb
+  name: GetSegmentStreamsAsync(string, long, string?, bool)
+  nameWithType: Streams.GetSegmentStreamsAsync(string, long, string?, bool)
+  fullName: StravaAPILibary.API.Streams.GetSegmentStreamsAsync(string, long, string?, bool)
+  type: Method
+  source:
+    id: GetSegmentStreamsAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    startLine: 116
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Get streams for a specific segment.
+  example: []
+  syntax:
+    content: public static Task<JsonObject> GetSegmentStreamsAsync(string accessToken, long segmentId, string? keys = null, bool keyByType = false)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The OAuth access token.
+    - id: segmentId
+      type: System.Int64
+      description: The ID of the segment.
+    - id: keys
+      type: System.String
+      description: 'Optional: Comma-separated list of stream keys (e.g., "distance,altitude,latlng").'
+    - id: keyByType
+      type: System.Boolean
+      description: 'Optional: If true, streams will be returned as a map keyed by type.'
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+      description: A <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> containing the segment streams.
+    content.vb: Public Shared Function GetSegmentStreamsAsync(accessToken As String, segmentId As Long, keys As String = Nothing, keyByType As Boolean = False) As Task(Of JsonObject)
+  overload: StravaAPILibary.API.Streams.GetSegmentStreamsAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">accessToken</code> is null or empty or <code class="paramref">segmentId</code> is invalid.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the request to the Strava API fails or returns a non-success status code.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the API response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the JSON response cannot be parsed as a <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Streams.GetSegmentStreamsAsync(String, Long, String, Boolean)
+  fullName.vb: StravaAPILibary.API.Streams.GetSegmentStreamsAsync(String, Long, String, Boolean)
+  name.vb: GetSegmentStreamsAsync(String, Long, String, Boolean)
+- uid: StravaAPILibary.API.Streams.GetRouteStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  commentId: M:StravaAPILibary.API.Streams.GetRouteStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  id: GetRouteStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  parent: StravaAPILibary.API.Streams
+  langs:
+  - csharp
+  - vb
+  name: GetRouteStreamsAsync(string, long, string?, bool)
+  nameWithType: Streams.GetRouteStreamsAsync(string, long, string?, bool)
+  fullName: StravaAPILibary.API.Streams.GetRouteStreamsAsync(string, long, string?, bool)
+  type: Method
+  source:
+    id: GetRouteStreamsAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    startLine: 174
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Get streams for a specific route.
+  example: []
+  syntax:
+    content: public static Task<JsonObject> GetRouteStreamsAsync(string accessToken, long routeId, string? keys = null, bool keyByType = false)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The OAuth access token.
+    - id: routeId
+      type: System.Int64
+      description: The ID of the route.
+    - id: keys
+      type: System.String
+      description: 'Optional: Comma-separated list of stream keys (e.g., "distance,altitude,latlng").'
+    - id: keyByType
+      type: System.Boolean
+      description: 'Optional: If true, streams will be returned as a map keyed by type.'
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+      description: A <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> containing the route streams.
+    content.vb: Public Shared Function GetRouteStreamsAsync(accessToken As String, routeId As Long, keys As String = Nothing, keyByType As Boolean = False) As Task(Of JsonObject)
+  overload: StravaAPILibary.API.Streams.GetRouteStreamsAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">accessToken</code> is null or empty or <code class="paramref">routeId</code> is invalid.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the request to the Strava API fails or returns a non-success status code.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the API response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the JSON response cannot be parsed as a <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Streams.GetRouteStreamsAsync(String, Long, String, Boolean)
+  fullName.vb: StravaAPILibary.API.Streams.GetRouteStreamsAsync(String, Long, String, Boolean)
+  name.vb: GetRouteStreamsAsync(String, Long, String, Boolean)
+- uid: StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  commentId: M:StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  id: GetSegmentEffortStreamsAsync(System.String,System.Int64,System.String,System.Boolean)
+  parent: StravaAPILibary.API.Streams
+  langs:
+  - csharp
+  - vb
+  name: GetSegmentEffortStreamsAsync(string, long, string?, bool)
+  nameWithType: Streams.GetSegmentEffortStreamsAsync(string, long, string?, bool)
+  fullName: StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync(string, long, string?, bool)
+  type: Method
+  source:
+    id: GetSegmentEffortStreamsAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    startLine: 232
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Get streams for a specific segment effort.
+  example: []
+  syntax:
+    content: public static Task<JsonObject> GetSegmentEffortStreamsAsync(string accessToken, long segmentEffortId, string? keys = null, bool keyByType = false)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The OAuth access token.
+    - id: segmentEffortId
+      type: System.Int64
+      description: The ID of the segment effort.
+    - id: keys
+      type: System.String
+      description: 'Optional: Comma-separated list of stream keys (e.g., "distance,time,latlng").'
+    - id: keyByType
+      type: System.Boolean
+      description: 'Optional: If true, streams will be returned as a map keyed by type.'
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+      description: A <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> containing the segment effort streams.
+    content.vb: Public Shared Function GetSegmentEffortStreamsAsync(accessToken As String, segmentEffortId As Long, keys As String = Nothing, keyByType As Boolean = False) As Task(Of JsonObject)
+  overload: StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">accessToken</code> is null or empty or <code class="paramref">segmentEffortId</code> is invalid.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the request to the Strava API fails or returns a non-success status code.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the API response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the JSON response cannot be parsed as a <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Streams.GetSegmentEffortStreamsAsync(String, Long, String, Boolean)
+  fullName.vb: StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync(String, Long, String, Boolean)
+  name.vb: GetSegmentEffortStreamsAsync(String, Long, String, Boolean)
+references:
+- uid: StravaAPILibary.API
+  commentId: N:StravaAPILibary.API
+  href: StravaAPILibary.html
+  name: StravaAPILibary.API
+  nameWithType: StravaAPILibary.API
+  fullName: StravaAPILibary.API
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.API
+    name: API
+    href: StravaAPILibary.API.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.API
+    name: API
+    href: StravaAPILibary.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json.Nodes.JsonObject
+  commentId: T:System.Text.Json.Nodes.JsonObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  name: JsonObject
+  nameWithType: JsonObject
+  fullName: System.Text.Json.Nodes.JsonObject
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Net.Http.HttpRequestException
+  commentId: T:System.Net.Http.HttpRequestException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception
+  name: HttpRequestException
+  nameWithType: HttpRequestException
+  fullName: System.Net.Http.HttpRequestException
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: StravaAPILibary.API.Streams.GetActivityStreamsAsync*
+  commentId: Overload:StravaAPILibary.API.Streams.GetActivityStreamsAsync
+  href: StravaAPILibary.API.Streams.html#StravaAPILibary_API_Streams_GetActivityStreamsAsync_System_String_System_Int64_System_String_System_Boolean_
+  name: GetActivityStreamsAsync
+  nameWithType: Streams.GetActivityStreamsAsync
+  fullName: StravaAPILibary.API.Streams.GetActivityStreamsAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+  commentId: T:System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JsonObject>
+  nameWithType: Task<JsonObject>
+  fullName: System.Threading.Tasks.Task<System.Text.Json.Nodes.JsonObject>
+  nameWithType.vb: Task(Of JsonObject)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Text.Json.Nodes.JsonObject)
+  name.vb: Task(Of JsonObject)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Text.Json.Nodes.JsonObject
+    name: JsonObject
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonObject
+    name: JsonObject
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: StravaAPILibary.API.Streams.GetSegmentStreamsAsync*
+  commentId: Overload:StravaAPILibary.API.Streams.GetSegmentStreamsAsync
+  href: StravaAPILibary.API.Streams.html#StravaAPILibary_API_Streams_GetSegmentStreamsAsync_System_String_System_Int64_System_String_System_Boolean_
+  name: GetSegmentStreamsAsync
+  nameWithType: Streams.GetSegmentStreamsAsync
+  fullName: StravaAPILibary.API.Streams.GetSegmentStreamsAsync
+- uid: StravaAPILibary.API.Streams.GetRouteStreamsAsync*
+  commentId: Overload:StravaAPILibary.API.Streams.GetRouteStreamsAsync
+  href: StravaAPILibary.API.Streams.html#StravaAPILibary_API_Streams_GetRouteStreamsAsync_System_String_System_Int64_System_String_System_Boolean_
+  name: GetRouteStreamsAsync
+  nameWithType: Streams.GetRouteStreamsAsync
+  fullName: StravaAPILibary.API.Streams.GetRouteStreamsAsync
+- uid: StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync*
+  commentId: Overload:StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync
+  href: StravaAPILibary.API.Streams.html#StravaAPILibary_API_Streams_GetSegmentEffortStreamsAsync_System_String_System_Int64_System_String_System_Boolean_
+  name: GetSegmentEffortStreamsAsync
+  nameWithType: Streams.GetSegmentEffortStreamsAsync
+  fullName: StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync

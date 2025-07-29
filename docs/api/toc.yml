@@ -1,0 +1,275 @@
+### YamlMime:TableOfContent
+items:
+- uid: StravaAPILibary.API
+  name: StravaAPILibary.API
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.API.Activities
+    name: Activities
+    type: Class
+  - uid: StravaAPILibary.API.Athletes
+    name: Athletes
+    type: Class
+  - uid: StravaAPILibary.API.Clubs
+    name: Clubs
+    type: Class
+  - uid: StravaAPILibary.API.Gears
+    name: Gears
+    type: Class
+  - uid: StravaAPILibary.API.Routes
+    name: Routes
+    type: Class
+  - uid: StravaAPILibary.API.Segments
+    name: Segments
+    type: Class
+  - uid: StravaAPILibary.API.SegmentsEfforts
+    name: SegmentsEfforts
+    type: Class
+  - uid: StravaAPILibary.API.Streams
+    name: Streams
+    type: Class
+  - uid: StravaAPILibary.API.Uploads
+    name: Uploads
+    type: Class
+- uid: StravaAPILibary.Authentication
+  name: StravaAPILibary.Authentication
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Authentication.Credentials
+    name: Credentials
+    type: Class
+  - uid: StravaAPILibary.Authentication.UserAuthentication
+    name: UserAuthentication
+    type: Class
+- uid: StravaAPILibary.Models
+  name: StravaAPILibary.Models
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.ActivityStats
+    name: ActivityStats
+    type: Class
+  - uid: StravaAPILibary.Models.ActivityTotal
+    name: ActivityTotal
+    type: Class
+  - uid: StravaAPILibary.Models.ActivityZone
+    name: ActivityZone
+    type: Class
+  - uid: StravaAPILibary.Models.Comment
+    name: Comment
+    type: Class
+  - uid: StravaAPILibary.Models.Error
+    name: Error
+    type: Class
+  - uid: StravaAPILibary.Models.Fault
+    name: Fault
+    type: Class
+  - uid: StravaAPILibary.Models.TimedZoneDistribution
+    name: TimedZoneDistribution
+    type: Class
+  - uid: StravaAPILibary.Models.TimedZoneRange
+    name: TimedZoneRange
+    type: Class
+- uid: StravaAPILibary.Models.Activities
+  name: StravaAPILibary.Models.Activities
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Activities.DetailedActivity
+    name: DetailedActivity
+    type: Class
+  - uid: StravaAPILibary.Models.Activities.Lap
+    name: Lap
+    type: Class
+  - uid: StravaAPILibary.Models.Activities.MetaActivity
+    name: MetaActivity
+    type: Class
+  - uid: StravaAPILibary.Models.Activities.Split
+    name: Split
+    type: Class
+  - uid: StravaAPILibary.Models.Activities.SummaryActivity
+    name: SummaryActivity
+    type: Class
+  - uid: StravaAPILibary.Models.Activities.UpdatableActivity
+    name: UpdatableActivity
+    type: Class
+- uid: StravaAPILibary.Models.Athletes
+  name: StravaAPILibary.Models.Athletes
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Athletes.DetailedAthlete
+    name: DetailedAthlete
+    type: Class
+  - uid: StravaAPILibary.Models.Athletes.MetaAthlete
+    name: MetaAthlete
+    type: Class
+  - uid: StravaAPILibary.Models.Athletes.SummaryAthlete
+    name: SummaryAthlete
+    type: Class
+- uid: StravaAPILibary.Models.Clubs
+  name: StravaAPILibary.Models.Clubs
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Clubs.ClubActivity
+    name: ClubActivity
+    type: Class
+  - uid: StravaAPILibary.Models.Clubs.ClubAthlete
+    name: ClubAthlete
+    type: Class
+  - uid: StravaAPILibary.Models.Clubs.DetailedClub
+    name: DetailedClub
+    type: Class
+  - uid: StravaAPILibary.Models.Clubs.MetaClub
+    name: MetaClub
+    type: Class
+  - uid: StravaAPILibary.Models.Clubs.SummaryClub
+    name: SummaryClub
+    type: Class
+- uid: StravaAPILibary.Models.Common
+  name: StravaAPILibary.Models.Common
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Common.LatLng
+    name: LatLng
+    type: Class
+- uid: StravaAPILibary.Models.Enums
+  name: StravaAPILibary.Models.Enums
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Enums.ActivityType
+    name: ActivityType
+    type: Enum
+  - uid: StravaAPILibary.Models.Enums.SportType
+    name: SportType
+    type: Enum
+- uid: StravaAPILibary.Models.Explorer
+  name: StravaAPILibary.Models.Explorer
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Explorer.ExplorerResponse
+    name: ExplorerResponse
+    type: Class
+  - uid: StravaAPILibary.Models.Explorer.ExplorerSegment
+    name: ExplorerSegment
+    type: Class
+- uid: StravaAPILibary.Models.Gears
+  name: StravaAPILibary.Models.Gears
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Gears.DetailedGear
+    name: DetailedGear
+    type: Class
+  - uid: StravaAPILibary.Models.Gears.SummaryGear
+    name: SummaryGear
+    type: Class
+- uid: StravaAPILibary.Models.Maps
+  name: StravaAPILibary.Models.Maps
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Maps.PolylineMap
+    name: PolylineMap
+    type: Class
+- uid: StravaAPILibary.Models.Photos
+  name: StravaAPILibary.Models.Photos
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Photos.PhotosSummary
+    name: PhotosSummary
+    type: Class
+  - uid: StravaAPILibary.Models.Photos.PhotosSummaryPrimary
+    name: PhotosSummaryPrimary
+    type: Class
+- uid: StravaAPILibary.Models.Routes
+  name: StravaAPILibary.Models.Routes
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Routes.Route
+    name: Route
+    type: Class
+  - uid: StravaAPILibary.Models.Routes.Waypoint
+    name: Waypoint
+    type: Class
+- uid: StravaAPILibary.Models.Segments
+  name: StravaAPILibary.Models.Segments
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Segments.DetailedSegment
+    name: DetailedSegment
+    type: Class
+  - uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+    name: DetailedSegmentEffort
+    type: Class
+  - uid: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort
+    name: SummaryPRSegmentEffort
+    type: Class
+  - uid: StravaAPILibary.Models.Segments.SummarySegment
+    name: SummarySegment
+    type: Class
+  - uid: StravaAPILibary.Models.Segments.SummarySegmentEffort
+    name: SummarySegmentEffort
+    type: Class
+- uid: StravaAPILibary.Models.Streams
+  name: StravaAPILibary.Models.Streams
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Streams.AltitudeStream
+    name: AltitudeStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.BaseStream
+    name: BaseStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.CadenceStream
+    name: CadenceStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.DistanceStream
+    name: DistanceStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.HeartrateStream
+    name: HeartrateStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.LatLngStream
+    name: LatLngStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.MovingStream
+    name: MovingStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.PowerStream
+    name: PowerStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.SmoothGradeStream
+    name: SmoothGradeStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.SmoothVelocityStream
+    name: SmoothVelocityStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.StreamSet
+    name: StreamSet
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.TemperatureStream
+    name: TemperatureStream
+    type: Class
+  - uid: StravaAPILibary.Models.Streams.TimeStream
+    name: TimeStream
+    type: Class
+- uid: StravaAPILibary.Models.Uploads
+  name: StravaAPILibary.Models.Uploads
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Uploads.Upload
+    name: Upload
+    type: Class
+- uid: StravaAPILibary.Models.Zones
+  name: StravaAPILibary.Models.Zones
+  type: Namespace
+  items:
+  - uid: StravaAPILibary.Models.Zones.HeartRateZoneRanges
+    name: HeartRateZoneRanges
+    type: Class
+  - uid: StravaAPILibary.Models.Zones.PowerZoneRanges
+    name: PowerZoneRanges
+    type: Class
+  - uid: StravaAPILibary.Models.Zones.ZoneRange
+    name: ZoneRange
+    type: Class
+  - uid: StravaAPILibary.Models.Zones.ZoneRanges
+    name: ZoneRanges
+    type: Class
+memberLayout: SamePage

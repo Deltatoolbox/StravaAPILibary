@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Gears
+  commentId: N:StravaAPILibary.Models.Gears
+  id: StravaAPILibary.Models.Gears
+  children:
+  - StravaAPILibary.Models.Gears.DetailedGear
+  - StravaAPILibary.Models.Gears.SummaryGear
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Gears
+  nameWithType: StravaAPILibary.Models.Gears
+  fullName: StravaAPILibary.Models.Gears
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Gears.DetailedGear
+  commentId: T:StravaAPILibary.Models.Gears.DetailedGear
+  href: StravaAPILibary.Models.Gears.DetailedGear.html
+  name: DetailedGear
+  nameWithType: DetailedGear
+  fullName: StravaAPILibary.Models.Gears.DetailedGear
+- uid: StravaAPILibary.Models.Gears.SummaryGear
+  commentId: T:StravaAPILibary.Models.Gears.SummaryGear
+  parent: StravaAPILibary.Models.Gears
+  href: StravaAPILibary.Models.Gears.SummaryGear.html
+  name: SummaryGear
+  nameWithType: SummaryGear
+  fullName: StravaAPILibary.Models.Gears.SummaryGear
+- uid: StravaAPILibary.Models.Gears
+  commentId: N:StravaAPILibary.Models.Gears
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Gears
+  nameWithType: StravaAPILibary.Models.Gears
+  fullName: StravaAPILibary.Models.Gears
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Gears
+    name: Gears
+    href: StravaAPILibary.Models.Gears.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Gears
+    name: Gears
+    href: StravaAPILibary.Models.Gears.html

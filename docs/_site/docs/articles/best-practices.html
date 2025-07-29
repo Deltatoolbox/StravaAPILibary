@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+      <title>Best Practices | StravaAPILibary Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Best Practices | StravaAPILibary Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="StravaAPILibary">
+            StravaAPILibary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="best-practices">Best Practices</h1>
+
+<p>This guide covers best practices for using the StravaAPILibary effectively, securely, and efficiently.</p>
+<h2 id="-security-best-practices">🔐 Security Best Practices</h2>
+<h3 id="1-secure-credential-management">1. Secure Credential Management</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">// Use environment variables for sensitive data
+string clientId = Environment.GetEnvironmentVariable(&quot;STRAVA_CLIENT_ID&quot;) 
+    ?? throw new InvalidOperationException(&quot;STRAVA_CLIENT_ID not set&quot;);
+string clientSecret = Environment.GetEnvironmentVariable(&quot;STRAVA_CLIENT_SECRET&quot;) 
+    ?? throw new InvalidOperationException(&quot;STRAVA_CLIENT_SECRET not set&quot;);
+
+var credentials = new Credentials(clientId, clientSecret, &quot;read,activity:read_all&quot;);
+</code></pre>
+<p><strong>❌ Don't:</strong></p>
+<pre><code class="lang-csharp">// Never hardcode credentials
+var credentials = new Credentials(&quot;12345&quot;, &quot;my_secret_key&quot;, &quot;read&quot;);
+</code></pre>
+<h3 id="2-token-storage">2. Token Storage</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">// Use secure storage for tokens
+public class SecureTokenStorage
+{
+    public async Task SaveTokensAsync(Credentials credentials)
+    {
+        // Use platform-specific secure storage
+        await SecureStorage.SaveAsync(&quot;strava_access_token&quot;, credentials.AccessToken);
+        await SecureStorage.SaveAsync(&quot;strava_refresh_token&quot;, credentials.RefreshToken);
+        await SecureStorage.SaveAsync(&quot;strava_token_expiry&quot;, credentials.TokenExpiration.ToString());
+    }
+    
+    public async Task&lt;Credentials?&gt; LoadTokensAsync(string clientId, string clientSecret)
+    {
+        var accessToken = await SecureStorage.GetAsync(&quot;strava_access_token&quot;);
+        var refreshToken = await SecureStorage.GetAsync(&quot;strava_refresh_token&quot;);
+        var expiryStr = await SecureStorage.GetAsync(&quot;strava_token_expiry&quot;);
+        
+        if (string.IsNullOrEmpty(accessToken) || string.IsNullOrEmpty(refreshToken))
+            return null;
+            
+        var credentials = new Credentials(clientId, clientSecret, &quot;read,activity:read_all&quot;)
+        {
+            AccessToken = accessToken,
+            RefreshToken = refreshToken,
+            TokenExpiration = DateTime.Parse(expiryStr)
+        };
+        
+        return credentials;
+    }
+}
+</code></pre>
+<p><strong>❌ Don't:</strong></p>
+<pre><code class="lang-csharp">// Never store tokens in plain text files
+File.WriteAllText(&quot;tokens.txt&quot;, accessToken);
+</code></pre>
+<h3 id="3-scope-management">3. Scope Management</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">// Request minimal scopes
+var credentials = new Credentials(clientId, clientSecret, &quot;read,activity:read_all&quot;);
+
+// Check if required scope is available
+bool hasActivityWrite = credentials.Scope.Contains(&quot;activity:write&quot;);
+if (!hasActivityWrite)
+{
+    throw new InvalidOperationException(&quot;activity:write scope is required for this operation.&quot;);
+}
+</code></pre>
+<p><strong>❌ Don't:</strong></p>
+<pre><code class="lang-csharp">// Don't request unnecessary scopes
+var credentials = new Credentials(clientId, clientSecret, &quot;read,activity:read_all,activity:write,profile:read_all,profile:write&quot;);
+</code></pre>
+<h2 id="-performance-best-practices">⚡ Performance Best Practices</h2>
+<h3 id="1-efficient-api-usage">1. Efficient API Usage</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class EfficientStravaClient
+{
+    private readonly HttpClient _httpClient;
+    private readonly string _accessToken;
+    
+    public EfficientStravaClient(string accessToken)
+    {
+        _accessToken = accessToken;
+        _httpClient = new HttpClient
+        {
+            Timeout = TimeSpan.FromSeconds(30),
+            DefaultRequestHeaders = 
+            {
+                Authorization = new AuthenticationHeaderValue(&quot;Bearer&quot;, accessToken)
+            }
+        };
+    }
+    
+    public async Task&lt;JsonArray&gt; GetActivitiesAsync(int page = 1, int perPage = 200)
+    {
+        // Use maximum per_page to reduce API calls
+        return await Activities.GetAthletesActivitiesAsync(_accessToken, page: page, perPage: perPage);
+    }
+}
+</code></pre>
+<p><strong>❌ Don't:</strong></p>
+<pre><code class="lang-csharp">// Don't make many small requests
+for (int i = 1; i &lt;= 100; i++)
+{
+    var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: i, perPage: 1);
+    // Process single activity
+}
+</code></pre>
+<h3 id="2-caching-strategies">2. Caching Strategies</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class CachedStravaClient
+{
+    private readonly IMemoryCache _cache;
+    private readonly string _accessToken;
+    
+    public CachedStravaClient(string accessToken, IMemoryCache cache)
+    {
+        _accessToken = accessToken;
+        _cache = cache;
+    }
+    
+    public async Task&lt;JsonObject&gt; GetAthleteProfileAsync()
+    {
+        const string cacheKey = &quot;athlete_profile&quot;;
+        
+        if (_cache.TryGetValue(cacheKey, out JsonObject? cachedProfile))
+        {
+            return cachedProfile!;
+        }
+        
+        var profile = await Athletes.GetAuthenticatedAthleteProfileAsync(_accessToken);
+        
+        // Cache for 1 hour (profile doesn't change frequently)
+        _cache.Set(cacheKey, profile, TimeSpan.FromHours(1));
+        
+        return profile;
+    }
+}
+</code></pre>
+<h3 id="3-batch-processing">3. Batch Processing</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class BatchActivityProcessor
+{
+    public async Task ProcessAllActivitiesAsync(string accessToken)
+    {
+        int page = 1;
+        int perPage = 200; // Maximum to reduce API calls
+        var allActivities = new List&lt;JsonNode&gt;();
+        
+        while (true)
+        {
+            var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: page, perPage: perPage);
+            
+            if (activities.Count == 0)
+                break;
+                
+            allActivities.AddRange(activities);
+            page++;
+        }
+        
+        // Process all activities at once
+        await ProcessActivitiesBatchAsync(allActivities);
+    }
+    
+    private async Task ProcessActivitiesBatchAsync(List&lt;JsonNode&gt; activities)
+    {
+        // Process activities in batches for efficiency
+        const int batchSize = 50;
+        
+        for (int i = 0; i &lt; activities.Count; i += batchSize)
+        {
+            var batch = activities.Skip(i).Take(batchSize);
+            await ProcessBatchAsync(batch);
+        }
+    }
+}
+</code></pre>
+<h2 id="-error-handling-best-practices">🛡️ Error Handling Best Practices</h2>
+<h3 id="1-comprehensive-exception-handling">1. Comprehensive Exception Handling</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class RobustStravaClient
+{
+    public async Task&lt;JsonArray?&gt; GetActivitiesWithRetryAsync(int maxRetries = 3)
+    {
+        for (int attempt = 1; attempt &lt;= maxRetries; attempt++)
+        {
+            try
+            {
+                return await Activities.GetAthletesActivitiesAsync(_accessToken);
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.TooManyRequests)
+            {
+                if (attempt &lt; maxRetries)
+                {
+                    var retryAfter = GetRetryAfterSeconds(ex);
+                    await Task.Delay(retryAfter * 1000);
+                }
+                else
+                {
+                    throw new InvalidOperationException(&quot;Rate limit exceeded after multiple retries&quot;, ex);
+                }
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                // Token might be expired, try to refresh
+                if (await TryRefreshTokenAsync())
+                {
+                    continue; // Retry with new token
+                }
+                throw new InvalidOperationException(&quot;Access token is invalid and refresh failed&quot;, ex);
+            }
+            catch (Exception ex)
+            {
+                if (attempt == maxRetries)
+                    throw;
+                
+                await Task.Delay(1000 * attempt); // Exponential backoff
+            }
+        }
+        
+        return null;
+    }
+}
+</code></pre>
+<h3 id="2-token-refresh-logic">2. Token Refresh Logic</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class TokenManager
+{
+    private readonly Credentials _credentials;
+    private readonly UserAuthentication _userAuth;
+    
+    public async Task&lt;string&gt; GetValidAccessTokenAsync()
+    {
+        // Check if token is expired or will expire soon
+        if (_credentials.TokenExpiration &lt;= DateTime.UtcNow.AddMinutes(5))
+        {
+            bool refreshSuccess = await _userAuth.RefreshAccessTokenAsync();
+            if (!refreshSuccess)
+            {
+                throw new InvalidOperationException(&quot;Failed to refresh access token. User needs to re-authenticate.&quot;);
+            }
+        }
+        
+        return _credentials.AccessToken;
+    }
+    
+    public async Task&lt;bool&gt; TryRefreshTokenAsync()
+    {
+        try
+        {
+            return await _userAuth.RefreshAccessTokenAsync();
+        }
+        catch (Exception)
+        {
+            return false;
+        }
+    }
+}
+</code></pre>
+<h3 id="3-graceful-degradation">3. Graceful Degradation</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class StravaService
+{
+    public async Task&lt;ActivitySummary&gt; GetActivitySummaryAsync(string accessToken)
+    {
+        try
+        {
+            var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: 1, perPage: 10);
+            
+            return new ActivitySummary
+            {
+                TotalActivities = activities.Count,
+                TotalDistance = activities.Sum(a =&gt; (double)a[&quot;distance&quot;]),
+                IsComplete = true
+            };
+        }
+        catch (HttpRequestException ex) when (ex.StatusCode == HttpStatusCode.TooManyRequests)
+        {
+            // Return partial data when rate limited
+            return new ActivitySummary
+            {
+                TotalActivities = 0,
+                TotalDistance = 0,
+                IsComplete = false,
+                ErrorMessage = &quot;Rate limited - showing cached data&quot;
+            };
+        }
+        catch (Exception ex)
+        {
+            // Log error and return empty result
+            _logger.LogError(ex, &quot;Failed to get activity summary&quot;);
+            return new ActivitySummary
+            {
+                TotalActivities = 0,
+                TotalDistance = 0,
+                IsComplete = false,
+                ErrorMessage = &quot;Service temporarily unavailable&quot;
+            };
+        }
+    }
+}
+</code></pre>
+<h2 id="-monitoring-and-logging">📊 Monitoring and Logging</h2>
+<h3 id="1-structured-logging">1. Structured Logging</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class StravaClientWithLogging
+{
+    private readonly ILogger&lt;StravaClientWithLogging&gt; _logger;
+    
+    public async Task&lt;JsonArray&gt; GetActivitiesAsync(string accessToken, int page = 1, int perPage = 30)
+    {
+        using var scope = _logger.BeginScope(new Dictionary&lt;string, object&gt;
+        {
+            [&quot;page&quot;] = page,
+            [&quot;per_page&quot;] = perPage
+        });
+        
+        _logger.LogInformation(&quot;Retrieving activities from Strava API&quot;);
+        
+        try
+        {
+            var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: page, perPage: perPage);
+            
+            _logger.LogInformation(&quot;Successfully retrieved {Count} activities&quot;, activities.Count);
+            
+            return activities;
+        }
+        catch (HttpRequestException ex)
+        {
+            _logger.LogError(ex, &quot;Failed to retrieve activities. Status: {StatusCode}&quot;, ex.StatusCode);
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, &quot;Unexpected error while retrieving activities&quot;);
+            throw;
+        }
+    }
+}
+</code></pre>
+<h3 id="2-metrics-collection">2. Metrics Collection</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class StravaClientWithMetrics
+{
+    private readonly IMetrics _metrics;
+    
+    public async Task&lt;JsonArray&gt; GetActivitiesAsync(string accessToken)
+    {
+        using var timer = _metrics.CreateTimer(&quot;strava.api.activities.duration&quot;);
+        
+        try
+        {
+            var activities = await Activities.GetAthletesActivitiesAsync(accessToken);
+            
+            _metrics.Increment(&quot;strava.api.activities.success&quot;);
+            _metrics.RecordGauge(&quot;strava.api.activities.count&quot;, activities.Count);
+            
+            return activities;
+        }
+        catch (Exception ex)
+        {
+            _metrics.Increment(&quot;strava.api.activities.error&quot;);
+            throw;
+        }
+    }
+}
+</code></pre>
+<h2 id="-design-patterns">🔄 Design Patterns</h2>
+<h3 id="1-repository-pattern">1. Repository Pattern</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public interface IStravaRepository
+{
+    Task&lt;JsonArray&gt; GetActivitiesAsync(int page = 1, int perPage = 30);
+    Task&lt;JsonObject&gt; GetActivityAsync(string activityId);
+    Task&lt;JsonObject&gt; GetAthleteProfileAsync();
+    Task&lt;bool&gt; UpdateActivityAsync(long activityId, string name, string description);
+}
+
+public class StravaRepository : IStravaRepository
+{
+    private readonly string _accessToken;
+    private readonly TokenManager _tokenManager;
+    
+    public StravaRepository(string accessToken, TokenManager tokenManager)
+    {
+        _accessToken = accessToken;
+        _tokenManager = tokenManager;
+    }
+    
+    public async Task&lt;JsonArray&gt; GetActivitiesAsync(int page = 1, int perPage = 30)
+    {
+        string validToken = await _tokenManager.GetValidAccessTokenAsync();
+        return await Activities.GetAthletesActivitiesAsync(validToken, page: page, perPage: perPage);
+    }
+    
+    public async Task&lt;JsonObject&gt; GetActivityAsync(string activityId)
+    {
+        string validToken = await _tokenManager.GetValidAccessTokenAsync();
+        return await Activities.GetActivityByIdAsync(validToken, activityId);
+    }
+    
+    public async Task&lt;JsonObject&gt; GetAthleteProfileAsync()
+    {
+        string validToken = await _tokenManager.GetValidAccessTokenAsync();
+        return await Athletes.GetAuthenticatedAthleteProfileAsync(validToken);
+    }
+    
+    public async Task&lt;bool&gt; UpdateActivityAsync(long activityId, string name, string description)
+    {
+        string validToken = await _tokenManager.GetValidAccessTokenAsync();
+        var result = await Activities.UpdateActivityAsync(validToken, activityId, name, description);
+        return result != null;
+    }
+}
+</code></pre>
+<h3 id="2-factory-pattern">2. Factory Pattern</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class StravaClientFactory
+{
+    private readonly IConfiguration _configuration;
+    private readonly ILogger&lt;StravaClientFactory&gt; _logger;
+    
+    public StravaClientFactory(IConfiguration configuration, ILogger&lt;StravaClientFactory&gt; logger)
+    {
+        _configuration = configuration;
+        _logger = logger;
+    }
+    
+    public async Task&lt;IStravaRepository&gt; CreateClientAsync()
+    {
+        var clientId = _configuration[&quot;Strava:ClientId&quot;];
+        var clientSecret = _configuration[&quot;Strava:ClientSecret&quot;];
+        
+        if (string.IsNullOrEmpty(clientId) || string.IsNullOrEmpty(clientSecret))
+        {
+            throw new InvalidOperationException(&quot;Strava credentials not configured&quot;);
+        }
+        
+        var credentials = new Credentials(clientId, clientSecret, &quot;read,activity:read_all&quot;);
+        var tokenManager = new TokenManager(credentials);
+        
+        // Try to load existing tokens
+        var existingTokens = await LoadTokensAsync();
+        if (existingTokens != null)
+        {
+            credentials.AccessToken = existingTokens.AccessToken;
+            credentials.RefreshToken = existingTokens.RefreshToken;
+            credentials.TokenExpiration = existingTokens.TokenExpiration;
+        }
+        
+        return new StravaRepository(credentials.AccessToken, tokenManager);
+    }
+}
+</code></pre>
+<h2 id="-testing-best-practices">🧪 Testing Best Practices</h2>
+<h3 id="1-unit-testing">1. Unit Testing</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">[TestClass]
+public class StravaClientTests
+{
+    private Mock&lt;IHttpClientFactory&gt; _mockHttpClientFactory;
+    private StravaClient _client;
+    
+    [TestInitialize]
+    public void Setup()
+    {
+        _mockHttpClientFactory = new Mock&lt;IHttpClientFactory&gt;();
+        _client = new StravaClient(&quot;test_token&quot;, _mockHttpClientFactory.Object);
+    }
+    
+    [TestMethod]
+    public async Task GetActivitiesAsync_ValidToken_ReturnsActivities()
+    {
+        // Arrange
+        var mockHttpClient = new Mock&lt;HttpClient&gt;();
+        var mockResponse = new HttpResponseMessage(HttpStatusCode.OK)
+        {
+            Content = new StringContent(&quot;[{\&quot;id\&quot;:123,\&quot;name\&quot;:\&quot;Test Activity\&quot;}]&quot;)
+        };
+        
+        mockHttpClient.Setup(x =&gt; x.GetAsync(It.IsAny&lt;string&gt;()))
+            .ReturnsAsync(mockResponse);
+        
+        _mockHttpClientFactory.Setup(x =&gt; x.CreateClient(It.IsAny&lt;string&gt;()))
+            .Returns(mockHttpClient.Object);
+        
+        // Act
+        var result = await _client.GetActivitiesAsync();
+        
+        // Assert
+        Assert.IsNotNull(result);
+        Assert.AreEqual(1, result.Count);
+        Assert.AreEqual(&quot;Test Activity&quot;, result[0][&quot;name&quot;]);
+    }
+}
+</code></pre>
+<h3 id="2-integration-testing">2. Integration Testing</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">[TestClass]
+public class StravaIntegrationTests
+{
+    private string _testAccessToken;
+    
+    [TestInitialize]
+    public async Task Setup()
+    {
+        // Use test credentials for integration tests
+        _testAccessToken = await GetTestAccessTokenAsync();
+    }
+    
+    [TestMethod]
+    public async Task GetAthleteProfile_ValidToken_ReturnsProfile()
+    {
+        // Arrange &amp; Act
+        var profile = await Athletes.GetAuthenticatedAthleteProfileAsync(_testAccessToken);
+        
+        // Assert
+        Assert.IsNotNull(profile);
+        Assert.IsTrue(profile.ContainsKey(&quot;id&quot;));
+        Assert.IsTrue(profile.ContainsKey(&quot;firstname&quot;));
+        Assert.IsTrue(profile.ContainsKey(&quot;lastname&quot;));
+    }
+}
+</code></pre>
+<h2 id="-documentation-best-practices">📚 Documentation Best Practices</h2>
+<h3 id="1-code-documentation">1. Code Documentation</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// Retrieves the authenticated athlete's activities with optional filtering and pagination.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;accessToken&quot;&gt;The OAuth access token for authentication.&lt;/param&gt;
+/// &lt;param name=&quot;page&quot;&gt;Page number for pagination. Must be greater than 0.&lt;/param&gt;
+/// &lt;param name=&quot;perPage&quot;&gt;Number of activities per page. Must be between 1 and 200.&lt;/param&gt;
+/// &lt;returns&gt;A &lt;see cref=&quot;JsonArray&quot;/&gt; containing the athlete's activities.&lt;/returns&gt;
+/// &lt;exception cref=&quot;ArgumentException&quot;&gt;Thrown when access token is invalid.&lt;/exception&gt;
+/// &lt;exception cref=&quot;HttpRequestException&quot;&gt;Thrown when the API request fails.&lt;/exception&gt;
+/// &lt;remarks&gt;
+/// This method requires the &lt;c&gt;activity:read_all&lt;/c&gt; scope.
+/// Activities are returned in reverse chronological order.
+/// &lt;/remarks&gt;
+/// &lt;example&gt;
+/// &lt;code&gt;
+/// var activities = await GetActivitiesAsync(accessToken, page: 1, perPage: 10);
+/// &lt;/code&gt;
+/// &lt;/example&gt;
+public async Task&lt;JsonArray&gt; GetActivitiesAsync(string accessToken, int page = 1, int perPage = 30)
+{
+    // Implementation
+}
+</code></pre>
+<h2 id="-deployment-best-practices">🚀 Deployment Best Practices</h2>
+<h3 id="1-configuration-management">1. Configuration Management</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-json">{
+  &quot;Strava&quot;: {
+    &quot;ClientId&quot;: &quot;your_client_id&quot;,
+    &quot;ClientSecret&quot;: &quot;your_client_secret&quot;,
+    &quot;RedirectUri&quot;: &quot;https://yourapp.com/callback&quot;,
+    &quot;DefaultScope&quot;: &quot;read,activity:read_all&quot;
+  },
+  &quot;Logging&quot;: {
+    &quot;LogLevel&quot;: {
+      &quot;StravaAPILibary&quot;: &quot;Information&quot;
+    }
+  }
+}
+</code></pre>
+<h3 id="2-environment-specific-settings">2. Environment-Specific Settings</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class StravaConfiguration
+{
+    public string ClientId { get; set; } = string.Empty;
+    public string ClientSecret { get; set; } = string.Empty;
+    public string RedirectUri { get; set; } = string.Empty;
+    public string DefaultScope { get; set; } = &quot;read,activity:read_all&quot;;
+    public int RequestTimeoutSeconds { get; set; } = 30;
+    public int MaxRetries { get; set; } = 3;
+}
+
+// In Startup.cs
+services.Configure&lt;StravaConfiguration&gt;(configuration.GetSection(&quot;Strava&quot;));
+</code></pre>
+<h2 id="-performance-monitoring">📈 Performance Monitoring</h2>
+<h3 id="1-health-checks">1. Health Checks</h3>
+<p><strong>✅ Do:</strong></p>
+<pre><code class="lang-csharp">public class StravaHealthCheck : IHealthCheck
+{
+    private readonly IStravaRepository _stravaRepository;
+    
+    public StravaHealthCheck(IStravaRepository stravaRepository)
+    {
+        _stravaRepository = stravaRepository;
+    }
+    
+    public async Task&lt;HealthCheckResult&gt; CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var profile = await _stravaRepository.GetAthleteProfileAsync();
+            
+            if (profile != null &amp;&amp; profile.ContainsKey(&quot;id&quot;))
+            {
+                return HealthCheckResult.Healthy(&quot;Strava API is accessible&quot;);
+            }
+            
+            return HealthCheckResult.Unhealthy(&quot;Strava API returned invalid response&quot;);
+        }
+        catch (Exception ex)
+        {
+            return HealthCheckResult.Unhealthy(&quot;Strava API is not accessible&quot;, ex);
+        }
+    }
+}
+</code></pre>
+<h2 id="-next-steps">🔗 Next Steps</h2>
+<ul>
+<li><strong><a href="../api/">API Reference</a></strong> - Complete API documentation</li>
+<li><strong><a href="authentication.html">Authentication Guide</a></strong> - OAuth flow and token management</li>
+<li><strong><a href="examples.html">Examples</a></strong> - Practical usage examples</li>
+</ul>
+<hr>
+<p><strong>Follow these best practices to build robust, secure, and efficient Strava applications! 🚀</strong></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

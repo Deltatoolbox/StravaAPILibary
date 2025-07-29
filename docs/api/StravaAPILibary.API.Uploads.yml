@@ -1,0 +1,670 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.API.Uploads
+  commentId: T:StravaAPILibary.API.Uploads
+  id: Uploads
+  parent: StravaAPILibary.API
+  children:
+  - StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)
+  - StravaAPILibary.API.Uploads.UploadActivityAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Uploads
+  nameWithType: Uploads
+  fullName: StravaAPILibary.API.Uploads
+  type: Class
+  source:
+    id: Uploads
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Uploads.cs
+    startLine: 40
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Provides methods for uploading activities and retrieving upload statuses from the Strava API.
+  remarks: >-
+    The <code>Uploads</code> class supports two main operations:
+
+    <ul><li>Uploading activity files (FIT, GPX, TCX) to Strava.</li><li>Checking the processing status of previously uploaded activity files.</li></ul>
+
+
+    <p><b>Important Notes:</b></p>
+
+    <ul><li>Uploads may take a while to process. You should poll the upload status using <xref href="StravaAPILibary.API.Uploads.GetUploadAsync(System.String%2cSystem.Int64)" data-throw-if-not-resolved="false"></xref>.</li><li>Uploading activities requires an authenticated athlete's access token with write permissions.</li></ul>
+
+
+    <p><b>Example Usage:</b></p>
+
+
+    <pre><code class="lang-csharp">// Upload an activity file
+
+    var uploadResponse = await Uploads.UploadActivityAsync(accessToken, "activity.fit", "fit", "Morning Ride", "Great ride", false, false);
+
+    Console.WriteLine(uploadResponse["id"]);
+
+
+    // Check upload status
+
+    var uploadStatus = await Uploads.GetUploadAsync(accessToken, (long)uploadResponse["id"]);
+
+    Console.WriteLine(uploadStatus["status"]);</code></pre>
+
+
+    <p><b>API Reference:</b></p>
+
+    See: <a href="https://developers.strava.com/docs/reference/#api-Uploads">Strava Uploads API Documentation</a>.
+  example: []
+  syntax:
+    content: public static class Uploads
+    content.vb: Public Module Uploads
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.API.Uploads.UploadActivityAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)
+  commentId: M:StravaAPILibary.API.Uploads.UploadActivityAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)
+  id: UploadActivityAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)
+  parent: StravaAPILibary.API.Uploads
+  langs:
+  - csharp
+  - vb
+  name: UploadActivityAsync(string, string, string, string?, string?, bool, bool)
+  nameWithType: Uploads.UploadActivityAsync(string, string, string, string?, string?, bool, bool)
+  fullName: StravaAPILibary.API.Uploads.UploadActivityAsync(string, string, string, string?, string?, bool, bool)
+  type: Method
+  source:
+    id: UploadActivityAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Uploads.cs
+    startLine: 62
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Uploads an activity file to Strava.
+  example: []
+  syntax:
+    content: public static Task<JsonObject> UploadActivityAsync(string accessToken, string filePath, string dataType, string? name = null, string? description = null, bool isTrainer = false, bool isCommute = false)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The OAuth access token.
+    - id: filePath
+      type: System.String
+      description: The path to the activity file (FIT, GPX, TCX).
+    - id: dataType
+      type: System.String
+      description: 'The file type: "fit", "gpx", or "tcx".'
+    - id: name
+      type: System.String
+      description: 'Optional: The name of the activity.'
+    - id: description
+      type: System.String
+      description: 'Optional: A description of the activity.'
+    - id: isTrainer
+      type: System.Boolean
+      description: 'Optional: Set to true if this is a trainer ride.'
+    - id: isCommute
+      type: System.Boolean
+      description: 'Optional: Set to true if this is a commute.'
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+      description: A <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> containing the upload status.
+    content.vb: Public Shared Function UploadActivityAsync(accessToken As String, filePath As String, dataType As String, name As String = Nothing, description As String = Nothing, isTrainer As Boolean = False, isCommute As Boolean = False) As Task(Of JsonObject)
+  overload: StravaAPILibary.API.Uploads.UploadActivityAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">accessToken</code> or <code class="paramref">filePath</code> is invalid.
+  - type: System.IO.FileNotFoundException
+    commentId: T:System.IO.FileNotFoundException
+    description: Thrown when the specified file does not exist.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the upload request fails.
+  nameWithType.vb: Uploads.UploadActivityAsync(String, String, String, String, String, Boolean, Boolean)
+  fullName.vb: StravaAPILibary.API.Uploads.UploadActivityAsync(String, String, String, String, String, Boolean, Boolean)
+  name.vb: UploadActivityAsync(String, String, String, String, String, Boolean, Boolean)
+- uid: StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)
+  commentId: M:StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)
+  id: GetUploadAsync(System.String,System.Int64)
+  parent: StravaAPILibary.API.Uploads
+  langs:
+  - csharp
+  - vb
+  name: GetUploadAsync(string, long)
+  nameWithType: Uploads.GetUploadAsync(string, long)
+  fullName: StravaAPILibary.API.Uploads.GetUploadAsync(string, long)
+  type: Method
+  source:
+    id: GetUploadAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Uploads.cs
+    startLine: 121
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.API
+  summary: Get an upload status by its ID.
+  example: []
+  syntax:
+    content: public static Task<JsonObject> GetUploadAsync(string accessToken, long uploadId)
+    parameters:
+    - id: accessToken
+      type: System.String
+      description: The OAuth access token.
+    - id: uploadId
+      type: System.Int64
+      description: The ID of the upload to retrieve.
+    return:
+      type: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+      description: A <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref> containing the upload status and details.
+    content.vb: Public Shared Function GetUploadAsync(accessToken As String, uploadId As Long) As Task(Of JsonObject)
+  overload: StravaAPILibary.API.Uploads.GetUploadAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">accessToken</code> is null or empty or when <code class="paramref">uploadId</code> is invalid.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the request to the Strava API fails or returns a non-success status code.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the API response is empty.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the JSON response cannot be parsed as a <xref href="System.Text.Json.Nodes.JsonObject" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: Uploads.GetUploadAsync(String, Long)
+  fullName.vb: StravaAPILibary.API.Uploads.GetUploadAsync(String, Long)
+  name.vb: GetUploadAsync(String, Long)
+references:
+- uid: StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)
+  commentId: M:StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)
+  isExternal: true
+  href: StravaAPILibary.API.Uploads.html#StravaAPILibary_API_Uploads_GetUploadAsync_System_String_System_Int64_
+  name: GetUploadAsync(string, long)
+  nameWithType: Uploads.GetUploadAsync(string, long)
+  fullName: StravaAPILibary.API.Uploads.GetUploadAsync(string, long)
+  nameWithType.vb: Uploads.GetUploadAsync(String, Long)
+  fullName.vb: StravaAPILibary.API.Uploads.GetUploadAsync(String, Long)
+  name.vb: GetUploadAsync(String, Long)
+  spec.csharp:
+  - uid: StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)
+    name: GetUploadAsync
+    href: StravaAPILibary.API.Uploads.html#StravaAPILibary_API_Uploads_GetUploadAsync_System_String_System_Int64_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)
+    name: GetUploadAsync
+    href: StravaAPILibary.API.Uploads.html#StravaAPILibary_API_Uploads_GetUploadAsync_System_String_System_Int64_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: StravaAPILibary.API
+  commentId: N:StravaAPILibary.API
+  href: StravaAPILibary.html
+  name: StravaAPILibary.API
+  nameWithType: StravaAPILibary.API
+  fullName: StravaAPILibary.API
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.API
+    name: API
+    href: StravaAPILibary.API.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.API
+    name: API
+    href: StravaAPILibary.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Text.Json.Nodes.JsonObject
+  commentId: T:System.Text.Json.Nodes.JsonObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  name: JsonObject
+  nameWithType: JsonObject
+  fullName: System.Text.Json.Nodes.JsonObject
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.IO.FileNotFoundException
+  commentId: T:System.IO.FileNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+  name: FileNotFoundException
+  nameWithType: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+- uid: System.Net.Http.HttpRequestException
+  commentId: T:System.Net.Http.HttpRequestException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception
+  name: HttpRequestException
+  nameWithType: HttpRequestException
+  fullName: System.Net.Http.HttpRequestException
+- uid: StravaAPILibary.API.Uploads.UploadActivityAsync*
+  commentId: Overload:StravaAPILibary.API.Uploads.UploadActivityAsync
+  href: StravaAPILibary.API.Uploads.html#StravaAPILibary_API_Uploads_UploadActivityAsync_System_String_System_String_System_String_System_String_System_String_System_Boolean_System_Boolean_
+  name: UploadActivityAsync
+  nameWithType: Uploads.UploadActivityAsync
+  fullName: StravaAPILibary.API.Uploads.UploadActivityAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+  commentId: T:System.Threading.Tasks.Task{System.Text.Json.Nodes.JsonObject}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<JsonObject>
+  nameWithType: Task<JsonObject>
+  fullName: System.Threading.Tasks.Task<System.Text.Json.Nodes.JsonObject>
+  nameWithType.vb: Task(Of JsonObject)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Text.Json.Nodes.JsonObject)
+  name.vb: Task(Of JsonObject)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Text.Json.Nodes.JsonObject
+    name: JsonObject
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Text.Json.Nodes.JsonObject
+    name: JsonObject
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: StravaAPILibary.API.Uploads.GetUploadAsync*
+  commentId: Overload:StravaAPILibary.API.Uploads.GetUploadAsync
+  href: StravaAPILibary.API.Uploads.html#StravaAPILibary_API_Uploads_GetUploadAsync_System_String_System_Int64_
+  name: GetUploadAsync
+  nameWithType: Uploads.GetUploadAsync
+  fullName: StravaAPILibary.API.Uploads.GetUploadAsync
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

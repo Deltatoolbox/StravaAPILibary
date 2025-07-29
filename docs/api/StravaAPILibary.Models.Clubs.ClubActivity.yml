@@ -1,0 +1,724 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Clubs.ClubActivity
+  commentId: T:StravaAPILibary.Models.Clubs.ClubActivity
+  id: ClubActivity
+  parent: StravaAPILibary.Models.Clubs
+  children:
+  - StravaAPILibary.Models.Clubs.ClubActivity.Athlete
+  - StravaAPILibary.Models.Clubs.ClubActivity.Distance
+  - StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime
+  - StravaAPILibary.Models.Clubs.ClubActivity.MovingTime
+  - StravaAPILibary.Models.Clubs.ClubActivity.Name
+  - StravaAPILibary.Models.Clubs.ClubActivity.SportType
+  - StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain
+  - StravaAPILibary.Models.Clubs.ClubActivity.Type
+  - StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType
+  langs:
+  - csharp
+  - vb
+  name: ClubActivity
+  nameWithType: ClubActivity
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity
+  type: Class
+  source:
+    id: ClubActivity
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 8
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: Represents an activity within a club.
+  example: []
+  syntax:
+    content: public class ClubActivity
+    content.vb: Public Class ClubActivity
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.Athlete
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.Athlete
+  id: Athlete
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: Athlete
+  nameWithType: ClubActivity.Athlete
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.Athlete
+  type: Property
+  source:
+    id: Athlete
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 13
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The athlete who performed the activity.
+  example: []
+  syntax:
+    content: public MetaAthlete Athlete { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Athletes.MetaAthlete
+    content.vb: Public Property Athlete As MetaAthlete
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.Athlete*
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.Name
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.Name
+  id: Name
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ClubActivity.Name
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.Name
+  type: Property
+  source:
+    id: Name
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 18
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The name of the activity.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.Name*
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.Distance
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.Distance
+  id: Distance
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: ClubActivity.Distance
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.Distance
+  type: Property
+  source:
+    id: Distance
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 23
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The activity's distance in meters.
+  example: []
+  syntax:
+    content: public float Distance { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Distance As Single
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.Distance*
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.MovingTime
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.MovingTime
+  id: MovingTime
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: MovingTime
+  nameWithType: ClubActivity.MovingTime
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.MovingTime
+  type: Property
+  source:
+    id: MovingTime
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 28
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The activity's moving time in seconds.
+  example: []
+  syntax:
+    content: public int MovingTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MovingTime As Integer
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.MovingTime*
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime
+  id: ElapsedTime
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: ElapsedTime
+  nameWithType: ClubActivity.ElapsedTime
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime
+  type: Property
+  source:
+    id: ElapsedTime
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 33
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The activity's elapsed time in seconds.
+  example: []
+  syntax:
+    content: public int ElapsedTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ElapsedTime As Integer
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime*
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain
+  id: TotalElevationGain
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: TotalElevationGain
+  nameWithType: ClubActivity.TotalElevationGain
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain
+  type: Property
+  source:
+    id: TotalElevationGain
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 38
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The activity's total elevation gain in meters.
+  example: []
+  syntax:
+    content: public float TotalElevationGain { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TotalElevationGain As Single
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain*
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.Type
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.Type
+  id: Type
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ClubActivity.Type
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.Type
+  type: Property
+  source:
+    id: Type
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 43
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The type of the activity. (Deprecated - prefer SportType)
+  example: []
+  syntax:
+    content: public ActivityType Type { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+    content.vb: Public Property Type As ActivityType
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.Type*
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.SportType
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.SportType
+  id: SportType
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: SportType
+  nameWithType: ClubActivity.SportType
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.SportType
+  type: Property
+  source:
+    id: SportType
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 48
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The sport type of the activity.
+  example: []
+  syntax:
+    content: public SportType SportType { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Enums.SportType
+    content.vb: Public Property SportType As SportType
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.SportType*
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType
+  commentId: P:StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType
+  id: WorkoutType
+  parent: StravaAPILibary.Models.Clubs.ClubActivity
+  langs:
+  - csharp
+  - vb
+  name: WorkoutType
+  nameWithType: ClubActivity.WorkoutType
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType
+  type: Property
+  source:
+    id: WorkoutType
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    startLine: 53
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Clubs
+  summary: The activity's workout type.
+  example: []
+  syntax:
+    content: public int WorkoutType { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property WorkoutType As Integer
+  overload: StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType*
+references:
+- uid: StravaAPILibary.Models.Clubs
+  commentId: N:StravaAPILibary.Models.Clubs
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Clubs
+  nameWithType: StravaAPILibary.Models.Clubs
+  fullName: StravaAPILibary.Models.Clubs
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Clubs
+    name: Clubs
+    href: StravaAPILibary.Models.Clubs.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Clubs
+    name: Clubs
+    href: StravaAPILibary.Models.Clubs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.Athlete*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.Athlete
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_Athlete
+  name: Athlete
+  nameWithType: ClubActivity.Athlete
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.Athlete
+- uid: StravaAPILibary.Models.Athletes.MetaAthlete
+  commentId: T:StravaAPILibary.Models.Athletes.MetaAthlete
+  parent: StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.Models.Athletes.MetaAthlete.html
+  name: MetaAthlete
+  nameWithType: MetaAthlete
+  fullName: StravaAPILibary.Models.Athletes.MetaAthlete
+- uid: StravaAPILibary.Models.Athletes
+  commentId: N:StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Athletes
+  nameWithType: StravaAPILibary.Models.Athletes
+  fullName: StravaAPILibary.Models.Athletes
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.Name*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.Name
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_Name
+  name: Name
+  nameWithType: ClubActivity.Name
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.Distance*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.Distance
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_Distance
+  name: Distance
+  nameWithType: ClubActivity.Distance
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.Distance
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.MovingTime*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.MovingTime
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_MovingTime
+  name: MovingTime
+  nameWithType: ClubActivity.MovingTime
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.MovingTime
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_ElapsedTime
+  name: ElapsedTime
+  nameWithType: ClubActivity.ElapsedTime
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_TotalElevationGain
+  name: TotalElevationGain
+  nameWithType: ClubActivity.TotalElevationGain
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.Type*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.Type
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_Type
+  name: Type
+  nameWithType: ClubActivity.Type
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.Type
+- uid: StravaAPILibary.Models.Enums.ActivityType
+  commentId: T:StravaAPILibary.Models.Enums.ActivityType
+  parent: StravaAPILibary.Models.Enums
+  href: StravaAPILibary.Models.Enums.ActivityType.html
+  name: ActivityType
+  nameWithType: ActivityType
+  fullName: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums
+  commentId: N:StravaAPILibary.Models.Enums
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Enums
+  nameWithType: StravaAPILibary.Models.Enums
+  fullName: StravaAPILibary.Models.Enums
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Enums
+    name: Enums
+    href: StravaAPILibary.Models.Enums.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Enums
+    name: Enums
+    href: StravaAPILibary.Models.Enums.html
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.SportType*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.SportType
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_SportType
+  name: SportType
+  nameWithType: ClubActivity.SportType
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.SportType
+- uid: StravaAPILibary.Models.Enums.SportType
+  commentId: T:StravaAPILibary.Models.Enums.SportType
+  parent: StravaAPILibary.Models.Enums
+  href: StravaAPILibary.Models.Enums.SportType.html
+  name: SportType
+  nameWithType: SportType
+  fullName: StravaAPILibary.Models.Enums.SportType
+- uid: StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType*
+  commentId: Overload:StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html#StravaAPILibary_Models_Clubs_ClubActivity_WorkoutType
+  name: WorkoutType
+  nameWithType: ClubActivity.WorkoutType
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType

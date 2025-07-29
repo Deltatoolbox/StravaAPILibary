@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Segments
+  commentId: N:StravaAPILibary.Models.Segments
+  id: StravaAPILibary.Models.Segments
+  children:
+  - StravaAPILibary.Models.Segments.DetailedSegment
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  - StravaAPILibary.Models.Segments.SummaryPRSegmentEffort
+  - StravaAPILibary.Models.Segments.SummarySegment
+  - StravaAPILibary.Models.Segments.SummarySegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Segments
+  nameWithType: StravaAPILibary.Models.Segments
+  fullName: StravaAPILibary.Models.Segments
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Segments.DetailedSegment
+  commentId: T:StravaAPILibary.Models.Segments.DetailedSegment
+  href: StravaAPILibary.Models.Segments.DetailedSegment.html
+  name: DetailedSegment
+  nameWithType: DetailedSegment
+  fullName: StravaAPILibary.Models.Segments.DetailedSegment
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  commentId: T:StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html
+  name: DetailedSegmentEffort
+  nameWithType: DetailedSegmentEffort
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+- uid: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort
+  commentId: T:StravaAPILibary.Models.Segments.SummaryPRSegmentEffort
+  parent: StravaAPILibary.Models.Segments
+  href: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.html
+  name: SummaryPRSegmentEffort
+  nameWithType: SummaryPRSegmentEffort
+  fullName: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort
+- uid: StravaAPILibary.Models.Segments.SummarySegment
+  commentId: T:StravaAPILibary.Models.Segments.SummarySegment
+  parent: StravaAPILibary.Models.Segments
+  href: StravaAPILibary.Models.Segments.SummarySegment.html
+  name: SummarySegment
+  nameWithType: SummarySegment
+  fullName: StravaAPILibary.Models.Segments.SummarySegment
+- uid: StravaAPILibary.Models.Segments.SummarySegmentEffort
+  commentId: T:StravaAPILibary.Models.Segments.SummarySegmentEffort
+  parent: StravaAPILibary.Models.Segments
+  href: StravaAPILibary.Models.Segments.SummarySegmentEffort.html
+  name: SummarySegmentEffort
+  nameWithType: SummarySegmentEffort
+  fullName: StravaAPILibary.Models.Segments.SummarySegmentEffort
+- uid: StravaAPILibary.Models.Segments
+  commentId: N:StravaAPILibary.Models.Segments
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Segments
+  nameWithType: StravaAPILibary.Models.Segments
+  fullName: StravaAPILibary.Models.Segments
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Segments
+    name: Segments
+    href: StravaAPILibary.Models.Segments.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Segments
+    name: Segments
+    href: StravaAPILibary.Models.Segments.html

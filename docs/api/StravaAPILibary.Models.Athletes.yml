@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Athletes
+  commentId: N:StravaAPILibary.Models.Athletes
+  id: StravaAPILibary.Models.Athletes
+  children:
+  - StravaAPILibary.Models.Athletes.DetailedAthlete
+  - StravaAPILibary.Models.Athletes.MetaAthlete
+  - StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Athletes
+  nameWithType: StravaAPILibary.Models.Athletes
+  fullName: StravaAPILibary.Models.Athletes
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Athletes.DetailedAthlete
+  commentId: T:StravaAPILibary.Models.Athletes.DetailedAthlete
+  href: StravaAPILibary.Models.Athletes.DetailedAthlete.html
+  name: DetailedAthlete
+  nameWithType: DetailedAthlete
+  fullName: StravaAPILibary.Models.Athletes.DetailedAthlete
+- uid: StravaAPILibary.Models.Athletes.MetaAthlete
+  commentId: T:StravaAPILibary.Models.Athletes.MetaAthlete
+  parent: StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.Models.Athletes.MetaAthlete.html
+  name: MetaAthlete
+  nameWithType: MetaAthlete
+  fullName: StravaAPILibary.Models.Athletes.MetaAthlete
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete
+  commentId: T:StravaAPILibary.Models.Athletes.SummaryAthlete
+  parent: StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html
+  name: SummaryAthlete
+  nameWithType: SummaryAthlete
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete
+- uid: StravaAPILibary.Models.Athletes
+  commentId: N:StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Athletes
+  nameWithType: StravaAPILibary.Models.Athletes
+  fullName: StravaAPILibary.Models.Athletes
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html

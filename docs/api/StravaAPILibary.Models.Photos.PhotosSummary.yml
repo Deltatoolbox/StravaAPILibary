@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Photos.PhotosSummary
+  commentId: T:StravaAPILibary.Models.Photos.PhotosSummary
+  id: PhotosSummary
+  parent: StravaAPILibary.Models.Photos
+  children:
+  - StravaAPILibary.Models.Photos.PhotosSummary.Count
+  - StravaAPILibary.Models.Photos.PhotosSummary.Primary
+  langs:
+  - csharp
+  - vb
+  name: PhotosSummary
+  nameWithType: PhotosSummary
+  fullName: StravaAPILibary.Models.Photos.PhotosSummary
+  type: Class
+  source:
+    id: PhotosSummary
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummary.cs
+    startLine: 5
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Photos
+  summary: Represents a summary of photos related to an activity.
+  example: []
+  syntax:
+    content: public class PhotosSummary
+    content.vb: Public Class PhotosSummary
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Photos.PhotosSummary.Count
+  commentId: P:StravaAPILibary.Models.Photos.PhotosSummary.Count
+  id: Count
+  parent: StravaAPILibary.Models.Photos.PhotosSummary
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: PhotosSummary.Count
+  fullName: StravaAPILibary.Models.Photos.PhotosSummary.Count
+  type: Property
+  source:
+    id: Count
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummary.cs
+    startLine: 10
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Photos
+  summary: The number of photos.
+  example: []
+  syntax:
+    content: public int Count { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Count As Integer
+  overload: StravaAPILibary.Models.Photos.PhotosSummary.Count*
+- uid: StravaAPILibary.Models.Photos.PhotosSummary.Primary
+  commentId: P:StravaAPILibary.Models.Photos.PhotosSummary.Primary
+  id: Primary
+  parent: StravaAPILibary.Models.Photos.PhotosSummary
+  langs:
+  - csharp
+  - vb
+  name: Primary
+  nameWithType: PhotosSummary.Primary
+  fullName: StravaAPILibary.Models.Photos.PhotosSummary.Primary
+  type: Property
+  source:
+    id: Primary
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummary.cs
+    startLine: 15
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Photos
+  summary: The primary photo associated with this activity.
+  example: []
+  syntax:
+    content: public PhotosSummaryPrimary? Primary { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Photos.PhotosSummaryPrimary
+    content.vb: Public Property Primary As PhotosSummaryPrimary
+  overload: StravaAPILibary.Models.Photos.PhotosSummary.Primary*
+references:
+- uid: StravaAPILibary.Models.Photos
+  commentId: N:StravaAPILibary.Models.Photos
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Photos
+  nameWithType: StravaAPILibary.Models.Photos
+  fullName: StravaAPILibary.Models.Photos
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Photos
+    name: Photos
+    href: StravaAPILibary.Models.Photos.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Photos
+    name: Photos
+    href: StravaAPILibary.Models.Photos.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Photos.PhotosSummary.Count*
+  commentId: Overload:StravaAPILibary.Models.Photos.PhotosSummary.Count
+  href: StravaAPILibary.Models.Photos.PhotosSummary.html#StravaAPILibary_Models_Photos_PhotosSummary_Count
+  name: Count
+  nameWithType: PhotosSummary.Count
+  fullName: StravaAPILibary.Models.Photos.PhotosSummary.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: StravaAPILibary.Models.Photos.PhotosSummary.Primary*
+  commentId: Overload:StravaAPILibary.Models.Photos.PhotosSummary.Primary
+  href: StravaAPILibary.Models.Photos.PhotosSummary.html#StravaAPILibary_Models_Photos_PhotosSummary_Primary
+  name: Primary
+  nameWithType: PhotosSummary.Primary
+  fullName: StravaAPILibary.Models.Photos.PhotosSummary.Primary
+- uid: StravaAPILibary.Models.Photos.PhotosSummaryPrimary
+  commentId: T:StravaAPILibary.Models.Photos.PhotosSummaryPrimary
+  parent: StravaAPILibary.Models.Photos
+  href: StravaAPILibary.Models.Photos.PhotosSummaryPrimary.html
+  name: PhotosSummaryPrimary
+  nameWithType: PhotosSummaryPrimary
+  fullName: StravaAPILibary.Models.Photos.PhotosSummaryPrimary

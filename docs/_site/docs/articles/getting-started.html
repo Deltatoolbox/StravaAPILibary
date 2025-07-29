@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started with StravaAPILibary | StravaAPILibary Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started with StravaAPILibary | StravaAPILibary Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="StravaAPILibary">
+            StravaAPILibary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="getting-started-with-stravaapilibary">Getting Started with StravaAPILibary</h1>
+
+<p>This guide will walk you through setting up and using the StravaAPILibary to interact with the Strava API.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before you begin, ensure you have:</p>
+<ul>
+<li><strong>.NET 8.0 SDK</strong> or later installed</li>
+<li><strong>Visual Studio 2022</strong> or <strong>JetBrains Rider</strong> (recommended IDEs)</li>
+<li><strong>Strava API credentials</strong> (Client ID and Client Secret)</li>
+<li><strong>Internet connection</strong> for API calls</li>
+</ul>
+<h2 id="step-1-install-the-library">Step 1: Install the Library</h2>
+<h3 id="using-nuget-package-manager">Using NuGet Package Manager</h3>
+<ol>
+<li>Right-click on your project in Solution Explorer</li>
+<li>Select <strong>Manage NuGet Packages</strong></li>
+<li>Search for <code>StravaAPILibary</code></li>
+<li>Click <strong>Install</strong></li>
+</ol>
+<h3 id="using-package-manager-console">Using Package Manager Console</h3>
+<pre><code class="lang-powershell">Install-Package StravaAPILibary
+</code></pre>
+<h3 id="using-net-cli">Using .NET CLI</h3>
+<pre><code class="lang-bash">dotnet add package StravaAPILibary
+</code></pre>
+<h3 id="using-packagereference">Using PackageReference</h3>
+<p>Add this to your <code>.csproj</code> file:</p>
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;StravaAPILibary&quot; Version=&quot;1.0.0&quot; /&gt;
+</code></pre>
+<h2 id="step-2-set-up-strava-api-credentials">Step 2: Set Up Strava API Credentials</h2>
+<h3 id="create-a-strava-application">Create a Strava Application</h3>
+<ol>
+<li>Visit <a href="https://www.strava.com/settings/api">Strava API Settings</a></li>
+<li>Click <strong>Create Application</strong></li>
+<li>Fill in the required information:
+<ul>
+<li><strong>Application Name</strong>: Your app name</li>
+<li><strong>Category</strong>: Choose appropriate category</li>
+<li><strong>Website</strong>: Your website URL</li>
+<li><strong>Authorization Callback Domain</strong>: <code>localhost</code> (for development)</li>
+</ul>
+</li>
+<li>Click <strong>Create</strong></li>
+<li>Note your <strong>Client ID</strong> and <strong>Client Secret</strong></li>
+</ol>
+<h3 id="configure-redirect-uri">Configure Redirect URI</h3>
+<p>For development, you can use:</p>
+<ul>
+<li><code>http://localhost:8080/callback</code></li>
+<li><code>http://localhost:3000/callback</code></li>
+<li><code>http://localhost:5000/callback</code></li>
+</ul>
+<h2 id="step-3-basic-authentication-flow">Step 3: Basic Authentication Flow</h2>
+<h3 id="create-your-first-application">Create Your First Application</h3>
+<pre><code class="lang-csharp">using StravaAPILibary.Authentication;
+using StravaAPILibary.API;
+
+class Program
+{
+    static async Task Main(string[] args)
+    {
+        // 1. Set up your credentials
+        var credentials = new Credentials(
+            &quot;your_client_id_here&quot;,
+            &quot;your_client_secret_here&quot;, 
+            &quot;read,activity:read_all&quot;
+        );
+
+        // 2. Create authentication instance
+        var userAuth = new UserAuthentication(
+            credentials,
+            &quot;http://localhost:8080/callback&quot;,
+            &quot;read,activity:read_all&quot;
+        );
+
+        // 3. Start the authorization process
+        Console.WriteLine(&quot;Starting Strava authorization...&quot;);
+        userAuth.StartAuthorization();
+
+        // 4. Wait for user to complete authorization
+        Console.WriteLine(&quot;Please complete the authorization in your browser.&quot;);
+        Console.WriteLine(&quot;After authorization, copy the authorization code from the URL.&quot;);
+        Console.Write(&quot;Enter authorization code: &quot;);
+        
+        string authCode = Console.ReadLine() ?? string.Empty;
+
+        // 5. Exchange code for access token
+        if (!string.IsNullOrWhiteSpace(authCode))
+        {
+            bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
+            
+            if (success)
+            {
+                string accessToken = credentials.AccessToken;
+                Console.WriteLine(&quot;✅ Authentication successful!&quot;);
+                Console.WriteLine($&quot;Access Token: {accessToken[..10]}...&quot;);
+                
+                // 6. Make your first API call
+                await MakeFirstApiCall(accessToken);
+            }
+            else
+            {
+                Console.WriteLine(&quot;❌ Authentication failed!&quot;);
+            }
+        }
+    }
+
+    static async Task MakeFirstApiCall(string accessToken)
+    {
+        try
+        {
+            // Get athlete profile
+            var profile = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+            Console.WriteLine($&quot;Welcome, {profile[&quot;firstname&quot;]} {profile[&quot;lastname&quot;]}!&quot;);
+
+            // Get recent activities
+            var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: 1, perPage: 5);
+            Console.WriteLine($&quot;Found {activities.Count} recent activities:&quot;);
+            
+            foreach (var activity in activities)
+            {
+                Console.WriteLine($&quot;- {activity[&quot;name&quot;]} ({activity[&quot;type&quot;]}) - {activity[&quot;distance&quot;]}m&quot;);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($&quot;Error making API call: {ex.Message}&quot;);
+        }
+    }
+}
+</code></pre>
+<h2 id="step-4-understanding-the-authentication-flow">Step 4: Understanding the Authentication Flow</h2>
+<h3 id="oauth-20-flow">OAuth 2.0 Flow</h3>
+<p>The library implements the standard OAuth 2.0 authorization code flow:</p>
+<ol>
+<li><strong>Authorization Request</strong>: User is redirected to Strava to authorize your application</li>
+<li><strong>Authorization Code</strong>: Strava returns an authorization code to your redirect URI</li>
+<li><strong>Token Exchange</strong>: Your application exchanges the code for an access token</li>
+<li><strong>API Calls</strong>: Use the access token to make API requests</li>
+</ol>
+<h3 id="token-management">Token Management</h3>
+<p>The library handles token management automatically:</p>
+<ul>
+<li><strong>Access Token</strong>: Used for API requests (expires in 6 hours)</li>
+<li><strong>Refresh Token</strong>: Used to get new access tokens (doesn't expire)</li>
+<li><strong>Token Expiration</strong>: Automatically tracked and handled</li>
+</ul>
+<h3 id="scopes">Scopes</h3>
+<p>Request only the scopes you need:</p>
+<ul>
+<li><code>read</code> - Basic profile access</li>
+<li><code>activity:read_all</code> - Read all activities</li>
+<li><code>activity:write</code> - Upload activities</li>
+<li><code>profile:read_all</code> - Detailed profile access</li>
+<li><code>profile:write</code> - Update profile information</li>
+</ul>
+<h2 id="step-5-common-usage-patterns">Step 5: Common Usage Patterns</h2>
+<h3 id="error-handling">Error Handling</h3>
+<pre><code class="lang-csharp">try
+{
+    var activities = await Activities.GetAthletesActivitiesAsync(accessToken);
+    // Process activities
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine($&quot;Invalid parameter: {ex.Message}&quot;);
+}
+catch (HttpRequestException ex)
+{
+    Console.WriteLine($&quot;API request failed: {ex.Message}&quot;);
+}
+catch (JsonException ex)
+{
+    Console.WriteLine($&quot;JSON parsing failed: {ex.Message}&quot;);
+}
+</code></pre>
+<h3 id="pagination">Pagination</h3>
+<pre><code class="lang-csharp">int page = 1;
+int perPage = 30;
+bool hasMoreActivities = true;
+
+while (hasMoreActivities)
+{
+    var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: page, perPage: perPage);
+    
+    if (activities.Count == 0)
+    {
+        hasMoreActivities = false;
+    }
+    else
+    {
+        // Process activities
+        foreach (var activity in activities)
+        {
+            Console.WriteLine($&quot;Activity: {activity[&quot;name&quot;]}&quot;);
+        }
+        
+        page++;
+    }
+}
+</code></pre>
+<h3 id="filtering-activities">Filtering Activities</h3>
+<pre><code class="lang-csharp">// Get activities from last 30 days
+int after = (int)DateTimeOffset.UtcNow.AddDays(-30).ToUnixTimeSeconds();
+var recentActivities = await Activities.GetAthletesActivitiesAsync(accessToken, after: after);
+
+// Get activities before a specific date
+int before = (int)DateTimeOffset.Parse(&quot;2024-01-01&quot;).ToUnixTimeSeconds();
+var oldActivities = await Activities.GetAthletesActivitiesAsync(accessToken, before: before);
+</code></pre>
+<h2 id="step-6-next-steps">Step 6: Next Steps</h2>
+<p>Now that you have the basics working, explore:</p>
+<ul>
+<li><strong><a href="../api/">API Reference</a></strong> - Complete API documentation</li>
+<li><strong><a href="authentication.html">Authentication Guide</a></strong> - Advanced authentication topics</li>
+<li><strong><a href="examples.html">Examples</a></strong> - More usage examples</li>
+<li><strong><a href="best-practices.html">Best Practices</a></strong> - Recommended patterns</li>
+</ul>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="common-issues">Common Issues</h3>
+<p><strong>&quot;Invalid authorization code&quot;</strong></p>
+<ul>
+<li>Ensure the authorization code is copied correctly</li>
+<li>Check that your redirect URI matches your Strava app settings</li>
+<li>Verify the code hasn't expired (codes expire quickly)</li>
+</ul>
+<p><strong>&quot;Access token is invalid&quot;</strong></p>
+<ul>
+<li>The access token may have expired</li>
+<li>Use the refresh token to get a new access token</li>
+<li>Check that you're using the correct scope</li>
+</ul>
+<p><strong>&quot;API request failed&quot;</strong></p>
+<ul>
+<li>Verify your internet connection</li>
+<li>Check that the Strava API is available</li>
+<li>Ensure your access token is valid</li>
+</ul>
+<h3 id="getting-help">Getting Help</h3>
+<ul>
+<li><strong>Documentation</strong>: <a href="https://your-docs-site.com">https://your-docs-site.com</a></li>
+<li><strong>GitHub Issues</strong>: <a href="https://github.com/your-repo/issues">https://github.com/your-repo/issues</a></li>
+<li><strong>Strava API Status</strong>: <a href="https://status.strava.com">https://status.strava.com</a></li>
+</ul>
+<hr>
+<p><strong>Ready to build amazing Strava applications! 🚀</strong></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

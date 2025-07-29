@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Common
+  commentId: N:StravaAPILibary.Models.Common
+  id: StravaAPILibary.Models.Common
+  children:
+  - StravaAPILibary.Models.Common.LatLng
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Common
+  nameWithType: StravaAPILibary.Models.Common
+  fullName: StravaAPILibary.Models.Common
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Common.LatLng
+  commentId: T:StravaAPILibary.Models.Common.LatLng
+  parent: StravaAPILibary.Models.Common
+  href: StravaAPILibary.Models.Common.LatLng.html
+  name: LatLng
+  nameWithType: LatLng
+  fullName: StravaAPILibary.Models.Common.LatLng
+- uid: StravaAPILibary.Models.Common
+  commentId: N:StravaAPILibary.Models.Common
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Common
+  nameWithType: StravaAPILibary.Models.Common
+  fullName: StravaAPILibary.Models.Common
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Common
+    name: Common
+    href: StravaAPILibary.Models.Common.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Common
+    name: Common
+    href: StravaAPILibary.Models.Common.html

@@ -1,0 +1,1250 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  commentId: T:StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  id: DetailedSegmentEffort
+  parent: StravaAPILibary.Models.Segments
+  children:
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal
+  - StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex
+  langs:
+  - csharp
+  - vb
+  name: DetailedSegmentEffort
+  nameWithType: DetailedSegmentEffort
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  type: Class
+  source:
+    id: DetailedSegmentEffort
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 9
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: Represents a detailed segment effort, including performance metrics and related activity/athlete information.
+  example: []
+  syntax:
+    content: public class DetailedSegmentEffort
+    content.vb: Public Class DetailedSegmentEffort
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id
+  id: Id
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: DetailedSegmentEffort.Id
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 14
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The unique identifier of this effort.
+  example: []
+  syntax:
+    content: public long Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Id As Long
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId
+  id: ActivityId
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: ActivityId
+  nameWithType: DetailedSegmentEffort.ActivityId
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId
+  type: Property
+  source:
+    id: ActivityId
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 19
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The unique identifier of the activity related to this effort.
+  example: []
+  syntax:
+    content: public long ActivityId { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property ActivityId As Long
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime
+  id: ElapsedTime
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: ElapsedTime
+  nameWithType: DetailedSegmentEffort.ElapsedTime
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime
+  type: Property
+  source:
+    id: ElapsedTime
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 24
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The elapsed time of the effort, in seconds.
+  example: []
+  syntax:
+    content: public int ElapsedTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ElapsedTime As Integer
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate
+  id: StartDate
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: StartDate
+  nameWithType: DetailedSegmentEffort.StartDate
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate
+  type: Property
+  source:
+    id: StartDate
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 29
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The time at which the effort was started.
+  example: []
+  syntax:
+    content: public DateTime StartDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property StartDate As Date
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal
+  id: StartDateLocal
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: StartDateLocal
+  nameWithType: DetailedSegmentEffort.StartDateLocal
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal
+  type: Property
+  source:
+    id: StartDateLocal
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 34
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The local time at which the effort was started.
+  example: []
+  syntax:
+    content: public DateTime StartDateLocal { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property StartDateLocal As Date
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance
+  id: Distance
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: DetailedSegmentEffort.Distance
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance
+  type: Property
+  source:
+    id: Distance
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 39
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The distance of the effort, in meters.
+  example: []
+  syntax:
+    content: public float Distance { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Distance As Single
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom
+  id: IsKom
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: IsKom
+  nameWithType: DetailedSegmentEffort.IsKom
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom
+  type: Property
+  source:
+    id: IsKom
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 44
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: Indicates whether this effort is the current best on the leaderboard (KOM/QOM).
+  example: []
+  syntax:
+    content: public bool IsKom { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsKom As Boolean
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name
+  id: Name
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: DetailedSegmentEffort.Name
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name
+  type: Property
+  source:
+    id: Name
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 49
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The name of the segment on which this effort was performed.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity
+  id: Activity
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: Activity
+  nameWithType: DetailedSegmentEffort.Activity
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity
+  type: Property
+  source:
+    id: Activity
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 54
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The activity associated with this effort.
+  example: []
+  syntax:
+    content: public MetaActivity? Activity { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Activities.MetaActivity
+    content.vb: Public Property Activity As MetaActivity
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete
+  id: Athlete
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: Athlete
+  nameWithType: DetailedSegmentEffort.Athlete
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete
+  type: Property
+  source:
+    id: Athlete
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 59
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The athlete who performed this effort.
+  example: []
+  syntax:
+    content: public MetaAthlete? Athlete { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Athletes.MetaAthlete
+    content.vb: Public Property Athlete As MetaAthlete
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime
+  id: MovingTime
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: MovingTime
+  nameWithType: DetailedSegmentEffort.MovingTime
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime
+  type: Property
+  source:
+    id: MovingTime
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 64
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The moving time of the effort, in seconds.
+  example: []
+  syntax:
+    content: public int MovingTime { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MovingTime As Integer
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex
+  id: StartIndex
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: StartIndex
+  nameWithType: DetailedSegmentEffort.StartIndex
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex
+  type: Property
+  source:
+    id: StartIndex
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 69
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The start index of this effort in its activity's stream.
+  example: []
+  syntax:
+    content: public int StartIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StartIndex As Integer
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex
+  id: EndIndex
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: EndIndex
+  nameWithType: DetailedSegmentEffort.EndIndex
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex
+  type: Property
+  source:
+    id: EndIndex
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 74
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The end index of this effort in its activity's stream.
+  example: []
+  syntax:
+    content: public int EndIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property EndIndex As Integer
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence
+  id: AverageCadence
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: AverageCadence
+  nameWithType: DetailedSegmentEffort.AverageCadence
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence
+  type: Property
+  source:
+    id: AverageCadence
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 79
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The average cadence during this effort.
+  example: []
+  syntax:
+    content: public float AverageCadence { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AverageCadence As Single
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts
+  id: AverageWatts
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: AverageWatts
+  nameWithType: DetailedSegmentEffort.AverageWatts
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts
+  type: Property
+  source:
+    id: AverageWatts
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 84
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The average power output during this effort, in watts.
+  example: []
+  syntax:
+    content: public float AverageWatts { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AverageWatts As Single
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts
+  id: DeviceWatts
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: DeviceWatts
+  nameWithType: DetailedSegmentEffort.DeviceWatts
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts
+  type: Property
+  source:
+    id: DeviceWatts
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 89
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: Indicates whether the wattage was measured by a power meter (true) or estimated (false).
+  example: []
+  syntax:
+    content: public bool DeviceWatts { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DeviceWatts As Boolean
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate
+  id: AverageHeartrate
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: AverageHeartrate
+  nameWithType: DetailedSegmentEffort.AverageHeartrate
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate
+  type: Property
+  source:
+    id: AverageHeartrate
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 94
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The average heart rate of the athlete during this effort.
+  example: []
+  syntax:
+    content: public float AverageHeartrate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property AverageHeartrate As Single
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate
+  id: MaxHeartrate
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: MaxHeartrate
+  nameWithType: DetailedSegmentEffort.MaxHeartrate
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate
+  type: Property
+  source:
+    id: MaxHeartrate
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 99
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The maximum heart rate of the athlete during this effort.
+  example: []
+  syntax:
+    content: public float MaxHeartrate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MaxHeartrate As Single
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment
+  id: Segment
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: Segment
+  nameWithType: DetailedSegmentEffort.Segment
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment
+  type: Property
+  source:
+    id: Segment
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 104
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The segment associated with this effort.
+  example: []
+  syntax:
+    content: public SummarySegment? Segment { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Segments.SummarySegment
+    content.vb: Public Property Segment As SummarySegment
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank
+  id: KomRank
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: KomRank
+  nameWithType: DetailedSegmentEffort.KomRank
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank
+  type: Property
+  source:
+    id: KomRank
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 109
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The athlete's rank on the global leaderboard (if in the top 10 at the time of upload).
+  example: []
+  syntax:
+    content: public int? KomRank { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property KomRank As Integer?
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank
+  id: PrRank
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: PrRank
+  nameWithType: DetailedSegmentEffort.PrRank
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank
+  type: Property
+  source:
+    id: PrRank
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 114
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: The athlete's rank on their personal leaderboard (if in the top 3 at the time of upload).
+  example: []
+  syntax:
+    content: public int? PrRank { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property PrRank As Integer?
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank*
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden
+  commentId: P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden
+  id: Hidden
+  parent: StravaAPILibary.Models.Segments.DetailedSegmentEffort
+  langs:
+  - csharp
+  - vb
+  name: Hidden
+  nameWithType: DetailedSegmentEffort.Hidden
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden
+  type: Property
+  source:
+    id: Hidden
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    startLine: 119
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Segments
+  summary: Indicates whether this effort should be hidden when viewed within an activity.
+  example: []
+  syntax:
+    content: public bool Hidden { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Hidden As Boolean
+  overload: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden*
+references:
+- uid: StravaAPILibary.Models.Segments
+  commentId: N:StravaAPILibary.Models.Segments
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Segments
+  nameWithType: StravaAPILibary.Models.Segments
+  fullName: StravaAPILibary.Models.Segments
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Segments
+    name: Segments
+    href: StravaAPILibary.Models.Segments.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Segments
+    name: Segments
+    href: StravaAPILibary.Models.Segments.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_Id
+  name: Id
+  nameWithType: DetailedSegmentEffort.Id
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_ActivityId
+  name: ActivityId
+  nameWithType: DetailedSegmentEffort.ActivityId
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_ElapsedTime
+  name: ElapsedTime
+  nameWithType: DetailedSegmentEffort.ElapsedTime
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_StartDate
+  name: StartDate
+  nameWithType: DetailedSegmentEffort.StartDate
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_StartDateLocal
+  name: StartDateLocal
+  nameWithType: DetailedSegmentEffort.StartDateLocal
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_Distance
+  name: Distance
+  nameWithType: DetailedSegmentEffort.Distance
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_IsKom
+  name: IsKom
+  nameWithType: DetailedSegmentEffort.IsKom
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_Name
+  name: Name
+  nameWithType: DetailedSegmentEffort.Name
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_Activity
+  name: Activity
+  nameWithType: DetailedSegmentEffort.Activity
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity
+- uid: StravaAPILibary.Models.Activities.MetaActivity
+  commentId: T:StravaAPILibary.Models.Activities.MetaActivity
+  parent: StravaAPILibary.Models.Activities
+  href: StravaAPILibary.Models.Activities.MetaActivity.html
+  name: MetaActivity
+  nameWithType: MetaActivity
+  fullName: StravaAPILibary.Models.Activities.MetaActivity
+- uid: StravaAPILibary.Models.Activities
+  commentId: N:StravaAPILibary.Models.Activities
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Activities
+  nameWithType: StravaAPILibary.Models.Activities
+  fullName: StravaAPILibary.Models.Activities
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Activities
+    name: Activities
+    href: StravaAPILibary.Models.Activities.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Activities
+    name: Activities
+    href: StravaAPILibary.Models.Activities.html
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_Athlete
+  name: Athlete
+  nameWithType: DetailedSegmentEffort.Athlete
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete
+- uid: StravaAPILibary.Models.Athletes.MetaAthlete
+  commentId: T:StravaAPILibary.Models.Athletes.MetaAthlete
+  parent: StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.Models.Athletes.MetaAthlete.html
+  name: MetaAthlete
+  nameWithType: MetaAthlete
+  fullName: StravaAPILibary.Models.Athletes.MetaAthlete
+- uid: StravaAPILibary.Models.Athletes
+  commentId: N:StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Athletes
+  nameWithType: StravaAPILibary.Models.Athletes
+  fullName: StravaAPILibary.Models.Athletes
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_MovingTime
+  name: MovingTime
+  nameWithType: DetailedSegmentEffort.MovingTime
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_StartIndex
+  name: StartIndex
+  nameWithType: DetailedSegmentEffort.StartIndex
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_EndIndex
+  name: EndIndex
+  nameWithType: DetailedSegmentEffort.EndIndex
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_AverageCadence
+  name: AverageCadence
+  nameWithType: DetailedSegmentEffort.AverageCadence
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_AverageWatts
+  name: AverageWatts
+  nameWithType: DetailedSegmentEffort.AverageWatts
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_DeviceWatts
+  name: DeviceWatts
+  nameWithType: DetailedSegmentEffort.DeviceWatts
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_AverageHeartrate
+  name: AverageHeartrate
+  nameWithType: DetailedSegmentEffort.AverageHeartrate
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_MaxHeartrate
+  name: MaxHeartrate
+  nameWithType: DetailedSegmentEffort.MaxHeartrate
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_Segment
+  name: Segment
+  nameWithType: DetailedSegmentEffort.Segment
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment
+- uid: StravaAPILibary.Models.Segments.SummarySegment
+  commentId: T:StravaAPILibary.Models.Segments.SummarySegment
+  parent: StravaAPILibary.Models.Segments
+  href: StravaAPILibary.Models.Segments.SummarySegment.html
+  name: SummarySegment
+  nameWithType: SummarySegment
+  fullName: StravaAPILibary.Models.Segments.SummarySegment
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_KomRank
+  name: KomRank
+  nameWithType: DetailedSegmentEffort.KomRank
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_PrRank
+  name: PrRank
+  nameWithType: DetailedSegmentEffort.PrRank
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank
+- uid: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden*
+  commentId: Overload:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden
+  href: StravaAPILibary.Models.Segments.DetailedSegmentEffort.html#StravaAPILibary_Models_Segments_DetailedSegmentEffort_Hidden
+  name: Hidden
+  nameWithType: DetailedSegmentEffort.Hidden
+  fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden

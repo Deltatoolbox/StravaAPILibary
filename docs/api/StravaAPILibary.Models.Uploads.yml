@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Uploads
+  commentId: N:StravaAPILibary.Models.Uploads
+  id: StravaAPILibary.Models.Uploads
+  children:
+  - StravaAPILibary.Models.Uploads.Upload
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Uploads
+  nameWithType: StravaAPILibary.Models.Uploads
+  fullName: StravaAPILibary.Models.Uploads
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Uploads.Upload
+  commentId: T:StravaAPILibary.Models.Uploads.Upload
+  href: StravaAPILibary.Models.Uploads.Upload.html
+  name: Upload
+  nameWithType: Upload
+  fullName: StravaAPILibary.Models.Uploads.Upload

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Routes
+  commentId: N:StravaAPILibary.Models.Routes
+  id: StravaAPILibary.Models.Routes
+  children:
+  - StravaAPILibary.Models.Routes.Route
+  - StravaAPILibary.Models.Routes.Waypoint
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Routes
+  nameWithType: StravaAPILibary.Models.Routes
+  fullName: StravaAPILibary.Models.Routes
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Routes.Route
+  commentId: T:StravaAPILibary.Models.Routes.Route
+  href: StravaAPILibary.Models.Routes.Route.html
+  name: Route
+  nameWithType: Route
+  fullName: StravaAPILibary.Models.Routes.Route
+- uid: StravaAPILibary.Models.Routes.Waypoint
+  commentId: T:StravaAPILibary.Models.Routes.Waypoint
+  href: StravaAPILibary.Models.Routes.Waypoint.html
+  name: Waypoint
+  nameWithType: Waypoint
+  fullName: StravaAPILibary.Models.Routes.Waypoint

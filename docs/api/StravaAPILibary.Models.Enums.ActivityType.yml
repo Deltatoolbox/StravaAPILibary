@@ -1,0 +1,992 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Enums.ActivityType
+  commentId: T:StravaAPILibary.Models.Enums.ActivityType
+  id: ActivityType
+  parent: StravaAPILibary.Models.Enums
+  children:
+  - StravaAPILibary.Models.Enums.ActivityType.AlpineSki
+  - StravaAPILibary.Models.Enums.ActivityType.BackcountrySki
+  - StravaAPILibary.Models.Enums.ActivityType.Canoeing
+  - StravaAPILibary.Models.Enums.ActivityType.Crossfit
+  - StravaAPILibary.Models.Enums.ActivityType.EBikeRide
+  - StravaAPILibary.Models.Enums.ActivityType.Elliptical
+  - StravaAPILibary.Models.Enums.ActivityType.Golf
+  - StravaAPILibary.Models.Enums.ActivityType.Handcycle
+  - StravaAPILibary.Models.Enums.ActivityType.Hike
+  - StravaAPILibary.Models.Enums.ActivityType.IceSkate
+  - StravaAPILibary.Models.Enums.ActivityType.InlineSkate
+  - StravaAPILibary.Models.Enums.ActivityType.Kayaking
+  - StravaAPILibary.Models.Enums.ActivityType.Kitesurf
+  - StravaAPILibary.Models.Enums.ActivityType.NordicSki
+  - StravaAPILibary.Models.Enums.ActivityType.Ride
+  - StravaAPILibary.Models.Enums.ActivityType.RockClimbing
+  - StravaAPILibary.Models.Enums.ActivityType.RollerSki
+  - StravaAPILibary.Models.Enums.ActivityType.Rowing
+  - StravaAPILibary.Models.Enums.ActivityType.Run
+  - StravaAPILibary.Models.Enums.ActivityType.Sail
+  - StravaAPILibary.Models.Enums.ActivityType.Skateboard
+  - StravaAPILibary.Models.Enums.ActivityType.Snowboard
+  - StravaAPILibary.Models.Enums.ActivityType.Snowshoe
+  - StravaAPILibary.Models.Enums.ActivityType.Soccer
+  - StravaAPILibary.Models.Enums.ActivityType.StairStepper
+  - StravaAPILibary.Models.Enums.ActivityType.StandUpPaddling
+  - StravaAPILibary.Models.Enums.ActivityType.Surfing
+  - StravaAPILibary.Models.Enums.ActivityType.Swim
+  - StravaAPILibary.Models.Enums.ActivityType.Velomobile
+  - StravaAPILibary.Models.Enums.ActivityType.VirtualRide
+  - StravaAPILibary.Models.Enums.ActivityType.VirtualRun
+  - StravaAPILibary.Models.Enums.ActivityType.Walk
+  - StravaAPILibary.Models.Enums.ActivityType.WeightTraining
+  - StravaAPILibary.Models.Enums.ActivityType.Wheelchair
+  - StravaAPILibary.Models.Enums.ActivityType.Windsurf
+  - StravaAPILibary.Models.Enums.ActivityType.Workout
+  - StravaAPILibary.Models.Enums.ActivityType.Yoga
+  langs:
+  - csharp
+  - vb
+  name: ActivityType
+  nameWithType: ActivityType
+  fullName: StravaAPILibary.Models.Enums.ActivityType
+  type: Enum
+  source:
+    id: ActivityType
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 6
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: >-
+    Enumeration of the types an activity may have.
+
+    Note: Does not include new sport types (e.g. MountainBikeRide).
+  example: []
+  syntax:
+    content: public enum ActivityType
+    content.vb: Public Enum ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.AlpineSki
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.AlpineSki
+  id: AlpineSki
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: AlpineSki
+  nameWithType: ActivityType.AlpineSki
+  fullName: StravaAPILibary.Models.Enums.ActivityType.AlpineSki
+  type: Field
+  source:
+    id: AlpineSki
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 9
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Alpine skiing activity.
+  example: []
+  syntax:
+    content: AlpineSki = 0
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.BackcountrySki
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.BackcountrySki
+  id: BackcountrySki
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: BackcountrySki
+  nameWithType: ActivityType.BackcountrySki
+  fullName: StravaAPILibary.Models.Enums.ActivityType.BackcountrySki
+  type: Field
+  source:
+    id: BackcountrySki
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 12
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Backcountry skiing activity.
+  example: []
+  syntax:
+    content: BackcountrySki = 1
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Canoeing
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Canoeing
+  id: Canoeing
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Canoeing
+  nameWithType: ActivityType.Canoeing
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Canoeing
+  type: Field
+  source:
+    id: Canoeing
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 15
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Canoeing activity.
+  example: []
+  syntax:
+    content: Canoeing = 2
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Crossfit
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Crossfit
+  id: Crossfit
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Crossfit
+  nameWithType: ActivityType.Crossfit
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Crossfit
+  type: Field
+  source:
+    id: Crossfit
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 18
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Crossfit training session.
+  example: []
+  syntax:
+    content: Crossfit = 3
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.EBikeRide
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.EBikeRide
+  id: EBikeRide
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: EBikeRide
+  nameWithType: ActivityType.EBikeRide
+  fullName: StravaAPILibary.Models.Enums.ActivityType.EBikeRide
+  type: Field
+  source:
+    id: EBikeRide
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 21
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: E-bike ride activity.
+  example: []
+  syntax:
+    content: EBikeRide = 4
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Elliptical
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Elliptical
+  id: Elliptical
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Elliptical
+  nameWithType: ActivityType.Elliptical
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Elliptical
+  type: Field
+  source:
+    id: Elliptical
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 24
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Elliptical trainer workout.
+  example: []
+  syntax:
+    content: Elliptical = 5
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Golf
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Golf
+  id: Golf
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Golf
+  nameWithType: ActivityType.Golf
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Golf
+  type: Field
+  source:
+    id: Golf
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 27
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Golf session.
+  example: []
+  syntax:
+    content: Golf = 6
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Handcycle
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Handcycle
+  id: Handcycle
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Handcycle
+  nameWithType: ActivityType.Handcycle
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Handcycle
+  type: Field
+  source:
+    id: Handcycle
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 30
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Handcycle ride.
+  example: []
+  syntax:
+    content: Handcycle = 7
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Hike
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Hike
+  id: Hike
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Hike
+  nameWithType: ActivityType.Hike
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Hike
+  type: Field
+  source:
+    id: Hike
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 33
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Hiking activity.
+  example: []
+  syntax:
+    content: Hike = 8
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.IceSkate
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.IceSkate
+  id: IceSkate
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: IceSkate
+  nameWithType: ActivityType.IceSkate
+  fullName: StravaAPILibary.Models.Enums.ActivityType.IceSkate
+  type: Field
+  source:
+    id: IceSkate
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 36
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Ice skating activity.
+  example: []
+  syntax:
+    content: IceSkate = 9
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.InlineSkate
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.InlineSkate
+  id: InlineSkate
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: InlineSkate
+  nameWithType: ActivityType.InlineSkate
+  fullName: StravaAPILibary.Models.Enums.ActivityType.InlineSkate
+  type: Field
+  source:
+    id: InlineSkate
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 39
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Inline skating activity.
+  example: []
+  syntax:
+    content: InlineSkate = 10
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Kayaking
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Kayaking
+  id: Kayaking
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Kayaking
+  nameWithType: ActivityType.Kayaking
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Kayaking
+  type: Field
+  source:
+    id: Kayaking
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 42
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Kayaking activity.
+  example: []
+  syntax:
+    content: Kayaking = 11
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Kitesurf
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Kitesurf
+  id: Kitesurf
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Kitesurf
+  nameWithType: ActivityType.Kitesurf
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Kitesurf
+  type: Field
+  source:
+    id: Kitesurf
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 45
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Kitesurfing session.
+  example: []
+  syntax:
+    content: Kitesurf = 12
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.NordicSki
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.NordicSki
+  id: NordicSki
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: NordicSki
+  nameWithType: ActivityType.NordicSki
+  fullName: StravaAPILibary.Models.Enums.ActivityType.NordicSki
+  type: Field
+  source:
+    id: NordicSki
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 48
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Nordic skiing activity.
+  example: []
+  syntax:
+    content: NordicSki = 13
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Ride
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Ride
+  id: Ride
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Ride
+  nameWithType: ActivityType.Ride
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Ride
+  type: Field
+  source:
+    id: Ride
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 51
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Standard bike ride.
+  example: []
+  syntax:
+    content: Ride = 14
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.RockClimbing
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.RockClimbing
+  id: RockClimbing
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: RockClimbing
+  nameWithType: ActivityType.RockClimbing
+  fullName: StravaAPILibary.Models.Enums.ActivityType.RockClimbing
+  type: Field
+  source:
+    id: RockClimbing
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 54
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Rock climbing activity.
+  example: []
+  syntax:
+    content: RockClimbing = 15
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.RollerSki
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.RollerSki
+  id: RollerSki
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: RollerSki
+  nameWithType: ActivityType.RollerSki
+  fullName: StravaAPILibary.Models.Enums.ActivityType.RollerSki
+  type: Field
+  source:
+    id: RollerSki
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 57
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Roller skiing activity.
+  example: []
+  syntax:
+    content: RollerSki = 16
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Rowing
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Rowing
+  id: Rowing
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Rowing
+  nameWithType: ActivityType.Rowing
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Rowing
+  type: Field
+  source:
+    id: Rowing
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 60
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Rowing session.
+  example: []
+  syntax:
+    content: Rowing = 17
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Run
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Run
+  id: Run
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Run
+  nameWithType: ActivityType.Run
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Run
+  type: Field
+  source:
+    id: Run
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 63
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Running activity.
+  example: []
+  syntax:
+    content: Run = 18
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Sail
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Sail
+  id: Sail
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Sail
+  nameWithType: ActivityType.Sail
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Sail
+  type: Field
+  source:
+    id: Sail
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 66
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Sailing session.
+  example: []
+  syntax:
+    content: Sail = 19
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Skateboard
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Skateboard
+  id: Skateboard
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Skateboard
+  nameWithType: ActivityType.Skateboard
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Skateboard
+  type: Field
+  source:
+    id: Skateboard
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 69
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Skateboarding session.
+  example: []
+  syntax:
+    content: Skateboard = 20
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Snowboard
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Snowboard
+  id: Snowboard
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Snowboard
+  nameWithType: ActivityType.Snowboard
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Snowboard
+  type: Field
+  source:
+    id: Snowboard
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 72
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Snowboarding activity.
+  example: []
+  syntax:
+    content: Snowboard = 21
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Snowshoe
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Snowshoe
+  id: Snowshoe
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Snowshoe
+  nameWithType: ActivityType.Snowshoe
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Snowshoe
+  type: Field
+  source:
+    id: Snowshoe
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 75
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Snowshoeing activity.
+  example: []
+  syntax:
+    content: Snowshoe = 22
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Soccer
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Soccer
+  id: Soccer
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Soccer
+  nameWithType: ActivityType.Soccer
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Soccer
+  type: Field
+  source:
+    id: Soccer
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 78
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Soccer game or practice.
+  example: []
+  syntax:
+    content: Soccer = 23
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.StairStepper
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.StairStepper
+  id: StairStepper
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: StairStepper
+  nameWithType: ActivityType.StairStepper
+  fullName: StravaAPILibary.Models.Enums.ActivityType.StairStepper
+  type: Field
+  source:
+    id: StairStepper
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 81
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Stair stepper workout.
+  example: []
+  syntax:
+    content: StairStepper = 24
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.StandUpPaddling
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.StandUpPaddling
+  id: StandUpPaddling
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: StandUpPaddling
+  nameWithType: ActivityType.StandUpPaddling
+  fullName: StravaAPILibary.Models.Enums.ActivityType.StandUpPaddling
+  type: Field
+  source:
+    id: StandUpPaddling
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 84
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Stand-up paddling session.
+  example: []
+  syntax:
+    content: StandUpPaddling = 25
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Surfing
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Surfing
+  id: Surfing
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Surfing
+  nameWithType: ActivityType.Surfing
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Surfing
+  type: Field
+  source:
+    id: Surfing
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 87
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Surfing session.
+  example: []
+  syntax:
+    content: Surfing = 26
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Swim
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Swim
+  id: Swim
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Swim
+  nameWithType: ActivityType.Swim
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Swim
+  type: Field
+  source:
+    id: Swim
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 90
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Swimming activity.
+  example: []
+  syntax:
+    content: Swim = 27
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Velomobile
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Velomobile
+  id: Velomobile
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Velomobile
+  nameWithType: ActivityType.Velomobile
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Velomobile
+  type: Field
+  source:
+    id: Velomobile
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 93
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Velomobile ride.
+  example: []
+  syntax:
+    content: Velomobile = 28
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.VirtualRide
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.VirtualRide
+  id: VirtualRide
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: VirtualRide
+  nameWithType: ActivityType.VirtualRide
+  fullName: StravaAPILibary.Models.Enums.ActivityType.VirtualRide
+  type: Field
+  source:
+    id: VirtualRide
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 96
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Virtual ride on trainer or simulator.
+  example: []
+  syntax:
+    content: VirtualRide = 29
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.VirtualRun
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.VirtualRun
+  id: VirtualRun
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: VirtualRun
+  nameWithType: ActivityType.VirtualRun
+  fullName: StravaAPILibary.Models.Enums.ActivityType.VirtualRun
+  type: Field
+  source:
+    id: VirtualRun
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 99
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Virtual run on treadmill or simulator.
+  example: []
+  syntax:
+    content: VirtualRun = 30
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Walk
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Walk
+  id: Walk
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Walk
+  nameWithType: ActivityType.Walk
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Walk
+  type: Field
+  source:
+    id: Walk
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 102
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Walking activity.
+  example: []
+  syntax:
+    content: Walk = 31
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.WeightTraining
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.WeightTraining
+  id: WeightTraining
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: WeightTraining
+  nameWithType: ActivityType.WeightTraining
+  fullName: StravaAPILibary.Models.Enums.ActivityType.WeightTraining
+  type: Field
+  source:
+    id: WeightTraining
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 105
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Weight training session.
+  example: []
+  syntax:
+    content: WeightTraining = 32
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Wheelchair
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Wheelchair
+  id: Wheelchair
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Wheelchair
+  nameWithType: ActivityType.Wheelchair
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Wheelchair
+  type: Field
+  source:
+    id: Wheelchair
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 108
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Wheelchair workout or ride.
+  example: []
+  syntax:
+    content: Wheelchair = 33
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Windsurf
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Windsurf
+  id: Windsurf
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Windsurf
+  nameWithType: ActivityType.Windsurf
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Windsurf
+  type: Field
+  source:
+    id: Windsurf
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 111
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Windsurfing session.
+  example: []
+  syntax:
+    content: Windsurf = 34
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Workout
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Workout
+  id: Workout
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Workout
+  nameWithType: ActivityType.Workout
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Workout
+  type: Field
+  source:
+    id: Workout
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 114
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: General workout session.
+  example: []
+  syntax:
+    content: Workout = 35
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.ActivityType.Yoga
+  commentId: F:StravaAPILibary.Models.Enums.ActivityType.Yoga
+  id: Yoga
+  parent: StravaAPILibary.Models.Enums.ActivityType
+  langs:
+  - csharp
+  - vb
+  name: Yoga
+  nameWithType: ActivityType.Yoga
+  fullName: StravaAPILibary.Models.Enums.ActivityType.Yoga
+  type: Field
+  source:
+    id: Yoga
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\ActivityType.cs
+    startLine: 117
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Enums
+  summary: Yoga session.
+  example: []
+  syntax:
+    content: Yoga = 36
+    return:
+      type: StravaAPILibary.Models.Enums.ActivityType
+references:
+- uid: StravaAPILibary.Models.Enums
+  commentId: N:StravaAPILibary.Models.Enums
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Enums
+  nameWithType: StravaAPILibary.Models.Enums
+  fullName: StravaAPILibary.Models.Enums
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Enums
+    name: Enums
+    href: StravaAPILibary.Models.Enums.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Enums
+    name: Enums
+    href: StravaAPILibary.Models.Enums.html
+- uid: StravaAPILibary.Models.Enums.ActivityType
+  commentId: T:StravaAPILibary.Models.Enums.ActivityType
+  parent: StravaAPILibary.Models.Enums
+  href: StravaAPILibary.Models.Enums.ActivityType.html
+  name: ActivityType
+  nameWithType: ActivityType
+  fullName: StravaAPILibary.Models.Enums.ActivityType

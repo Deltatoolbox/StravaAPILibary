@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Clubs
+  commentId: N:StravaAPILibary.Models.Clubs
+  id: StravaAPILibary.Models.Clubs
+  children:
+  - StravaAPILibary.Models.Clubs.ClubActivity
+  - StravaAPILibary.Models.Clubs.ClubAthlete
+  - StravaAPILibary.Models.Clubs.DetailedClub
+  - StravaAPILibary.Models.Clubs.MetaClub
+  - StravaAPILibary.Models.Clubs.SummaryClub
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Clubs
+  nameWithType: StravaAPILibary.Models.Clubs
+  fullName: StravaAPILibary.Models.Clubs
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Clubs.ClubActivity
+  commentId: T:StravaAPILibary.Models.Clubs.ClubActivity
+  href: StravaAPILibary.Models.Clubs.ClubActivity.html
+  name: ClubActivity
+  nameWithType: ClubActivity
+  fullName: StravaAPILibary.Models.Clubs.ClubActivity
+- uid: StravaAPILibary.Models.Clubs.ClubAthlete
+  commentId: T:StravaAPILibary.Models.Clubs.ClubAthlete
+  href: StravaAPILibary.Models.Clubs.ClubAthlete.html
+  name: ClubAthlete
+  nameWithType: ClubAthlete
+  fullName: StravaAPILibary.Models.Clubs.ClubAthlete
+- uid: StravaAPILibary.Models.Clubs.DetailedClub
+  commentId: T:StravaAPILibary.Models.Clubs.DetailedClub
+  href: StravaAPILibary.Models.Clubs.DetailedClub.html
+  name: DetailedClub
+  nameWithType: DetailedClub
+  fullName: StravaAPILibary.Models.Clubs.DetailedClub
+- uid: StravaAPILibary.Models.Clubs.MetaClub
+  commentId: T:StravaAPILibary.Models.Clubs.MetaClub
+  href: StravaAPILibary.Models.Clubs.MetaClub.html
+  name: MetaClub
+  nameWithType: MetaClub
+  fullName: StravaAPILibary.Models.Clubs.MetaClub
+- uid: StravaAPILibary.Models.Clubs.SummaryClub
+  commentId: T:StravaAPILibary.Models.Clubs.SummaryClub
+  href: StravaAPILibary.Models.Clubs.SummaryClub.html
+  name: SummaryClub
+  nameWithType: SummaryClub
+  fullName: StravaAPILibary.Models.Clubs.SummaryClub

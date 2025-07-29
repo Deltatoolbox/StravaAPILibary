@@ -1,0 +1,1057 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Authentication.UserAuthentication
+  commentId: T:StravaAPILibary.Authentication.UserAuthentication
+  id: UserAuthentication
+  parent: StravaAPILibary.Authentication
+  children:
+  - StravaAPILibary.Authentication.UserAuthentication.#ctor(StravaAPILibary.Authentication.Credentials,System.String,System.String)
+  - StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl
+  - StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(System.String)
+  - StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(System.String)
+  - StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync
+  - StravaAPILibary.Authentication.UserAuthentication.StartAuthorization
+  - StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+  langs:
+  - csharp
+  - vb
+  name: UserAuthentication
+  nameWithType: UserAuthentication
+  fullName: StravaAPILibary.Authentication.UserAuthentication
+  type: Class
+  source:
+    id: UserAuthentication
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    startLine: 105
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Authentication
+  summary: Handles the OAuth 2.0 authentication flow for Strava users, including authorization, token exchange, and token refresh.
+  remarks: >-
+    The <code>UserAuthentication</code> class implements the complete OAuth 2.0 authorization code flow for Strava API integration.
+
+
+    <p><b>OAuth 2.0 Flow:</b></p>
+
+    <ol><li>User is redirected to Strava's authorization page</li><li>User authorizes the application and grants requested scopes</li><li>Strava redirects back with an authorization code</li><li>Application exchanges the code for access and refresh tokens</li><li>Access token is used for API requests (expires in 6 hours)</li><li>Refresh token is used to get new access tokens when needed</li></ol>
+
+
+    <p><b>Usage Example:</b></p>
+
+
+    <pre><code class="lang-csharp">// Create credentials
+
+    var credentials = new Credentials("your_client_id", "your_client_secret", "read,activity:read_all");
+
+
+    // Initialize authentication
+
+    var userAuth = new UserAuthentication(credentials, "http://localhost:8080/callback", "read,activity:read_all");
+
+
+    // Start authorization process
+
+    userAuth.StartAuthorization();
+
+
+    // Wait for user to complete authorization
+
+    string authCode = await userAuth.WaitForAuthCodeAsync();
+
+
+    // Exchange code for tokens
+
+    bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
+
+
+    if (success)
+
+    {
+        string accessToken = credentials.AccessToken;
+        // Use accessToken for API calls
+    }</code></pre>
+
+
+    <p><b>Token Management:</b></p>
+
+    <ul><li>Access tokens expire after 6 hours</li><li>Refresh tokens have no expiration (until revoked)</li><li>Use <xref href="StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync" data-throw-if-not-resolved="false"></xref> to get new access tokens</li><li>Store tokens securely (environment variables, secure storage)</li></ul>
+
+
+    <p><b>Security Considerations:</b></p>
+
+    <ul><li>Never expose client secret in client-side code</li><li>Use HTTPS for redirect URIs in production</li><li>Request minimal scopes needed for your application</li><li>Implement proper error handling for token refresh failures</li></ul>
+
+
+    <p><b>API Documentation:</b></p>
+
+    Refer to the official Strava API documentation for authentication:
+
+    <a href="https://developers.strava.com/docs/authentication/">Strava Authentication Guide</a>.
+  example:
+  - >-
+    <p>Complete authentication flow with error handling:</p>
+
+
+    <pre><code class="lang-csharp">public async Task&lt;string&gt; AuthenticateAsync()
+
+    {
+        var credentials = new Credentials("client_id", "client_secret", "read,activity:read_all");
+        var userAuth = new UserAuthentication(credentials, "http://localhost:8080/callback", "read,activity:read_all");
+
+        try
+        {
+            userAuth.StartAuthorization();
+            string authCode = await userAuth.WaitForAuthCodeAsync();
+
+            bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
+            if (success)
+            {
+                return credentials.AccessToken;
+            }
+            else
+            {
+                throw new InvalidOperationException("Failed to exchange authorization code for tokens.");
+            }
+        }
+        catch (TimeoutException)
+        {
+            throw new InvalidOperationException("Authorization timed out. Please try again.");
+        }
+        catch (Exception ex)
+        {
+            throw new InvalidOperationException($"Authentication failed: {ex.Message}");
+        }
+    }</code></pre>
+  syntax:
+    content: public class UserAuthentication
+    content.vb: Public Class UserAuthentication
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Authentication.UserAuthentication.#ctor(StravaAPILibary.Authentication.Credentials,System.String,System.String)
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.#ctor(StravaAPILibary.Authentication.Credentials,System.String,System.String)
+  id: '#ctor(StravaAPILibary.Authentication.Credentials,System.String,System.String)'
+  parent: StravaAPILibary.Authentication.UserAuthentication
+  langs:
+  - csharp
+  - vb
+  name: UserAuthentication(Credentials, string, string)
+  nameWithType: UserAuthentication.UserAuthentication(Credentials, string, string)
+  fullName: StravaAPILibary.Authentication.UserAuthentication.UserAuthentication(StravaAPILibary.Authentication.Credentials, string, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    startLine: 129
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Authentication
+  summary: Initializes a new instance of the <xref href="StravaAPILibary.Authentication.UserAuthentication" data-throw-if-not-resolved="false"></xref> class with the specified credentials and configuration.
+  remarks: >-
+    <p>The redirect URI must exactly match what is configured in your Strava application settings.</p>
+
+    <p>Common redirect URIs for development:</p>
+
+    <ul><li><code>http://localhost:8080/callback</code></li><li><code>http://localhost:3000/callback</code></li><li><code>http://localhost:5000/callback</code></li></ul>
+  example: []
+  syntax:
+    content: public UserAuthentication(Credentials creds, string redirectUri, string scope)
+    parameters:
+    - id: creds
+      type: StravaAPILibary.Authentication.Credentials
+      description: The Strava API credentials containing client ID and secret. Must not be null.
+    - id: redirectUri
+      type: System.String
+      description: The redirect URI registered for the Strava application. Must match the URI configured in your Strava app settings.
+    - id: scope
+      type: System.String
+      description: The requested OAuth scope(s). Multiple scopes can be separated by commas (e.g., <code>read,activity:read_all</code>).
+    content.vb: Public Sub New(creds As Credentials, redirectUri As String, scope As String)
+  overload: StravaAPILibary.Authentication.UserAuthentication.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">creds</code>, <code class="paramref">redirectUri</code>, or <code class="paramref">scope</code> is null.
+  nameWithType.vb: UserAuthentication.New(Credentials, String, String)
+  fullName.vb: StravaAPILibary.Authentication.UserAuthentication.New(StravaAPILibary.Authentication.Credentials, String, String)
+  name.vb: New(Credentials, String, String)
+- uid: StravaAPILibary.Authentication.UserAuthentication.StartAuthorization
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.StartAuthorization
+  id: StartAuthorization
+  parent: StravaAPILibary.Authentication.UserAuthentication
+  langs:
+  - csharp
+  - vb
+  name: StartAuthorization()
+  nameWithType: UserAuthentication.StartAuthorization()
+  fullName: StravaAPILibary.Authentication.UserAuthentication.StartAuthorization()
+  type: Method
+  source:
+    id: StartAuthorization
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    startLine: 159
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Authentication
+  summary: Starts the authorization process by opening the browser with the Strava OAuth URL.
+  remarks: >-
+    This method opens the user's default browser and navigates to Strava's authorization page.
+
+    The user will be prompted to log in to Strava (if not already logged in) and authorize your application.
+
+
+    <p>After authorization, Strava will redirect the user back to your redirect URI with an authorization code.</p>
+
+    <p>Use <xref href="StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync" data-throw-if-not-resolved="false"></xref> to automatically capture the authorization code, or handle the redirect manually.</p>
+  example:
+  - >-
+    <pre><code class="lang-csharp">var userAuth = new UserAuthentication(credentials, "http://localhost:8080/callback", "read,activity:read_all");
+
+    userAuth.StartAuthorization();
+
+
+    // Option 1: Wait for automatic code capture
+
+    string authCode = await userAuth.WaitForAuthCodeAsync();
+
+
+    // Option 2: Handle redirect manually
+
+    // User will be redirected to http://localhost:8080/callback?code=YOUR_AUTH_CODE
+
+    // Extract the code parameter from the URL</code></pre>
+  syntax:
+    content: public void StartAuthorization()
+    content.vb: Public Sub StartAuthorization()
+  overload: StravaAPILibary.Authentication.UserAuthentication.StartAuthorization*
+- uid: StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(System.String)
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(System.String)
+  id: OpenBrowser(System.String)
+  parent: StravaAPILibary.Authentication.UserAuthentication
+  langs:
+  - csharp
+  - vb
+  name: OpenBrowser(string)
+  nameWithType: UserAuthentication.OpenBrowser(string)
+  fullName: StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(string)
+  type: Method
+  source:
+    id: OpenBrowser
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    startLine: 173
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Authentication
+  summary: Opens the specified URL in the default browser.
+  remarks: >-
+    This method uses the system's default browser to open the provided URL.
+
+    On Windows, it uses <code>Process.Start</code> with <code>UseShellExecute = true</code>.
+  example: []
+  syntax:
+    content: public void OpenBrowser(string url)
+    parameters:
+    - id: url
+      type: System.String
+      description: The URL to open in the browser.
+    content.vb: Public Sub OpenBrowser(url As String)
+  overload: StravaAPILibary.Authentication.UserAuthentication.OpenBrowser*
+  nameWithType.vb: UserAuthentication.OpenBrowser(String)
+  fullName.vb: StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(String)
+  name.vb: OpenBrowser(String)
+- uid: StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl
+  id: BuildAuthorizationUrl
+  parent: StravaAPILibary.Authentication.UserAuthentication
+  langs:
+  - csharp
+  - vb
+  name: BuildAuthorizationUrl()
+  nameWithType: UserAuthentication.BuildAuthorizationUrl()
+  fullName: StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl()
+  type: Method
+  source:
+    id: BuildAuthorizationUrl
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    startLine: 201
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Authentication
+  summary: Builds the Strava OAuth authorization URL with the configured parameters.
+  remarks: >-
+    The generated URL includes:
+
+    <ul><li>Client ID from credentials</li><li>Redirect URI (URL-encoded)</li><li>Response type set to "code"</li><li>Requested scope (URL-encoded)</li><li>Approval prompt set to "force" to always show authorization page</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">var userAuth = new UserAuthentication(credentials, "http://localhost:8080/callback", "read,activity:read_all");
+
+    string authUrl = userAuth.BuildAuthorizationUrl();
+
+    Console.WriteLine(authUrl);
+
+    // Output: https://www.strava.com/oauth/authorize?client_id=12345&amp;redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&amp;response_type=code&amp;scope=read%2Cactivity%3Aread_all&amp;approval_prompt=force</code></pre>
+  syntax:
+    content: public string BuildAuthorizationUrl()
+    return:
+      type: System.String
+      description: The complete authorization URL for redirecting the user to Strava's authorization page.
+    content.vb: Public Function BuildAuthorizationUrl() As String
+  overload: StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl*
+- uid: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+  id: WaitForAuthCodeAsync
+  parent: StravaAPILibary.Authentication.UserAuthentication
+  langs:
+  - csharp
+  - vb
+  name: WaitForAuthCodeAsync()
+  nameWithType: UserAuthentication.WaitForAuthCodeAsync()
+  fullName: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync()
+  type: Method
+  source:
+    id: WaitForAuthCodeAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    startLine: 245
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Authentication
+  summary: Waits for the user to authorize the application and returns the authorization code.
+  remarks: >-
+    This method starts an HTTP listener on the redirect URI port and waits for the OAuth callback.
+
+    It automatically handles the redirect response and extracts the authorization code.
+
+
+    <p><b>Important:</b></p>
+
+    <ul><li>The redirect URI must be accessible (localhost for development)</li><li>Port must be available and not blocked by firewall</li><li>Method times out after 5 minutes</li><li>Returns a success page to the user's browser</li></ul>
+
+
+    <p><b>Alternative:</b></p>
+
+    For production applications, consider handling the redirect manually instead of using this method.
+  example:
+  - >-
+    <pre><code class="lang-csharp">try
+
+    {
+        userAuth.StartAuthorization();
+        string authCode = await userAuth.WaitForAuthCodeAsync();
+        Console.WriteLine($"Authorization code: {authCode}");
+    }
+
+    catch (TimeoutException)
+
+    {
+        Console.WriteLine("Authorization timed out. Please try again.");
+    }</code></pre>
+  syntax:
+    content: public Task<string> WaitForAuthCodeAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The authorization code from the OAuth redirect.
+    content.vb: Public Function WaitForAuthCodeAsync() As Task(Of String)
+  overload: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when the redirect URI is not set or the authorization code is missing in the response.
+  - type: System.TimeoutException
+    commentId: T:System.TimeoutException
+    description: Thrown if no authorization is received within 5 minutes.
+- uid: StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(System.String)
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(System.String)
+  id: ExchangeCodeForTokenAsync(System.String)
+  parent: StravaAPILibary.Authentication.UserAuthentication
+  langs:
+  - csharp
+  - vb
+  name: ExchangeCodeForTokenAsync(string)
+  nameWithType: UserAuthentication.ExchangeCodeForTokenAsync(string)
+  fullName: StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(string)
+  type: Method
+  source:
+    id: ExchangeCodeForTokenAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    startLine: 328
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Authentication
+  summary: Exchanges an authorization code for an access token and refresh token.
+  remarks: >-
+    This method performs the OAuth 2.0 token exchange by sending a POST request to Strava's token endpoint.
+
+    If successful, the access token, refresh token, and expiration time are stored in the credentials object.
+
+
+    <p><b>Token Exchange Process:</b></p>
+
+    <ol><li>Send POST request to <code>https://www.strava.com/oauth/token</code></li><li>Include client ID, client secret, authorization code, and grant type</li><li>Parse response to extract tokens and expiration</li><li>Store tokens in the credentials object</li></ol>
+
+
+    <p><b>Response Fields:</b></p>
+
+    <ul><li><code>access_token</code> - Used for API requests (expires in 6 hours)</li><li><code>refresh_token</code> - Used to get new access tokens</li><li><code>expires_at</code> - Unix timestamp when access token expires</li><li><code>expires_in</code> - Seconds until access token expires</li></ul>
+  example:
+  - >-
+    <pre><code class="lang-csharp">string authCode = "received_authorization_code";
+
+    bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
+
+
+    if (success)
+
+    {
+        Console.WriteLine($"Access Token: {credentials.AccessToken}");
+        Console.WriteLine($"Refresh Token: {credentials.RefreshToken}");
+        Console.WriteLine($"Expires: {credentials.TokenExpiration}");
+    }
+
+    else
+
+    {
+        Console.WriteLine("Token exchange failed.");
+    }</code></pre>
+  syntax:
+    content: public Task<bool> ExchangeCodeForTokenAsync(string authCode)
+    parameters:
+    - id: authCode
+      type: System.String
+      description: The authorization code received from the OAuth redirect.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the token exchange was successful; otherwise, <code>false</code>.
+    content.vb: Public Function ExchangeCodeForTokenAsync(authCode As String) As Task(Of Boolean)
+  overload: StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when <code class="paramref">authCode</code> is null or empty.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the token exchange request fails or returns a non-success status code.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the response JSON cannot be parsed.
+  nameWithType.vb: UserAuthentication.ExchangeCodeForTokenAsync(String)
+  fullName.vb: StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(String)
+  name.vb: ExchangeCodeForTokenAsync(String)
+- uid: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync
+  id: RefreshAccessTokenAsync
+  parent: StravaAPILibary.Authentication.UserAuthentication
+  langs:
+  - csharp
+  - vb
+  name: RefreshAccessTokenAsync()
+  nameWithType: UserAuthentication.RefreshAccessTokenAsync()
+  fullName: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync()
+  type: Method
+  source:
+    id: RefreshAccessTokenAsync
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    startLine: 390
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Authentication
+  summary: Refreshes the access token using the refresh token.
+  remarks: >-
+    This method uses the refresh token to obtain a new access token without requiring user re-authorization.
+
+    The new access token and expiration time are stored in the credentials object.
+
+
+    <p><b>When to Use:</b></p>
+
+    <ul><li>Access token has expired (6 hours)</li><li>Access token will expire soon (within 5 minutes)</li><li>API calls return 401 Unauthorized errors</li></ul>
+
+
+    <p><b>Error Handling:</b></p>
+
+    If the refresh token is invalid or has been revoked, this method will return false.
+
+    In such cases, the user will need to re-authenticate using the full OAuth flow.
+  example:
+  - >-
+    <pre><code class="lang-csharp">// Check if token needs refresh
+
+    if (credentials.TokenExpiration &lt;= DateTime.UtcNow.AddMinutes(5))
+
+    {
+        bool refreshSuccess = await userAuth.RefreshAccessTokenAsync();
+        if (refreshSuccess)
+        {
+            Console.WriteLine("Token refreshed successfully.");
+        }
+        else
+        {
+            Console.WriteLine("Token refresh failed. User needs to re-authenticate.");
+        }
+    }</code></pre>
+  syntax:
+    content: public Task<bool> RefreshAccessTokenAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>true</code> if the token refresh was successful; otherwise, <code>false</code>.
+    content.vb: Public Function RefreshAccessTokenAsync() As Task(Of Boolean)
+  overload: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when no refresh token is available.
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: Thrown when the refresh request fails or returns a non-success status code.
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when the response JSON cannot be parsed.
+references:
+- uid: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync
+  name: RefreshAccessTokenAsync()
+  nameWithType: UserAuthentication.RefreshAccessTokenAsync()
+  fullName: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync()
+  spec.csharp:
+  - uid: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync
+    name: RefreshAccessTokenAsync
+    href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync
+    name: RefreshAccessTokenAsync
+    href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync
+  - name: (
+  - name: )
+- uid: StravaAPILibary.Authentication
+  commentId: N:StravaAPILibary.Authentication
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Authentication
+  nameWithType: StravaAPILibary.Authentication
+  fullName: StravaAPILibary.Authentication
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Authentication
+    name: Authentication
+    href: StravaAPILibary.Authentication.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Authentication
+    name: Authentication
+    href: StravaAPILibary.Authentication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Authentication.UserAuthentication
+  commentId: T:StravaAPILibary.Authentication.UserAuthentication
+  href: StravaAPILibary.Authentication.UserAuthentication.html
+  name: UserAuthentication
+  nameWithType: UserAuthentication
+  fullName: StravaAPILibary.Authentication.UserAuthentication
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: StravaAPILibary.Authentication.UserAuthentication.#ctor*
+  commentId: Overload:StravaAPILibary.Authentication.UserAuthentication.#ctor
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication__ctor_StravaAPILibary_Authentication_Credentials_System_String_System_String_
+  name: UserAuthentication
+  nameWithType: UserAuthentication.UserAuthentication
+  fullName: StravaAPILibary.Authentication.UserAuthentication.UserAuthentication
+  nameWithType.vb: UserAuthentication.New
+  fullName.vb: StravaAPILibary.Authentication.UserAuthentication.New
+  name.vb: New
+- uid: StravaAPILibary.Authentication.Credentials
+  commentId: T:StravaAPILibary.Authentication.Credentials
+  parent: StravaAPILibary.Authentication
+  href: StravaAPILibary.Authentication.Credentials.html
+  name: Credentials
+  nameWithType: Credentials
+  fullName: StravaAPILibary.Authentication.Credentials
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+  commentId: M:StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync
+  name: WaitForAuthCodeAsync()
+  nameWithType: UserAuthentication.WaitForAuthCodeAsync()
+  fullName: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync()
+  spec.csharp:
+  - uid: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+    name: WaitForAuthCodeAsync
+    href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+    name: WaitForAuthCodeAsync
+    href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync
+  - name: (
+  - name: )
+- uid: StravaAPILibary.Authentication.UserAuthentication.StartAuthorization*
+  commentId: Overload:StravaAPILibary.Authentication.UserAuthentication.StartAuthorization
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_StartAuthorization
+  name: StartAuthorization
+  nameWithType: UserAuthentication.StartAuthorization
+  fullName: StravaAPILibary.Authentication.UserAuthentication.StartAuthorization
+- uid: StravaAPILibary.Authentication.UserAuthentication.OpenBrowser*
+  commentId: Overload:StravaAPILibary.Authentication.UserAuthentication.OpenBrowser
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_OpenBrowser_System_String_
+  name: OpenBrowser
+  nameWithType: UserAuthentication.OpenBrowser
+  fullName: StravaAPILibary.Authentication.UserAuthentication.OpenBrowser
+- uid: StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl*
+  commentId: Overload:StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_BuildAuthorizationUrl
+  name: BuildAuthorizationUrl
+  nameWithType: UserAuthentication.BuildAuthorizationUrl
+  fullName: StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.TimeoutException
+  commentId: T:System.TimeoutException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timeoutexception
+  name: TimeoutException
+  nameWithType: TimeoutException
+  fullName: System.TimeoutException
+- uid: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync*
+  commentId: Overload:StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync
+  name: WaitForAuthCodeAsync
+  nameWithType: UserAuthentication.WaitForAuthCodeAsync
+  fullName: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.Net.Http.HttpRequestException
+  commentId: T:System.Net.Http.HttpRequestException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception
+  name: HttpRequestException
+  nameWithType: HttpRequestException
+  fullName: System.Net.Http.HttpRequestException
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync*
+  commentId: Overload:StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_ExchangeCodeForTokenAsync_System_String_
+  name: ExchangeCodeForTokenAsync
+  nameWithType: UserAuthentication.ExchangeCodeForTokenAsync
+  fullName: StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync*
+  commentId: Overload:StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync
+  href: StravaAPILibary.Authentication.UserAuthentication.html#StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync
+  name: RefreshAccessTokenAsync
+  nameWithType: UserAuthentication.RefreshAccessTokenAsync
+  fullName: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync

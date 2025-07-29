@@ -1,0 +1,838 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete
+  commentId: T:StravaAPILibary.Models.Athletes.SummaryAthlete
+  id: SummaryAthlete
+  parent: StravaAPILibary.Models.Athletes
+  children:
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.City
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.Country
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.Id
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.Premium
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.Profile
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.Sex
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.State
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.Summit
+  - StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt
+  langs:
+  - csharp
+  - vb
+  name: SummaryAthlete
+  nameWithType: SummaryAthlete
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete
+  type: Class
+  source:
+    id: SummaryAthlete
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 7
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: Represents a summary of an athlete with profile and location details.
+  example: []
+  syntax:
+    content: public class SummaryAthlete
+    content.vb: Public Class SummaryAthlete
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Id
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.Id
+  id: Id
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: SummaryAthlete.Id
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 12
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The unique identifier of the athlete.
+  example: []
+  syntax:
+    content: public long Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Id As Long
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.Id*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState
+  id: ResourceState
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: ResourceState
+  nameWithType: SummaryAthlete.ResourceState
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState
+  type: Property
+  source:
+    id: ResourceState
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 18
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: >-
+    Resource state, indicates level of detail.
+
+    Possible values: 1 (meta), 2 (summary), 3 (detail).
+  example: []
+  syntax:
+    content: public int ResourceState { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ResourceState As Integer
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname
+  id: Firstname
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: Firstname
+  nameWithType: SummaryAthlete.Firstname
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname
+  type: Property
+  source:
+    id: Firstname
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 23
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The athlete's first name.
+  example: []
+  syntax:
+    content: public string Firstname { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Firstname As String
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname
+  id: Lastname
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: Lastname
+  nameWithType: SummaryAthlete.Lastname
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname
+  type: Property
+  source:
+    id: Lastname
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 28
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The athlete's last name.
+  example: []
+  syntax:
+    content: public string Lastname { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Lastname As String
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium
+  id: ProfileMedium
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: ProfileMedium
+  nameWithType: SummaryAthlete.ProfileMedium
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium
+  type: Property
+  source:
+    id: ProfileMedium
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 33
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: URL to a 62x62 pixel profile picture.
+  example: []
+  syntax:
+    content: public string ProfileMedium { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProfileMedium As String
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Profile
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.Profile
+  id: Profile
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: Profile
+  nameWithType: SummaryAthlete.Profile
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Profile
+  type: Property
+  source:
+    id: Profile
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 38
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: URL to a 124x124 pixel profile picture.
+  example: []
+  syntax:
+    content: public string Profile { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Profile As String
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.Profile*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.City
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.City
+  id: City
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: City
+  nameWithType: SummaryAthlete.City
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.City
+  type: Property
+  source:
+    id: City
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 43
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The athlete's city.
+  example: []
+  syntax:
+    content: public string City { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property City As String
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.City*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.State
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.State
+  id: State
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: SummaryAthlete.State
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.State
+  type: Property
+  source:
+    id: State
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 48
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The athlete's state or geographical region.
+  example: []
+  syntax:
+    content: public string State { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property State As String
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.State*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Country
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.Country
+  id: Country
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: Country
+  nameWithType: SummaryAthlete.Country
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Country
+  type: Property
+  source:
+    id: Country
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 53
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The athlete's country.
+  example: []
+  syntax:
+    content: public string Country { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Country As String
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.Country*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Sex
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.Sex
+  id: Sex
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: Sex
+  nameWithType: SummaryAthlete.Sex
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Sex
+  type: Property
+  source:
+    id: Sex
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 58
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The athlete's sex. M = Male, F = Female.
+  example: []
+  syntax:
+    content: public string Sex { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Sex As String
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.Sex*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Premium
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.Premium
+  id: Premium
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: Premium
+  nameWithType: SummaryAthlete.Premium
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Premium
+  type: Property
+  source:
+    id: Premium
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 63
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: Deprecated. Use Summit field instead. Whether the athlete has any Summit subscription.
+  example: []
+  syntax:
+    content: public bool Premium { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Premium As Boolean
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.Premium*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Summit
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.Summit
+  id: Summit
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: Summit
+  nameWithType: SummaryAthlete.Summit
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Summit
+  type: Property
+  source:
+    id: Summit
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 68
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: Whether the athlete has any Summit subscription.
+  example: []
+  syntax:
+    content: public bool Summit { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Summit As Boolean
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.Summit*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt
+  id: CreatedAt
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: SummaryAthlete.CreatedAt
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt
+  type: Property
+  source:
+    id: CreatedAt
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 73
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The time at which the athlete was created.
+  example: []
+  syntax:
+    content: public DateTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedAt As Date
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt*
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt
+  commentId: P:StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt
+  id: UpdatedAt
+  parent: StravaAPILibary.Models.Athletes.SummaryAthlete
+  langs:
+  - csharp
+  - vb
+  name: UpdatedAt
+  nameWithType: SummaryAthlete.UpdatedAt
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt
+  type: Property
+  source:
+    id: UpdatedAt
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\SummaryAthlete.cs
+    startLine: 78
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Athletes
+  summary: The time at which the athlete was last updated.
+  example: []
+  syntax:
+    content: public DateTime UpdatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property UpdatedAt As Date
+  overload: StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt*
+references:
+- uid: StravaAPILibary.Models.Athletes
+  commentId: N:StravaAPILibary.Models.Athletes
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Athletes
+  nameWithType: StravaAPILibary.Models.Athletes
+  fullName: StravaAPILibary.Models.Athletes
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Athletes
+    name: Athletes
+    href: StravaAPILibary.Models.Athletes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Id*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.Id
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_Id
+  name: Id
+  nameWithType: SummaryAthlete.Id
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Id
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_ResourceState
+  name: ResourceState
+  nameWithType: SummaryAthlete.ResourceState
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_Firstname
+  name: Firstname
+  nameWithType: SummaryAthlete.Firstname
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_Lastname
+  name: Lastname
+  nameWithType: SummaryAthlete.Lastname
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_ProfileMedium
+  name: ProfileMedium
+  nameWithType: SummaryAthlete.ProfileMedium
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Profile*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.Profile
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_Profile
+  name: Profile
+  nameWithType: SummaryAthlete.Profile
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Profile
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.City*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.City
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_City
+  name: City
+  nameWithType: SummaryAthlete.City
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.City
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.State*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.State
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_State
+  name: State
+  nameWithType: SummaryAthlete.State
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.State
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Country*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.Country
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_Country
+  name: Country
+  nameWithType: SummaryAthlete.Country
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Country
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Sex*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.Sex
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_Sex
+  name: Sex
+  nameWithType: SummaryAthlete.Sex
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Sex
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Premium*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.Premium
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_Premium
+  name: Premium
+  nameWithType: SummaryAthlete.Premium
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Premium
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.Summit*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.Summit
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_Summit
+  name: Summit
+  nameWithType: SummaryAthlete.Summit
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.Summit
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_CreatedAt
+  name: CreatedAt
+  nameWithType: SummaryAthlete.CreatedAt
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt*
+  commentId: Overload:StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt
+  href: StravaAPILibary.Models.Athletes.SummaryAthlete.html#StravaAPILibary_Models_Athletes_SummaryAthlete_UpdatedAt
+  name: UpdatedAt
+  nameWithType: SummaryAthlete.UpdatedAt
+  fullName: StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt

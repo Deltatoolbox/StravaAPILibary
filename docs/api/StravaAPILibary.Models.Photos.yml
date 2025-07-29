@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Photos
+  commentId: N:StravaAPILibary.Models.Photos
+  id: StravaAPILibary.Models.Photos
+  children:
+  - StravaAPILibary.Models.Photos.PhotosSummary
+  - StravaAPILibary.Models.Photos.PhotosSummaryPrimary
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Photos
+  nameWithType: StravaAPILibary.Models.Photos
+  fullName: StravaAPILibary.Models.Photos
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Photos.PhotosSummary
+  commentId: T:StravaAPILibary.Models.Photos.PhotosSummary
+  parent: StravaAPILibary.Models.Photos
+  href: StravaAPILibary.Models.Photos.PhotosSummary.html
+  name: PhotosSummary
+  nameWithType: PhotosSummary
+  fullName: StravaAPILibary.Models.Photos.PhotosSummary
+- uid: StravaAPILibary.Models.Photos.PhotosSummaryPrimary
+  commentId: T:StravaAPILibary.Models.Photos.PhotosSummaryPrimary
+  parent: StravaAPILibary.Models.Photos
+  href: StravaAPILibary.Models.Photos.PhotosSummaryPrimary.html
+  name: PhotosSummaryPrimary
+  nameWithType: PhotosSummaryPrimary
+  fullName: StravaAPILibary.Models.Photos.PhotosSummaryPrimary
+- uid: StravaAPILibary.Models.Photos
+  commentId: N:StravaAPILibary.Models.Photos
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Photos
+  nameWithType: StravaAPILibary.Models.Photos
+  fullName: StravaAPILibary.Models.Photos
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Photos
+    name: Photos
+    href: StravaAPILibary.Models.Photos.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Photos
+    name: Photos
+    href: StravaAPILibary.Models.Photos.html

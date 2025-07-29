@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+      <title>Examples | StravaAPILibary Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Examples | StravaAPILibary Documentation ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="StravaAPILibary">
+            StravaAPILibary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="examples">Examples</h1>
+
+<p>This guide provides practical examples of using the StravaAPILibary for common scenarios and real-world applications.</p>
+<h2 id="basic-examples">Basic Examples</h2>
+<h3 id="get-athlete-profile">Get Athlete Profile</h3>
+<pre><code class="lang-csharp">using StravaAPILibary.API;
+
+var profile = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+
+Console.WriteLine($&quot;Name: {profile[&quot;firstname&quot;]} {profile[&quot;lastname&quot;]}&quot;);
+Console.WriteLine($&quot;Location: {profile[&quot;city&quot;]}, {profile[&quot;state&quot;]}&quot;);
+Console.WriteLine($&quot;Followers: {profile[&quot;follower_count&quot;]}&quot;);
+Console.WriteLine($&quot;Following: {profile[&quot;friend_count&quot;]}&quot;);
+</code></pre>
+<h3 id="get-recent-activities">Get Recent Activities</h3>
+<pre><code class="lang-csharp">var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: 1, perPage: 10);
+
+foreach (var activity in activities)
+{
+    Console.WriteLine($&quot;Activity: {activity[&quot;name&quot;]}&quot;);
+    Console.WriteLine($&quot;  Type: {activity[&quot;type&quot;]}&quot;);
+    Console.WriteLine($&quot;  Distance: {activity[&quot;distance&quot;]}m&quot;);
+    Console.WriteLine($&quot;  Duration: {activity[&quot;moving_time&quot;]}s&quot;);
+    Console.WriteLine($&quot;  Date: {activity[&quot;start_date_local&quot;]}&quot;);
+    Console.WriteLine();
+}
+</code></pre>
+<h3 id="get-activity-details">Get Activity Details</h3>
+<pre><code class="lang-csharp">string activityId = &quot;123456789&quot;;
+var activity = await Activities.GetActivityByIdAsync(accessToken, activityId);
+
+Console.WriteLine($&quot;Activity: {activity[&quot;name&quot;]}&quot;);
+Console.WriteLine($&quot;  Description: {activity[&quot;description&quot;]}&quot;);
+Console.WriteLine($&quot;  Distance: {activity[&quot;distance&quot;]}m&quot;);
+Console.WriteLine($&quot;  Elevation Gain: {activity[&quot;total_elevation_gain&quot;]}m&quot;);
+Console.WriteLine($&quot;  Average Speed: {activity[&quot;average_speed&quot;]} m/s&quot;);
+Console.WriteLine($&quot;  Max Speed: {activity[&quot;max_speed&quot;]} m/s&quot;);
+</code></pre>
+<h2 id="advanced-examples">Advanced Examples</h2>
+<h3 id="activity-analysis">Activity Analysis</h3>
+<pre><code class="lang-csharp">public class ActivityAnalyzer
+{
+    public async Task AnalyzeActivitiesAsync(string accessToken)
+    {
+        var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: 1, perPage: 50);
+        
+        var stats = new
+        {
+            TotalActivities = activities.Count,
+            TotalDistance = activities.Sum(a =&gt; (double)a[&quot;distance&quot;]),
+            TotalTime = activities.Sum(a =&gt; (int)a[&quot;moving_time&quot;]),
+            ActivitiesByType = activities.GroupBy(a =&gt; (string)a[&quot;type&quot;])
+                                      .ToDictionary(g =&gt; g.Key, g =&gt; g.Count())
+        };
+        
+        Console.WriteLine($&quot;Total Activities: {stats.TotalActivities}&quot;);
+        Console.WriteLine($&quot;Total Distance: {stats.TotalDistance / 1000:F1}km&quot;);
+        Console.WriteLine($&quot;Total Time: {TimeSpan.FromSeconds(stats.TotalTime)}&quot;);
+        
+        foreach (var type in stats.ActivitiesByType)
+        {
+            Console.WriteLine($&quot;  {type.Key}: {type.Value} activities&quot;);
+        }
+    }
+}
+</code></pre>
+<h3 id="segment-explorer">Segment Explorer</h3>
+<pre><code class="lang-csharp">public class SegmentExplorer
+{
+    public async Task ExploreSegmentsAsync(string accessToken, float[] bounds, string activityType = &quot;running&quot;)
+    {
+        var segments = await Segments.GetExploreSegmentsAsync(accessToken, bounds, activityType);
+        
+        Console.WriteLine($&quot;Found {segments.Count} segments in the area:&quot;);
+        
+        foreach (var segment in segments)
+        {
+            Console.WriteLine($&quot;  {segment[&quot;name&quot;]}&quot;);
+            Console.WriteLine($&quot;    Distance: {segment[&quot;distance&quot;]}m&quot;);
+            Console.WriteLine($&quot;    Average Grade: {segment[&quot;average_grade&quot;]}%&quot;);
+            Console.WriteLine($&quot;    Elevation Difference: {segment[&quot;elevation_high&quot;] - segment[&quot;elevation_low&quot;]}m&quot;);
+            Console.WriteLine();
+        }
+    }
+    
+    public async Task GetStarredSegmentsAsync(string accessToken)
+    {
+        var starredSegments = await Segments.GetStarredSegmentsAsync(accessToken);
+        
+        Console.WriteLine($&quot;You have {starredSegments.Count} starred segments:&quot;);
+        
+        foreach (var segment in starredSegments)
+        {
+            Console.WriteLine($&quot;  {segment[&quot;name&quot;]} - {segment[&quot;distance&quot;]}m&quot;);
+        }
+    }
+}
+</code></pre>
+<h3 id="club-activities">Club Activities</h3>
+<pre><code class="lang-csharp">public class ClubManager
+{
+    public async Task GetClubInfoAsync(string accessToken)
+    {
+        var clubs = await Clubs.GetClubsAsync(accessToken);
+        
+        foreach (var club in clubs)
+        {
+            Console.WriteLine($&quot;Club: {club[&quot;name&quot;]}&quot;);
+            Console.WriteLine($&quot;  Members: {club[&quot;member_count&quot;]}&quot;);
+            Console.WriteLine($&quot;  Activities: {club[&quot;activity_count&quot;]}&quot;);
+            Console.WriteLine($&quot;  Description: {club[&quot;description&quot;]}&quot;);
+            Console.WriteLine();
+            
+            // Get club activities
+            var clubId = (long)club[&quot;id&quot;];
+            var activities = await Clubs.GetClubActivitiesAsync(accessToken, clubId, page: 1, perPage: 5);
+            
+            Console.WriteLine(&quot;  Recent Activities:&quot;);
+            foreach (var activity in activities)
+            {
+                Console.WriteLine($&quot;    {activity[&quot;athlete&quot;][&quot;firstname&quot;]} {activity[&quot;athlete&quot;][&quot;lastname&quot;]}: {activity[&quot;name&quot;]}&quot;);
+            }
+            Console.WriteLine();
+        }
+    }
+}
+</code></pre>
+<h3 id="route-management">Route Management</h3>
+<pre><code class="lang-csharp">public class RouteManager
+{
+    public async Task ExportRouteAsync(string accessToken, long routeId, string outputPath)
+    {
+        // Get route details
+        var route = await Routes.GetRouteByIdAsync(accessToken, routeId);
+        Console.WriteLine($&quot;Route: {route[&quot;name&quot;]}&quot;);
+        Console.WriteLine($&quot;  Distance: {route[&quot;distance&quot;]}m&quot;);
+        Console.WriteLine($&quot;  Elevation Gain: {route[&quot;elevation_gain&quot;]}m&quot;);
+        
+        // Export as GPX
+        var gpxData = await Routes.GetRouteGpxExportAsync(accessToken, routeId);
+        await File.WriteAllTextAsync($&quot;{outputPath}.gpx&quot;, gpxData);
+        
+        // Export as TCX
+        var tcxData = await Routes.GetRouteTcxExportAsync(accessToken, routeId);
+        await File.WriteAllTextAsync($&quot;{outputPath}.tcx&quot;, tcxData);
+        
+        Console.WriteLine($&quot;Route exported to {outputPath}.gpx and {outputPath}.tcx&quot;);
+    }
+}
+</code></pre>
+<h3 id="activity-upload">Activity Upload</h3>
+<pre><code class="lang-csharp">public class ActivityUploader
+{
+    public async Task UploadActivityAsync(string accessToken, string filePath, string activityName, string description = &quot;&quot;)
+    {
+        try
+        {
+            // Determine file type
+            string dataType = Path.GetExtension(filePath).ToLower() switch
+            {
+                &quot;.gpx&quot; =&gt; &quot;gpx&quot;,
+                &quot;.tcx&quot; =&gt; &quot;tcx&quot;,
+                &quot;.fit&quot; =&gt; &quot;fit&quot;,
+                _ =&gt; throw new ArgumentException(&quot;Unsupported file format. Use GPX, TCX, or FIT files.&quot;)
+            };
+            
+            // Upload activity
+            var uploadResponse = await Activities.PostActivityAsync(
+                accessToken,
+                activityName,
+                dataType,
+                filePath,
+                description
+            );
+            
+            Console.WriteLine($&quot;Upload started. Upload ID: {uploadResponse[&quot;id&quot;]}&quot;);
+            
+            // Monitor upload status
+            await MonitorUploadStatusAsync(accessToken, (long)uploadResponse[&quot;id&quot;]);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($&quot;Upload failed: {ex.Message}&quot;);
+        }
+    }
+    
+    private async Task MonitorUploadStatusAsync(string accessToken, long uploadId)
+    {
+        int maxAttempts = 30; // 5 minutes with 10-second intervals
+        int attempts = 0;
+        
+        while (attempts &lt; maxAttempts)
+        {
+            var uploadStatus = await Uploads.GetUploadAsync(accessToken, uploadId);
+            string status = (string)uploadStatus[&quot;status&quot;];
+            
+            Console.WriteLine($&quot;Upload status: {status}&quot;);
+            
+            if (status == &quot;Your activity is ready.&quot;)
+            {
+                Console.WriteLine(&quot;✅ Upload completed successfully!&quot;);
+                Console.WriteLine($&quot;Activity ID: {uploadStatus[&quot;activity_id&quot;]}&quot;);
+                break;
+            }
+            else if (status == &quot;There was an error processing your activity.&quot;)
+            {
+                Console.WriteLine(&quot;❌ Upload failed!&quot;);
+                Console.WriteLine($&quot;Error: {uploadStatus[&quot;error&quot;]}&quot;);
+                break;
+            }
+            
+            await Task.Delay(10000); // Wait 10 seconds
+            attempts++;
+        }
+        
+        if (attempts &gt;= maxAttempts)
+        {
+            Console.WriteLine(&quot;⏰ Upload monitoring timed out.&quot;);
+        }
+    }
+}
+</code></pre>
+<h3 id="stream-data-analysis">Stream Data Analysis</h3>
+<pre><code class="lang-csharp">public class StreamAnalyzer
+{
+    public async Task AnalyzeActivityStreamsAsync(string accessToken, long activityId)
+    {
+        var streams = await Streams.GetActivityStreamsAsync(
+            accessToken, 
+            activityId, 
+            &quot;time,distance,latlng,altitude,velocity_smooth,heartrate,cadence,watts,temp,moving,grade_smooth&quot;
+        );
+        
+        if (streams.ContainsKey(&quot;latlng&quot;))
+        {
+            var latlngStream = streams[&quot;latlng&quot;] as JsonArray;
+            Console.WriteLine($&quot;GPS Points: {latlngStream?.Count ?? 0}&quot;);
+        }
+        
+        if (streams.ContainsKey(&quot;heartrate&quot;))
+        {
+            var hrStream = streams[&quot;heartrate&quot;] as JsonArray;
+            if (hrStream?.Count &gt; 0)
+            {
+                var hrValues = hrStream.Select(x =&gt; (int)x).ToList();
+                Console.WriteLine($&quot;Heart Rate - Avg: {hrValues.Average():F0}, Max: {hrValues.Max()}, Min: {hrValues.Min()}&quot;);
+            }
+        }
+        
+        if (streams.ContainsKey(&quot;velocity_smooth&quot;))
+        {
+            var speedStream = streams[&quot;velocity_smooth&quot;] as JsonArray;
+            if (speedStream?.Count &gt; 0)
+            {
+                var speedValues = speedStream.Select(x =&gt; (double)x).ToList();
+                Console.WriteLine($&quot;Speed - Avg: {speedValues.Average() * 3.6:F1} km/h, Max: {speedValues.Max() * 3.6:F1} km/h&quot;);
+            }
+        }
+    }
+}
+</code></pre>
+<h2 id="real-world-scenarios">Real-World Scenarios</h2>
+<h3 id="fitness-dashboard">Fitness Dashboard</h3>
+<pre><code class="lang-csharp">public class FitnessDashboard
+{
+    public async Task GenerateDashboardAsync(string accessToken)
+    {
+        var profile = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+        var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: 1, perPage: 30);
+        
+        Console.WriteLine(&quot;=== FITNESS DASHBOARD ===&quot;);
+        Console.WriteLine($&quot;Athlete: {profile[&quot;firstname&quot;]} {profile[&quot;lastname&quot;]}&quot;);
+        Console.WriteLine($&quot;Location: {profile[&quot;city&quot;]}, {profile[&quot;state&quot;]}&quot;);
+        Console.WriteLine();
+        
+        // Weekly summary
+        var weekAgo = DateTime.UtcNow.AddDays(-7);
+        var recentActivities = activities.Where(a =&gt; 
+            DateTime.Parse((string)a[&quot;start_date_local&quot;]) &gt;= weekAgo).ToList();
+        
+        var weeklyStats = new
+        {
+            Activities = recentActivities.Count,
+            Distance = recentActivities.Sum(a =&gt; (double)a[&quot;distance&quot;]) / 1000,
+            Time = recentActivities.Sum(a =&gt; (int)a[&quot;moving_time&quot;]),
+            Elevation = recentActivities.Sum(a =&gt; (double)a[&quot;total_elevation_gain&quot;])
+        };
+        
+        Console.WriteLine(&quot;This Week:&quot;);
+        Console.WriteLine($&quot;  Activities: {weeklyStats.Activities}&quot;);
+        Console.WriteLine($&quot;  Distance: {weeklyStats.Distance:F1} km&quot;);
+        Console.WriteLine($&quot;  Time: {TimeSpan.FromSeconds(weeklyStats.Time)}&quot;);
+        Console.WriteLine($&quot;  Elevation: {weeklyStats.Elevation:F0} m&quot;);
+        Console.WriteLine();
+        
+        // Activity breakdown
+        var activityTypes = recentActivities.GroupBy(a =&gt; (string)a[&quot;type&quot;])
+                                          .OrderByDescending(g =&gt; g.Count());
+        
+        Console.WriteLine(&quot;Activity Breakdown:&quot;);
+        foreach (var type in activityTypes)
+        {
+            var typeStats = type.ToList();
+            var avgDistance = typeStats.Average(a =&gt; (double)a[&quot;distance&quot;]) / 1000;
+            Console.WriteLine($&quot;  {type.Key}: {type.Count()} activities, avg {avgDistance:F1} km&quot;);
+        }
+    }
+}
+</code></pre>
+<h3 id="training-plan-generator">Training Plan Generator</h3>
+<pre><code class="lang-csharp">public class TrainingPlanGenerator
+{
+    public async Task GenerateTrainingPlanAsync(string accessToken, string targetEvent, DateTime targetDate)
+    {
+        var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: 1, perPage: 100);
+        var profile = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+        
+        Console.WriteLine($&quot;=== TRAINING PLAN FOR {targetEvent.ToUpper()} ===&quot;);
+        Console.WriteLine($&quot;Target Date: {targetDate:MMMM dd, yyyy}&quot;);
+        Console.WriteLine($&quot;Days until event: {(targetDate - DateTime.Now).Days}&quot;);
+        Console.WriteLine();
+        
+        // Analyze current fitness level
+        var recentRuns = activities.Where(a =&gt; 
+            (string)a[&quot;type&quot;] == &quot;Run&quot; &amp;&amp; 
+            DateTime.Parse((string)a[&quot;start_date_local&quot;]) &gt;= DateTime.Now.AddDays(-30)
+        ).ToList();
+        
+        if (recentRuns.Any())
+        {
+            var avgPace = recentRuns.Average(a =&gt; (double)a[&quot;average_speed&quot;]);
+            var maxDistance = recentRuns.Max(a =&gt; (double)a[&quot;distance&quot;]);
+            
+            Console.WriteLine(&quot;Current Fitness Level:&quot;);
+            Console.WriteLine($&quot;  Average Pace: {60 / (avgPace * 3.6):F1} min/km&quot;);
+            Console.WriteLine($&quot;  Longest Run: {maxDistance / 1000:F1} km&quot;);
+            Console.WriteLine();
+            
+            // Generate training plan
+            GenerateWeeklyPlan(targetDate, maxDistance / 1000);
+        }
+    }
+    
+    private void GenerateWeeklyPlan(DateTime targetDate, double currentLongestRun)
+    {
+        var weeksUntilEvent = (int)((targetDate - DateTime.Now).TotalDays / 7);
+        
+        Console.WriteLine(&quot;Recommended Training Plan:&quot;);
+        for (int week = 1; week &lt;= Math.Min(weeksUntilEvent, 12); week++)
+        {
+            var weekDate = DateTime.Now.AddDays(week * 7);
+            var targetDistance = Math.Min(currentLongestRun + (week * 2), 42.2); // Cap at marathon distance
+            
+            Console.WriteLine($&quot;Week {week} ({weekDate:MMM dd}):&quot;);
+            Console.WriteLine($&quot;  Long Run: {targetDistance:F1} km&quot;);
+            Console.WriteLine($&quot;  Tempo Run: {targetDistance * 0.6:F1} km&quot;);
+            Console.WriteLine($&quot;  Easy Runs: 2x {targetDistance * 0.4:F1} km&quot;);
+            Console.WriteLine();
+        }
+    }
+}
+</code></pre>
+<h3 id="social-features">Social Features</h3>
+<pre><code class="lang-csharp">public class SocialFeatures
+{
+    public async Task GetSocialFeedAsync(string accessToken)
+    {
+        var clubs = await Clubs.GetClubsAsync(accessToken);
+        
+        Console.WriteLine(&quot;=== SOCIAL FEED ===&quot;);
+        
+        foreach (var club in clubs)
+        {
+            Console.WriteLine($&quot;Club: {club[&quot;name&quot;]}&quot;);
+            
+            var clubId = (long)club[&quot;id&quot;];
+            var activities = await Clubs.GetClubActivitiesAsync(accessToken, clubId, page: 1, perPage: 5);
+            
+            foreach (var activity in activities)
+            {
+                var athlete = activity[&quot;athlete&quot;];
+                Console.WriteLine($&quot;  {athlete[&quot;firstname&quot;]} {athlete[&quot;lastname&quot;]}: {activity[&quot;name&quot;]}&quot;);
+                Console.WriteLine($&quot;    {activity[&quot;type&quot;]} - {((double)activity[&quot;distance&quot;] / 1000):F1} km&quot;);
+                Console.WriteLine($&quot;    {activity[&quot;start_date_local&quot;]}&quot;);
+                Console.WriteLine();
+            }
+        }
+    }
+    
+    public async Task GetActivityKudosAsync(string accessToken, string activityId)
+    {
+        var kudos = await Activities.GetActivityKudosAsync(accessToken, activityId);
+        
+        Console.WriteLine($&quot;Kudos for activity {activityId}:&quot;);
+        foreach (var kudo in kudos)
+        {
+            Console.WriteLine($&quot;  {kudo[&quot;firstname&quot;]} {kudo[&quot;lastname&quot;]}&quot;);
+        }
+    }
+}
+</code></pre>
+<h2 id="error-handling-examples">Error Handling Examples</h2>
+<h3 id="robust-api-client">Robust API Client</h3>
+<pre><code class="lang-csharp">public class RobustStravaClient
+{
+    private readonly string _accessToken;
+    private readonly HttpClient _httpClient;
+    
+    public RobustStravaClient(string accessToken)
+    {
+        _accessToken = accessToken;
+        _httpClient = new HttpClient();
+        _httpClient.DefaultRequestHeaders.Authorization = 
+            new System.Net.Http.Headers.AuthenticationHeaderValue(&quot;Bearer&quot;, accessToken);
+    }
+    
+    public async Task&lt;JsonArray?&gt; GetActivitiesWithRetryAsync(int maxRetries = 3)
+    {
+        for (int attempt = 1; attempt &lt;= maxRetries; attempt++)
+        {
+            try
+            {
+                return await Activities.GetAthletesActivitiesAsync(_accessToken);
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.TooManyRequests)
+            {
+                if (attempt &lt; maxRetries)
+                {
+                    var retryAfter = GetRetryAfterSeconds(ex);
+                    Console.WriteLine($&quot;Rate limited. Waiting {retryAfter} seconds...&quot;);
+                    await Task.Delay(retryAfter * 1000);
+                }
+                else
+                {
+                    throw new InvalidOperationException(&quot;Rate limit exceeded after multiple retries&quot;, ex);
+                }
+            }
+            catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+            {
+                throw new InvalidOperationException(&quot;Access token is invalid or expired&quot;, ex);
+            }
+            catch (Exception ex)
+            {
+                if (attempt == maxRetries)
+                    throw;
+                
+                Console.WriteLine($&quot;Attempt {attempt} failed: {ex.Message}&quot;);
+                await Task.Delay(1000 * attempt); // Exponential backoff
+            }
+        }
+        
+        return null;
+    }
+    
+    private int GetRetryAfterSeconds(HttpRequestException ex)
+    {
+        // Parse Retry-After header if available
+        if (ex.Data.Contains(&quot;RetryAfter&quot;))
+        {
+            return (int)ex.Data[&quot;RetryAfter&quot;];
+        }
+        return 60; // Default 1 minute
+    }
+}
+</code></pre>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><strong><a href="../api/">API Reference</a></strong> - Complete API documentation</li>
+<li><strong><a href="authentication.html">Authentication Guide</a></strong> - Authentication patterns</li>
+<li><strong><a href="best-practices.html">Best Practices</a></strong> - Performance and security tips</li>
+</ul>
+<hr>
+<p><strong>Build amazing Strava applications with these examples! 🚀</strong></p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

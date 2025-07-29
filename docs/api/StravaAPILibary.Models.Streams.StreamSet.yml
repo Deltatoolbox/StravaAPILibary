@@ -1,0 +1,755 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Streams.StreamSet
+  commentId: T:StravaAPILibary.Models.Streams.StreamSet
+  id: StreamSet
+  parent: StravaAPILibary.Models.Streams
+  children:
+  - StravaAPILibary.Models.Streams.StreamSet.Altitude
+  - StravaAPILibary.Models.Streams.StreamSet.Cadence
+  - StravaAPILibary.Models.Streams.StreamSet.Distance
+  - StravaAPILibary.Models.Streams.StreamSet.GradeSmooth
+  - StravaAPILibary.Models.Streams.StreamSet.Heartrate
+  - StravaAPILibary.Models.Streams.StreamSet.LatLng
+  - StravaAPILibary.Models.Streams.StreamSet.Moving
+  - StravaAPILibary.Models.Streams.StreamSet.Temp
+  - StravaAPILibary.Models.Streams.StreamSet.Time
+  - StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth
+  - StravaAPILibary.Models.Streams.StreamSet.Watts
+  langs:
+  - csharp
+  - vb
+  name: StreamSet
+  nameWithType: StreamSet
+  fullName: StravaAPILibary.Models.Streams.StreamSet
+  type: Class
+  source:
+    id: StreamSet
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 5
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Represents a collection of different data streams associated with an activity or segment.
+  example: []
+  syntax:
+    content: public class StreamSet
+    content.vb: Public Class StreamSet
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Streams.StreamSet.Time
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.Time
+  id: Time
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: StreamSet.Time
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Time
+  type: Property
+  source:
+    id: Time
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 10
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of time values (seconds).
+  example: []
+  syntax:
+    content: public TimeStream? Time { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.TimeStream
+    content.vb: Public Property Time As TimeStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.Time*
+- uid: StravaAPILibary.Models.Streams.StreamSet.Distance
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.Distance
+  id: Distance
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: StreamSet.Distance
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Distance
+  type: Property
+  source:
+    id: Distance
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 15
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of distance values (meters).
+  example: []
+  syntax:
+    content: public DistanceStream? Distance { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.DistanceStream
+    content.vb: Public Property Distance As DistanceStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.Distance*
+- uid: StravaAPILibary.Models.Streams.StreamSet.LatLng
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.LatLng
+  id: LatLng
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: LatLng
+  nameWithType: StreamSet.LatLng
+  fullName: StravaAPILibary.Models.Streams.StreamSet.LatLng
+  type: Property
+  source:
+    id: LatLng
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 20
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of GPS coordinates (latitude/longitude pairs).
+  example: []
+  syntax:
+    content: public LatLngStream? LatLng { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.LatLngStream
+    content.vb: Public Property LatLng As LatLngStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.LatLng*
+- uid: StravaAPILibary.Models.Streams.StreamSet.Altitude
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.Altitude
+  id: Altitude
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: Altitude
+  nameWithType: StreamSet.Altitude
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Altitude
+  type: Property
+  source:
+    id: Altitude
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 25
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of altitude values (meters).
+  example: []
+  syntax:
+    content: public AltitudeStream? Altitude { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.AltitudeStream
+    content.vb: Public Property Altitude As AltitudeStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.Altitude*
+- uid: StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth
+  id: VelocitySmooth
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: VelocitySmooth
+  nameWithType: StreamSet.VelocitySmooth
+  fullName: StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth
+  type: Property
+  source:
+    id: VelocitySmooth
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 30
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of smoothed velocity values (m/s).
+  example: []
+  syntax:
+    content: public SmoothVelocityStream? VelocitySmooth { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.SmoothVelocityStream
+    content.vb: Public Property VelocitySmooth As SmoothVelocityStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth*
+- uid: StravaAPILibary.Models.Streams.StreamSet.Heartrate
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.Heartrate
+  id: Heartrate
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: Heartrate
+  nameWithType: StreamSet.Heartrate
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Heartrate
+  type: Property
+  source:
+    id: Heartrate
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 35
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of heart rate values (bpm).
+  example: []
+  syntax:
+    content: public HeartrateStream? Heartrate { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.HeartrateStream
+    content.vb: Public Property Heartrate As HeartrateStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.Heartrate*
+- uid: StravaAPILibary.Models.Streams.StreamSet.Cadence
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.Cadence
+  id: Cadence
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: Cadence
+  nameWithType: StreamSet.Cadence
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Cadence
+  type: Property
+  source:
+    id: Cadence
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 40
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of cadence values (rotations per minute).
+  example: []
+  syntax:
+    content: public CadenceStream? Cadence { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.CadenceStream
+    content.vb: Public Property Cadence As CadenceStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.Cadence*
+- uid: StravaAPILibary.Models.Streams.StreamSet.Watts
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.Watts
+  id: Watts
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: Watts
+  nameWithType: StreamSet.Watts
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Watts
+  type: Property
+  source:
+    id: Watts
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 45
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of power values (watts).
+  example: []
+  syntax:
+    content: public PowerStream? Watts { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.PowerStream
+    content.vb: Public Property Watts As PowerStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.Watts*
+- uid: StravaAPILibary.Models.Streams.StreamSet.Temp
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.Temp
+  id: Temp
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: Temp
+  nameWithType: StreamSet.Temp
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Temp
+  type: Property
+  source:
+    id: Temp
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 50
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of temperature values (°C).
+  example: []
+  syntax:
+    content: public TemperatureStream? Temp { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.TemperatureStream
+    content.vb: Public Property Temp As TemperatureStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.Temp*
+- uid: StravaAPILibary.Models.Streams.StreamSet.Moving
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.Moving
+  id: Moving
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: Moving
+  nameWithType: StreamSet.Moving
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Moving
+  type: Property
+  source:
+    id: Moving
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 55
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream indicating movement state (true = moving).
+  example: []
+  syntax:
+    content: public MovingStream? Moving { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.MovingStream
+    content.vb: Public Property Moving As MovingStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.Moving*
+- uid: StravaAPILibary.Models.Streams.StreamSet.GradeSmooth
+  commentId: P:StravaAPILibary.Models.Streams.StreamSet.GradeSmooth
+  id: GradeSmooth
+  parent: StravaAPILibary.Models.Streams.StreamSet
+  langs:
+  - csharp
+  - vb
+  name: GradeSmooth
+  nameWithType: StreamSet.GradeSmooth
+  fullName: StravaAPILibary.Models.Streams.StreamSet.GradeSmooth
+  type: Property
+  source:
+    id: GradeSmooth
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\StreamSet.cs
+    startLine: 60
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Streams
+  summary: Stream of smoothed gradient values (percent grade).
+  example: []
+  syntax:
+    content: public SmoothGradeStream? GradeSmooth { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Streams.SmoothGradeStream
+    content.vb: Public Property GradeSmooth As SmoothGradeStream
+  overload: StravaAPILibary.Models.Streams.StreamSet.GradeSmooth*
+references:
+- uid: StravaAPILibary.Models.Streams
+  commentId: N:StravaAPILibary.Models.Streams
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Streams
+  nameWithType: StravaAPILibary.Models.Streams
+  fullName: StravaAPILibary.Models.Streams
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Streams
+    name: Streams
+    href: StravaAPILibary.Models.Streams.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Streams
+    name: Streams
+    href: StravaAPILibary.Models.Streams.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Streams.StreamSet.Time*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.Time
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_Time
+  name: Time
+  nameWithType: StreamSet.Time
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Time
+- uid: StravaAPILibary.Models.Streams.TimeStream
+  commentId: T:StravaAPILibary.Models.Streams.TimeStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.TimeStream.html
+  name: TimeStream
+  nameWithType: TimeStream
+  fullName: StravaAPILibary.Models.Streams.TimeStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.Distance*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.Distance
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_Distance
+  name: Distance
+  nameWithType: StreamSet.Distance
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Distance
+- uid: StravaAPILibary.Models.Streams.DistanceStream
+  commentId: T:StravaAPILibary.Models.Streams.DistanceStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.DistanceStream.html
+  name: DistanceStream
+  nameWithType: DistanceStream
+  fullName: StravaAPILibary.Models.Streams.DistanceStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.LatLng*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.LatLng
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_LatLng
+  name: LatLng
+  nameWithType: StreamSet.LatLng
+  fullName: StravaAPILibary.Models.Streams.StreamSet.LatLng
+- uid: StravaAPILibary.Models.Streams.LatLngStream
+  commentId: T:StravaAPILibary.Models.Streams.LatLngStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.LatLngStream.html
+  name: LatLngStream
+  nameWithType: LatLngStream
+  fullName: StravaAPILibary.Models.Streams.LatLngStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.Altitude*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.Altitude
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_Altitude
+  name: Altitude
+  nameWithType: StreamSet.Altitude
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Altitude
+- uid: StravaAPILibary.Models.Streams.AltitudeStream
+  commentId: T:StravaAPILibary.Models.Streams.AltitudeStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.AltitudeStream.html
+  name: AltitudeStream
+  nameWithType: AltitudeStream
+  fullName: StravaAPILibary.Models.Streams.AltitudeStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_VelocitySmooth
+  name: VelocitySmooth
+  nameWithType: StreamSet.VelocitySmooth
+  fullName: StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth
+- uid: StravaAPILibary.Models.Streams.SmoothVelocityStream
+  commentId: T:StravaAPILibary.Models.Streams.SmoothVelocityStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.SmoothVelocityStream.html
+  name: SmoothVelocityStream
+  nameWithType: SmoothVelocityStream
+  fullName: StravaAPILibary.Models.Streams.SmoothVelocityStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.Heartrate*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.Heartrate
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_Heartrate
+  name: Heartrate
+  nameWithType: StreamSet.Heartrate
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Heartrate
+- uid: StravaAPILibary.Models.Streams.HeartrateStream
+  commentId: T:StravaAPILibary.Models.Streams.HeartrateStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.HeartrateStream.html
+  name: HeartrateStream
+  nameWithType: HeartrateStream
+  fullName: StravaAPILibary.Models.Streams.HeartrateStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.Cadence*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.Cadence
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_Cadence
+  name: Cadence
+  nameWithType: StreamSet.Cadence
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Cadence
+- uid: StravaAPILibary.Models.Streams.CadenceStream
+  commentId: T:StravaAPILibary.Models.Streams.CadenceStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.CadenceStream.html
+  name: CadenceStream
+  nameWithType: CadenceStream
+  fullName: StravaAPILibary.Models.Streams.CadenceStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.Watts*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.Watts
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_Watts
+  name: Watts
+  nameWithType: StreamSet.Watts
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Watts
+- uid: StravaAPILibary.Models.Streams.PowerStream
+  commentId: T:StravaAPILibary.Models.Streams.PowerStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.PowerStream.html
+  name: PowerStream
+  nameWithType: PowerStream
+  fullName: StravaAPILibary.Models.Streams.PowerStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.Temp*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.Temp
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_Temp
+  name: Temp
+  nameWithType: StreamSet.Temp
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Temp
+- uid: StravaAPILibary.Models.Streams.TemperatureStream
+  commentId: T:StravaAPILibary.Models.Streams.TemperatureStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.TemperatureStream.html
+  name: TemperatureStream
+  nameWithType: TemperatureStream
+  fullName: StravaAPILibary.Models.Streams.TemperatureStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.Moving*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.Moving
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_Moving
+  name: Moving
+  nameWithType: StreamSet.Moving
+  fullName: StravaAPILibary.Models.Streams.StreamSet.Moving
+- uid: StravaAPILibary.Models.Streams.MovingStream
+  commentId: T:StravaAPILibary.Models.Streams.MovingStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.MovingStream.html
+  name: MovingStream
+  nameWithType: MovingStream
+  fullName: StravaAPILibary.Models.Streams.MovingStream
+- uid: StravaAPILibary.Models.Streams.StreamSet.GradeSmooth*
+  commentId: Overload:StravaAPILibary.Models.Streams.StreamSet.GradeSmooth
+  href: StravaAPILibary.Models.Streams.StreamSet.html#StravaAPILibary_Models_Streams_StreamSet_GradeSmooth
+  name: GradeSmooth
+  nameWithType: StreamSet.GradeSmooth
+  fullName: StravaAPILibary.Models.Streams.StreamSet.GradeSmooth
+- uid: StravaAPILibary.Models.Streams.SmoothGradeStream
+  commentId: T:StravaAPILibary.Models.Streams.SmoothGradeStream
+  parent: StravaAPILibary.Models.Streams
+  href: StravaAPILibary.Models.Streams.SmoothGradeStream.html
+  name: SmoothGradeStream
+  nameWithType: SmoothGradeStream
+  fullName: StravaAPILibary.Models.Streams.SmoothGradeStream

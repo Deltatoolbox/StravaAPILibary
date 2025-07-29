@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Enums
+  commentId: N:StravaAPILibary.Models.Enums
+  id: StravaAPILibary.Models.Enums
+  children:
+  - StravaAPILibary.Models.Enums.ActivityType
+  - StravaAPILibary.Models.Enums.SportType
+  langs:
+  - csharp
+  - vb
+  name: StravaAPILibary.Models.Enums
+  nameWithType: StravaAPILibary.Models.Enums
+  fullName: StravaAPILibary.Models.Enums
+  type: Namespace
+  assemblies:
+  - StravaAPILibary
+references:
+- uid: StravaAPILibary.Models.Enums.ActivityType
+  commentId: T:StravaAPILibary.Models.Enums.ActivityType
+  parent: StravaAPILibary.Models.Enums
+  href: StravaAPILibary.Models.Enums.ActivityType.html
+  name: ActivityType
+  nameWithType: ActivityType
+  fullName: StravaAPILibary.Models.Enums.ActivityType
+- uid: StravaAPILibary.Models.Enums.SportType
+  commentId: T:StravaAPILibary.Models.Enums.SportType
+  parent: StravaAPILibary.Models.Enums
+  href: StravaAPILibary.Models.Enums.SportType.html
+  name: SportType
+  nameWithType: SportType
+  fullName: StravaAPILibary.Models.Enums.SportType
+- uid: StravaAPILibary.Models.Enums
+  commentId: N:StravaAPILibary.Models.Enums
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Enums
+  nameWithType: StravaAPILibary.Models.Enums
+  fullName: StravaAPILibary.Models.Enums
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Enums
+    name: Enums
+    href: StravaAPILibary.Models.Enums.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Enums
+    name: Enums
+    href: StravaAPILibary.Models.Enums.html

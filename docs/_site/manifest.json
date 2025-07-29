@@ -1,0 +1,1285 @@
+{
+  "source_base_path": "C:/Users/torn/source/repos/Strava/StravaAPILibary",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.Activities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.Activities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.Activities",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.Activities.yml\" sourcestartlinenumber=\"1\">Provides methods to interact with Strava's Activities API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.Athletes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.Athletes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.Athletes",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.Athletes.yml\" sourcestartlinenumber=\"1\">Provides methods to interact with Strava's Athletes API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.Clubs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.Clubs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.Clubs",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.Clubs.yml\" sourcestartlinenumber=\"1\">Provides methods to interact with Strava's Clubs API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.Gears.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.Gears.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.Gears",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.Gears.yml\" sourcestartlinenumber=\"1\">Provides methods to interact with Strava's Gear API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.Routes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.Routes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.Routes",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.Routes.yml\" sourcestartlinenumber=\"1\">Provides methods to interact with Strava's Routes API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.Segments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.Segments.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.Segments",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.Segments.yml\" sourcestartlinenumber=\"1\">Provides methods for interacting with Strava's Segments API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.SegmentsEfforts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.SegmentsEfforts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.SegmentsEfforts",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.SegmentsEfforts.yml\" sourcestartlinenumber=\"1\">Provides methods for interacting with Strava's Segment Efforts API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.Streams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.Streams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.Streams",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.Streams.yml\" sourcestartlinenumber=\"1\">Provides methods for retrieving stream data (detailed time-series data) from Strava.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.Uploads.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.Uploads.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API.Uploads",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.API.Uploads.yml\" sourcestartlinenumber=\"1\">Provides methods for uploading activities and retrieving upload statuses from the Strava API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.API.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.API",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Authentication.Credentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Authentication.Credentials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Authentication.Credentials",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Authentication.Credentials.yml\" sourcestartlinenumber=\"1\">Represents the credentials required for authenticating with the Strava API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Authentication.UserAuthentication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Authentication.UserAuthentication.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Authentication.UserAuthentication",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Authentication.UserAuthentication.yml\" sourcestartlinenumber=\"1\">Handles the OAuth 2.0 authentication flow for Strava users, including authorization, token exchange, and token refresh.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Authentication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Authentication.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Authentication",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Activities.DetailedActivity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Activities.DetailedActivity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Activities.DetailedActivity",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Activities.DetailedActivity.yml\" sourcestartlinenumber=\"1\">Represents a detailed Strava activity with extensive metadata, statistics, and related objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Activities.Lap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Activities.Lap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Activities.Lap",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Activities.Lap.yml\" sourcestartlinenumber=\"1\">Represents a single lap within an activity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Activities.MetaActivity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Activities.MetaActivity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Activities.MetaActivity",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Activities.MetaActivity.yml\" sourcestartlinenumber=\"1\">Represents a minimal reference to an activity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Activities.Split.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Activities.Split.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Activities.Split",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Activities.Split.yml\" sourcestartlinenumber=\"1\">Represents a split of an activity, typically used for running activities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Activities.SummaryActivity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Activities.SummaryActivity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Activities.SummaryActivity",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Activities.SummaryActivity.yml\" sourcestartlinenumber=\"1\">Represents a summarized Strava activity with key performance and metadata fields.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Activities.UpdatableActivity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Activities.UpdatableActivity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Activities.UpdatableActivity",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Activities.UpdatableActivity.yml\" sourcestartlinenumber=\"1\">Represents an updatable activity in Strava.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Activities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Activities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Activities",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.ActivityStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.ActivityStats.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.ActivityStats",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.ActivityStats.yml\" sourcestartlinenumber=\"1\">Represents rolled-up statistics and totals for an athlete,\nincluding recent, year-to-date, and all-time metrics for rides, runs, and swims.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.ActivityTotal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.ActivityTotal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.ActivityTotal",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.ActivityTotal.yml\" sourcestartlinenumber=\"1\">A roll-up of metrics pertaining to a set of activities.\nValues are in seconds and meters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.ActivityZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.ActivityZone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.ActivityZone",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.ActivityZone.yml\" sourcestartlinenumber=\"1\">Represents an activity zone, such as heart rate or power, including its score, distribution, and related data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Athletes.DetailedAthlete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Athletes.DetailedAthlete.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Athletes.DetailedAthlete",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Athletes.DetailedAthlete.yml\" sourcestartlinenumber=\"1\">Represents a detailed athlete profile with extensive personal, equipment, and club data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Athletes.MetaAthlete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Athletes.MetaAthlete.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Athletes.MetaAthlete",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Athletes.MetaAthlete.yml\" sourcestartlinenumber=\"1\">Represents a minimal athlete object containing only the athlete's ID.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Athletes.SummaryAthlete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Athletes.SummaryAthlete.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Athletes.SummaryAthlete",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Athletes.SummaryAthlete.yml\" sourcestartlinenumber=\"1\">Represents a summary of an athlete with profile and location details.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Athletes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Athletes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Athletes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Clubs.ClubActivity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Clubs.ClubActivity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Clubs.ClubActivity",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Clubs.ClubActivity.yml\" sourcestartlinenumber=\"1\">Represents an activity within a club.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Clubs.ClubAthlete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Clubs.ClubAthlete.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Clubs.ClubAthlete",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Clubs.ClubAthlete.yml\" sourcestartlinenumber=\"1\">Represents an athlete within a club.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Clubs.DetailedClub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Clubs.DetailedClub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Clubs.DetailedClub",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Clubs.DetailedClub.yml\" sourcestartlinenumber=\"1\">Represents detailed information about a club.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Clubs.MetaClub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Clubs.MetaClub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Clubs.MetaClub",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Clubs.MetaClub.yml\" sourcestartlinenumber=\"1\">Represents a meta-level summary of a club in Strava.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Clubs.SummaryClub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Clubs.SummaryClub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Clubs.SummaryClub",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Clubs.SummaryClub.yml\" sourcestartlinenumber=\"1\">Represents a summary of a Strava club with basic metadata and membership information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Clubs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Clubs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Clubs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Comment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Comment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Comment",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Comment.yml\" sourcestartlinenumber=\"1\">Represents a comment made on an activity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Common.LatLng.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Common.LatLng.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Common.LatLng",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Common.LatLng.yml\" sourcestartlinenumber=\"1\">Represents a geographical coordinate as a pair of latitude and longitude.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Common.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Common",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Enums.ActivityType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Enums.ActivityType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Enums.ActivityType",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Enums.ActivityType.yml\" sourcestartlinenumber=\"1\">Enumeration of the types an activity may have.\nNote: Does not include new sport types (e.g. MountainBikeRide).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Enums.SportType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Enums.SportType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Enums.SportType",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Enums.SportType.yml\" sourcestartlinenumber=\"1\">Enumeration of the sport types an activity may have.\nUnlike <xref href=\"StravaAPILibary.Models.Enums.ActivityType\" data-throw-if-not-resolved=\"false\"></xref>, this includes newer activity types such as MountainBikeRide.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Error.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Error",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Error.yml\" sourcestartlinenumber=\"1\">Represents an error returned from the Strava API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Explorer.ExplorerResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Explorer.ExplorerResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Explorer.ExplorerResponse",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Explorer.ExplorerResponse.yml\" sourcestartlinenumber=\"1\">Represents the response from the Explorer API containing a set of segments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Explorer.ExplorerSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Explorer.ExplorerSegment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Explorer.ExplorerSegment",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Explorer.ExplorerSegment.yml\" sourcestartlinenumber=\"1\">Represents a segment returned from the Explorer API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Explorer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Explorer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Explorer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Fault.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Fault.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Fault",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Fault.yml\" sourcestartlinenumber=\"1\">Represents a fault response from the Strava API, including a message and associated errors.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Gears.DetailedGear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Gears.DetailedGear.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Gears.DetailedGear",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Gears.DetailedGear.yml\" sourcestartlinenumber=\"1\">Represents detailed information about a piece of gear in Strava.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Gears.SummaryGear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Gears.SummaryGear.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Gears.SummaryGear",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Gears.SummaryGear.yml\" sourcestartlinenumber=\"1\">Represents a summary of gear associated with an athlete or activity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Gears.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Gears.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Gears",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Maps.PolylineMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Maps.PolylineMap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Maps.PolylineMap",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Maps.PolylineMap.yml\" sourcestartlinenumber=\"1\">Represents the polyline map data of an activity, route, or segment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Maps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Maps.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Maps",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Photos.PhotosSummary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Photos.PhotosSummary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Photos.PhotosSummary",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Photos.PhotosSummary.yml\" sourcestartlinenumber=\"1\">Represents a summary of photos related to an activity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Photos.PhotosSummaryPrimary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Photos.PhotosSummaryPrimary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Photos.PhotosSummaryPrimary",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Photos.PhotosSummaryPrimary.yml\" sourcestartlinenumber=\"1\">Represents the primary photo associated with an activity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Photos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Photos.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Photos",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Routes.Route.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Routes.Route.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Routes.Route",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Routes.Route.yml\" sourcestartlinenumber=\"1\">Represents a Strava route, including its metadata and associated details.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Routes.Waypoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Routes.Waypoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Routes.Waypoint",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Routes.Waypoint.yml\" sourcestartlinenumber=\"1\">Represents a waypoint along a route.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Routes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Routes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Routes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Segments.DetailedSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Segments.DetailedSegment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Segments.DetailedSegment",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Segments.DetailedSegment.yml\" sourcestartlinenumber=\"1\">Represents detailed information about a Strava segment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Segments.DetailedSegmentEffort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Segments.DetailedSegmentEffort.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Segments.DetailedSegmentEffort",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Segments.DetailedSegmentEffort.yml\" sourcestartlinenumber=\"1\">Represents a detailed segment effort, including performance metrics and related activity/athlete information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Segments.SummaryPRSegmentEffort",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.yml\" sourcestartlinenumber=\"1\">Represents the personal record (PR) effort for a segment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Segments.SummarySegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Segments.SummarySegment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Segments.SummarySegment",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Segments.SummarySegment.yml\" sourcestartlinenumber=\"1\">Represents a summary of a Strava segment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Segments.SummarySegmentEffort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Segments.SummarySegmentEffort.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Segments.SummarySegmentEffort",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Segments.SummarySegmentEffort.yml\" sourcestartlinenumber=\"1\">Represents a summary of an athlete's effort on a segment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Segments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Segments.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Segments",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.AltitudeStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.AltitudeStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.AltitudeStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.AltitudeStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of altitude data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.BaseStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.BaseStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.BaseStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.BaseStream.yml\" sourcestartlinenumber=\"1\">Represents the base properties of a stream returned by the Strava API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.CadenceStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.CadenceStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.CadenceStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.CadenceStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of cadence data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.DistanceStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.DistanceStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.DistanceStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.DistanceStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of distance data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.HeartrateStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.HeartrateStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.HeartrateStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.HeartrateStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of heart rate data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.LatLngStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.LatLngStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.LatLngStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.LatLngStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of GPS coordinates (latitude/longitude).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.MovingStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.MovingStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.MovingStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.MovingStream.yml\" sourcestartlinenumber=\"1\">Represents a stream indicating whether the athlete was moving.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.PowerStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.PowerStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.PowerStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.PowerStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of power data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.SmoothGradeStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.SmoothGradeStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.SmoothGradeStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.SmoothGradeStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of smoothed gradient data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.SmoothVelocityStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.SmoothVelocityStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.SmoothVelocityStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.SmoothVelocityStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of smoothed velocity (speed) data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.StreamSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.StreamSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.StreamSet",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.StreamSet.yml\" sourcestartlinenumber=\"1\">Represents a collection of different data streams associated with an activity or segment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.TemperatureStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.TemperatureStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.TemperatureStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.TemperatureStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of temperature data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.TimeStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.TimeStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams.TimeStream",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Streams.TimeStream.yml\" sourcestartlinenumber=\"1\">Represents a stream of time data points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Streams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Streams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Streams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.TimedZoneDistribution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.TimedZoneDistribution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.TimedZoneDistribution",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.TimedZoneDistribution.yml\" sourcestartlinenumber=\"1\">Represents a collection of exclusive ranges (zones) and the time spent in each.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.TimedZoneRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.TimedZoneRange.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.TimedZoneRange",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.TimedZoneRange.yml\" sourcestartlinenumber=\"1\">Represents the time spent in a specific zone range.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Uploads.Upload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Uploads.Upload.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Uploads.Upload",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Uploads.Upload.yml\" sourcestartlinenumber=\"1\">Represents the status and details of an upload in Strava.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Uploads.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Uploads.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Uploads",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Zones.HeartRateZoneRanges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Zones.HeartRateZoneRanges.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Zones.HeartRateZoneRanges",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Zones.HeartRateZoneRanges.yml\" sourcestartlinenumber=\"1\">Represents heart rate zone ranges for an athlete.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Zones.PowerZoneRanges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Zones.PowerZoneRanges.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Zones.PowerZoneRanges",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Zones.PowerZoneRanges.yml\" sourcestartlinenumber=\"1\">Represents the power zone ranges for an athlete.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Zones.ZoneRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Zones.ZoneRange.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Zones.ZoneRange",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Zones.ZoneRange.yml\" sourcestartlinenumber=\"1\">Represents a single heart rate or power zone range.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Zones.ZoneRanges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Zones.ZoneRanges.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Zones.ZoneRanges",
+      "Summary": "<p sourcefile=\"docs/api/StravaAPILibary.Models.Zones.ZoneRanges.yml\" sourcestartlinenumber=\"1\">A collection of zone ranges (e.g., heart rate or power zones).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.Zones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.Zones.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models.Zones",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/StravaAPILibary.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/StravaAPILibary.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StravaAPILibary.Models",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/articles/authentication.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/articles/authentication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/articles/best-practices.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/articles/best-practices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/articles/examples.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/articles/examples.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/articles/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/articles/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

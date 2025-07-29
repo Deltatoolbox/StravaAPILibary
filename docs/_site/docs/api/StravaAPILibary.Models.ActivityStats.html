@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ActivityStats | StravaAPILibary Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ActivityStats | StravaAPILibary Documentation ">
+      
+      <meta name="description" content="Represents rolled-up statistics and totals for an athlete, including recent, year-to-date, and all-time metrics for rides, runs, and swims.">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="StravaAPILibary">
+            StravaAPILibary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="StravaAPILibary.Models.ActivityStats">
+
+
+
+  <h1 id="StravaAPILibary_Models_ActivityStats" data-uid="StravaAPILibary.Models.ActivityStats" class="text-break">
+Class ActivityStats  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="StravaAPILibary.html">StravaAPILibary</a>.<a class="xref" href="StravaAPILibary.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>StravaAPILibary.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents rolled-up statistics and totals for an athlete,
+including recent, year-to-date, and all-time metrics for rides, runs, and swims.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ActivityStats</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ActivityStats</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="StravaAPILibary_Models_ActivityStats__ctor_" data-uid="StravaAPILibary.Models.ActivityStats.#ctor*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats__ctor" data-uid="StravaAPILibary.Models.ActivityStats.#ctor">
+  ActivityStats()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="StravaAPILibary.Models.ActivityStats.html">ActivityStats</a> class
+with default values for all activity totals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityStats()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_AllRideTotals_" data-uid="StravaAPILibary.Models.ActivityStats.AllRideTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_AllRideTotals" data-uid="StravaAPILibary.Models.ActivityStats.AllRideTotals">
+  AllRideTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The all-time ride statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;all_ride_totals&quot;)]
+public ActivityTotal AllRideTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_AllRunTotals_" data-uid="StravaAPILibary.Models.ActivityStats.AllRunTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_AllRunTotals" data-uid="StravaAPILibary.Models.ActivityStats.AllRunTotals">
+  AllRunTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The all-time run statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;all_run_totals&quot;)]
+public ActivityTotal AllRunTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_AllSwimTotals_" data-uid="StravaAPILibary.Models.ActivityStats.AllSwimTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_AllSwimTotals" data-uid="StravaAPILibary.Models.ActivityStats.AllSwimTotals">
+  AllSwimTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The all-time swim statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;all_swim_totals&quot;)]
+public ActivityTotal AllSwimTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_BiggestClimbElevationGain_" data-uid="StravaAPILibary.Models.ActivityStats.BiggestClimbElevationGain*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_BiggestClimbElevationGain" data-uid="StravaAPILibary.Models.ActivityStats.BiggestClimbElevationGain">
+  BiggestClimbElevationGain
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The highest climb elevation gain achieved by the athlete, in meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;biggest_climb_elevation_gain&quot;)]
+public double BiggestClimbElevationGain { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_BiggestRideDistance_" data-uid="StravaAPILibary.Models.ActivityStats.BiggestRideDistance*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_BiggestRideDistance" data-uid="StravaAPILibary.Models.ActivityStats.BiggestRideDistance">
+  BiggestRideDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The longest distance ridden by the athlete, in meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;biggest_ride_distance&quot;)]
+public double BiggestRideDistance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_RecentRideTotals_" data-uid="StravaAPILibary.Models.ActivityStats.RecentRideTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_RecentRideTotals" data-uid="StravaAPILibary.Models.ActivityStats.RecentRideTotals">
+  RecentRideTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The recent (last 4 weeks) ride statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;recent_ride_totals&quot;)]
+public ActivityTotal RecentRideTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_RecentRunTotals_" data-uid="StravaAPILibary.Models.ActivityStats.RecentRunTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_RecentRunTotals" data-uid="StravaAPILibary.Models.ActivityStats.RecentRunTotals">
+  RecentRunTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The recent (last 4 weeks) run statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;recent_run_totals&quot;)]
+public ActivityTotal RecentRunTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_RecentSwimTotals_" data-uid="StravaAPILibary.Models.ActivityStats.RecentSwimTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_RecentSwimTotals" data-uid="StravaAPILibary.Models.ActivityStats.RecentSwimTotals">
+  RecentSwimTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The recent (last 4 weeks) swim statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;recent_swim_totals&quot;)]
+public ActivityTotal RecentSwimTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_YtdRideTotals_" data-uid="StravaAPILibary.Models.ActivityStats.YtdRideTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_YtdRideTotals" data-uid="StravaAPILibary.Models.ActivityStats.YtdRideTotals">
+  YtdRideTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The year-to-date ride statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;ytd_ride_totals&quot;)]
+public ActivityTotal YtdRideTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_YtdRunTotals_" data-uid="StravaAPILibary.Models.ActivityStats.YtdRunTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_YtdRunTotals" data-uid="StravaAPILibary.Models.ActivityStats.YtdRunTotals">
+  YtdRunTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The year-to-date run statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;ytd_run_totals&quot;)]
+public ActivityTotal YtdRunTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="StravaAPILibary_Models_ActivityStats_YtdSwimTotals_" data-uid="StravaAPILibary.Models.ActivityStats.YtdSwimTotals*"></a>
+
+  <h3 id="StravaAPILibary_Models_ActivityStats_YtdSwimTotals" data-uid="StravaAPILibary.Models.ActivityStats.YtdSwimTotals">
+  YtdSwimTotals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The year-to-date swim statistics for the athlete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonPropertyName(&quot;ytd_swim_totals&quot;)]
+public ActivityTotal YtdSwimTotals { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="StravaAPILibary.Models.ActivityTotal.html">ActivityTotal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

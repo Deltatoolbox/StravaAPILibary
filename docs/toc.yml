@@ -1,0 +1,12 @@
+- name: Home
+  href: index.md
+- name: Getting Started
+  href: articles/getting-started.md
+- name: Authentication
+  href: articles/authentication.md
+- name: Examples
+  href: articles/examples.md
+- name: Best Practices
+  href: articles/best-practices.md
+- name: API Reference
+  href: api/

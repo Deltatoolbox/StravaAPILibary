@@ -1,0 +1,581 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Uploads.Upload
+  commentId: T:StravaAPILibary.Models.Uploads.Upload
+  id: Upload
+  parent: StravaAPILibary.Models.Uploads
+  children:
+  - StravaAPILibary.Models.Uploads.Upload.ActivityId
+  - StravaAPILibary.Models.Uploads.Upload.Error
+  - StravaAPILibary.Models.Uploads.Upload.ExternalId
+  - StravaAPILibary.Models.Uploads.Upload.Id
+  - StravaAPILibary.Models.Uploads.Upload.IdStr
+  - StravaAPILibary.Models.Uploads.Upload.Status
+  langs:
+  - csharp
+  - vb
+  name: Upload
+  nameWithType: Upload
+  fullName: StravaAPILibary.Models.Uploads.Upload
+  type: Class
+  source:
+    id: Upload
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    startLine: 5
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Uploads
+  summary: Represents the status and details of an upload in Strava.
+  example: []
+  syntax:
+    content: public class Upload
+    content.vb: Public Class Upload
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Uploads.Upload.Id
+  commentId: P:StravaAPILibary.Models.Uploads.Upload.Id
+  id: Id
+  parent: StravaAPILibary.Models.Uploads.Upload
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Upload.Id
+  fullName: StravaAPILibary.Models.Uploads.Upload.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    startLine: 10
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Uploads
+  summary: The unique identifier of the upload.
+  example: []
+  syntax:
+    content: public long Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Id As Long
+  overload: StravaAPILibary.Models.Uploads.Upload.Id*
+- uid: StravaAPILibary.Models.Uploads.Upload.IdStr
+  commentId: P:StravaAPILibary.Models.Uploads.Upload.IdStr
+  id: IdStr
+  parent: StravaAPILibary.Models.Uploads.Upload
+  langs:
+  - csharp
+  - vb
+  name: IdStr
+  nameWithType: Upload.IdStr
+  fullName: StravaAPILibary.Models.Uploads.Upload.IdStr
+  type: Property
+  source:
+    id: IdStr
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    startLine: 15
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Uploads
+  summary: The unique identifier of the upload in string format.
+  example: []
+  syntax:
+    content: public string IdStr { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property IdStr As String
+  overload: StravaAPILibary.Models.Uploads.Upload.IdStr*
+- uid: StravaAPILibary.Models.Uploads.Upload.ExternalId
+  commentId: P:StravaAPILibary.Models.Uploads.Upload.ExternalId
+  id: ExternalId
+  parent: StravaAPILibary.Models.Uploads.Upload
+  langs:
+  - csharp
+  - vb
+  name: ExternalId
+  nameWithType: Upload.ExternalId
+  fullName: StravaAPILibary.Models.Uploads.Upload.ExternalId
+  type: Property
+  source:
+    id: ExternalId
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    startLine: 20
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Uploads
+  summary: The external identifier of the upload (e.g., original file name or external system reference).
+  example: []
+  syntax:
+    content: public string ExternalId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ExternalId As String
+  overload: StravaAPILibary.Models.Uploads.Upload.ExternalId*
+- uid: StravaAPILibary.Models.Uploads.Upload.Error
+  commentId: P:StravaAPILibary.Models.Uploads.Upload.Error
+  id: Error
+  parent: StravaAPILibary.Models.Uploads.Upload
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: Upload.Error
+  fullName: StravaAPILibary.Models.Uploads.Upload.Error
+  type: Property
+  source:
+    id: Error
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    startLine: 25
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Uploads
+  summary: The error associated with this upload, if any.
+  example: []
+  syntax:
+    content: public string? Error { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property [Error] As String
+  overload: StravaAPILibary.Models.Uploads.Upload.Error*
+- uid: StravaAPILibary.Models.Uploads.Upload.Status
+  commentId: P:StravaAPILibary.Models.Uploads.Upload.Status
+  id: Status
+  parent: StravaAPILibary.Models.Uploads.Upload
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: Upload.Status
+  fullName: StravaAPILibary.Models.Uploads.Upload.Status
+  type: Property
+  source:
+    id: Status
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    startLine: 30
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Uploads
+  summary: The current status of the upload.
+  example: []
+  syntax:
+    content: public string Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Status As String
+  overload: StravaAPILibary.Models.Uploads.Upload.Status*
+- uid: StravaAPILibary.Models.Uploads.Upload.ActivityId
+  commentId: P:StravaAPILibary.Models.Uploads.Upload.ActivityId
+  id: ActivityId
+  parent: StravaAPILibary.Models.Uploads.Upload
+  langs:
+  - csharp
+  - vb
+  name: ActivityId
+  nameWithType: Upload.ActivityId
+  fullName: StravaAPILibary.Models.Uploads.Upload.ActivityId
+  type: Property
+  source:
+    id: ActivityId
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    startLine: 35
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Uploads
+  summary: The identifier of the activity this upload resulted in.
+  example: []
+  syntax:
+    content: public long? ActivityId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property ActivityId As Long?
+  overload: StravaAPILibary.Models.Uploads.Upload.ActivityId*
+references:
+- uid: StravaAPILibary.Models.Uploads
+  commentId: N:StravaAPILibary.Models.Uploads
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Uploads
+  nameWithType: StravaAPILibary.Models.Uploads
+  fullName: StravaAPILibary.Models.Uploads
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Uploads
+    name: Uploads
+    href: StravaAPILibary.Models.Uploads.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Uploads
+    name: Uploads
+    href: StravaAPILibary.Models.Uploads.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Uploads.Upload.Id*
+  commentId: Overload:StravaAPILibary.Models.Uploads.Upload.Id
+  href: StravaAPILibary.Models.Uploads.Upload.html#StravaAPILibary_Models_Uploads_Upload_Id
+  name: Id
+  nameWithType: Upload.Id
+  fullName: StravaAPILibary.Models.Uploads.Upload.Id
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: StravaAPILibary.Models.Uploads.Upload.IdStr*
+  commentId: Overload:StravaAPILibary.Models.Uploads.Upload.IdStr
+  href: StravaAPILibary.Models.Uploads.Upload.html#StravaAPILibary_Models_Uploads_Upload_IdStr
+  name: IdStr
+  nameWithType: Upload.IdStr
+  fullName: StravaAPILibary.Models.Uploads.Upload.IdStr
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Models.Uploads.Upload.ExternalId*
+  commentId: Overload:StravaAPILibary.Models.Uploads.Upload.ExternalId
+  href: StravaAPILibary.Models.Uploads.Upload.html#StravaAPILibary_Models_Uploads_Upload_ExternalId
+  name: ExternalId
+  nameWithType: Upload.ExternalId
+  fullName: StravaAPILibary.Models.Uploads.Upload.ExternalId
+- uid: StravaAPILibary.Models.Uploads.Upload.Error*
+  commentId: Overload:StravaAPILibary.Models.Uploads.Upload.Error
+  href: StravaAPILibary.Models.Uploads.Upload.html#StravaAPILibary_Models_Uploads_Upload_Error
+  name: Error
+  nameWithType: Upload.Error
+  fullName: StravaAPILibary.Models.Uploads.Upload.Error
+- uid: StravaAPILibary.Models.Uploads.Upload.Status*
+  commentId: Overload:StravaAPILibary.Models.Uploads.Upload.Status
+  href: StravaAPILibary.Models.Uploads.Upload.html#StravaAPILibary_Models_Uploads_Upload_Status
+  name: Status
+  nameWithType: Upload.Status
+  fullName: StravaAPILibary.Models.Uploads.Upload.Status
+- uid: StravaAPILibary.Models.Uploads.Upload.ActivityId*
+  commentId: Overload:StravaAPILibary.Models.Uploads.Upload.ActivityId
+  href: StravaAPILibary.Models.Uploads.Upload.html#StravaAPILibary_Models_Uploads_Upload_ActivityId
+  name: ActivityId
+  nameWithType: Upload.ActivityId
+  fullName: StravaAPILibary.Models.Uploads.Upload.ActivityId
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,3816 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StravaAPILibary</name>
+    </assembly>
+    <members>
+        <member name="T:StravaAPILibary.API.Activities">
+            <summary>
+            Provides methods to interact with Strava's Activities API.
+            </summary>
+            <remarks>
+            This static class contains methods for retrieving, creating, and updating athlete activities in Strava.
+            It communicates with Strava's REST API endpoints related to activities and returns JSON responses.
+            
+            <para><b>Features:</b></para>
+            <list type="bullet">
+            <item><description>Retrieve authenticated athlete's activities.</description></item>
+            <item><description>Fetch details of a specific activity by ID.</description></item>
+            <item><description>Get related data like laps, zones, comments, and kudos.</description></item>
+            <item><description>Upload new activities and update existing ones.</description></item>
+            </list>
+            
+            <para><b>Usage:</b></para>
+            All methods require a valid <c>accessToken</c> (OAuth token) with appropriate scopes granted by Strava.
+            Many methods also support pagination and optional filtering parameters.
+            
+            <para><b>API Documentation:</b></para>
+            Refer to the official Strava API documentation: 
+            <see href="https://developers.strava.com/docs/reference/">Strava API Reference</see>.
+            </remarks>
+            <example>
+            Example: Retrieve the authenticated athlete's activities:
+            <code>
+            var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: 1, perPage: 30);
+            </code>
+            
+            Example: Upload a new activity:
+            <code>
+            var uploadResponse = await Activities.PostActivityAsync(accessToken, "Morning Ride", "gpx", @"C:\ride.gpx");
+            </code>
+            </example>
+        </member>
+        <member name="M:StravaAPILibary.API.Activities.GetAthletesActivitiesAsync(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get the activities of the authenticated athlete.
+            </summary>
+            <param name="accessToken">The access token for authentication.</param>
+            <param name="before">Unix timestamp to filter activities before this date (0 = no filter).</param>
+            <param name="after">Unix timestamp to filter activities after this date (0 = no filter).</param>
+            <param name="page">Page number for pagination (default: 1).</param>
+            <param name="perPage">Number of items per page (default: 30).</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the athlete's activities.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="page"/> or <paramref name="perPage"/> is less than or equal to zero.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Activities.GetActivityByIdAsync(System.String,System.String)">
+            <summary>
+            Get a specific activity by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="activityId">The ID of the activity to retrieve.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the activity details.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> or <paramref name="activityId"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Activities.GetActivityLapsAsync(System.String,System.String)">
+            <summary>
+            Get a list of laps for a specific activity.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="activityId">The ID of the activity to retrieve laps for.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the laps of the specified activity.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> or <paramref name="activityId"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Activities.GetActivityZonesAsync(System.String,System.String)">
+            <summary>
+            Get the zones for a specific activity.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="activityId">The ID of the activity to retrieve zones for.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the activity's zones.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> or <paramref name="activityId"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Activities.GetActivityCommentsAsync(System.String,System.String)">
+            <summary>
+            Get the comments for a specific activity.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="activityId">The ID of the activity to retrieve comments for.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the comments of the activity.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> or <paramref name="activityId"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Activities.GetActivityKudosAsync(System.String,System.String)">
+            <summary>
+            Get the kudos given for a specific activity.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="activityId">The ID of the activity to retrieve kudos for.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the kudos for the activity.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> or <paramref name="activityId"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Activities.PostActivityAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.String)">
+            <summary>
+            Posts (uploads) an activity file to Strava.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="name">The name of the activity.</param>
+            <param name="dataType">The file type of the upload (fit, gpx, tcx).</param>
+            <param name="filePath">The path to the activity file.</param>
+            <param name="description">Optional: A description of the activity.</param>
+            <param name="isTrainer">Optional: Set to true if this is a trainer ride.</param>
+            <param name="isCommute">Optional: Set to true if this is a commute activity.</param>
+            <param name="externalId">Optional: An external ID to uniquely identify this upload.</param>
+            <param name="sportType">Optional: The sport type (e.g., "Run", "Ride").</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the upload status.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when accessToken, name, or dataType are invalid.
+            </exception>
+            <exception cref="T:System.IO.FileNotFoundException">
+            Thrown when the specified file does not exist.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the Strava API request fails.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the response cannot be parsed as JSON.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Activities.UpdateActivityAsync(System.String,System.Int64,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String)">
+            <summary>
+            Updates an activity by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="activityId">The ID of the activity to update.</param>
+            <param name="name">Optional: New name for the activity.</param>
+            <param name="description">Optional: New description for the activity.</param>
+            <param name="isTrainer">Optional: Whether the activity is a trainer ride.</param>
+            <param name="isCommute">Optional: Whether the activity is a commute.</param>
+            <param name="sportType">Optional: The sport type (e.g., "Run", "Ride").</param>
+            <param name="gearId">Optional: The gear ID to associate with the activity.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the updated activity data.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or <paramref name="activityId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed.
+            </exception>
+        </member>
+        <member name="T:StravaAPILibary.API.Athletes">
+             <summary>
+             Provides methods to interact with Strava's Athletes API.
+             </summary>
+             <remarks>
+             This static class contains methods for retrieving and updating information about the authenticated athlete 
+             and other related athlete-specific data. It communicates with Strava's REST API and returns JSON responses.
+            
+             <para><b>Features:</b></para>
+             <list type="bullet">
+             <item><description>Retrieve the authenticated athlete's profile details.</description></item>
+             <item><description>Fetch athlete statistics (e.g., totals, ride/run stats).</description></item>
+             <item><description>Retrieve heart rate and power zones.</description></item>
+             <item><description>Update athlete information such as weight (requires <c>profile:write</c> scope).</description></item>
+             </list>
+            
+             <para><b>Usage:</b></para>
+             All methods require a valid <c>accessToken</c> (OAuth token) with the necessary scopes granted.
+             
+             <para><b>API Documentation:</b></para>
+             See the official Strava API reference:
+             <see href="https://developers.strava.com/docs/reference/">Strava API Reference</see>.
+             </remarks>
+             <example>
+             Example: Retrieve the authenticated athlete's profile:
+             <code>
+             var profile = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+             </code>
+            
+             Example: Update athlete weight:
+             <code>
+             var updatedProfile = await Athletes.UpdateAuthenticatedAthleteAsync(accessToken, 72.5f);
+             </code>
+             </example>
+        </member>
+        <member name="M:StravaAPILibary.API.Athletes.GetAuthenticatedAthleteProfileAsync(System.String)">
+            <summary>
+            Get the authenticated Athlete's profile.
+            </summary>
+            <param name="accessToken">The access token for authentication.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the athlete's profile information.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Athletes.GetAuthenticatedAthleteStatsAsync(System.String,System.String)">
+            <summary>
+            Get Athlete's stats for the authenticated athlete.
+            This method retrieves the statistics of a specific athlete using their athlete ID.
+            </summary>
+            <param name="accessToken">The access token for authentication.</param>
+            <param name="athleteId">The ID of the athlete whose stats are to be retrieved.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the athlete's statistics.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> or <paramref name="athleteId"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Athletes.GetAuthenticatedAthleteZonesAsync(System.String)">
+            <summary>
+            Get Athlete's heart rate and power zones for the authenticated athlete.
+            </summary>
+            <param name="accessToken">The access token for authentication.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the athlete's heart rate and power zones.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Athletes.UpdateAuthenticatedAthleteAsync(System.String,System.Single)">
+            <summary>
+            Updates the authenticated athlete's weight.
+            Requires scope: profile:write.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="weight">The new weight of the athlete in kilograms.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the updated athlete profile.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when the access token is null or empty.</exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">Thrown when the API request fails.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the response is empty.</exception>
+            <exception cref="T:System.Text.Json.JsonException">Thrown when the response cannot be parsed as JSON.</exception>
+        </member>
+        <member name="T:StravaAPILibary.API.Clubs">
+            <summary>
+            Provides methods to interact with Strava's Clubs API.
+            </summary>
+            <remarks>
+            This static class offers functionality for retrieving information related to Strava clubs, including club details, members, activities, and admins.
+            All methods require a valid OAuth <c>accessToken</c> with the necessary scopes.
+            
+            <para><b>Features:</b></para>
+            <list type="bullet">
+            <item><description>Retrieve detailed information about a specific club by its ID.</description></item>
+            <item><description>Fetch the list of clubs the authenticated athlete is a member of.</description></item>
+            <item><description>Retrieve members, activities, and admins of a specific club.</description></item>
+            </list>
+            
+            <para><b>Usage:</b></para>
+            <code>
+            var club = await Clubs.GetClubByIdAsync(accessToken, 12345);
+            var members = await Clubs.GetClubMembersAsync(accessToken, 12345);
+            var activities = await Clubs.GetClubActivitiesAsync(accessToken, 12345);
+            var admins = await Clubs.GetClubAdminsAsync(accessToken, 12345);
+            </code>
+            
+            <para><b>API Documentation:</b></para>
+            See the official Strava API reference:
+            <see href="https://developers.strava.com/docs/reference/">Strava API Reference</see>.
+            </remarks>
+        </member>
+        <member name="M:StravaAPILibary.API.Clubs.GetClubByIdAsync(System.String,System.Int64)">
+            <summary>
+            Get a club by its ID.
+            </summary>
+            <param name="accessToken">The access token for the API.</param>
+            <param name="clubId">The ID of the club to retrieve.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the club data.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when the access token or club ID is null or empty.</exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">Thrown when the request to the API fails.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the response is empty.</exception>
+            <exception cref="T:System.Text.Json.JsonException">Thrown when the JSON response cannot be parsed.</exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Clubs.GetClubsAsync(System.String,System.Int32,System.Int32)">
+            <summary>
+            Get clubs for the authenticated athlete.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="page">Page number for pagination (default: 1).</param>
+            <param name="perPage">Number of items per page (default: 30).</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the clubs of the authenticated athlete.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="page"/> or <paramref name="perPage"/> is less than or equal to zero.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Clubs.GetClubMembersAsync(System.String,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Get the members of a club by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="clubId">The ID of the club.</param>
+            <param name="page">Page number for pagination (default: 1).</param>
+            <param name="perPage">Number of items per page (default: 30).</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the members of the club.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or when <paramref name="clubId"/> is invalid.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="page"/> or <paramref name="perPage"/> is less than or equal to zero.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Clubs.GetClubActivitiesAsync(System.String,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Get the activities of a club by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="clubId">The ID of the club.</param>
+            <param name="page">Page number for pagination (default: 1).</param>
+            <param name="perPage">Number of items per page (default: 30).</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the activities of the club.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or when <paramref name="clubId"/> is invalid.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="page"/> or <paramref name="perPage"/> is less than or equal to zero.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Clubs.GetClubAdminsAsync(System.String,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Get the admins of a club by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="clubId">The ID of the club.</param>
+            <param name="page">Page number for pagination (default: 1).</param>
+            <param name="perPage">Number of items per page (default: 30).</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the admins of the club.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or when <paramref name="clubId"/> is invalid.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="page"/> or <paramref name="perPage"/> is less than or equal to zero.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="T:StravaAPILibary.API.Gears">
+            <summary>
+            Provides methods to interact with Strava's Gear API.
+            </summary>
+            <remarks>
+            This static class offers functionality for retrieving information about gear associated with an athlete's Strava account.
+            
+            <para><b>Features:</b></para>
+            <list type="bullet">
+            <item><description>Retrieve detailed information about a specific gear item (bike or shoes) by its ID.</description></item>
+            </list>
+            
+            <para><b>Usage:</b></para>
+            <code>
+            var gear = await Gears.GetGearByIdAsync(accessToken, "b1234567898765509876");
+            Console.WriteLine(gear["name"]);
+            </code>
+            
+            <para><b>API Documentation:</b></para>
+            See the official Strava API reference:
+            <see href="https://developers.strava.com/docs/reference/">Strava API Reference</see>.
+            </remarks>
+        </member>
+        <member name="M:StravaAPILibary.API.Gears.GetGearByIdAsync(System.String,System.String)">
+            <summary>
+            Get a gear by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="gearId">The ID of the gear.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the gear details.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> or <paramref name="gearId"/> is null or empty.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="T:StravaAPILibary.API.Routes">
+             <summary>
+             Provides methods to interact with Strava's Routes API.
+             </summary>
+             <remarks>
+             This static class contains methods for retrieving and exporting route data associated with Strava athletes.
+             
+             <para><b>Features:</b></para>
+             <list type="bullet">
+             <item><description>Retrieve detailed information about a specific route by its ID.</description></item>
+             <item><description>Retrieve a list of routes associated with a specific athlete.</description></item>
+             <item><description>Export a route in GPX or TCX format for external usage.</description></item>
+             </list>
+             
+             <para><b>Usage:</b></para>
+             <code>
+             var route = await Routes.GetRouteByIdAsync(accessToken, 123456);
+             Console.WriteLine(route["name"]);
+            
+             var gpxData = await Routes.GetRouteGpxExportAsync(accessToken, 123456);
+             File.WriteAllText("route.gpx", gpxData);
+             </code>
+             
+             <para><b>API Documentation:</b></para>
+             See the official Strava API reference:
+             <see href="https://developers.strava.com/docs/reference/#api-Routes">Strava Routes API Reference</see>.
+             </remarks>
+        </member>
+        <member name="M:StravaAPILibary.API.Routes.GetRouteByIdAsync(System.String,System.Int64)">
+            <summary>
+            Get a route by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="routeId">The ID of the route to retrieve.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the route data.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty, or when <paramref name="routeId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Routes.GetRoutesByAthleteIdAsync(System.String,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Get a list of routes from a specific athlete.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="athleteId">The ID of the athlete.</param>
+            <param name="page">Page number for pagination (default: 1).</param>
+            <param name="perPage">Number of items per page (default: 30).</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the athlete's routes.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or <paramref name="athleteId"/> is invalid.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="page"/> or <paramref name="perPage"/> is less than or equal to zero.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Routes.GetRouteGpxExportAsync(System.String,System.Int64)">
+            <summary>
+            Get a GPX export of a route by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="routeId">The ID of the route to export.</param>
+            <returns>A string containing the GPX data of the route.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty, or when <paramref name="routeId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the GPX response is empty.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Routes.GetRouteTcxExportAsync(System.String,System.Int64)">
+            <summary>
+            Get a TCX export of a route by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="routeId">The ID of the route to export.</param>
+            <returns>A string containing the TCX data of the route.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty, or when <paramref name="routeId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the TCX response is empty.
+            </exception>
+        </member>
+        <member name="T:StravaAPILibary.API.Segments">
+             <summary>
+             Provides methods for interacting with Strava's Segments API.
+             </summary>
+             <remarks>
+             This static class includes methods to retrieve, explore, and manage segments for the authenticated athlete.
+             
+             <para><b>Features:</b></para>
+             <list type="bullet">
+             <item><description>Retrieve detailed information about a specific segment by its ID.</description></item>
+             <item><description>Get a list of starred segments for the authenticated athlete.</description></item>
+             <item><description>Explore top 10 segments within a defined geographical bounding box.</description></item>
+             <item><description>Star or unstar a segment for the authenticated athlete.</description></item>
+             </list>
+             
+             <para><b>Usage Example:</b></para>
+             <code>
+             // Retrieve a segment by ID:
+             var segment = await Segments.GetSegmentByIdAsync(accessToken, "12345");
+             Console.WriteLine(segment["name"]);
+            
+             // Star a segment:
+             var updatedSegment = await Segments.PutStarredSegmentAsync(accessToken, 12345, true);
+             </code>
+             
+             <para><b>API Documentation:</b></para>
+             Refer to the official Strava API documentation for segments:
+             <see href="https://developers.strava.com/docs/reference/#api-Segments">Strava Segments API Reference</see>.
+             </remarks>
+        </member>
+        <member name="M:StravaAPILibary.API.Segments.GetSegmentByIdAsync(System.String,System.String)">
+            <summary>
+            Get a segment by its ID.
+            </summary>
+            <param name="accessToken">The access token for the API.</param>
+            <param name="segmentId">The ID of the segment to retrieve.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the segment data.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when the access token or segment ID is null or empty.</exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">Thrown when the request to the API fails.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the response is empty.</exception>
+            <exception cref="T:System.Text.Json.JsonException">Thrown when the JSON response cannot be parsed.</exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Segments.GetStarredSegmentsAsync(System.String,System.Int32,System.Int32)">
+            <summary>
+            Get starred segments for the authenticated athlete.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="page">Page number (default: 1).</param>
+            <param name="perPage">Number of items per page (default: 30).</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the starred segments.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty.
+            </exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when <paramref name="page"/> or <paramref name="perPage"/> is less than or equal to zero.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the API request fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the response JSON cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonArray"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Segments.GetExploreSegmentsAsync(System.String,System.Single[],System.String,System.Int32,System.Int32)">
+            <summary>
+            Get a list of top 10 segments for the specified query.
+            </summary>
+            <param name="accessToken">Strava access token.</param>
+            <param name="bounds">Array of four float values [SW lat, SW lon, NE lat, NE lon].</param>
+            <param name="activityType">Activity type: "running" or "riding".</param>
+            <param name="minCat">Minimum climbing category (-1 for any).</param>
+            <param name="maxCat">Maximum climbing category (-1 for any).</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the top 10 segments matching the query.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty,
+            or when <paramref name="bounds"/> is null or does not contain exactly 4 elements.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed 
+            or does not contain a 'segments' array.
+            </exception>$
+        </member>
+        <member name="M:StravaAPILibary.API.Segments.PutStarredSegmentAsync(System.String,System.Int64,System.Boolean)">
+            <summary>
+            Stars or unstars a segment for the authenticated athlete.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="segmentId">The ID of the segment to star or unstar.</param>
+            <param name="starred">True to star the segment; false to unstar.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the updated segment data.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty, or when <paramref name="segmentId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the API response cannot be parsed.
+            </exception>
+        </member>
+        <member name="T:StravaAPILibary.API.SegmentsEfforts">
+             <summary>
+             Provides methods for interacting with Strava's Segment Efforts API.
+             </summary>
+             <remarks>
+             This static class includes methods to retrieve segment efforts for the authenticated athlete.
+             Some endpoints require a Strava subscription and the <c>activity:read</c> OAuth scope.
+             
+             <para><b>Features:</b></para>
+             <list type="bullet">
+             <item><description>Retrieve a list of segment efforts for the authenticated athlete and a given segment.</description></item>
+             <item><description>Retrieve details of a specific segment effort by its ID.</description></item>
+             </list>
+             
+             <para><b>Usage Example:</b></para>
+             <code>
+             // Get all segment efforts for a segment (requires subscription):
+             var efforts = await SegmentsEfforts.GetSegmentEffortsAsync(accessToken, 123456, DateTime.Parse("2024-01-01"), DateTime.Parse("2024-02-01"));
+            
+             // Get details of a specific segment effort:
+             var effort = await SegmentsEfforts.GetSegmentEffortByIdAsync(accessToken, 987654);
+             Console.WriteLine(effort["elapsed_time"]);
+             </code>
+             
+             <para><b>API Documentation:</b></para>
+             Refer to the official Strava API documentation for segment efforts:
+             <see href="https://developers.strava.com/docs/reference/#api-SegmentEfforts">Strava Segment Efforts API Reference</see>.
+             </remarks>
+        </member>
+        <member name="M:StravaAPILibary.API.SegmentsEfforts.GetSegmentEffortsAsync(System.String,System.Int64,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            Returns a set of the authenticated athlete's segment efforts for a given segment.
+            Requires subscription and scope: activity:read.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="segmentId">The ID of the segment.</param>
+            <param name="startDateLocal">Optional: ISO 8601 formatted start date (e.g. "2024-01-01T00:00:00Z").</param>
+            <param name="endDateLocal">Optional: ISO 8601 formatted end date (e.g. "2024-02-01T00:00:00Z").</param>
+            <param name="perPage">Number of items per page. Default: 30.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonArray"/> containing the list of segment efforts.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="accessToken"/> is null or empty, or <paramref name="segmentId"/> is invalid.</exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">Thrown when the API request fails.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown when the response is empty.</exception>
+            <exception cref="T:System.Text.Json.JsonException">Thrown when the response cannot be parsed.</exception>
+        </member>
+        <member name="M:StravaAPILibary.API.SegmentsEfforts.GetSegmentEffortByIdAsync(System.String,System.Int64)">
+            <summary>
+            Get a specific segment effort by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="segmentEffortId">The ID of the segment effort.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the segment effort details.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty, or when <paramref name="segmentEffortId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the API response cannot be parsed as JSON.
+            </exception>
+        </member>
+        <member name="T:StravaAPILibary.API.Streams">
+             <summary>
+             Provides methods for retrieving stream data (detailed time-series data) from Strava.
+             </summary>
+             <remarks>
+             Streams represent detailed data points over time or distance, such as GPS coordinates,
+             altitude, speed, heart rate, cadence, power, and more.
+            
+             <para><b>Features:</b></para>
+             <list type="bullet">
+             <item><description>Retrieve streams for a specific activity.</description></item>
+             <item><description>Retrieve streams for a specific segment.</description></item>
+             <item><description>Retrieve streams for a specific route.</description></item>
+             <item><description>Retrieve streams for a specific segment effort.</description></item>
+             </list>
+            
+             <para><b>Usage Example:</b></para>
+             <code>
+             // Example: Get lat/lng and altitude streams for an activity
+             var streams = await Streams.GetActivityStreamsAsync(accessToken, 123456789, "latlng,altitude", true);
+             Console.WriteLine(streams["latlng"]);
+             </code>
+            
+             <para><b>API Documentation:</b></para>
+             Refer to the official Strava API documentation for streams:
+             <see href="https://developers.strava.com/docs/reference/#api-Streams">Strava Streams API Reference</see>.
+             </remarks>
+        </member>
+        <member name="M:StravaAPILibary.API.Streams.GetActivityStreamsAsync(System.String,System.Int64,System.String,System.Boolean)">
+            <summary>
+            Get streams for a specific activity.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="activityId">The ID of the activity.</param>
+            <param name="keys">Optional: Comma-separated list of stream types to retrieve (e.g., "latlng,altitude").</param>
+            <param name="keyByType">Optional: If true, streams will be returned as a map keyed by type.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the streams data.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or <paramref name="activityId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Streams.GetSegmentStreamsAsync(System.String,System.Int64,System.String,System.Boolean)">
+            <summary>
+            Get streams for a specific segment.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="segmentId">The ID of the segment.</param>
+            <param name="keys">Optional: Comma-separated list of stream keys (e.g., "distance,altitude,latlng").</param>
+            <param name="keyByType">Optional: If true, streams will be returned as a map keyed by type.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the segment streams.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or <paramref name="segmentId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Streams.GetRouteStreamsAsync(System.String,System.Int64,System.String,System.Boolean)">
+            <summary>
+            Get streams for a specific route.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="routeId">The ID of the route.</param>
+            <param name="keys">Optional: Comma-separated list of stream keys (e.g., "distance,altitude,latlng").</param>
+            <param name="keyByType">Optional: If true, streams will be returned as a map keyed by type.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the route streams.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or <paramref name="routeId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync(System.String,System.Int64,System.String,System.Boolean)">
+            <summary>
+            Get streams for a specific segment effort.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="segmentEffortId">The ID of the segment effort.</param>
+            <param name="keys">Optional: Comma-separated list of stream keys (e.g., "distance,time,latlng").</param>
+            <param name="keyByType">Optional: If true, streams will be returned as a map keyed by type.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the segment effort streams.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or <paramref name="segmentEffortId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="T:StravaAPILibary.API.Uploads">
+            <summary>
+            Provides methods for uploading activities and retrieving upload statuses from the Strava API.
+            </summary>
+            <remarks>
+            The <c>Uploads</c> class supports two main operations:
+            <list type="bullet">
+            <item><description>Uploading activity files (FIT, GPX, TCX) to Strava.</description></item>
+            <item><description>Checking the processing status of previously uploaded activity files.</description></item>
+            </list>
+            
+            <para><b>Important Notes:</b></para>
+            <list type="bullet">
+            <item><description>Uploads may take a while to process. You should poll the upload status using <see cref="M:StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)"/>.</description></item>
+            <item><description>Uploading activities requires an authenticated athlete's access token with write permissions.</description></item>
+            </list>
+            
+            <para><b>Example Usage:</b></para>
+            <code>
+            // Upload an activity file
+            var uploadResponse = await Uploads.UploadActivityAsync(accessToken, "activity.fit", "fit", "Morning Ride", "Great ride", false, false);
+            Console.WriteLine(uploadResponse["id"]);
+            
+            // Check upload status
+            var uploadStatus = await Uploads.GetUploadAsync(accessToken, (long)uploadResponse["id"]);
+            Console.WriteLine(uploadStatus["status"]);
+            </code>
+            
+            <para><b>API Reference:</b></para>
+            See: <see href="https://developers.strava.com/docs/reference/#api-Uploads">Strava Uploads API Documentation</see>.
+            </remarks>
+        </member>
+        <member name="M:StravaAPILibary.API.Uploads.UploadActivityAsync(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Uploads an activity file to Strava.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="filePath">The path to the activity file (FIT, GPX, TCX).</param>
+            <param name="dataType">The file type: "fit", "gpx", or "tcx".</param>
+            <param name="name">Optional: The name of the activity.</param>
+            <param name="description">Optional: A description of the activity.</param>
+            <param name="isTrainer">Optional: Set to true if this is a trainer ride.</param>
+            <param name="isCommute">Optional: Set to true if this is a commute.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the upload status.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> or <paramref name="filePath"/> is invalid.
+            </exception>
+            <exception cref="T:System.IO.FileNotFoundException">
+            Thrown when the specified file does not exist.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the upload request fails.
+            </exception>
+        </member>
+        <member name="M:StravaAPILibary.API.Uploads.GetUploadAsync(System.String,System.Int64)">
+            <summary>
+            Get an upload status by its ID.
+            </summary>
+            <param name="accessToken">The OAuth access token.</param>
+            <param name="uploadId">The ID of the upload to retrieve.</param>
+            <returns>A <see cref="T:System.Text.Json.Nodes.JsonObject"/> containing the upload status and details.</returns>
+            <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="accessToken"/> is null or empty or when <paramref name="uploadId"/> is invalid.
+            </exception>
+            <exception cref="T:System.Net.Http.HttpRequestException">
+            Thrown when the request to the Strava API fails or returns a non-success status code.
+            </exception>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown when the API response is empty.
+            </exception>
+            <exception cref="T:System.Text.Json.JsonException">
+            Thrown when the JSON response cannot be parsed as a <see cref="T:System.Text.Json.Nodes.JsonObject"/>.
+            </exception>
+        </member>
+        <member name="T:StravaAPILibary.Authentication.Credentials">
+            <summary>
+            Represents the credentials required for authenticating with the Strava API.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Authentication.Credentials.ClientId">
+            <summary>
+            Gets or sets the client ID provided by Strava for the application.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Authentication.Credentials.ClientSecret">
+            <summary>
+            Gets or sets the client secret associated with the Strava application.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Authentication.Credentials.AccessToken">
+            <summary>
+            Gets or sets the OAuth access token used for API requests.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Authentication.Credentials.RefreshToken">
+            <summary>
+            Gets or sets the OAuth refresh token used to obtain a new access token when it expires.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Authentication.Credentials.Scope">
+            <summary>
+            Gets or sets the scope of access for the token.
+            <para>Examples: <c>read</c>, <c>activity:read_all</c>, <c>activity:write</c>, <c>profile:read_all</c>, <c>profile:write</c>.</para>
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Authentication.Credentials.TokenExpiration">
+            <summary>
+            Gets or sets the expiration date and time of the current access token.
+            </summary>
+        </member>
+        <member name="M:StravaAPILibary.Authentication.Credentials.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StravaAPILibary.Authentication.Credentials"/> class with the specified client ID, client secret, and scope.
+            </summary>
+            <param name="clientId">The client ID provided by Strava for the application.</param>
+            <param name="clientSecret">The client secret associated with the Strava application.</param>
+            <param name="scope">The scope of access required for API interactions (e.g., <c>read</c>, <c>activity:read_all</c>).</param>
+        </member>
+        <member name="T:StravaAPILibary.Authentication.UserAuthentication">
+            <summary>
+            Handles the OAuth 2.0 authentication flow for Strava users, including authorization, token exchange, and token refresh.
+            </summary>
+        </member>
+        <member name="M:StravaAPILibary.Authentication.UserAuthentication.#ctor(StravaAPILibary.Authentication.Credentials,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StravaAPILibary.Authentication.UserAuthentication"/> class.
+            </summary>
+            <param name="creds">The Strava API credentials containing client ID and secret.</param>
+            <param name="redirectUri">The redirect URI registered for the Strava application.</param>
+            <param name="scope">The requested scope (e.g., <c>read,activity:read_all</c>).</param>
+        </member>
+        <member name="M:StravaAPILibary.Authentication.UserAuthentication.StartAuthorization">
+            <summary>
+            Starts the authorization process by opening the browser with the Strava OAuth URL.
+            </summary>
+        </member>
+        <member name="M:StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(System.String)">
+            <summary>
+            Opens the specified URL in the default browser.
+            </summary>
+            <param name="url">The URL to open.</param>
+        </member>
+        <member name="M:StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl">
+            <summary>
+            Builds the Strava OAuth authorization URL.
+            </summary>
+            <returns>The complete authorization URL for redirecting the user.</returns>
+        </member>
+        <member name="M:StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync">
+            <summary>
+            Waits for the user to authorize the application and returns the authorization code.
+            </summary>
+            <returns>The authorization code from the OAuth redirect.</returns>
+            <exception cref="T:System.TimeoutException">Thrown if no authorization is received within the timeout.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown if the authorization code is missing in the response.</exception>
+        </member>
+        <member name="M:StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(System.String)">
+            <summary>
+            Exchanges an authorization code for an access token and refresh token.
+            </summary>
+            <param name="authCode">The authorization code received from Strava.</param>
+            <returns><c>true</c> if the token exchange succeeded; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync">
+            <summary>
+            Refreshes the access token using the stored refresh token.
+            </summary>
+            <returns><c>true</c> if the token refresh succeeded or was not needed; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="T:StravaAPILibary.Models.Activities.DetailedActivity">
+            <summary>
+            Represents a detailed Strava activity with extensive metadata, statistics, and related objects.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Id">
+            <summary>
+            The unique identifier of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.ExternalId">
+            <summary>
+            The identifier provided at upload time.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.UploadId">
+            <summary>
+            The identifier of the upload that resulted in this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Athlete">
+            <summary>
+            The athlete associated with this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Name">
+            <summary>
+            The name of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Distance">
+            <summary>
+            The activity's distance in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.MovingTime">
+            <summary>
+            The activity's moving time in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.ElapsedTime">
+            <summary>
+            The activity's elapsed time in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.TotalElevationGain">
+            <summary>
+            The activity's total elevation gain in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.ElevHigh">
+            <summary>
+            The activity's highest elevation in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.ElevLow">
+            <summary>
+            The activity's lowest elevation in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Type">
+            <summary>
+            Deprecated. Prefer to use <see cref="P:StravaAPILibary.Models.Activities.DetailedActivity.SportType"/>.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.SportType">
+            <summary>
+            The sport type of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.StartDate">
+            <summary>
+            The UTC time when the activity was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.StartDateLocal">
+            <summary>
+            The local time when the activity was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Timezone">
+            <summary>
+            The timezone of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.StartLatLng">
+            <summary>
+            The start latitude/longitude of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.EndLatLng">
+            <summary>
+            The end latitude/longitude of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.AchievementCount">
+            <summary>
+            The number of achievements gained during this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.KudosCount">
+            <summary>
+            The number of kudos given for this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.CommentCount">
+            <summary>
+            The number of comments for this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.AthleteCount">
+            <summary>
+            The number of athletes participating in this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.PhotoCount">
+            <summary>
+            The number of Instagram photos for this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.TotalPhotoCount">
+            <summary>
+            The total number of photos (Instagram + Strava) for this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Map">
+            <summary>
+            The map associated with this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Trainer">
+            <summary>
+            Whether this activity was recorded on a training machine.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Commute">
+            <summary>
+            Whether this activity is a commute.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Manual">
+            <summary>
+            Whether this activity was created manually.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Private">
+            <summary>
+            Whether this activity is private.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Flagged">
+            <summary>
+            Whether this activity is flagged.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.WorkoutType">
+            <summary>
+            The workout type of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.UploadIdStr">
+            <summary>
+            The upload identifier in string format.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.AverageSpeed">
+            <summary>
+            The average speed in meters per second.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.MaxSpeed">
+            <summary>
+            The maximum speed in meters per second.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.HasKudoed">
+            <summary>
+            Whether the logged-in athlete has kudoed this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.HideFromHome">
+            <summary>
+            Whether this activity is muted in the home feed.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.GearId">
+            <summary>
+            The gear ID used for this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Kilojoules">
+            <summary>
+            The total work done in kilojoules during this activity (rides only).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.AverageWatts">
+            <summary>
+            Average power output in watts (rides only).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.DeviceWatts">
+            <summary>
+            Whether the watts are from a power meter (false if estimated).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.MaxWatts">
+            <summary>
+            Maximum power in watts (rides with power meter only).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.WeightedAverageWatts">
+            <summary>
+            Weighted average watts (Normalized Power) for rides with power data.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Description">
+            <summary>
+            Description of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Photos">
+            <summary>
+            Photos associated with the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Gear">
+            <summary>
+            Gear summary used during the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Calories">
+            <summary>
+            Calories burned during the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.SegmentEfforts">
+            <summary>
+            Segment efforts during this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.DeviceName">
+            <summary>
+            The device used to record this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.EmbedToken">
+            <summary>
+            The token used to embed this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.SplitsMetric">
+            <summary>
+            Splits of the activity in metric units (for runs).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.SplitsStandard">
+            <summary>
+            Splits of the activity in imperial units (for runs).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.Laps">
+            <summary>
+            Laps of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.DetailedActivity.BestEfforts">
+            <summary>
+            Best efforts during this activity.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Activities.Lap">
+            <summary>
+            Represents a single lap within an activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.Id">
+            <summary>
+            The unique identifier of this lap.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.Activity">
+            <summary>
+            The activity associated with this lap.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.Athlete">
+            <summary>
+            The athlete associated with this lap.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.AverageCadence">
+            <summary>
+            The lap's average cadence.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.AverageSpeed">
+            <summary>
+            The lap's average speed.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.Distance">
+            <summary>
+            The lap's distance, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.ElapsedTime">
+            <summary>
+            The lap's elapsed time, in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.StartIndex">
+            <summary>
+            The start index of this lap in the activity's stream.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.EndIndex">
+            <summary>
+            The end index of this lap in the activity's stream.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.LapIndex">
+            <summary>
+            The index of this lap in the activity it belongs to.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.MaxSpeed">
+            <summary>
+            The maximum speed during this lap, in meters per second.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.MovingTime">
+            <summary>
+            The lap's moving time, in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.Name">
+            <summary>
+            The name of the lap.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.PaceZone">
+            <summary>
+            The athlete's pace zone during this lap.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.Split">
+            <summary>
+            The split number for this lap.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.StartDate">
+            <summary>
+            The time at which the lap was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.StartDateLocal">
+            <summary>
+            The time at which the lap was started in the local timezone.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Lap.TotalElevationGain">
+            <summary>
+            The elevation gain of this lap, in meters.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Activities.MetaActivity">
+            <summary>
+            Represents a minimal reference to an activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.MetaActivity.Id">
+            <summary>
+            The unique identifier of the activity.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Activities.Split">
+            <summary>
+            Represents a split of an activity, typically used for running activities.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Split.AverageSpeed">
+            <summary>
+            The average speed of this split, in meters per second.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Split.Distance">
+            <summary>
+            The distance of this split, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Split.ElapsedTime">
+            <summary>
+            The elapsed time of this split, in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Split.ElevationDifference">
+            <summary>
+            The elevation difference of this split, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Split.PaceZone">
+            <summary>
+            The pacing zone of this split.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Split.MovingTime">
+            <summary>
+            The moving time of this split, in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.Split.SplitIndex">
+            <summary>
+            The index number of this split.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Activities.SummaryActivity">
+            <summary>
+            Represents a summarized Strava activity with key performance and metadata fields.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Id">
+            <summary>
+            The unique identifier of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.ExternalId">
+            <summary>
+            The identifier provided at upload time.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.UploadId">
+            <summary>
+            The identifier of the upload that resulted in this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Athlete">
+            <summary>
+            The athlete who performed this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Name">
+            <summary>
+            The name of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Distance">
+            <summary>
+            The activity's distance, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.MovingTime">
+            <summary>
+            The activity's moving time, in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.ElapsedTime">
+            <summary>
+            The activity's elapsed time, in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.TotalElevationGain">
+            <summary>
+            The total elevation gain of the activity, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.ElevHigh">
+            <summary>
+            The highest elevation reached during the activity, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.ElevLow">
+            <summary>
+            The lowest elevation reached during the activity, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Type">
+            <summary>
+            The deprecated activity type. Prefer <see cref="P:StravaAPILibary.Models.Activities.SummaryActivity.SportType"/>.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.SportType">
+            <summary>
+            The sport type of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.StartDate">
+            <summary>
+            The time at which the activity was started (UTC).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.StartDateLocal">
+            <summary>
+            The local time at which the activity was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Timezone">
+            <summary>
+            The timezone of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.StartLatLng">
+            <summary>
+            The start latitude/longitude of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.EndLatLng">
+            <summary>
+            The end latitude/longitude of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.AchievementCount">
+            <summary>
+            The number of achievements gained during this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.KudosCount">
+            <summary>
+            The number of kudos given for this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.CommentCount">
+            <summary>
+            The number of comments on this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.AthleteCount">
+            <summary>
+            The number of athletes participating in this activity (group activities).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.PhotoCount">
+            <summary>
+            The number of Instagram photos for this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.TotalPhotoCount">
+            <summary>
+            The total number of Instagram and Strava photos for this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Map">
+            <summary>
+            The map information associated with this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Trainer">
+            <summary>
+            Indicates whether this activity was recorded on a training machine.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Commute">
+            <summary>
+            Indicates whether this activity is a commute.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Manual">
+            <summary>
+            Indicates whether this activity was created manually.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Private">
+            <summary>
+            Indicates whether this activity is private.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Flagged">
+            <summary>
+            Indicates whether this activity was flagged.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.WorkoutType">
+            <summary>
+            The workout type of this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.UploadIdStr">
+            <summary>
+            The unique identifier of the upload in string format.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.AverageSpeed">
+            <summary>
+            The average speed of this activity, in meters per second.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.MaxSpeed">
+            <summary>
+            The maximum speed of this activity, in meters per second.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.HasKudoed">
+            <summary>
+            Indicates whether the authenticated athlete has given kudos to this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.HideFromHome">
+            <summary>
+            Indicates whether the activity is muted (hidden from home feed).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.GearId">
+            <summary>
+            The gear ID associated with this activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.Kilojoules">
+            <summary>
+            The total work done in kilojoules during this activity (rides only).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.AverageWatts">
+            <summary>
+            The average power output in watts (rides only).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.DeviceWatts">
+            <summary>
+            Indicates whether the power data is from a power meter (true) or estimated (false).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.MaxWatts">
+            <summary>
+            The maximum power output during this activity (rides with power meter only).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.SummaryActivity.WeightedAverageWatts">
+            <summary>
+            Similar to Normalized Power, rides with power meter data only.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Activities.UpdatableActivity">
+            <summary>
+            Represents an updatable activity in Strava.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.UpdatableActivity.Commute">
+            <summary>
+            Indicates whether this activity is a commute.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.UpdatableActivity.Trainer">
+            <summary>
+            Indicates whether this activity was recorded on a training machine.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome">
+            <summary>
+            Indicates whether this activity is muted (hidden from home feed).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.UpdatableActivity.Description">
+            <summary>
+            The description of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.UpdatableActivity.Name">
+            <summary>
+            The name of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.UpdatableActivity.Type">
+            <summary>
+            The deprecated activity type. Prefer to use <see cref="P:StravaAPILibary.Models.Activities.UpdatableActivity.SportType"/>.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.UpdatableActivity.SportType">
+            <summary>
+            The sport type of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Activities.UpdatableActivity.GearId">
+            <summary>
+            Identifier for the gear associated with the activity. 
+            Use 'none' to clear gear from activity.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.ActivityStats">
+            <summary>
+            Represents rolled-up statistics and totals for an athlete,
+            including recent, year-to-date, and all-time metrics for rides, runs, and swims.
+            </summary>
+        </member>
+        <member name="M:StravaAPILibary.Models.ActivityStats.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:StravaAPILibary.Models.ActivityStats"/> class
+            with default values for all activity totals.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.BiggestRideDistance">
+            <summary>
+            The longest distance ridden by the athlete, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.BiggestClimbElevationGain">
+            <summary>
+            The highest climb elevation gain achieved by the athlete, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.RecentRideTotals">
+            <summary>
+            The recent (last 4 weeks) ride statistics for the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.RecentRunTotals">
+            <summary>
+            The recent (last 4 weeks) run statistics for the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.RecentSwimTotals">
+            <summary>
+            The recent (last 4 weeks) swim statistics for the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.YtdRideTotals">
+            <summary>
+            The year-to-date ride statistics for the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.YtdRunTotals">
+            <summary>
+            The year-to-date run statistics for the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.YtdSwimTotals">
+            <summary>
+            The year-to-date swim statistics for the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.AllRideTotals">
+            <summary>
+            The all-time ride statistics for the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.AllRunTotals">
+            <summary>
+            The all-time run statistics for the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityStats.AllSwimTotals">
+            <summary>
+            The all-time swim statistics for the athlete.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.ActivityTotal">
+            <summary>
+            A roll-up of metrics pertaining to a set of activities.
+            Values are in seconds and meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityTotal.Count">
+            <summary>
+            The number of activities considered in this total.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityTotal.Distance">
+            <summary>
+            The total distance covered by the considered activities (in meters).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityTotal.MovingTime">
+            <summary>
+            The total moving time of the considered activities (in seconds).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityTotal.ElapsedTime">
+            <summary>
+            The total elapsed time of the considered activities (in seconds).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityTotal.ElevationGain">
+            <summary>
+            The total elevation gain of the considered activities (in meters).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityTotal.AchievementCount">
+            <summary>
+            The total number of achievements in the considered activities.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.ActivityZone">
+            <summary>
+            Represents an activity zone, such as heart rate or power, including its score, distribution, and related data.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityZone.Score">
+            <summary>
+            The score achieved in this zone.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityZone.DistributionBuckets">
+            <summary>
+            The time distribution buckets for this zone.
+            Each bucket represents the time spent in a specific range.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityZone.Type">
+            <summary>
+            The type of the activity zone. 
+            Valid values: "heartrate" or "power".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityZone.SensorBased">
+            <summary>
+            Indicates whether the zone data is sensor-based.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityZone.Points">
+            <summary>
+            The number of points in this zone.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityZone.CustomZones">
+            <summary>
+            Indicates if custom zones were used.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.ActivityZone.Max">
+            <summary>
+            The maximum value recorded in this zone.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Athletes.DetailedAthlete">
+            <summary>
+            Represents a detailed athlete profile with extensive personal, equipment, and club data.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Id">
+            <summary>
+            The unique identifier of the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.ResourceState">
+            <summary>
+            Resource state, indicates level of detail. Possible values: 1 -> "meta", 2 -> "summary", 3 -> "detail".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.FirstName">
+            <summary>
+            The athlete's first name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.LastName">
+            <summary>
+            The athlete's last name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.ProfileMedium">
+            <summary>
+            URL to a 62x62 pixel profile picture.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Profile">
+            <summary>
+            URL to a 124x124 pixel profile picture.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.City">
+            <summary>
+            The athlete's city.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.State">
+            <summary>
+            The athlete's state or geographical region.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Country">
+            <summary>
+            The athlete's country.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Sex">
+            <summary>
+            The athlete's sex. May take one of the following values: "M", "F".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Premium">
+            <summary>
+            Deprecated. Use <see cref="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Summit"/> instead. Whether the athlete has any Summit subscription.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Summit">
+            <summary>
+            Whether the athlete has any Summit subscription.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.CreatedAt">
+            <summary>
+            The time at which the athlete was created.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.UpdatedAt">
+            <summary>
+            The time at which the athlete was last updated.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.FollowerCount">
+            <summary>
+            The athlete's follower count.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.FriendCount">
+            <summary>
+            The athlete's friend count.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.MeasurementPreference">
+            <summary>
+            The athlete's preferred unit system. May take one of the following values: "feet", "meters".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Ftp">
+            <summary>
+            The athlete's Functional Threshold Power (FTP).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Weight">
+            <summary>
+            The athlete's weight.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Clubs">
+            <summary>
+            The clubs the athlete is a member of.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Bikes">
+            <summary>
+            The bikes owned by the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.DetailedAthlete.Shoes">
+            <summary>
+            The shoes owned by the athlete.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Athletes.MetaAthlete">
+            <summary>
+            Represents a minimal athlete object containing only the athlete's ID.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.MetaAthlete.Id">
+            <summary>
+            The unique identifier of the athlete.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Athletes.SummaryAthlete">
+            <summary>
+            Represents a summary of an athlete with profile and location details.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.Id">
+            <summary>
+            The unique identifier of the athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.ResourceState">
+            <summary>
+            Resource state, indicates level of detail.
+            Possible values: 1 (meta), 2 (summary), 3 (detail).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.Firstname">
+            <summary>
+            The athlete's first name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.Lastname">
+            <summary>
+            The athlete's last name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.ProfileMedium">
+            <summary>
+            URL to a 62x62 pixel profile picture.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.Profile">
+            <summary>
+            URL to a 124x124 pixel profile picture.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.City">
+            <summary>
+            The athlete's city.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.State">
+            <summary>
+            The athlete's state or geographical region.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.Country">
+            <summary>
+            The athlete's country.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.Sex">
+            <summary>
+            The athlete's sex. M = Male, F = Female.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.Premium">
+            <summary>
+            Deprecated. Use Summit field instead. Whether the athlete has any Summit subscription.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.Summit">
+            <summary>
+            Whether the athlete has any Summit subscription.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.CreatedAt">
+            <summary>
+            The time at which the athlete was created.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Athletes.SummaryAthlete.UpdatedAt">
+            <summary>
+            The time at which the athlete was last updated.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Clubs.ClubActivity">
+            <summary>
+            Represents an activity within a club.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.Athlete">
+            <summary>
+            The athlete who performed the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.Name">
+            <summary>
+            The name of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.Distance">
+            <summary>
+            The activity's distance in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.MovingTime">
+            <summary>
+            The activity's moving time in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime">
+            <summary>
+            The activity's elapsed time in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain">
+            <summary>
+            The activity's total elevation gain in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.Type">
+            <summary>
+            The type of the activity. (Deprecated - prefer SportType)
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.SportType">
+            <summary>
+            The sport type of the activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType">
+            <summary>
+            The activity's workout type.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Clubs.ClubAthlete">
+            <summary>
+            Represents an athlete within a club.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubAthlete.ResourceState">
+            <summary>
+            Resource state, indicates level of detail.
+            1 -> meta, 2 -> summary, 3 -> detail.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubAthlete.FirstName">
+            <summary>
+            The athlete's first name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubAthlete.LastName">
+            <summary>
+            The athlete's last initial.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubAthlete.Member">
+            <summary>
+            The athlete's member status.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubAthlete.Admin">
+            <summary>
+            Whether the athlete is a club admin.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.ClubAthlete.Owner">
+            <summary>
+            Whether the athlete is the club owner.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Clubs.DetailedClub">
+            <summary>
+            Represents detailed information about a club.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Id">
+            <summary>
+            The club's unique identifier.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.ResourceState">
+            <summary>
+            Resource state, indicates level of detail. Possible values: 1 -> "meta", 2 -> "summary", 3 -> "detail".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Name">
+            <summary>
+            The club's name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.ProfileMedium">
+            <summary>
+            URL to a 60x60 pixel profile picture.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.CoverPhoto">
+            <summary>
+            URL to a ~1185x580 pixel cover photo.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.CoverPhotoSmall">
+            <summary>
+            URL to a ~360x176 pixel cover photo.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.SportType">
+            <summary>
+            Deprecated. Prefer to use <see cref="P:StravaAPILibary.Models.Clubs.DetailedClub.ActivityTypes"/>. May take values: cycling, running, triathlon, other.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.ActivityTypes">
+            <summary>
+            The activity types that count for a club. This takes precedence over <see cref="P:StravaAPILibary.Models.Clubs.DetailedClub.SportType"/>.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.City">
+            <summary>
+            The club's city.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.State">
+            <summary>
+            The club's state or geographical region.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Country">
+            <summary>
+            The club's country.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Private">
+            <summary>
+            Whether the club is private.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.MemberCount">
+            <summary>
+            The club's member count.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Featured">
+            <summary>
+            Whether the club is featured or not.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Verified">
+            <summary>
+            Whether the club is verified or not.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Url">
+            <summary>
+            The club's vanity URL.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Membership">
+            <summary>
+            The membership status of the logged-in athlete. May take values: "member", "pending".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Admin">
+            <summary>
+            Whether the currently logged-in athlete is an administrator of this club.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.Owner">
+            <summary>
+            Whether the currently logged-in athlete is the owner of this club.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.DetailedClub.FollowingCount">
+            <summary>
+            The number of athletes in the club that the logged-in athlete follows.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Clubs.MetaClub">
+            <summary>
+            Represents a meta-level summary of a club in Strava.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.MetaClub.Id">
+            <summary>
+            The club's unique identifier.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.MetaClub.ResourceState">
+            <summary>
+            Resource state, indicates level of detail.
+            Possible values:
+            1 -> "meta",
+            2 -> "summary",
+            3 -> "detail".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.MetaClub.Name">
+            <summary>
+            The club's name.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Clubs.SummaryClub">
+            <summary>
+            Represents a summary of a Strava club with basic metadata and membership information.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.Id">
+            <summary>
+            The club's unique identifier.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.ResourceState">
+            <summary>
+            Resource state, indicates level of detail.
+            Possible values: 1 -> meta, 2 -> summary, 3 -> detail.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.Name">
+            <summary>
+            The club's name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.ProfileMedium">
+            <summary>
+            URL to a 60x60 pixel profile picture.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.CoverPhoto">
+            <summary>
+            URL to a ~1185x580 pixel cover photo.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.CoverPhotoSmall">
+            <summary>
+            URL to a ~360x176 pixel cover photo.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.SportType">
+            <summary>
+            Deprecated. Prefer to use <see cref="P:StravaAPILibary.Models.Clubs.SummaryClub.ActivityTypes"/>.
+            May take one of the following values: cycling, running, triathlon, other.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.ActivityTypes">
+            <summary>
+            The activity types that count for a club. This takes precedence over <see cref="P:StravaAPILibary.Models.Clubs.SummaryClub.SportType"/>.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.City">
+            <summary>
+            The club's city.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.State">
+            <summary>
+            The club's state or geographical region.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.Country">
+            <summary>
+            The club's country.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.Private">
+            <summary>
+            Indicates whether the club is private.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.MemberCount">
+            <summary>
+            The club's member count.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.Featured">
+            <summary>
+            Indicates whether the club is featured.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.Verified">
+            <summary>
+            Indicates whether the club is verified.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Clubs.SummaryClub.Url">
+            <summary>
+            The club's vanity URL.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Comment">
+            <summary>
+            Represents a comment made on an activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Comment.Id">
+            <summary>
+            The unique identifier of this comment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Comment.ActivityId">
+            <summary>
+            The identifier of the activity this comment is related to.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Comment.Text">
+            <summary>
+            The content of the comment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Comment.Athlete">
+            <summary>
+            The athlete who made the comment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Comment.CreatedAt">
+            <summary>
+            The time at which this comment was created.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Common.LatLng">
+            <summary>
+            Represents a geographical coordinate as a pair of latitude and longitude.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Common.LatLng.Latitude">
+            <summary>
+            Latitude component of the coordinate.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Common.LatLng.Longitude">
+            <summary>
+            Longitude component of the coordinate.
+            </summary>
+        </member>
+        <member name="M:StravaAPILibary.Models.Common.LatLng.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:StravaAPILibary.Models.Common.LatLng"/>.
+            </summary>
+        </member>
+        <member name="M:StravaAPILibary.Models.Common.LatLng.#ctor(System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of <see cref="T:StravaAPILibary.Models.Common.LatLng"/> with specified latitude and longitude.
+            </summary>
+            <param name="latitude">The latitude component.</param>
+            <param name="longitude">The longitude component.</param>
+        </member>
+        <member name="M:StravaAPILibary.Models.Common.LatLng.ToArray">
+            <summary>
+            Returns the coordinate as an array of floats [latitude, longitude].
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Enums.ActivityType">
+            <summary>
+            Enumeration of the types an activity may have.
+            Note: Does not include new sport types (e.g. MountainBikeRide).
+            </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.AlpineSki">
+            <summary>Alpine skiing activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.BackcountrySki">
+            <summary>Backcountry skiing activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Canoeing">
+            <summary>Canoeing activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Crossfit">
+            <summary>Crossfit training session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.EBikeRide">
+            <summary>E-bike ride activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Elliptical">
+            <summary>Elliptical trainer workout.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Golf">
+            <summary>Golf session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Handcycle">
+            <summary>Handcycle ride.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Hike">
+            <summary>Hiking activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.IceSkate">
+            <summary>Ice skating activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.InlineSkate">
+            <summary>Inline skating activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Kayaking">
+            <summary>Kayaking activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Kitesurf">
+            <summary>Kitesurfing session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.NordicSki">
+            <summary>Nordic skiing activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Ride">
+            <summary>Standard bike ride.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.RockClimbing">
+            <summary>Rock climbing activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.RollerSki">
+            <summary>Roller skiing activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Rowing">
+            <summary>Rowing session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Run">
+            <summary>Running activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Sail">
+            <summary>Sailing session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Skateboard">
+            <summary>Skateboarding session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Snowboard">
+            <summary>Snowboarding activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Snowshoe">
+            <summary>Snowshoeing activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Soccer">
+            <summary>Soccer game or practice.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.StairStepper">
+            <summary>Stair stepper workout.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.StandUpPaddling">
+            <summary>Stand-up paddling session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Surfing">
+            <summary>Surfing session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Swim">
+            <summary>Swimming activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Velomobile">
+            <summary>Velomobile ride.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.VirtualRide">
+            <summary>Virtual ride on trainer or simulator.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.VirtualRun">
+            <summary>Virtual run on treadmill or simulator.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Walk">
+            <summary>Walking activity.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.WeightTraining">
+            <summary>Weight training session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Wheelchair">
+            <summary>Wheelchair workout or ride.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Windsurf">
+            <summary>Windsurfing session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Workout">
+            <summary>General workout session.</summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.ActivityType.Yoga">
+            <summary>Yoga session.</summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Enums.SportType">
+            <summary>
+            Enumeration of the sport types an activity may have.
+            Unlike <see cref="T:StravaAPILibary.Models.Enums.ActivityType"/>, this includes newer activity types such as MountainBikeRide.
+            </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.AlpineSki">
+            <summary> Alpine skiing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.BackcountrySki">
+            <summary> Backcountry skiing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Badminton">
+            <summary> Badminton activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Canoeing">
+            <summary> Canoeing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Crossfit">
+            <summary> Crossfit workout. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.EBikeRide">
+            <summary> Electric bike ride. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Elliptical">
+            <summary> Elliptical workout. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.EMountainBikeRide">
+            <summary> Electric mountain bike ride. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Golf">
+            <summary> Golf session. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.GravelRide">
+            <summary> Gravel bike ride. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Handcycle">
+            <summary> Handcycling activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.HighIntensityIntervalTraining">
+            <summary> High-intensity interval training. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Hike">
+            <summary> Hiking activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.IceSkate">
+            <summary> Ice skating activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.InlineSkate">
+            <summary> Inline skating activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Kayaking">
+            <summary> Kayaking activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Kitesurf">
+            <summary> Kitesurfing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.MountainBikeRide">
+            <summary> Mountain biking activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.NordicSki">
+            <summary> Nordic skiing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Pickleball">
+            <summary> Pickleball activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Pilates">
+            <summary> Pilates workout. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Racquetball">
+            <summary> Racquetball activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Ride">
+            <summary> Standard cycling activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.RockClimbing">
+            <summary> Rock climbing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.RollerSki">
+            <summary> Roller skiing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Rowing">
+            <summary> Rowing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Run">
+            <summary> Running activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Sail">
+            <summary> Sailing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Skateboard">
+            <summary> Skateboarding activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Snowboard">
+            <summary> Snowboarding activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Snowshoe">
+            <summary> Snowshoeing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Soccer">
+            <summary> Soccer game. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Squash">
+            <summary> Squash activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.StairStepper">
+            <summary> Stair stepper workout. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.StandUpPaddling">
+            <summary> Stand-up paddling activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Surfing">
+            <summary> Surfing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Swim">
+            <summary> Swimming activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.TableTennis">
+            <summary> Table tennis activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Tennis">
+            <summary> Tennis activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.TrailRun">
+            <summary> Trail running activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Velomobile">
+            <summary> Velomobile ride. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.VirtualRide">
+            <summary> Virtual cycling ride. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.VirtualRow">
+            <summary> Virtual rowing session. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.VirtualRun">
+            <summary> Virtual running session. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Walk">
+            <summary> Walking activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.WeightTraining">
+            <summary> Weight training session. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Wheelchair">
+            <summary> Wheelchair activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Windsurf">
+            <summary> Windsurfing activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Workout">
+            <summary> Generic workout activity. </summary>
+        </member>
+        <member name="F:StravaAPILibary.Models.Enums.SportType.Yoga">
+            <summary> Yoga session. </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Error">
+            <summary>
+            Represents an error returned from the Strava API.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Error.Code">
+            <summary>
+            The code associated with this error.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Error.Field">
+            <summary>
+            The specific field or aspect of the resource associated with this error.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Error.Resource">
+            <summary>
+            The type of resource associated with this error.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Explorer.ExplorerResponse">
+            <summary>
+            Represents the response from the Explorer API containing a set of segments.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerResponse.Segments">
+            <summary>
+            The set of segments matching an explorer request.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Explorer.ExplorerSegment">
+            <summary>
+            Represents a segment returned from the Explorer API.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.Id">
+            <summary>
+            The unique identifier of this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.Name">
+            <summary>
+            The name of this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory">
+            <summary>
+            The category of the climb [0, 5].
+            Higher is harder (e.g. 5 = Hors catégorie, 0 = uncategorized).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc">
+            <summary>
+            The description for the category of the climb (NC, 4, 3, 2, 1, HC).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade">
+            <summary>
+            The segment's average grade in percents.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng">
+            <summary>
+            The starting latitude/longitude of the segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng">
+            <summary>
+            The ending latitude/longitude of the segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference">
+            <summary>
+            The segment's elevation difference in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.Distance">
+            <summary>
+            The segment's distance in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Explorer.ExplorerSegment.Points">
+            <summary>
+            The polyline of the segment.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Fault">
+            <summary>
+            Represents a fault response from the Strava API, including a message and associated errors.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Fault.Message">
+            <summary>
+            The message of the fault.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Fault.Errors">
+            <summary>
+            The set of specific errors associated with this fault, if any.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Gears.DetailedGear">
+            <summary>
+            Represents detailed information about a piece of gear in Strava.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.Id">
+            <summary>
+            The gear's unique identifier.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.ResourceState">
+            <summary>
+            Resource state, indicates level of detail. Possible values: 2 -> "summary", 3 -> "detail".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.Primary">
+            <summary>
+            Whether this gear is the owner's default gear.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.Name">
+            <summary>
+            The gear's name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.Distance">
+            <summary>
+            The distance logged with this gear.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.BrandName">
+            <summary>
+            The gear's brand name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.ModelName">
+            <summary>
+            The gear's model name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.FrameType">
+            <summary>
+            The gear's frame type (bike only).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.DetailedGear.Description">
+            <summary>
+            The description of the gear.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Gears.SummaryGear">
+            <summary>
+            Represents a summary of gear associated with an athlete or activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.SummaryGear.Id">
+            <summary>
+            The gear's unique identifier.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.SummaryGear.ResourceState">
+            <summary>
+            Resource state, indicates level of detail. Possible values: 
+            2 = "summary", 3 = "detail".
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.SummaryGear.Primary">
+            <summary>
+            Indicates whether this gear is the athlete's primary/default gear.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.SummaryGear.Name">
+            <summary>
+            The gear's display name.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Gears.SummaryGear.Distance">
+            <summary>
+            The distance logged with this gear, in meters.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Maps.PolylineMap">
+            <summary>
+            Represents the polyline map data of an activity, route, or segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Maps.PolylineMap.Id">
+            <summary>
+            The identifier of the map.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Maps.PolylineMap.Polyline">
+            <summary>
+            The polyline of the map, only returned in detailed representations.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Maps.PolylineMap.SummaryPolyline">
+            <summary>
+            The summary polyline of the map.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Photos.PhotosSummary">
+            <summary>
+            Represents a summary of photos related to an activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Photos.PhotosSummary.Count">
+            <summary>
+            The number of photos.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Photos.PhotosSummary.Primary">
+            <summary>
+            The primary photo associated with this activity.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Photos.PhotosSummaryPrimary">
+            <summary>
+            Represents the primary photo associated with an activity.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Photos.PhotosSummaryPrimary.Id">
+            <summary>
+            The ID of the primary photo.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Photos.PhotosSummaryPrimary.Source">
+            <summary>
+            The source of the primary photo.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Photos.PhotosSummaryPrimary.UniqueId">
+            <summary>
+            The unique identifier of the primary photo.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Photos.PhotosSummaryPrimary.Urls">
+            <summary>
+            The URLs associated with the primary photo.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Routes.Route">
+            <summary>
+            Represents a Strava route, including its metadata and associated details.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Athlete">
+            <summary>
+            The athlete who created the route.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Description">
+            <summary>
+            The description of the route.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Distance">
+            <summary>
+            The distance of the route, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.ElevationGain">
+            <summary>
+            The elevation gain of the route, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Id">
+            <summary>
+            The unique identifier of this route.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.IdStr">
+            <summary>
+            The unique identifier of this route in string format.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Map">
+            <summary>
+            The polyline map of the route.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Name">
+            <summary>
+            The name of the route.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Private">
+            <summary>
+            Whether this route is private.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Starred">
+            <summary>
+            Whether this route is starred by the logged-in athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Timestamp">
+            <summary>
+            An epoch timestamp of when the route was created.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Type">
+            <summary>
+            This route's type (1 for ride, 2 for run).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.SubType">
+            <summary>
+            This route's sub-type (1 for road, 2 for mountain bike, 3 for cross, 4 for trail, 5 for mixed).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.CreatedAt">
+            <summary>
+            The time at which the route was created.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.UpdatedAt">
+            <summary>
+            The time at which the route was last updated.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.EstimatedMovingTime">
+            <summary>
+            Estimated time in seconds for the authenticated athlete to complete the route.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Segments">
+            <summary>
+            The segments traversed by this route.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Route.Waypoints">
+            <summary>
+            The custom waypoints along this route.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Routes.Waypoint">
+            <summary>
+            Represents a waypoint along a route.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Waypoint.LatLng">
+            <summary>
+            The location along the route that the waypoint is closest to.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Waypoint.TargetLatLng">
+            <summary>
+            A location off of the route that the waypoint is (optional).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Waypoint.Categories">
+            <summary>
+            Categories that the waypoint belongs to.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Waypoint.Title">
+            <summary>
+            A title for the waypoint.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Waypoint.Description">
+            <summary>
+            A description of the waypoint (optional).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Routes.Waypoint.DistanceIntoRoute">
+            <summary>
+            The number of meters along the route where the waypoint is located.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Segments.DetailedSegment">
+            <summary>
+            Represents detailed information about a Strava segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.Id">
+            <summary>
+            The unique identifier of this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.Name">
+            <summary>
+            The name of this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.ActivityType">
+            <summary>
+            The activity type of this segment (e.g., Ride, Run).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.Distance">
+            <summary>
+            The segment's distance, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.AverageGrade">
+            <summary>
+            The segment's average grade, in percents.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.MaximumGrade">
+            <summary>
+            The segment's maximum grade, in percents.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.ElevationHigh">
+            <summary>
+            The segment's highest elevation, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.ElevationLow">
+            <summary>
+            The segment's lowest elevation, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.StartLatLng">
+            <summary>
+            The segment's start coordinates (latitude/longitude).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.EndLatLng">
+            <summary>
+            The segment's end coordinates (latitude/longitude).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.ClimbCategory">
+            <summary>
+            The category of the climb [0, 5]. Higher is harder (e.g., 5 = HC, 0 = uncategorized).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.City">
+            <summary>
+            The city where the segment is located.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.State">
+            <summary>
+            The state or geographical region of the segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.Country">
+            <summary>
+            The country of the segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.Private">
+            <summary>
+            Whether this segment is private.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.AthletePrEffort">
+            <summary>
+            The athlete's personal record effort on this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.AthleteSegmentStats">
+            <summary>
+            The athlete's segment statistics.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.CreatedAt">
+            <summary>
+            The date and time when the segment was created.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.UpdatedAt">
+            <summary>
+            The date and time when the segment was last updated.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.TotalElevationGain">
+            <summary>
+            The total elevation gain of the segment, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.Map">
+            <summary>
+            The polyline map of the segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.EffortCount">
+            <summary>
+            The total number of efforts recorded for this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.AthleteCount">
+            <summary>
+            The number of unique athletes who have an effort on this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.Hazardous">
+            <summary>
+            Indicates whether this segment is considered hazardous.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegment.StarCount">
+            <summary>
+            The number of stars for this segment.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Segments.DetailedSegmentEffort">
+            <summary>
+            Represents a detailed segment effort, including performance metrics and related activity/athlete information.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id">
+            <summary>
+            The unique identifier of this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId">
+            <summary>
+            The unique identifier of the activity related to this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime">
+            <summary>
+            The elapsed time of the effort, in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate">
+            <summary>
+            The time at which the effort was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal">
+            <summary>
+            The local time at which the effort was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance">
+            <summary>
+            The distance of the effort, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom">
+            <summary>
+            Indicates whether this effort is the current best on the leaderboard (KOM/QOM).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name">
+            <summary>
+            The name of the segment on which this effort was performed.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity">
+            <summary>
+            The activity associated with this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete">
+            <summary>
+            The athlete who performed this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime">
+            <summary>
+            The moving time of the effort, in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex">
+            <summary>
+            The start index of this effort in its activity's stream.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex">
+            <summary>
+            The end index of this effort in its activity's stream.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence">
+            <summary>
+            The average cadence during this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts">
+            <summary>
+            The average power output during this effort, in watts.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts">
+            <summary>
+            Indicates whether the wattage was measured by a power meter (true) or estimated (false).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate">
+            <summary>
+            The average heart rate of the athlete during this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate">
+            <summary>
+            The maximum heart rate of the athlete during this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment">
+            <summary>
+            The segment associated with this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank">
+            <summary>
+            The athlete's rank on the global leaderboard (if in the top 10 at the time of upload).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank">
+            <summary>
+            The athlete's rank on their personal leaderboard (if in the top 3 at the time of upload).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden">
+            <summary>
+            Indicates whether this effort should be hidden when viewed within an activity.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Segments.SummaryPRSegmentEffort">
+            <summary>
+            Represents the personal record (PR) effort for a segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.PrActivityId">
+            <summary>
+            The unique identifier of the activity related to the PR effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.PrElapsedTime">
+            <summary>
+            The elapsed time of the PR effort in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.PrDate">
+            <summary>
+            The date and time when the PR effort was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.EffortCount">
+            <summary>
+            The number of efforts by the authenticated athlete on this segment.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Segments.SummarySegment">
+            <summary>
+            Represents a summary of a Strava segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.Id">
+            <summary>
+            The unique identifier of this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.Name">
+            <summary>
+            The name of this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.ActivityType">
+            <summary>
+            The activity type of the segment (e.g. Ride, Run).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.Distance">
+            <summary>
+            The distance of the segment, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.AverageGrade">
+            <summary>
+            The segment's average grade, in percent.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.MaximumGrade">
+            <summary>
+            The segment's maximum grade, in percent.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.ElevationHigh">
+            <summary>
+            The segment's highest elevation, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.ElevationLow">
+            <summary>
+            The segment's lowest elevation, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.StartLatLng">
+            <summary>
+            The starting latitude/longitude of the segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.EndLatLng">
+            <summary>
+            The ending latitude/longitude of the segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.ClimbCategory">
+            <summary>
+            The climb category of the segment (0-5).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.City">
+            <summary>
+            The city where the segment is located.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.State">
+            <summary>
+            The state or geographical region where the segment is located.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.Country">
+            <summary>
+            The country where the segment is located.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.Private">
+            <summary>
+            Indicates whether the segment is private.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.AthletePrEffort">
+            <summary>
+            The personal record (PR) effort for this segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegment.AthleteSegmentStats">
+            <summary>
+            The athlete's segment statistics.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Segments.SummarySegmentEffort">
+            <summary>
+            Represents a summary of an athlete's effort on a segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegmentEffort.Id">
+            <summary>
+            The unique identifier of this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegmentEffort.ActivityId">
+            <summary>
+            The unique identifier of the activity related to this effort.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegmentEffort.ElapsedTime">
+            <summary>
+            The elapsed time of this effort in seconds.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegmentEffort.StartDate">
+            <summary>
+            The date and time when this effort was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegmentEffort.StartDateLocal">
+            <summary>
+            The local date and time when this effort was started.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegmentEffort.Distance">
+            <summary>
+            The distance covered during this effort, in meters.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Segments.SummarySegmentEffort.IsKom">
+            <summary>
+            Indicates whether this effort is the current best on the leaderboard.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.StreamSet">
+            <summary>
+            Represents a collection of different data streams associated with an activity or segment.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.Time">
+            <summary>
+            Stream of time values (seconds).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.Distance">
+            <summary>
+            Stream of distance values (meters).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.LatLng">
+            <summary>
+            Stream of GPS coordinates (latitude/longitude pairs).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.Altitude">
+            <summary>
+            Stream of altitude values (meters).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.VelocitySmooth">
+            <summary>
+            Stream of smoothed velocity values (m/s).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.Heartrate">
+            <summary>
+            Stream of heart rate values (bpm).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.Cadence">
+            <summary>
+            Stream of cadence values (rotations per minute).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.Watts">
+            <summary>
+            Stream of power values (watts).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.Temp">
+            <summary>
+            Stream of temperature values (°C).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.Moving">
+            <summary>
+            Stream indicating movement state (true = moving).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.StreamSet.GradeSmooth">
+            <summary>
+            Stream of smoothed gradient values (percent grade).
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.AltitudeStream">
+            <summary>
+            Represents a stream of altitude data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.AltitudeStream.Data">
+            <summary>
+            The sequence of altitude values, in meters.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.BaseStream">
+            <summary>
+            Represents the base properties of a stream returned by the Strava API.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.BaseStream.OriginalSize">
+            <summary>
+            The number of data points in this stream.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.BaseStream.Resolution">
+            <summary>
+            The level of detail (sampling) in which this stream was returned.
+            Possible values: low, medium, high.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.BaseStream.SeriesType">
+            <summary>
+            The base series used in the case the stream was downsampled.
+            Possible values: distance, time.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.CadenceStream">
+            <summary>
+            Represents a stream of cadence data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.CadenceStream.Data">
+            <summary>
+            The sequence of cadence values, in rotations per minute.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.DistanceStream">
+            <summary>
+            Represents a stream of distance data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.DistanceStream.Data">
+            <summary>
+            The sequence of distance values, in meters.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.HeartrateStream">
+            <summary>
+            Represents a stream of heart rate data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.HeartrateStream.Data">
+            <summary>
+            The sequence of heart rate values, in beats per minute.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.LatLngStream">
+            <summary>
+            Represents a stream of GPS coordinates (latitude/longitude).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.LatLngStream.Data">
+            <summary>
+            The sequence of latitude/longitude coordinate pairs.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.MovingStream">
+            <summary>
+            Represents a stream indicating whether the athlete was moving.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.MovingStream.Data">
+            <summary>
+            The sequence of movement flags, where true indicates movement.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.PowerStream">
+            <summary>
+            Represents a stream of power data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.PowerStream.Data">
+            <summary>
+            The sequence of power values, in watts.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.SmoothGradeStream">
+            <summary>
+            Represents a stream of smoothed gradient data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.SmoothGradeStream.Data">
+            <summary>
+            The sequence of gradient values, as percentages.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.SmoothVelocityStream">
+            <summary>
+            Represents a stream of smoothed velocity (speed) data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.SmoothVelocityStream.Data">
+            <summary>
+            The sequence of velocity values, in meters per second.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.TemperatureStream">
+            <summary>
+            Represents a stream of temperature data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.TemperatureStream.Data">
+            <summary>
+            The sequence of temperature values, in degrees Celsius.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Streams.TimeStream">
+            <summary>
+            Represents a stream of time data points.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Streams.TimeStream.Data">
+            <summary>
+            The sequence of time values, in seconds.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.TimedZoneDistribution">
+            <summary>
+            Represents a collection of exclusive ranges (zones) and the time spent in each.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.TimedZoneDistribution.Zones">
+            <summary>
+            The list of timed zone ranges.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.TimedZoneRange">
+            <summary>
+            Represents the time spent in a specific zone range.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.TimedZoneRange.Min">
+            <summary>
+            The minimum value in the range.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.TimedZoneRange.Max">
+            <summary>
+            The maximum value in the range.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.TimedZoneRange.Time">
+            <summary>
+            The number of seconds spent in this zone.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Uploads.Upload">
+            <summary>
+            Represents the status and details of an upload in Strava.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Uploads.Upload.Id">
+            <summary>
+            The unique identifier of the upload.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Uploads.Upload.IdStr">
+            <summary>
+            The unique identifier of the upload in string format.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Uploads.Upload.ExternalId">
+            <summary>
+            The external identifier of the upload (e.g., original file name or external system reference).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Uploads.Upload.Error">
+            <summary>
+            The error associated with this upload, if any.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Uploads.Upload.Status">
+            <summary>
+            The current status of the upload.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Uploads.Upload.ActivityId">
+            <summary>
+            The identifier of the activity this upload resulted in.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Zones.HeartRateZoneRanges">
+            <summary>
+            Represents heart rate zone ranges for an athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Zones.HeartRateZoneRanges.CustomZones">
+            <summary>
+            Indicates whether the athlete has set their own custom heart rate zones.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Zones.HeartRateZoneRanges.Zones">
+            <summary>
+            The heart rate zones for the athlete.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Zones.PowerZoneRanges">
+            <summary>
+            Represents the power zone ranges for an athlete.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Zones.PowerZoneRanges.Zones">
+            <summary>
+            The collection of power zone ranges.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Zones.ZoneRange">
+            <summary>
+            Represents a single heart rate or power zone range.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Zones.ZoneRange.Min">
+            <summary>
+            The minimum value in the range.
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Zones.ZoneRange.Max">
+            <summary>
+            The maximum value in the range.
+            </summary>
+        </member>
+        <member name="T:StravaAPILibary.Models.Zones.ZoneRanges">
+            <summary>
+            A collection of zone ranges (e.g., heart rate or power zones).
+            </summary>
+        </member>
+        <member name="P:StravaAPILibary.Models.Zones.ZoneRanges.Zones">
+            <summary>
+            A list of individual zone ranges.
+            </summary>
+        </member>
+    </members>
+</doc>

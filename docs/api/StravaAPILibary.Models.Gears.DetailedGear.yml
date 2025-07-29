@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Gears.DetailedGear
+  commentId: T:StravaAPILibary.Models.Gears.DetailedGear
+  id: DetailedGear
+  parent: StravaAPILibary.Models.Gears
+  children:
+  - StravaAPILibary.Models.Gears.DetailedGear.BrandName
+  - StravaAPILibary.Models.Gears.DetailedGear.Description
+  - StravaAPILibary.Models.Gears.DetailedGear.Distance
+  - StravaAPILibary.Models.Gears.DetailedGear.FrameType
+  - StravaAPILibary.Models.Gears.DetailedGear.Id
+  - StravaAPILibary.Models.Gears.DetailedGear.ModelName
+  - StravaAPILibary.Models.Gears.DetailedGear.Name
+  - StravaAPILibary.Models.Gears.DetailedGear.Primary
+  - StravaAPILibary.Models.Gears.DetailedGear.ResourceState
+  langs:
+  - csharp
+  - vb
+  name: DetailedGear
+  nameWithType: DetailedGear
+  fullName: StravaAPILibary.Models.Gears.DetailedGear
+  type: Class
+  source:
+    id: DetailedGear
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 5
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: Represents detailed information about a piece of gear in Strava.
+  example: []
+  syntax:
+    content: public class DetailedGear
+    content.vb: Public Class DetailedGear
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Id
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.Id
+  id: Id
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: DetailedGear.Id
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 10
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: The gear's unique identifier.
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: StravaAPILibary.Models.Gears.DetailedGear.Id*
+- uid: StravaAPILibary.Models.Gears.DetailedGear.ResourceState
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.ResourceState
+  id: ResourceState
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: ResourceState
+  nameWithType: DetailedGear.ResourceState
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.ResourceState
+  type: Property
+  source:
+    id: ResourceState
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 15
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: 'Resource state, indicates level of detail. Possible values: 2 -&gt; "summary", 3 -&gt; "detail".'
+  example: []
+  syntax:
+    content: public int ResourceState { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ResourceState As Integer
+  overload: StravaAPILibary.Models.Gears.DetailedGear.ResourceState*
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Primary
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.Primary
+  id: Primary
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: Primary
+  nameWithType: DetailedGear.Primary
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Primary
+  type: Property
+  source:
+    id: Primary
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 20
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: Whether this gear is the owner's default gear.
+  example: []
+  syntax:
+    content: public bool Primary { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Primary As Boolean
+  overload: StravaAPILibary.Models.Gears.DetailedGear.Primary*
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Name
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.Name
+  id: Name
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: DetailedGear.Name
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Name
+  type: Property
+  source:
+    id: Name
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 25
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: The gear's name.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: StravaAPILibary.Models.Gears.DetailedGear.Name*
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Distance
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.Distance
+  id: Distance
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: DetailedGear.Distance
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Distance
+  type: Property
+  source:
+    id: Distance
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 30
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: The distance logged with this gear.
+  example: []
+  syntax:
+    content: public float Distance { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Distance As Single
+  overload: StravaAPILibary.Models.Gears.DetailedGear.Distance*
+- uid: StravaAPILibary.Models.Gears.DetailedGear.BrandName
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.BrandName
+  id: BrandName
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: BrandName
+  nameWithType: DetailedGear.BrandName
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.BrandName
+  type: Property
+  source:
+    id: BrandName
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 35
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: The gear's brand name.
+  example: []
+  syntax:
+    content: public string BrandName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BrandName As String
+  overload: StravaAPILibary.Models.Gears.DetailedGear.BrandName*
+- uid: StravaAPILibary.Models.Gears.DetailedGear.ModelName
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.ModelName
+  id: ModelName
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: ModelName
+  nameWithType: DetailedGear.ModelName
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.ModelName
+  type: Property
+  source:
+    id: ModelName
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 40
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: The gear's model name.
+  example: []
+  syntax:
+    content: public string ModelName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ModelName As String
+  overload: StravaAPILibary.Models.Gears.DetailedGear.ModelName*
+- uid: StravaAPILibary.Models.Gears.DetailedGear.FrameType
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.FrameType
+  id: FrameType
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: FrameType
+  nameWithType: DetailedGear.FrameType
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.FrameType
+  type: Property
+  source:
+    id: FrameType
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 45
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: The gear's frame type (bike only).
+  example: []
+  syntax:
+    content: public int FrameType { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property FrameType As Integer
+  overload: StravaAPILibary.Models.Gears.DetailedGear.FrameType*
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Description
+  commentId: P:StravaAPILibary.Models.Gears.DetailedGear.Description
+  id: Description
+  parent: StravaAPILibary.Models.Gears.DetailedGear
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: DetailedGear.Description
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Description
+  type: Property
+  source:
+    id: Description
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\DetailedGear.cs
+    startLine: 50
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Gears
+  summary: The description of the gear.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: StravaAPILibary.Models.Gears.DetailedGear.Description*
+references:
+- uid: StravaAPILibary.Models.Gears
+  commentId: N:StravaAPILibary.Models.Gears
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Gears
+  nameWithType: StravaAPILibary.Models.Gears
+  fullName: StravaAPILibary.Models.Gears
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Gears
+    name: Gears
+    href: StravaAPILibary.Models.Gears.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Gears
+    name: Gears
+    href: StravaAPILibary.Models.Gears.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Id*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.Id
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_Id
+  name: Id
+  nameWithType: DetailedGear.Id
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Models.Gears.DetailedGear.ResourceState*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.ResourceState
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_ResourceState
+  name: ResourceState
+  nameWithType: DetailedGear.ResourceState
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.ResourceState
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Primary*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.Primary
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_Primary
+  name: Primary
+  nameWithType: DetailedGear.Primary
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Primary
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Name*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.Name
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_Name
+  name: Name
+  nameWithType: DetailedGear.Name
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Name
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Distance*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.Distance
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_Distance
+  name: Distance
+  nameWithType: DetailedGear.Distance
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Distance
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: StravaAPILibary.Models.Gears.DetailedGear.BrandName*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.BrandName
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_BrandName
+  name: BrandName
+  nameWithType: DetailedGear.BrandName
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.BrandName
+- uid: StravaAPILibary.Models.Gears.DetailedGear.ModelName*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.ModelName
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_ModelName
+  name: ModelName
+  nameWithType: DetailedGear.ModelName
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.ModelName
+- uid: StravaAPILibary.Models.Gears.DetailedGear.FrameType*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.FrameType
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_FrameType
+  name: FrameType
+  nameWithType: DetailedGear.FrameType
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.FrameType
+- uid: StravaAPILibary.Models.Gears.DetailedGear.Description*
+  commentId: Overload:StravaAPILibary.Models.Gears.DetailedGear.Description
+  href: StravaAPILibary.Models.Gears.DetailedGear.html#StravaAPILibary_Models_Gears_DetailedGear_Description
+  name: Description
+  nameWithType: DetailedGear.Description
+  fullName: StravaAPILibary.Models.Gears.DetailedGear.Description

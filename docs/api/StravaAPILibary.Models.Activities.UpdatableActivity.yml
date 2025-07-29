@@ -1,0 +1,690 @@
+### YamlMime:ManagedReference
+items:
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity
+  commentId: T:StravaAPILibary.Models.Activities.UpdatableActivity
+  id: UpdatableActivity
+  parent: StravaAPILibary.Models.Activities
+  children:
+  - StravaAPILibary.Models.Activities.UpdatableActivity.Commute
+  - StravaAPILibary.Models.Activities.UpdatableActivity.Description
+  - StravaAPILibary.Models.Activities.UpdatableActivity.GearId
+  - StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome
+  - StravaAPILibary.Models.Activities.UpdatableActivity.Name
+  - StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+  - StravaAPILibary.Models.Activities.UpdatableActivity.Trainer
+  - StravaAPILibary.Models.Activities.UpdatableActivity.Type
+  langs:
+  - csharp
+  - vb
+  name: UpdatableActivity
+  nameWithType: UpdatableActivity
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity
+  type: Class
+  source:
+    id: UpdatableActivity
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 7
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: Represents an updatable activity in Strava.
+  example: []
+  syntax:
+    content: public class UpdatableActivity
+    content.vb: Public Class UpdatableActivity
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Commute
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.Commute
+  id: Commute
+  parent: StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: Commute
+  nameWithType: UpdatableActivity.Commute
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Commute
+  type: Property
+  source:
+    id: Commute
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 12
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: Indicates whether this activity is a commute.
+  example: []
+  syntax:
+    content: public bool Commute { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Commute As Boolean
+  overload: StravaAPILibary.Models.Activities.UpdatableActivity.Commute*
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Trainer
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.Trainer
+  id: Trainer
+  parent: StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: Trainer
+  nameWithType: UpdatableActivity.Trainer
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Trainer
+  type: Property
+  source:
+    id: Trainer
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 17
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: Indicates whether this activity was recorded on a training machine.
+  example: []
+  syntax:
+    content: public bool Trainer { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Trainer As Boolean
+  overload: StravaAPILibary.Models.Activities.UpdatableActivity.Trainer*
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome
+  id: HideFromHome
+  parent: StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: HideFromHome
+  nameWithType: UpdatableActivity.HideFromHome
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome
+  type: Property
+  source:
+    id: HideFromHome
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 22
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: Indicates whether this activity is muted (hidden from home feed).
+  example: []
+  syntax:
+    content: public bool HideFromHome { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HideFromHome As Boolean
+  overload: StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome*
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Description
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.Description
+  id: Description
+  parent: StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: UpdatableActivity.Description
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Description
+  type: Property
+  source:
+    id: Description
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 27
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: The description of the activity.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: StravaAPILibary.Models.Activities.UpdatableActivity.Description*
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Name
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.Name
+  id: Name
+  parent: StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: UpdatableActivity.Name
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Name
+  type: Property
+  source:
+    id: Name
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 32
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: The name of the activity.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: StravaAPILibary.Models.Activities.UpdatableActivity.Name*
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Type
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.Type
+  id: Type
+  parent: StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: UpdatableActivity.Type
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Type
+  type: Property
+  source:
+    id: Type
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 37
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: The deprecated activity type. Prefer to use <xref href="StravaAPILibary.Models.Activities.UpdatableActivity.SportType" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public ActivityType? Type { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{StravaAPILibary.Models.Enums.ActivityType}
+    content.vb: Public Property Type As ActivityType?
+  overload: StravaAPILibary.Models.Activities.UpdatableActivity.Type*
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+  id: SportType
+  parent: StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: SportType
+  nameWithType: UpdatableActivity.SportType
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+  type: Property
+  source:
+    id: SportType
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 42
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: The sport type of the activity.
+  example: []
+  syntax:
+    content: public SportType SportType { get; set; }
+    parameters: []
+    return:
+      type: StravaAPILibary.Models.Enums.SportType
+    content.vb: Public Property SportType As SportType
+  overload: StravaAPILibary.Models.Activities.UpdatableActivity.SportType*
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.GearId
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.GearId
+  id: GearId
+  parent: StravaAPILibary.Models.Activities.UpdatableActivity
+  langs:
+  - csharp
+  - vb
+  name: GearId
+  nameWithType: UpdatableActivity.GearId
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.GearId
+  type: Property
+  source:
+    id: GearId
+    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    startLine: 48
+  assemblies:
+  - StravaAPILibary
+  namespace: StravaAPILibary.Models.Activities
+  summary: >-
+    Identifier for the gear associated with the activity. 
+
+    Use 'none' to clear gear from activity.
+  example: []
+  syntax:
+    content: public string GearId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property GearId As String
+  overload: StravaAPILibary.Models.Activities.UpdatableActivity.GearId*
+references:
+- uid: StravaAPILibary.Models.Activities
+  commentId: N:StravaAPILibary.Models.Activities
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Activities
+  nameWithType: StravaAPILibary.Models.Activities
+  fullName: StravaAPILibary.Models.Activities
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Activities
+    name: Activities
+    href: StravaAPILibary.Models.Activities.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Activities
+    name: Activities
+    href: StravaAPILibary.Models.Activities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Commute*
+  commentId: Overload:StravaAPILibary.Models.Activities.UpdatableActivity.Commute
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_Commute
+  name: Commute
+  nameWithType: UpdatableActivity.Commute
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Commute
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Trainer*
+  commentId: Overload:StravaAPILibary.Models.Activities.UpdatableActivity.Trainer
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_Trainer
+  name: Trainer
+  nameWithType: UpdatableActivity.Trainer
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Trainer
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome*
+  commentId: Overload:StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_HideFromHome
+  name: HideFromHome
+  nameWithType: UpdatableActivity.HideFromHome
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Description*
+  commentId: Overload:StravaAPILibary.Models.Activities.UpdatableActivity.Description
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_Description
+  name: Description
+  nameWithType: UpdatableActivity.Description
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Name*
+  commentId: Overload:StravaAPILibary.Models.Activities.UpdatableActivity.Name
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_Name
+  name: Name
+  nameWithType: UpdatableActivity.Name
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Name
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+  commentId: P:StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_SportType
+  name: SportType
+  nameWithType: UpdatableActivity.SportType
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.Type*
+  commentId: Overload:StravaAPILibary.Models.Activities.UpdatableActivity.Type
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_Type
+  name: Type
+  nameWithType: UpdatableActivity.Type
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Type
+- uid: System.Nullable{StravaAPILibary.Models.Enums.ActivityType}
+  commentId: T:System.Nullable{StravaAPILibary.Models.Enums.ActivityType}
+  parent: System
+  definition: System.Nullable`1
+  href: StravaAPILibary.Models.Enums.ActivityType.html
+  name: ActivityType?
+  nameWithType: ActivityType?
+  fullName: StravaAPILibary.Models.Enums.ActivityType?
+  spec.csharp:
+  - uid: StravaAPILibary.Models.Enums.ActivityType
+    name: ActivityType
+    href: StravaAPILibary.Models.Enums.ActivityType.html
+  - name: '?'
+  spec.vb:
+  - uid: StravaAPILibary.Models.Enums.ActivityType
+    name: ActivityType
+    href: StravaAPILibary.Models.Enums.ActivityType.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.SportType*
+  commentId: Overload:StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_SportType
+  name: SportType
+  nameWithType: UpdatableActivity.SportType
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.SportType
+- uid: StravaAPILibary.Models.Enums.SportType
+  commentId: T:StravaAPILibary.Models.Enums.SportType
+  parent: StravaAPILibary.Models.Enums
+  href: StravaAPILibary.Models.Enums.SportType.html
+  name: SportType
+  nameWithType: SportType
+  fullName: StravaAPILibary.Models.Enums.SportType
+- uid: StravaAPILibary.Models.Enums
+  commentId: N:StravaAPILibary.Models.Enums
+  href: StravaAPILibary.html
+  name: StravaAPILibary.Models.Enums
+  nameWithType: StravaAPILibary.Models.Enums
+  fullName: StravaAPILibary.Models.Enums
+  spec.csharp:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Enums
+    name: Enums
+    href: StravaAPILibary.Models.Enums.html
+  spec.vb:
+  - uid: StravaAPILibary
+    name: StravaAPILibary
+    href: StravaAPILibary.html
+  - name: .
+  - uid: StravaAPILibary.Models
+    name: Models
+    href: StravaAPILibary.Models.html
+  - name: .
+  - uid: StravaAPILibary.Models.Enums
+    name: Enums
+    href: StravaAPILibary.Models.Enums.html
+- uid: StravaAPILibary.Models.Activities.UpdatableActivity.GearId*
+  commentId: Overload:StravaAPILibary.Models.Activities.UpdatableActivity.GearId
+  href: StravaAPILibary.Models.Activities.UpdatableActivity.html#StravaAPILibary_Models_Activities_UpdatableActivity_GearId
+  name: GearId
+  nameWithType: UpdatableActivity.GearId
+  fullName: StravaAPILibary.Models.Activities.UpdatableActivity.GearId

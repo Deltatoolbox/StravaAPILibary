@@ -1,0 +1,13 @@
+C:\Users\torn\source\repos\Strava\StravaAPILibary\bin\Release\net8.0\StravaAPILibary.deps.json
+C:\Users\torn\source\repos\Strava\StravaAPILibary\bin\Release\net8.0\StravaAPILibary.dll
+C:\Users\torn\source\repos\Strava\StravaAPILibary\bin\Release\net8.0\StravaAPILibary.pdb
+C:\Users\torn\source\repos\Strava\StravaAPILibary\bin\Release\net8.0\StravaAPILibary.xml
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\StravaAPILibary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\StravaAPILibary.AssemblyInfoInputs.cache
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\StravaAPILibary.AssemblyInfo.cs
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\StravaAPILibary.csproj.CoreCompileInputs.cache
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\StravaAPILibary.dll
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\refint\StravaAPILibary.dll
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\StravaAPILibary.xml
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\StravaAPILibary.pdb
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Release\net8.0\ref\StravaAPILibary.dll
