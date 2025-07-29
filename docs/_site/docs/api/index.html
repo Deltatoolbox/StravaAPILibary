@@ -85,97 +85,395 @@
         </div>
 
         <article data-uid="">
-<h1 id="api-reference">API Reference</h1>
+<h1 id="stravaapilibary-api-reference">StravaAPILibary API Reference</h1>
 
-<p>Welcome to the complete API documentation for <strong>StravaAPILibary</strong>. This reference covers all classes, methods, and types available in the library.</p>
+<p>Welcome to the comprehensive API documentation for <strong>StravaAPILibary</strong> - a powerful .NET library for seamless Strava API integration.</p>
+<h2 id="-quick-start">🚀 Quick Start</h2>
+<pre><code class="lang-csharp">// Install via NuGet
+Install-Package StravaAPILibary
+
+// Basic usage
+using StravaAPILibary.API;
+using StravaAPILibary.Authentication;
+
+// Authenticate and get athlete profile
+var credentials = new Credentials(clientId, clientSecret);
+var auth = new UserAuthentication(credentials);
+var accessToken = await auth.GetAccessTokenAsync(authorizationCode);
+var athlete = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+</code></pre>
 <h2 id="-api-overview">📚 API Overview</h2>
 <p>StravaAPILibary provides a comprehensive .NET wrapper for the Strava API, organized into the following main areas:</p>
-<h3 id="-authentication">🔐 Authentication</h3>
+<h3 id="-authentication--security">🔐 Authentication &amp; Security</h3>
+<p><strong>OAuth 2.0 Implementation</strong></p>
 <ul>
-<li><strong>[Credentials]({{ '/api/StravaAPILibary.Authentication.Credentials.html' | relative_url }})</strong> - OAuth 2.0 credential management</li>
-<li><strong>[UserAuthentication]({{ '/api/StravaAPILibary.Authentication.UserAuthentication.html' | relative_url }})</strong> - Authentication flow handling</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/credentials.cs">Credentials</a></strong> - Secure credential management</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs">UserAuthentication</a></strong> - Complete OAuth 2.0 flow</li>
 </ul>
-<h3 id="-activities">🏃‍♂️ Activities</h3>
+<p><strong>Key Features:</strong></p>
 <ul>
-<li><strong>[Activities]({{ '/api/StravaAPILibary.API.Activities.html' | relative_url }})</strong> - Activity management and retrieval</li>
-<li><strong>[DetailedActivity]({{ '/api/StravaAPILibary.Models.Activities.DetailedActivity.html' | relative_url }})</strong> - Complete activity information</li>
-<li><strong>[SummaryActivity]({{ '/api/StravaAPILibary.Models.Activities.SummaryActivity.html' | relative_url }})</strong> - Activity summaries</li>
-<li><strong>[UpdatableActivity]({{ '/api/StravaAPILibary.Models.Activities.UpdatableActivity.html' | relative_url }})</strong> - Activity update operations</li>
+<li>Automatic token refresh</li>
+<li>Secure credential storage</li>
+<li>Multiple authentication flows</li>
+<li>Error handling and retry logic</li>
 </ul>
-<h3 id="-athletes">👤 Athletes</h3>
-<ul>
-<li><strong>[Athletes]({{ '/api/StravaAPILibary.API.Athletes.html' | relative_url }})</strong> - Athlete profile management</li>
-<li><strong>[DetailedAthlete]({{ '/api/StravaAPILibary.Models.Athletes.DetailedAthlete.html' | relative_url }})</strong> - Complete athlete information</li>
-<li><strong>[SummaryAthlete]({{ '/api/StravaAPILibary.Models.Athletes.SummaryAthlete.html' | relative_url }})</strong> - Athlete summaries</li>
-</ul>
-<h3 id="-clubs">🏢 Clubs</h3>
-<ul>
-<li><strong>[Clubs]({{ '/api/StravaAPILibary.API.Clubs.html' | relative_url }})</strong> - Club management</li>
-<li><strong>[DetailedClub]({{ '/api/StravaAPILibary.Models.Clubs.DetailedClub.html' | relative_url }})</strong> - Club information</li>
-<li><strong>[ClubActivity]({{ '/api/StravaAPILibary.Models.Clubs.ClubActivity.html' | relative_url }})</strong> - Club activities</li>
-</ul>
-<h3 id="-segments">🏁 Segments</h3>
-<ul>
-<li><strong>[Segments]({{ '/api/StravaAPILibary.API.Segments.html' | relative_url }})</strong> - Segment operations</li>
-<li><strong>[DetailedSegment]({{ '/api/StravaAPILibary.Models.Segments.DetailedSegment.html' | relative_url }})</strong> - Segment information</li>
-<li><strong>[SegmentEfforts]({{ '/api/StravaAPILibary.API.SegmentsEfforts.html' | relative_url }})</strong> - Segment effort tracking</li>
-</ul>
-<h3 id="-routes">🗺️ Routes</h3>
-<ul>
-<li><strong>[Routes]({{ '/api/StravaAPILibary.API.Routes.html' | relative_url }})</strong> - Route management</li>
-<li><strong>[Route]({{ '/api/StravaAPILibary.Models.Routes.Route.html' | relative_url }})</strong> - Route information</li>
-</ul>
-<h3 id="-streams">📊 Streams</h3>
-<ul>
-<li><strong>[Streams]({{ '/api/StravaAPILibary.API.Streams.html' | relative_url }})</strong> - Activity stream data</li>
-<li><strong>[StreamSet]({{ '/api/StravaAPILibary.Models.Streams.StreamSet.html' | relative_url }})</strong> - Stream data collections</li>
-</ul>
-<h3 id="-gears">🚴‍♂️ Gears</h3>
-<ul>
-<li><strong>[Gears]({{ '/api/StravaAPILibary.API.Gears.html' | relative_url }})</strong> - Equipment management</li>
-<li><strong>[DetailedGear]({{ '/api/StravaAPILibary.Models.Gears.DetailedGear.html' | relative_url }})</strong> - Equipment information</li>
-</ul>
-<h3 id="-uploads">📤 Uploads</h3>
-<ul>
-<li><strong>[Uploads]({{ '/api/StravaAPILibary.API.Uploads.html' | relative_url }})</strong> - Activity upload functionality</li>
-<li><strong>[Upload]({{ '/api/StravaAPILibary.Models.Uploads.Upload.html' | relative_url }})</strong> - Upload status and information</li>
-</ul>
-<h2 id="-quick-search">🔍 Quick Search</h2>
-<div class="search-container">
-  <input type="text" id="api-search" class="search-input" placeholder="Search API documentation...">
-  <div id="search-results" class="search-results"></div>
-</div>
-<h2 id="-common-operations">📋 Common Operations</h2>
-<h3 id="get-athlete-profile">Get Athlete Profile</h3>
-<pre><code class="lang-csharp">var athlete = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+<pre><code class="lang-csharp">// Initialize authentication
+var credentials = new Credentials
+{
+    ClientId = &quot;your_client_id&quot;,
+    ClientSecret = &quot;your_client_secret&quot;
+};
+
+var auth = new UserAuthentication(credentials);
+
+// Get authorization URL
+var authUrl = auth.GetAuthorizationUrl(&quot;read,activity:read_all&quot;);
+
+// Exchange code for token
+var accessToken = await auth.GetAccessTokenAsync(authorizationCode);
 </code></pre>
-<h3 id="get-recent-activities">Get Recent Activities</h3>
-<pre><code class="lang-csharp">var activities = await Activities.GetAthletesActivitiesAsync(accessToken, perPage: 10);
+<h3 id="-activities-management">🏃‍♂️ Activities Management</h3>
+<p><strong>Core Activity Operations</strong></p>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs">Activities</a></strong> - Complete activity management</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/DetailedActivity.cs">DetailedActivity</a></strong> - Full activity data</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/SummaryActivity.cs">SummaryActivity</a></strong> - Activity summaries</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Activities/UpdatableActivity.cs">UpdatableActivity</a></strong> - Activity updates</li>
+</ul>
+<p><strong>Available Operations:</strong></p>
+<ul>
+<li>Get athlete activities</li>
+<li>Get activity by ID</li>
+<li>Create new activities</li>
+<li>Update activity details</li>
+<li>Delete activities</li>
+<li>Get activity comments</li>
+<li>Get activity kudos</li>
+</ul>
+<pre><code class="lang-csharp">// Get recent activities
+var activities = await Activities.GetAthletesActivitiesAsync(accessToken, perPage: 20);
+
+// Get specific activity
+var activity = await Activities.GetActivityByIdAsync(accessToken, activityId);
+
+// Update activity
+var updateData = new UpdatableActivity
+{
+    Name = &quot;Updated Activity Name&quot;,
+    Description = &quot;Updated description&quot;,
+    Type = ActivityType.Run
+};
+await Activities.UpdateActivityByIdAsync(accessToken, activityId, updateData);
+
+// Get activity streams
+var streams = await Streams.GetActivityStreamsAsync(accessToken, activityId, 
+    new[] { &quot;time&quot;, &quot;distance&quot;, &quot;latlng&quot;, &quot;altitude&quot;, &quot;velocity_smooth&quot; });
 </code></pre>
-<h3 id="get-activity-details">Get Activity Details</h3>
-<pre><code class="lang-csharp">var activity = await Activities.GetActivityByIdAsync(accessToken, activityId);
+<h3 id="-athlete-profiles">👤 Athlete Profiles</h3>
+<p><strong>Athlete Management</strong></p>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Athletes.cs">Athletes</a></strong> - Athlete operations</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Athletes/DetailedAthlete.cs">DetailedAthlete</a></strong> - Complete athlete data</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Athletes/SummaryAthlete.cs">SummaryAthlete</a></strong> - Athlete summaries</li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Get authenticated athlete profile</li>
+<li>Get athlete statistics</li>
+<li>Get athlete zones</li>
+<li>Get athlete activities</li>
+<li>Get athlete followers/following</li>
+</ul>
+<pre><code class="lang-csharp">// Get authenticated athlete
+var athlete = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+
+// Get athlete stats
+var stats = await Athletes.GetAthleteStatsAsync(accessToken, athleteId);
+
+// Get athlete zones
+var zones = await Athletes.GetAthleteZonesAsync(accessToken);
 </code></pre>
-<h3 id="get-club-information">Get Club Information</h3>
-<pre><code class="lang-csharp">var club = await Clubs.GetClubByIdAsync(accessToken, clubId);
+<h3 id="-clubs--communities">🏢 Clubs &amp; Communities</h3>
+<p><strong>Club Management</strong></p>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Clubs.cs">Clubs</a></strong> - Club operations</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Clubs/DetailedClub.cs">DetailedClub</a></strong> - Club information</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Clubs/ClubActivity.cs">ClubActivity</a></strong> - Club activities</li>
+</ul>
+<p><strong>Capabilities:</strong></p>
+<ul>
+<li>Get club information</li>
+<li>Get club members</li>
+<li>Get club activities</li>
+<li>Get club announcements</li>
+<li>Join/leave clubs</li>
+</ul>
+<pre><code class="lang-csharp">// Get club details
+var club = await Clubs.GetClubByIdAsync(accessToken, clubId);
+
+// Get club members
+var members = await Clubs.GetClubMembersByIdAsync(accessToken, clubId);
+
+// Get club activities
+var activities = await Clubs.GetClubActivitiesByIdAsync(accessToken, clubId);
 </code></pre>
-<h3 id="get-segment-details">Get Segment Details</h3>
-<pre><code class="lang-csharp">var segment = await Segments.GetSegmentByIdAsync(accessToken, segmentId);
+<h3 id="-segments--efforts">🏁 Segments &amp; Efforts</h3>
+<p><strong>Segment Operations</strong></p>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Segments.cs">Segments</a></strong> - Segment management</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Segments/DetailedSegment.cs">DetailedSegment</a></strong> - Segment data</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/SegmentsEfforts.cs">SegmentEfforts</a></strong> - Effort tracking</li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Get segment by ID</li>
+<li>Get segment leaderboard</li>
+<li>Get segment efforts</li>
+<li>Star/unstar segments</li>
+<li>Get starred segments</li>
+</ul>
+<pre><code class="lang-csharp">// Get segment details
+var segment = await Segments.GetSegmentByIdAsync(accessToken, segmentId);
+
+// Get segment leaderboard
+var leaderboard = await Segments.GetSegmentLeaderboardAsync(accessToken, segmentId);
+
+// Get segment efforts
+var efforts = await Segments.GetSegmentEffortsAsync(accessToken, segmentId);
+
+// Star a segment
+await Segments.StarSegmentAsync(accessToken, segmentId, true);
 </code></pre>
-<h2 id="-getting-started">🎯 Getting Started</h2>
-<p>If you're new to the library, start with:</p>
-<ol>
-<li><strong>[Getting Started]({{ '/articles/getting-started/' | relative_url }})</strong> - Basic setup and installation</li>
-<li><strong>[Authentication Guide]({{ '/articles/authentication/' | relative_url }})</strong> - OAuth 2.0 setup</li>
-<li><strong>[Examples]({{ '/articles/examples/' | relative_url }})</strong> - Practical usage examples</li>
-</ol>
-<h2 id="-related-resources">🔗 Related Resources</h2>
+<h3 id="-routes--navigation">🗺️ Routes &amp; Navigation</h3>
+<p><strong>Route Management</strong></p>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Routes.cs">Routes</a></strong> - Route operations</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Routes/Route.cs">Route</a></strong> - Route data</li>
+</ul>
+<p><strong>Capabilities:</strong></p>
+<ul>
+<li>Get route by ID</li>
+<li>Get athlete routes</li>
+<li>Export route GPX</li>
+<li>Get route streams</li>
+</ul>
+<pre><code class="lang-csharp">// Get route details
+var route = await Routes.GetRouteByIdAsync(accessToken, routeId);
+
+// Get athlete routes
+var routes = await Routes.GetAthleteRoutesAsync(accessToken);
+
+// Export route as GPX
+var gpxData = await Routes.ExportRouteGPXAsync(accessToken, routeId);
+</code></pre>
+<h3 id="-streams--data-analysis">📊 Streams &amp; Data Analysis</h3>
+<p><strong>Activity Streams</strong></p>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Streams.cs">Streams</a></strong> - Stream operations</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Streams/StreamSet.cs">StreamSet</a></strong> - Stream collections</li>
+</ul>
+<p><strong>Available Stream Types:</strong></p>
+<ul>
+<li>Time, Distance, LatLng</li>
+<li>Altitude, Velocity, Moving</li>
+<li>Heart Rate, Cadence, Power</li>
+<li>Temperature, Grade, Watts</li>
+</ul>
+<pre><code class="lang-csharp">// Get activity streams
+var streams = await Streams.GetActivityStreamsAsync(accessToken, activityId, 
+    new[] { &quot;time&quot;, &quot;distance&quot;, &quot;latlng&quot;, &quot;altitude&quot;, &quot;velocity_smooth&quot; });
+
+// Get segment effort streams
+var effortStreams = await Streams.GetSegmentEffortStreamsAsync(accessToken, segmentEffortId,
+    new[] { &quot;distance&quot;, &quot;altitude&quot;, &quot;latlng&quot; });
+
+// Get route streams
+var routeStreams = await Streams.GetRouteStreamsAsync(accessToken, routeId);
+</code></pre>
+<h3 id="-equipment--gear">🚴‍♂️ Equipment &amp; Gear</h3>
+<p><strong>Gear Management</strong></p>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Gears.cs">Gears</a></strong> - Equipment operations</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Gears/DetailedGear.cs">DetailedGear</a></strong> - Gear information</li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li>Get gear by ID</li>
+<li>Get athlete gear</li>
+<li>Track gear usage</li>
+<li>Gear statistics</li>
+</ul>
+<pre><code class="lang-csharp">// Get gear details
+var gear = await Gears.GetGearByIdAsync(accessToken, gearId);
+
+// Get athlete gear
+var athleteGear = await Gears.GetAthleteGearAsync(accessToken);
+</code></pre>
+<h3 id="-uploads--data-import">📤 Uploads &amp; Data Import</h3>
+<p><strong>Activity Uploads</strong></p>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Uploads.cs">Uploads</a></strong> - Upload operations</li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Models/Uploads/Upload.cs">Upload</a></strong> - Upload status</li>
+</ul>
+<p><strong>Supported Formats:</strong></p>
+<ul>
+<li>GPX, TCX, FIT files</li>
+<li>Manual activity creation</li>
+<li>Upload status tracking</li>
+<li>Error handling</li>
+</ul>
+<pre><code class="lang-csharp">// Upload activity file
+var upload = await Uploads.CreateUploadAsync(accessToken, 
+    filePath: &quot;activity.gpx&quot;,
+    activityType: ActivityType.Run,
+    name: &quot;Morning Run&quot;);
+
+// Check upload status
+var status = await Uploads.GetUploadByIdAsync(accessToken, upload.Id);
+</code></pre>
+<h2 id="-advanced-features">🔍 Advanced Features</h2>
+<h3 id="error-handling">Error Handling</h3>
+<pre><code class="lang-csharp">try
+{
+    var activity = await Activities.GetActivityByIdAsync(accessToken, activityId);
+}
+catch (StravaApiException ex)
+{
+    switch (ex.StatusCode)
+    {
+        case 401:
+            // Handle unauthorized - refresh token
+            break;
+        case 404:
+            // Handle not found
+            break;
+        case 429:
+            // Handle rate limiting
+            break;
+    }
+}
+</code></pre>
+<h3 id="rate-limiting">Rate Limiting</h3>
+<pre><code class="lang-csharp">// The library automatically handles rate limiting
+// You can also implement custom retry logic
+var retryPolicy = Policy
+    .Handle&lt;StravaApiException&gt;(ex =&gt; ex.StatusCode == 429)
+    .WaitAndRetryAsync(3, retryAttempt =&gt; 
+        TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+</code></pre>
+<h3 id="batch-operations">Batch Operations</h3>
+<pre><code class="lang-csharp">// Get multiple activities efficiently
+var activityIds = new[] { 123456, 123457, 123458 };
+var activities = new List&lt;DetailedActivity&gt;();
+
+foreach (var id in activityIds)
+{
+    var activity = await Activities.GetActivityByIdAsync(accessToken, id);
+    activities.Add(activity);
+}
+</code></pre>
+<h2 id="-common-use-cases">📋 Common Use Cases</h2>
+<h3 id="1-activity-analysis-dashboard">1. Activity Analysis Dashboard</h3>
+<pre><code class="lang-csharp">// Get athlete's recent activities with detailed analysis
+var activities = await Activities.GetAthletesActivitiesAsync(accessToken, perPage: 50);
+var analysis = new List&lt;ActivityAnalysis&gt;();
+
+foreach (var activity in activities)
+{
+    var streams = await Streams.GetActivityStreamsAsync(accessToken, activity.Id, 
+        new[] { &quot;time&quot;, &quot;distance&quot;, &quot;heartrate&quot;, &quot;velocity_smooth&quot; });
+    
+    analysis.Add(new ActivityAnalysis
+    {
+        Activity = activity,
+        AverageHeartRate = streams.HeartrateStream?.Data?.Average() ?? 0,
+        MaxSpeed = streams.VelocitySmoothStream?.Data?.Max() ?? 0,
+        TotalDistance = activity.Distance
+    });
+}
+</code></pre>
+<h3 id="2-segment-performance-tracking">2. Segment Performance Tracking</h3>
+<pre><code class="lang-csharp">// Track segment performance over time
+var segmentId = 123456;
+var efforts = await Segments.GetSegmentEffortsAsync(accessToken, segmentId);
+
+var performance = efforts.Select(effort =&gt; new SegmentPerformance
+{
+    Date = effort.StartDate,
+    Time = effort.ElapsedTime,
+    AverageWatts = effort.AverageWatts,
+    MaxWatts = effort.MaxWatts
+}).OrderBy(p =&gt; p.Date).ToList();
+</code></pre>
+<h3 id="3-club-activity-monitoring">3. Club Activity Monitoring</h3>
+<pre><code class="lang-csharp">// Monitor club activities and engagement
+var clubId = 123456;
+var clubActivities = await Clubs.GetClubActivitiesByIdAsync(accessToken, clubId);
+
+var clubStats = new ClubStatistics
+{
+    TotalActivities = clubActivities.Count,
+    TotalDistance = clubActivities.Sum(a =&gt; a.Distance),
+    AverageSpeed = clubActivities.Average(a =&gt; a.AverageSpeed),
+    MostActiveMember = clubActivities
+        .GroupBy(a =&gt; a.Athlete.Id)
+        .OrderByDescending(g =&gt; g.Count())
+        .First().Key
+};
+</code></pre>
+<h2 id="-best-practices">🎯 Best Practices</h2>
+<h3 id="1-token-management">1. Token Management</h3>
+<pre><code class="lang-csharp">// Store tokens securely and refresh when needed
+var tokenManager = new TokenManager();
+await tokenManager.RefreshTokenIfNeededAsync(accessToken);
+</code></pre>
+<h3 id="2-efficient-data-loading">2. Efficient Data Loading</h3>
+<pre><code class="lang-csharp">// Use pagination for large datasets
+var allActivities = new List&lt;SummaryActivity&gt;();
+var page = 1;
+const int perPage = 200;
+
+do
+{
+    var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page, perPage);
+    allActivities.AddRange(activities);
+    page++;
+} while (activities.Count == perPage);
+</code></pre>
+<h3 id="3-error-recovery">3. Error Recovery</h3>
+<pre><code class="lang-csharp">// Implement robust error handling
+var policy = Policy
+    .Handle&lt;StravaApiException&gt;()
+    .Or&lt;HttpRequestException&gt;()
+    .WaitAndRetryAsync(3, retryAttempt =&gt; 
+        TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
+    onRetry: (exception, timeSpan, retryCount, context) =&gt;
+    {
+        // Log retry attempt
+        Console.WriteLine($&quot;Retry {retryCount} after {timeSpan.TotalSeconds}s&quot;);
+    });
+</code></pre>
+<h2 id="-resources--support">🔗 Resources &amp; Support</h2>
+<h3 id="-documentation">📖 Documentation</h3>
+<ul>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/docs/articles/getting-started.md">Getting Started Guide</a></strong></li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/docs/articles/authentication.md">Authentication Guide</a></strong></li>
+<li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/docs/articles/examples.md">Examples &amp; Tutorials</a></strong></li>
+</ul>
+<h3 id="-development">🛠️ Development</h3>
 <ul>
 <li><strong><a href="https://github.com/Deltatoolbox/StravaAPILibary">GitHub Repository</a></strong> - Source code and issues</li>
 <li><strong><a href="https://www.nuget.org/packages/StravaAPILibary">NuGet Package</a></strong> - Package installation</li>
 <li><strong><a href="https://developers.strava.com/docs/reference/">Strava API Documentation</a></strong> - Official Strava API docs</li>
 </ul>
+<h3 id="-community">💬 Community</h3>
+<ul>
+<li><strong>GitHub Issues</strong> - Report bugs and request features</li>
+<li><strong>GitHub Discussions</strong> - Ask questions and share experiences</li>
+<li><strong>Contributing Guide</strong> - Help improve the library</li>
+</ul>
 <hr>
-<p><strong>Need help? Check our examples or create an issue on GitHub! 💡</strong></p>
+<p><strong>Ready to get started?</strong> Check out our <a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/docs/articles/getting-started.md">Getting Started Guide</a> for your first steps with StravaAPILibary! 🚀</p>
 <style>
 .search-container {
   margin: 2rem 0;
@@ -215,54 +513,96 @@
 .search-result-item:last-child {
   border-bottom: none;
 }
+
+.api-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--secondary-bg);
+}
+
+.code-example {
+  background-color: var(--code-bg);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--secondary-bg);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: var(--text-primary);
+}
+
+.feature-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('api-search');
   const searchResults = document.getElementById('search-results');
   
-  searchInput.addEventListener('input', function() {
-    const query = this.value.toLowerCase().trim();
+  if (searchInput && searchResults) {
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase().trim();
+      
+      if (query.length < 2) {
+        searchResults.style.display = 'none';
+        return;
+      }
+      
+      // Enhanced search implementation
+      const results = [
+        { title: 'Activities API', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs' },
+        { title: 'Athletes API', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Athletes.cs' },
+        { title: 'Authentication', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs' },
+        { title: 'Clubs API', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Clubs.cs' },
+        { title: 'Segments API', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Segments.cs' },
+        { title: 'Routes API', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Routes.cs' },
+        { title: 'Streams API', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Streams.cs' },
+        { title: 'Uploads API', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Uploads.cs' },
+        { title: 'Gears API', url: 'https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Gears.cs' }
+      ].filter(item => 
+        item.title.toLowerCase().includes(query)
+      );
+      
+      if (results.length > 0) {
+        searchResults.innerHTML = results.map(result => 
+          `<div class="search-result-item" onclick="window.open('${result.url}', '_blank')">
+            ${result.title}
+          </div>`
+        ).join('');
+        searchResults.style.display = 'block';
+      } else {
+        searchResults.innerHTML = '<div class="search-result-item">No results found</div>';
+        searchResults.style.display = 'block';
+      }
+    });
     
-    if (query.length < 2) {
-      searchResults.style.display = 'none';
-      return;
-    }
-    
-    // Simple search implementation
-    // In a real implementation, you'd want to index the API documentation
-    const results = [
-      { title: 'Activities API', url: '{{ "/api/StravaAPILibary.API.Activities.html" | relative_url }}' },
-      { title: 'Athletes API', url: '{{ "/api/StravaAPILibary.API.Athletes.html" | relative_url }}' },
-      { title: 'Authentication', url: '{{ "/api/StravaAPILibary.Authentication.UserAuthentication.html" | relative_url }}' },
-      { title: 'Clubs API', url: '{{ "/api/StravaAPILibary.API.Clubs.html" | relative_url }}' },
-      { title: 'Segments API', url: '{{ "/api/StravaAPILibary.API.Segments.html" | relative_url }}' },
-      { title: 'Routes API', url: '{{ "/api/StravaAPILibary.API.Routes.html" | relative_url }}' },
-      { title: 'Streams API', url: '{{ "/api/StravaAPILibary.API.Streams.html" | relative_url }}' },
-      { title: 'Uploads API', url: '{{ "/api/StravaAPILibary.API.Uploads.html" | relative_url }}' }
-    ].filter(item => 
-      item.title.toLowerCase().includes(query)
-    );
-    
-    if (results.length > 0) {
-      searchResults.innerHTML = results.map(result => 
-        `<div class="search-result-item" onclick="window.location.href='${result.url}'">
-          ${result.title}
-        </div>`
-      ).join('');
-      searchResults.style.display = 'block';
-    } else {
-      searchResults.innerHTML = '<div class="search-result-item">No results found</div>';
-      searchResults.style.display = 'block';
-    }
-  });
-  
-  // Hide results when clicking outside
-  document.addEventListener('click', function(e) {
-    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-      searchResults.style.display = 'none';
-    }
-  });
+    // Hide results when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.style.display = 'none';
+      }
+    });
+  }
 });
 </script> 
 

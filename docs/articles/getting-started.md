@@ -10,22 +10,45 @@ Welcome to the StravaAPILibary! This guide will help you get up and running quic
 
 ## 📦 Installation
 
-### Via NuGet Package Manager
+### Clone from GitHub Repository
+
+The recommended way to use StravaAPILibary is to clone it directly from our GitHub repository:
 
 ```bash
-dotnet add package StravaAPILibary
+git clone https://github.com/Deltatoolbox/StravaAPILibary.git
+cd StravaAPILibary
 ```
 
-### Via Package Manager Console
+### Add to Your Project
 
-```powershell
-Install-Package StravaAPILibary
-```
+After cloning, you can add the library to your project by referencing the project files:
 
-### Via .csproj
+#### Option 1: Add as Project Reference
 
 ```xml
-<PackageReference Include="StravaAPILibary" Version="1.0.0" />
+<!-- In your .csproj file -->
+<ItemGroup>
+  <ProjectReference Include="path/to/StravaAPILibary/StravaAPILibary.csproj" />
+</ItemGroup>
+```
+
+#### Option 2: Copy Source Files
+
+You can also copy the source files directly into your project:
+
+1. Copy the `API/` folder to your project
+2. Copy the `Authentication/` folder to your project  
+3. Copy the `Models/` folder to your project
+4. Add the necessary using statements to your code
+
+### Build the Library
+
+```bash
+# Build the library
+dotnet build StravaAPILibary.csproj
+
+# Or build in Release mode
+dotnet build StravaAPILibary.csproj --configuration Release
 ```
 
 ## 🚀 Quick Start
@@ -105,6 +128,7 @@ The library supports the OAuth 2.0 authorization code flow:
 ## 📋 Prerequisites
 
 - **.NET 6.0** or later
+- **Git** for cloning the repository
 - **Strava Account** with API access
 - **Strava Application** (Client ID and Secret)
 
@@ -163,7 +187,16 @@ catch (Exception ex)
 
 - Check the **[API Reference]({{ '/api/' | relative_url }})** for detailed method documentation
 - Review **[Examples]({{ '/articles/examples/' | relative_url }})** for common use cases
-- Visit the **[GitHub Repository](https://github.com/your-repo/StravaAPILibary)** for issues and contributions
+- Visit the **[GitHub Repository](https://github.com/Deltatoolbox/StravaAPILibary)** for issues and contributions
+
+## 🤝 Contributing
+
+Since you're using the source code directly, you can easily contribute to the project:
+
+1. Fork the repository
+2. Make your changes
+3. Submit a pull request
+4. Help improve the library for everyone!
 
 ---
 
