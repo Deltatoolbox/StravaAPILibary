@@ -97,7 +97,7 @@ Class Activities  <a class="header-action link-secondary" title="View source" hr
   <dl><dt>Assembly</dt><dd>StravaAPILibary.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Provides methods to interact with Strava's Activities API.</p>
+  <div class="markdown summary"><p>Provides methods to interact with Strava's Activities API.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -147,14 +147,14 @@ Class Activities  <a class="header-action link-secondary" title="View source" hr
 
 
   <h2 id="StravaAPILibary_API_Activities_examples">Examples</h2>
-  <p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Example: Retrieve the authenticated athlete's activities:</p>
+  <p>Example: Retrieve the authenticated athlete's activities:</p>
 <pre><code class="lang-csharp">var activities = await Activities.GetAthletesActivitiesAsync(accessToken, page: 1, perPage: 30);</code></pre>
-<p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="4">Example: Upload a new activity:</p>
+<p>Example: Upload a new activity:</p>
 <pre><code class="lang-csharp">var uploadResponse = await Activities.PostActivityAsync(accessToken, "Morning Ride", "gpx", @"C:\ride.gpx");</code></pre>
 
 
   <h2 id="StravaAPILibary_API_Activities_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">This static class contains methods for retrieving, creating, and updating athlete activities in Strava.
+  <div class="markdown level0 remarks"><p>This static class contains methods for retrieving, creating, and updating athlete activities in Strava.
 It communicates with Strava's REST API endpoints related to activities and returns JSON responses.</p>
 <p><b>Features:</b></p>
 <ul><li>Retrieve authenticated athlete's activities.</li><li>Fetch details of a specific activity by ID.</li><li>Get related data like laps, zones, comments, and kudos.</li><li>Upload new activities and update existing ones.</li></ul>
@@ -178,7 +178,7 @@ Refer to the official Strava API documentation:
   <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Get a specific activity by its ID.</p>
+  <div class="markdown level1 summary"><p>Get a specific activity by its ID.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -189,17 +189,17 @@ Refer to the official Strava API documentation:
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The OAuth access token.</p>
+    <dd><p>The OAuth access token.</p>
 </dd>
     <dt><code>activityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The ID of the activity to retrieve.</p>
+    <dd><p>The ID of the activity to retrieve.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a>&gt;</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a> containing the activity details.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a> containing the activity details.</p>
 </dd>
   </dl>
 
@@ -213,16 +213,16 @@ Refer to the official Strava API documentation:
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
+    <dd><p>Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the request to the Strava API fails or returns a non-success status code.</p>
+    <dd><p>Thrown when the request to the Strava API fails or returns a non-success status code.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the API response is empty.</p>
+    <dd><p>Thrown when the API response is empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a>.</p>
+    <dd><p>Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a>.</p>
 </dd>
   </dl>
 
@@ -235,7 +235,7 @@ Refer to the official Strava API documentation:
   <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs/#L330"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Get the comments for a specific activity.</p>
+  <div class="markdown level1 summary"><p>Get the comments for a specific activity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -246,17 +246,17 @@ Refer to the official Strava API documentation:
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The OAuth access token.</p>
+    <dd><p>The OAuth access token.</p>
 </dd>
     <dt><code>activityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The ID of the activity to retrieve comments for.</p>
+    <dd><p>The ID of the activity to retrieve comments for.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>&gt;</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the comments of the activity.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the comments of the activity.</p>
 </dd>
   </dl>
 
@@ -270,16 +270,16 @@ Refer to the official Strava API documentation:
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
+    <dd><p>Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the request to the Strava API fails or returns a non-success status code.</p>
+    <dd><p>Thrown when the request to the Strava API fails or returns a non-success status code.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the API response is empty.</p>
+    <dd><p>Thrown when the API response is empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
+    <dd><p>Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
 </dd>
   </dl>
 
@@ -292,7 +292,7 @@ Refer to the official Strava API documentation:
   <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs/#L372"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Get the kudos given for a specific activity.</p>
+  <div class="markdown level1 summary"><p>Get the kudos given for a specific activity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -303,17 +303,17 @@ Refer to the official Strava API documentation:
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The OAuth access token.</p>
+    <dd><p>The OAuth access token.</p>
 </dd>
     <dt><code>activityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The ID of the activity to retrieve kudos for.</p>
+    <dd><p>The ID of the activity to retrieve kudos for.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>&gt;</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the kudos for the activity.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the kudos for the activity.</p>
 </dd>
   </dl>
 
@@ -327,16 +327,16 @@ Refer to the official Strava API documentation:
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
+    <dd><p>Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the request to the Strava API fails or returns a non-success status code.</p>
+    <dd><p>Thrown when the request to the Strava API fails or returns a non-success status code.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the API response is empty.</p>
+    <dd><p>Thrown when the API response is empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
+    <dd><p>Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
 </dd>
   </dl>
 
@@ -349,7 +349,7 @@ Refer to the official Strava API documentation:
   <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Get a list of laps for a specific activity.</p>
+  <div class="markdown level1 summary"><p>Get a list of laps for a specific activity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -360,17 +360,17 @@ Refer to the official Strava API documentation:
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The OAuth access token.</p>
+    <dd><p>The OAuth access token.</p>
 </dd>
     <dt><code>activityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The ID of the activity to retrieve laps for.</p>
+    <dd><p>The ID of the activity to retrieve laps for.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>&gt;</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the laps of the specified activity.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the laps of the specified activity.</p>
 </dd>
   </dl>
 
@@ -384,16 +384,16 @@ Refer to the official Strava API documentation:
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
+    <dd><p>Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the request to the Strava API fails or returns a non-success status code.</p>
+    <dd><p>Thrown when the request to the Strava API fails or returns a non-success status code.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the API response is empty.</p>
+    <dd><p>Thrown when the API response is empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
+    <dd><p>Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
 </dd>
   </dl>
 
@@ -406,7 +406,7 @@ Refer to the official Strava API documentation:
   <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Get the zones for a specific activity.</p>
+  <div class="markdown level1 summary"><p>Get the zones for a specific activity.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -417,17 +417,17 @@ Refer to the official Strava API documentation:
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The OAuth access token.</p>
+    <dd><p>The OAuth access token.</p>
 </dd>
     <dt><code>activityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The ID of the activity to retrieve zones for.</p>
+    <dd><p>The ID of the activity to retrieve zones for.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>&gt;</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the activity's zones.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the activity's zones.</p>
 </dd>
   </dl>
 
@@ -441,16 +441,16 @@ Refer to the official Strava API documentation:
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
+    <dd><p>Thrown when <code class="paramref">accessToken</code> or <code class="paramref">activityId</code> is null or empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the request to the Strava API fails or returns a non-success status code.</p>
+    <dd><p>Thrown when the request to the Strava API fails or returns a non-success status code.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the API response is empty.</p>
+    <dd><p>Thrown when the API response is empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
+    <dd><p>Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
 </dd>
   </dl>
 
@@ -463,7 +463,7 @@ Refer to the official Strava API documentation:
   <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Retrieves the activities of the authenticated athlete with optional filtering and pagination.</p>
+  <div class="markdown level1 summary"><p>Retrieves the activities of the authenticated athlete with optional filtering and pagination.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -474,26 +474,26 @@ Refer to the official Strava API documentation:
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The OAuth access token for authentication. Must be valid and not expired.</p>
+    <dd><p>The OAuth access token for authentication. Must be valid and not expired.</p>
 </dd>
     <dt><code>before</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Unix timestamp to filter activities before this date. Use 0 for no filter.</p>
+    <dd><p>Unix timestamp to filter activities before this date. Use 0 for no filter.</p>
 </dd>
     <dt><code>after</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Unix timestamp to filter activities after this date. Use 0 for no filter.</p>
+    <dd><p>Unix timestamp to filter activities after this date. Use 0 for no filter.</p>
 </dd>
     <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Page number for pagination. Must be greater than 0.</p>
+    <dd><p>Page number for pagination. Must be greater than 0.</p>
 </dd>
     <dt><code>perPage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Number of activities per page. Must be between 1 and 200.</p>
+    <dd><p>Number of activities per page. Must be between 1 and 200.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>&gt;</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the athlete's activities.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a> containing the athlete's activities.</p>
 </dd>
   </dl>
 
@@ -542,7 +542,7 @@ while (hasMoreActivities)
 
 
   <h4 class="section" id="StravaAPILibary_API_Activities_GetAthletesActivitiesAsync_System_String_System_Int32_System_Int32_System_Int32_System_Int32__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">This method retrieves the authenticated athlete's activities from Strava. Activities are returned
+  <div class="markdown level1 remarks"><p>This method retrieves the authenticated athlete's activities from Strava. Activities are returned
 in reverse chronological order (most recent first).</p>
 <p><b>Filtering:</b></p>
 <ul><li>Use <code class="paramref">after</code> to get activities from a specific date onwards</li><li>Use <code class="paramref">before</code> to get activities up to a specific date</li><li>Both filters use Unix timestamps (seconds since epoch)</li><li>Use 0 for either parameter to disable that filter</li></ul>
@@ -557,19 +557,19 @@ This endpoint is subject to Strava's API rate limits. Consider implementing expo
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when <code class="paramref">accessToken</code> is null or empty.</p>
+    <dd><p>Thrown when <code class="paramref">accessToken</code> is null or empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when <code class="paramref">page</code> or <code class="paramref">perPage</code> is less than or equal to zero.</p>
+    <dd><p>Thrown when <code class="paramref">page</code> or <code class="paramref">perPage</code> is less than or equal to zero.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the request to the Strava API fails or returns a non-success status code.</p>
+    <dd><p>Thrown when the request to the Strava API fails or returns a non-success status code.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the API response is empty.</p>
+    <dd><p>Thrown when the API response is empty.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
+    <dd><p>Thrown when the JSON response cannot be parsed as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonarray">JsonArray</a>.</p>
 </dd>
   </dl>
 
@@ -582,7 +582,7 @@ This endpoint is subject to Strava's API rate limits. Consider implementing expo
   <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs/#L421"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Posts (uploads) an activity file to Strava.</p>
+  <div class="markdown level1 summary"><p>Posts (uploads) an activity file to Strava.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -593,38 +593,38 @@ This endpoint is subject to Strava's API rate limits. Consider implementing expo
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The OAuth access token.</p>
+    <dd><p>The OAuth access token.</p>
 </dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The name of the activity.</p>
+    <dd><p>The name of the activity.</p>
 </dd>
     <dt><code>dataType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The file type of the upload (fit, gpx, tcx).</p>
+    <dd><p>The file type of the upload (fit, gpx, tcx).</p>
 </dd>
     <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The path to the activity file.</p>
+    <dd><p>The path to the activity file.</p>
 </dd>
     <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: A description of the activity.</p>
+    <dd><p>Optional: A description of the activity.</p>
 </dd>
     <dt><code>isTrainer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: Set to true if this is a trainer ride.</p>
+    <dd><p>Optional: Set to true if this is a trainer ride.</p>
 </dd>
     <dt><code>isCommute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: Set to true if this is a commute activity.</p>
+    <dd><p>Optional: Set to true if this is a commute activity.</p>
 </dd>
     <dt><code>externalId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: An external ID to uniquely identify this upload.</p>
+    <dd><p>Optional: An external ID to uniquely identify this upload.</p>
 </dd>
     <dt><code>sportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: The sport type (e.g., &quot;Run&quot;, &quot;Ride&quot;).</p>
+    <dd><p>Optional: The sport type (e.g., &quot;Run&quot;, &quot;Ride&quot;).</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a>&gt;</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a> containing the upload status.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a> containing the upload status.</p>
 </dd>
   </dl>
 
@@ -638,16 +638,16 @@ This endpoint is subject to Strava's API rate limits. Consider implementing expo
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when accessToken, name, or dataType are invalid.</p>
+    <dd><p>Thrown when accessToken, name, or dataType are invalid.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception">FileNotFoundException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the specified file does not exist.</p>
+    <dd><p>Thrown when the specified file does not exist.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the Strava API request fails.</p>
+    <dd><p>Thrown when the Strava API request fails.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the response cannot be parsed as JSON.</p>
+    <dd><p>Thrown when the response cannot be parsed as JSON.</p>
 </dd>
   </dl>
 
@@ -660,7 +660,7 @@ This endpoint is subject to Strava's API rate limits. Consider implementing expo
   <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/API/Activities.cs/#L490"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Updates an activity by its ID.</p>
+  <div class="markdown level1 summary"><p>Updates an activity by its ID.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -671,35 +671,35 @@ This endpoint is subject to Strava's API rate limits. Consider implementing expo
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The OAuth access token.</p>
+    <dd><p>The OAuth access token.</p>
 </dd>
     <dt><code>activityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">The ID of the activity to update.</p>
+    <dd><p>The ID of the activity to update.</p>
 </dd>
     <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: New name for the activity.</p>
+    <dd><p>Optional: New name for the activity.</p>
 </dd>
     <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: New description for the activity.</p>
+    <dd><p>Optional: New description for the activity.</p>
 </dd>
     <dt><code>isTrainer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: Whether the activity is a trainer ride.</p>
+    <dd><p>Optional: Whether the activity is a trainer ride.</p>
 </dd>
     <dt><code>isCommute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: Whether the activity is a commute.</p>
+    <dd><p>Optional: Whether the activity is a commute.</p>
 </dd>
     <dt><code>sportType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: The sport type (e.g., &quot;Run&quot;, &quot;Ride&quot;).</p>
+    <dd><p>Optional: The sport type (e.g., &quot;Run&quot;, &quot;Ride&quot;).</p>
 </dd>
     <dt><code>gearId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Optional: The gear ID to associate with the activity.</p>
+    <dd><p>Optional: The gear ID to associate with the activity.</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a>&gt;</dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a> containing the updated activity data.</p>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.nodes.jsonobject">JsonObject</a> containing the updated activity data.</p>
 </dd>
   </dl>
 
@@ -713,13 +713,13 @@ This endpoint is subject to Strava's API rate limits. Consider implementing expo
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when <code class="paramref">accessToken</code> is null or empty or <code class="paramref">activityId</code> is invalid.</p>
+    <dd><p>Thrown when <code class="paramref">accessToken</code> is null or empty or <code class="paramref">activityId</code> is invalid.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the request to the Strava API fails or returns a non-success status code.</p>
+    <dd><p>Thrown when the request to the Strava API fails or returns a non-success status code.</p>
 </dd>
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></dt>
-    <dd><p sourcefile="docs/api/StravaAPILibary.API.Activities.yml" sourcestartlinenumber="1">Thrown when the JSON response cannot be parsed.</p>
+    <dd><p>Thrown when the JSON response cannot be parsed.</p>
 </dd>
   </dl>
 
