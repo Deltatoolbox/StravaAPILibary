@@ -41,10 +41,10 @@ if (success)
 
 ## 📚 Documentation
 
-- **[API Reference](https://your-docs-site.com/api/)** - Complete API documentation
-- **[Getting Started Guide](https://your-docs-site.com/articles/getting-started.html)** - Detailed setup instructions
-- **[Authentication Guide](https://your-docs-site.com/articles/authentication.html)** - OAuth flow and token management
-- **[Examples](https://your-docs-site.com/articles/examples.html)** - Common usage patterns
+- **[API Reference](https://deltatoolbox.github.io/StravaAPILibary/api/)** - Complete API documentation
+- **[Getting Started Guide](https://deltatoolbox.github.io/StravaAPILibary/articles/getting-started.html)** - Detailed setup instructions
+- **[Authentication Guide](https://deltatoolbox.github.io/StravaAPILibary/articles/authentication.html)** - OAuth flow and token management
+- **[Examples](https://deltatoolbox.github.io/StravaAPILibary/articles/examples.html)** - Common usage patterns
 
 ## 🔧 Features
 
