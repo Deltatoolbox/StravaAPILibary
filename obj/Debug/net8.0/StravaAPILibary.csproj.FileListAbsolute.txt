@@ -11,3 +11,4 @@ C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Debug\net8.0\refint\Strava
 C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Debug\net8.0\StravaAPILibary.xml
 C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Debug\net8.0\StravaAPILibary.pdb
 C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Debug\net8.0\ref\StravaAPILibary.dll
+C:\Users\torn\source\repos\Strava\StravaAPILibary\obj\Debug\net8.0\StravaAPILibary.sourcelink.json
