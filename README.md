@@ -42,9 +42,9 @@ if (success)
 ## 📚 Documentation
 
 - **[API Reference](https://deltatoolbox.github.io/StravaAPILibary/api/)** - Complete API documentation
-- **[Getting Started Guide](https://deltatoolbox.github.io/StravaAPILibary/articles/getting-started.html)** - Detailed setup instructions
-- **[Authentication Guide](https://deltatoolbox.github.io/StravaAPILibary/articles/authentication.html)** - OAuth flow and token management
-- **[Examples](https://deltatoolbox.github.io/StravaAPILibary/articles/examples.html)** - Common usage patterns
+- **[Getting Started Guide](https://deltatoolbox.github.io/StravaAPILibary/articles/getting-started/)** - Detailed setup instructions
+- **[Authentication Guide](https://deltatoolbox.github.io/StravaAPILibary/articles/authentication/)** - OAuth flow and token management
+- **[Examples](https://deltatoolbox.github.io/StravaAPILibary/articles/examples/)** - Common usage patterns
 
 ## 🔧 Features
 
