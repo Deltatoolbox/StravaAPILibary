@@ -15,8 +15,12 @@ items:
   fullName: StravaAPILibary.Models.Fault
   type: Class
   source:
+    remote:
+      path: Models/Fault.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Fault
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Fault.cs
+    path: Models/Fault.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -48,8 +52,12 @@ items:
   fullName: StravaAPILibary.Models.Fault.Message
   type: Property
   source:
+    remote:
+      path: Models/Fault.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Message
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Fault.cs
+    path: Models/Fault.cs
     startLine: 12
   assemblies:
   - StravaAPILibary
@@ -75,8 +83,12 @@ items:
   fullName: StravaAPILibary.Models.Fault.Errors
   type: Property
   source:
+    remote:
+      path: Models/Fault.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Errors
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Fault.cs
+    path: Models/Fault.cs
     startLine: 17
   assemblies:
   - StravaAPILibary

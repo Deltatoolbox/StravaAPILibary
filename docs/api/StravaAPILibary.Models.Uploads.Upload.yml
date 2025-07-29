@@ -19,8 +19,12 @@ items:
   fullName: StravaAPILibary.Models.Uploads.Upload
   type: Class
   source:
+    remote:
+      path: Models/Uploads/Upload.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Upload
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    path: Models/Uploads/Upload.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -52,8 +56,12 @@ items:
   fullName: StravaAPILibary.Models.Uploads.Upload.Id
   type: Property
   source:
+    remote:
+      path: Models/Uploads/Upload.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    path: Models/Uploads/Upload.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -79,8 +87,12 @@ items:
   fullName: StravaAPILibary.Models.Uploads.Upload.IdStr
   type: Property
   source:
+    remote:
+      path: Models/Uploads/Upload.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: IdStr
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    path: Models/Uploads/Upload.cs
     startLine: 15
   assemblies:
   - StravaAPILibary
@@ -106,8 +118,12 @@ items:
   fullName: StravaAPILibary.Models.Uploads.Upload.ExternalId
   type: Property
   source:
+    remote:
+      path: Models/Uploads/Upload.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ExternalId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    path: Models/Uploads/Upload.cs
     startLine: 20
   assemblies:
   - StravaAPILibary
@@ -133,8 +149,12 @@ items:
   fullName: StravaAPILibary.Models.Uploads.Upload.Error
   type: Property
   source:
+    remote:
+      path: Models/Uploads/Upload.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Error
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    path: Models/Uploads/Upload.cs
     startLine: 25
   assemblies:
   - StravaAPILibary
@@ -160,8 +180,12 @@ items:
   fullName: StravaAPILibary.Models.Uploads.Upload.Status
   type: Property
   source:
+    remote:
+      path: Models/Uploads/Upload.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Status
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    path: Models/Uploads/Upload.cs
     startLine: 30
   assemblies:
   - StravaAPILibary
@@ -187,8 +211,12 @@ items:
   fullName: StravaAPILibary.Models.Uploads.Upload.ActivityId
   type: Property
   source:
+    remote:
+      path: Models/Uploads/Upload.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ActivityId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Uploads\Upload.cs
+    path: Models/Uploads/Upload.cs
     startLine: 35
   assemblies:
   - StravaAPILibary

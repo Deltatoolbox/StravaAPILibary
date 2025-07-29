@@ -16,8 +16,12 @@ items:
   fullName: StravaAPILibary.Models.TimedZoneRange
   type: Class
   source:
+    remote:
+      path: Models/TimedZoneRange.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TimedZoneRange
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\TimedZoneRange.cs
+    path: Models/TimedZoneRange.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -49,8 +53,12 @@ items:
   fullName: StravaAPILibary.Models.TimedZoneRange.Min
   type: Property
   source:
+    remote:
+      path: Models/TimedZoneRange.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Min
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\TimedZoneRange.cs
+    path: Models/TimedZoneRange.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -76,8 +84,12 @@ items:
   fullName: StravaAPILibary.Models.TimedZoneRange.Max
   type: Property
   source:
+    remote:
+      path: Models/TimedZoneRange.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Max
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\TimedZoneRange.cs
+    path: Models/TimedZoneRange.cs
     startLine: 15
   assemblies:
   - StravaAPILibary
@@ -103,8 +115,12 @@ items:
   fullName: StravaAPILibary.Models.TimedZoneRange.Time
   type: Property
   source:
+    remote:
+      path: Models/TimedZoneRange.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Time
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\TimedZoneRange.cs
+    path: Models/TimedZoneRange.cs
     startLine: 20
   assemblies:
   - StravaAPILibary

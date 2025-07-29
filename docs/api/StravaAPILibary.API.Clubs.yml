@@ -18,8 +18,12 @@ items:
   fullName: StravaAPILibary.API.Clubs
   type: Class
   source:
+    remote:
+      path: API/Clubs.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Clubs
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Clubs.cs
+    path: API/Clubs.cs
     startLine: 36
   assemblies:
   - StravaAPILibary
@@ -79,8 +83,12 @@ items:
   fullName: StravaAPILibary.API.Clubs.GetClubByIdAsync(string, long)
   type: Method
   source:
+    remote:
+      path: API/Clubs.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetClubByIdAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Clubs.cs
+    path: API/Clubs.cs
     startLine: 48
   assemblies:
   - StravaAPILibary
@@ -129,8 +137,12 @@ items:
   fullName: StravaAPILibary.API.Clubs.GetClubsAsync(string, int, int)
   type: Method
   source:
+    remote:
+      path: API/Clubs.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetClubsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Clubs.cs
+    path: API/Clubs.cs
     startLine: 97
   assemblies:
   - StravaAPILibary
@@ -185,8 +197,12 @@ items:
   fullName: StravaAPILibary.API.Clubs.GetClubMembersAsync(string, long, int, int)
   type: Method
   source:
+    remote:
+      path: API/Clubs.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetClubMembersAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Clubs.cs
+    path: API/Clubs.cs
     startLine: 148
   assemblies:
   - StravaAPILibary
@@ -244,8 +260,12 @@ items:
   fullName: StravaAPILibary.API.Clubs.GetClubActivitiesAsync(string, long, int, int)
   type: Method
   source:
+    remote:
+      path: API/Clubs.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetClubActivitiesAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Clubs.cs
+    path: API/Clubs.cs
     startLine: 206
   assemblies:
   - StravaAPILibary
@@ -303,8 +323,12 @@ items:
   fullName: StravaAPILibary.API.Clubs.GetClubAdminsAsync(string, long, int, int)
   type: Method
   source:
+    remote:
+      path: API/Clubs.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetClubAdminsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Clubs.cs
+    path: API/Clubs.cs
     startLine: 262
   assemblies:
   - StravaAPILibary

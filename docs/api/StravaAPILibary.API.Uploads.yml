@@ -15,8 +15,12 @@ items:
   fullName: StravaAPILibary.API.Uploads
   type: Class
   source:
+    remote:
+      path: API/Uploads.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Uploads
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Uploads.cs
+    path: API/Uploads.cs
     startLine: 40
   assemblies:
   - StravaAPILibary
@@ -79,8 +83,12 @@ items:
   fullName: StravaAPILibary.API.Uploads.UploadActivityAsync(string, string, string, string?, string?, bool, bool)
   type: Method
   source:
+    remote:
+      path: API/Uploads.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UploadActivityAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Uploads.cs
+    path: API/Uploads.cs
     startLine: 62
   assemblies:
   - StravaAPILibary
@@ -141,8 +149,12 @@ items:
   fullName: StravaAPILibary.API.Uploads.GetUploadAsync(string, long)
   type: Method
   source:
+    remote:
+      path: API/Uploads.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetUploadAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Uploads.cs
+    path: API/Uploads.cs
     startLine: 121
   assemblies:
   - StravaAPILibary

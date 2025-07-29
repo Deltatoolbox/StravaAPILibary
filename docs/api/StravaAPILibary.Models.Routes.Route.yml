@@ -31,8 +31,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route
   type: Class
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Route
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 11
   assemblies:
   - StravaAPILibary
@@ -64,8 +68,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Athlete
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Athlete
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 16
   assemblies:
   - StravaAPILibary
@@ -91,8 +99,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Description
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Description
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 21
   assemblies:
   - StravaAPILibary
@@ -118,8 +130,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Distance
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 26
   assemblies:
   - StravaAPILibary
@@ -145,8 +161,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.ElevationGain
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElevationGain
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 31
   assemblies:
   - StravaAPILibary
@@ -172,8 +192,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Id
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 36
   assemblies:
   - StravaAPILibary
@@ -199,8 +223,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.IdStr
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: IdStr
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 41
   assemblies:
   - StravaAPILibary
@@ -226,8 +254,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Map
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Map
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 46
   assemblies:
   - StravaAPILibary
@@ -253,8 +285,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Name
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 51
   assemblies:
   - StravaAPILibary
@@ -280,8 +316,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Private
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Private
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 56
   assemblies:
   - StravaAPILibary
@@ -307,8 +347,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Starred
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Starred
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 61
   assemblies:
   - StravaAPILibary
@@ -334,8 +378,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Timestamp
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Timestamp
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 66
   assemblies:
   - StravaAPILibary
@@ -361,8 +409,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Type
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Type
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 71
   assemblies:
   - StravaAPILibary
@@ -388,8 +440,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.SubType
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SubType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 76
   assemblies:
   - StravaAPILibary
@@ -415,8 +471,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.CreatedAt
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: CreatedAt
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 81
   assemblies:
   - StravaAPILibary
@@ -442,8 +502,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.UpdatedAt
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UpdatedAt
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 86
   assemblies:
   - StravaAPILibary
@@ -469,8 +533,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.EstimatedMovingTime
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: EstimatedMovingTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 91
   assemblies:
   - StravaAPILibary
@@ -496,8 +564,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Segments
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Segments
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 96
   assemblies:
   - StravaAPILibary
@@ -523,8 +595,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Route.Waypoints
   type: Property
   source:
+    remote:
+      path: Models/Routes/Route.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Waypoints
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Route.cs
+    path: Models/Routes/Route.cs
     startLine: 101
   assemblies:
   - StravaAPILibary

@@ -17,8 +17,12 @@ items:
   fullName: StravaAPILibary.API.Segments
   type: Class
   source:
+    remote:
+      path: API/Segments.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Segments
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    path: API/Segments.cs
     startLine: 40
   assemblies:
   - StravaAPILibary
@@ -79,8 +83,12 @@ items:
   fullName: StravaAPILibary.API.Segments.GetSegmentByIdAsync(string, string)
   type: Method
   source:
+    remote:
+      path: API/Segments.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetSegmentByIdAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    path: API/Segments.cs
     startLine: 52
   assemblies:
   - StravaAPILibary
@@ -129,8 +137,12 @@ items:
   fullName: StravaAPILibary.API.Segments.GetStarredSegmentsAsync(string, int, int)
   type: Method
   source:
+    remote:
+      path: API/Segments.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetStarredSegmentsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    path: API/Segments.cs
     startLine: 99
   assemblies:
   - StravaAPILibary
@@ -185,8 +197,12 @@ items:
   fullName: StravaAPILibary.API.Segments.GetExploreSegmentsAsync(string, float[], string, int, int)
   type: Method
   source:
+    remote:
+      path: API/Segments.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetExploreSegmentsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    path: API/Segments.cs
     startLine: 153
   assemblies:
   - StravaAPILibary
@@ -250,8 +266,12 @@ items:
   fullName: StravaAPILibary.API.Segments.PutStarredSegmentAsync(string, long, bool)
   type: Method
   source:
+    remote:
+      path: API/Segments.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PutStarredSegmentAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Segments.cs
+    path: API/Segments.cs
     startLine: 202
   assemblies:
   - StravaAPILibary

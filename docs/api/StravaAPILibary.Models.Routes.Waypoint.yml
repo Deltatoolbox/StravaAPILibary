@@ -19,8 +19,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Waypoint
   type: Class
   source:
+    remote:
+      path: Models/Routes/Waypoint.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Waypoint
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Waypoint.cs
+    path: Models/Routes/Waypoint.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -52,8 +56,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Waypoint.LatLng
   type: Property
   source:
+    remote:
+      path: Models/Routes/Waypoint.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: LatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Waypoint.cs
+    path: Models/Routes/Waypoint.cs
     startLine: 12
   assemblies:
   - StravaAPILibary
@@ -79,8 +87,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Waypoint.TargetLatLng
   type: Property
   source:
+    remote:
+      path: Models/Routes/Waypoint.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TargetLatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Waypoint.cs
+    path: Models/Routes/Waypoint.cs
     startLine: 17
   assemblies:
   - StravaAPILibary
@@ -106,8 +118,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Waypoint.Categories
   type: Property
   source:
+    remote:
+      path: Models/Routes/Waypoint.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Categories
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Waypoint.cs
+    path: Models/Routes/Waypoint.cs
     startLine: 22
   assemblies:
   - StravaAPILibary
@@ -133,8 +149,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Waypoint.Title
   type: Property
   source:
+    remote:
+      path: Models/Routes/Waypoint.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Title
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Waypoint.cs
+    path: Models/Routes/Waypoint.cs
     startLine: 27
   assemblies:
   - StravaAPILibary
@@ -160,8 +180,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Waypoint.Description
   type: Property
   source:
+    remote:
+      path: Models/Routes/Waypoint.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Description
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Waypoint.cs
+    path: Models/Routes/Waypoint.cs
     startLine: 32
   assemblies:
   - StravaAPILibary
@@ -187,8 +211,12 @@ items:
   fullName: StravaAPILibary.Models.Routes.Waypoint.DistanceIntoRoute
   type: Property
   source:
+    remote:
+      path: Models/Routes/Waypoint.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: DistanceIntoRoute
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Routes\Waypoint.cs
+    path: Models/Routes/Waypoint.cs
     startLine: 37
   assemblies:
   - StravaAPILibary

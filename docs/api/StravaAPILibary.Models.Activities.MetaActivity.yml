@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.MetaActivity
   type: Class
   source:
+    remote:
+      path: Models/Activities/MetaActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MetaActivity
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\MetaActivity.cs
+    path: Models/Activities/MetaActivity.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -47,8 +51,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.MetaActivity.Id
   type: Property
   source:
+    remote:
+      path: Models/Activities/MetaActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\MetaActivity.cs
+    path: Models/Activities/MetaActivity.cs
     startLine: 10
   assemblies:
   - StravaAPILibary

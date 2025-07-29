@@ -15,8 +15,12 @@ items:
   fullName: StravaAPILibary.API.SegmentsEfforts
   type: Class
   source:
+    remote:
+      path: API/SegmentsEfforts.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SegmentsEfforts
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\SegmentsEfforts.cs
+    path: API/SegmentsEfforts.cs
     startLine: 41
   assemblies:
   - StravaAPILibary
@@ -79,8 +83,12 @@ items:
   fullName: StravaAPILibary.API.SegmentsEfforts.GetSegmentEffortsAsync(string, long, System.DateTime?, System.DateTime?, int)
   type: Method
   source:
+    remote:
+      path: API/SegmentsEfforts.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetSegmentEffortsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\SegmentsEfforts.cs
+    path: API/SegmentsEfforts.cs
     startLine: 57
   assemblies:
   - StravaAPILibary
@@ -141,8 +149,12 @@ items:
   fullName: StravaAPILibary.API.SegmentsEfforts.GetSegmentEffortByIdAsync(string, long)
   type: Method
   source:
+    remote:
+      path: API/SegmentsEfforts.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetSegmentEffortByIdAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\SegmentsEfforts.cs
+    path: API/SegmentsEfforts.cs
     startLine: 110
   assemblies:
   - StravaAPILibary

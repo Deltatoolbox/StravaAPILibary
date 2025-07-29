@@ -21,8 +21,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity
   type: Class
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UpdatableActivity
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -54,8 +58,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Commute
   type: Property
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Commute
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 12
   assemblies:
   - StravaAPILibary
@@ -81,8 +89,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Trainer
   type: Property
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Trainer
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 17
   assemblies:
   - StravaAPILibary
@@ -108,8 +120,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity.HideFromHome
   type: Property
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: HideFromHome
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 22
   assemblies:
   - StravaAPILibary
@@ -135,8 +151,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Description
   type: Property
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Description
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 27
   assemblies:
   - StravaAPILibary
@@ -162,8 +182,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Name
   type: Property
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 32
   assemblies:
   - StravaAPILibary
@@ -189,8 +213,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity.Type
   type: Property
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Type
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 37
   assemblies:
   - StravaAPILibary
@@ -216,8 +244,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity.SportType
   type: Property
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SportType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 42
   assemblies:
   - StravaAPILibary
@@ -243,8 +275,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.UpdatableActivity.GearId
   type: Property
   source:
+    remote:
+      path: Models/Activities/UpdatableActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GearId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\UpdatableActivity.cs
+    path: Models/Activities/UpdatableActivity.cs
     startLine: 48
   assemblies:
   - StravaAPILibary

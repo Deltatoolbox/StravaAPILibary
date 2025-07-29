@@ -16,8 +16,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.BaseStream
   type: Class
   source:
+    remote:
+      path: Models/Streams/BaseStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: BaseStream
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\BaseStream.cs
+    path: Models/Streams/BaseStream.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -61,8 +65,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.BaseStream.OriginalSize
   type: Property
   source:
+    remote:
+      path: Models/Streams/BaseStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: OriginalSize
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\BaseStream.cs
+    path: Models/Streams/BaseStream.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -88,8 +96,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.BaseStream.Resolution
   type: Property
   source:
+    remote:
+      path: Models/Streams/BaseStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Resolution
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\BaseStream.cs
+    path: Models/Streams/BaseStream.cs
     startLine: 16
   assemblies:
   - StravaAPILibary
@@ -118,8 +130,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.BaseStream.SeriesType
   type: Property
   source:
+    remote:
+      path: Models/Streams/BaseStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SeriesType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\BaseStream.cs
+    path: Models/Streams/BaseStream.cs
     startLine: 22
   assemblies:
   - StravaAPILibary

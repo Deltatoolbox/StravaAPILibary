@@ -18,8 +18,12 @@ items:
   fullName: StravaAPILibary.Models.Common.LatLng
   type: Class
   source:
+    remote:
+      path: Models/Common/LatLng.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: LatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    path: Models/Common/LatLng.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -51,8 +55,12 @@ items:
   fullName: StravaAPILibary.Models.Common.LatLng.Latitude
   type: Property
   source:
+    remote:
+      path: Models/Common/LatLng.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Latitude
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    path: Models/Common/LatLng.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -78,8 +86,12 @@ items:
   fullName: StravaAPILibary.Models.Common.LatLng.Longitude
   type: Property
   source:
+    remote:
+      path: Models/Common/LatLng.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Longitude
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    path: Models/Common/LatLng.cs
     startLine: 15
   assemblies:
   - StravaAPILibary
@@ -105,8 +117,12 @@ items:
   fullName: StravaAPILibary.Models.Common.LatLng.LatLng()
   type: Constructor
   source:
+    remote:
+      path: Models/Common/LatLng.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: .ctor
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    path: Models/Common/LatLng.cs
     startLine: 20
   assemblies:
   - StravaAPILibary
@@ -132,8 +148,12 @@ items:
   fullName: StravaAPILibary.Models.Common.LatLng.LatLng(float, float)
   type: Constructor
   source:
+    remote:
+      path: Models/Common/LatLng.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: .ctor
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    path: Models/Common/LatLng.cs
     startLine: 27
   assemblies:
   - StravaAPILibary
@@ -166,8 +186,12 @@ items:
   fullName: StravaAPILibary.Models.Common.LatLng.ToArray()
   type: Method
   source:
+    remote:
+      path: Models/Common/LatLng.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ToArray
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Common\LatLng.cs
+    path: Models/Common/LatLng.cs
     startLine: 36
   assemblies:
   - StravaAPILibary

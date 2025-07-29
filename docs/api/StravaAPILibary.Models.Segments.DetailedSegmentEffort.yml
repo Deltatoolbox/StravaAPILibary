@@ -35,8 +35,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort
   type: Class
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: DetailedSegmentEffort
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 9
   assemblies:
   - StravaAPILibary
@@ -68,8 +72,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Id
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 14
   assemblies:
   - StravaAPILibary
@@ -95,8 +103,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ActivityId
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ActivityId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 19
   assemblies:
   - StravaAPILibary
@@ -122,8 +134,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.ElapsedTime
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElapsedTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 24
   assemblies:
   - StravaAPILibary
@@ -149,8 +165,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDate
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartDate
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 29
   assemblies:
   - StravaAPILibary
@@ -176,8 +196,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartDateLocal
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartDateLocal
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 34
   assemblies:
   - StravaAPILibary
@@ -203,8 +227,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Distance
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 39
   assemblies:
   - StravaAPILibary
@@ -230,8 +258,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.IsKom
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: IsKom
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 44
   assemblies:
   - StravaAPILibary
@@ -257,8 +289,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Name
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 49
   assemblies:
   - StravaAPILibary
@@ -284,8 +320,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Activity
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Activity
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 54
   assemblies:
   - StravaAPILibary
@@ -311,8 +351,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Athlete
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Athlete
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 59
   assemblies:
   - StravaAPILibary
@@ -338,8 +382,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MovingTime
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MovingTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 64
   assemblies:
   - StravaAPILibary
@@ -365,8 +413,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.StartIndex
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartIndex
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 69
   assemblies:
   - StravaAPILibary
@@ -392,8 +444,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.EndIndex
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: EndIndex
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 74
   assemblies:
   - StravaAPILibary
@@ -419,8 +475,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageCadence
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AverageCadence
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 79
   assemblies:
   - StravaAPILibary
@@ -446,8 +506,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageWatts
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AverageWatts
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 84
   assemblies:
   - StravaAPILibary
@@ -473,8 +537,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.DeviceWatts
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: DeviceWatts
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 89
   assemblies:
   - StravaAPILibary
@@ -500,8 +568,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.AverageHeartrate
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AverageHeartrate
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 94
   assemblies:
   - StravaAPILibary
@@ -527,8 +599,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.MaxHeartrate
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MaxHeartrate
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 99
   assemblies:
   - StravaAPILibary
@@ -554,8 +630,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Segment
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Segment
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 104
   assemblies:
   - StravaAPILibary
@@ -581,8 +661,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.KomRank
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: KomRank
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 109
   assemblies:
   - StravaAPILibary
@@ -608,8 +692,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.PrRank
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PrRank
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 114
   assemblies:
   - StravaAPILibary
@@ -635,8 +723,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.DetailedSegmentEffort.Hidden
   type: Property
   source:
+    remote:
+      path: Models/Segments/DetailedSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Hidden
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\DetailedSegmentEffort.cs
+    path: Models/Segments/DetailedSegmentEffort.cs
     startLine: 119
   assemblies:
   - StravaAPILibary

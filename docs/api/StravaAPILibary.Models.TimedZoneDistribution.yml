@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.TimedZoneDistribution
   type: Class
   source:
+    remote:
+      path: Models/TimedZoneDistribution.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TimedZoneDistribution
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\TimedZoneDistribution.cs
+    path: Models/TimedZoneDistribution.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -47,8 +51,12 @@ items:
   fullName: StravaAPILibary.Models.TimedZoneDistribution.Zones
   type: Property
   source:
+    remote:
+      path: Models/TimedZoneDistribution.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Zones
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\TimedZoneDistribution.cs
+    path: Models/TimedZoneDistribution.cs
     startLine: 12
   assemblies:
   - StravaAPILibary

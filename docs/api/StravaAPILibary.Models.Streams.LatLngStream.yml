@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.LatLngStream
   type: Class
   source:
+    remote:
+      path: Models/Streams/LatLngStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: LatLngStream
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\LatLngStream.cs
+    path: Models/Streams/LatLngStream.cs
     startLine: 8
   assemblies:
   - StravaAPILibary
@@ -51,8 +55,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.LatLngStream.Data
   type: Property
   source:
+    remote:
+      path: Models/Streams/LatLngStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Data
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\LatLngStream.cs
+    path: Models/Streams/LatLngStream.cs
     startLine: 13
   assemblies:
   - StravaAPILibary

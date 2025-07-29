@@ -19,8 +19,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubAthlete
   type: Class
   source:
+    remote:
+      path: Models/Clubs/ClubAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ClubAthlete
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubAthlete.cs
+    path: Models/Clubs/ClubAthlete.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -52,8 +56,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubAthlete.ResourceState
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ResourceState
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubAthlete.cs
+    path: Models/Clubs/ClubAthlete.cs
     startLine: 11
   assemblies:
   - StravaAPILibary
@@ -82,8 +90,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubAthlete.FirstName
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: FirstName
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubAthlete.cs
+    path: Models/Clubs/ClubAthlete.cs
     startLine: 16
   assemblies:
   - StravaAPILibary
@@ -109,8 +121,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubAthlete.LastName
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: LastName
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubAthlete.cs
+    path: Models/Clubs/ClubAthlete.cs
     startLine: 21
   assemblies:
   - StravaAPILibary
@@ -136,8 +152,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubAthlete.Member
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Member
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubAthlete.cs
+    path: Models/Clubs/ClubAthlete.cs
     startLine: 26
   assemblies:
   - StravaAPILibary
@@ -163,8 +183,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubAthlete.Admin
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Admin
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubAthlete.cs
+    path: Models/Clubs/ClubAthlete.cs
     startLine: 31
   assemblies:
   - StravaAPILibary
@@ -190,8 +214,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubAthlete.Owner
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Owner
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubAthlete.cs
+    path: Models/Clubs/ClubAthlete.cs
     startLine: 36
   assemblies:
   - StravaAPILibary

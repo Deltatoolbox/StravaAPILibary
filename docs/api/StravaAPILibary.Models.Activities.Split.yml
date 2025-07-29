@@ -20,8 +20,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.Split
   type: Class
   source:
+    remote:
+      path: Models/Activities/Split.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Split
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\Split.cs
+    path: Models/Activities/Split.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -53,8 +57,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.Split.AverageSpeed
   type: Property
   source:
+    remote:
+      path: Models/Activities/Split.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AverageSpeed
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\Split.cs
+    path: Models/Activities/Split.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -80,8 +88,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.Split.Distance
   type: Property
   source:
+    remote:
+      path: Models/Activities/Split.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\Split.cs
+    path: Models/Activities/Split.cs
     startLine: 15
   assemblies:
   - StravaAPILibary
@@ -107,8 +119,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.Split.ElapsedTime
   type: Property
   source:
+    remote:
+      path: Models/Activities/Split.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElapsedTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\Split.cs
+    path: Models/Activities/Split.cs
     startLine: 20
   assemblies:
   - StravaAPILibary
@@ -134,8 +150,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.Split.ElevationDifference
   type: Property
   source:
+    remote:
+      path: Models/Activities/Split.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElevationDifference
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\Split.cs
+    path: Models/Activities/Split.cs
     startLine: 25
   assemblies:
   - StravaAPILibary
@@ -161,8 +181,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.Split.PaceZone
   type: Property
   source:
+    remote:
+      path: Models/Activities/Split.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PaceZone
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\Split.cs
+    path: Models/Activities/Split.cs
     startLine: 30
   assemblies:
   - StravaAPILibary
@@ -188,8 +212,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.Split.MovingTime
   type: Property
   source:
+    remote:
+      path: Models/Activities/Split.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MovingTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\Split.cs
+    path: Models/Activities/Split.cs
     startLine: 35
   assemblies:
   - StravaAPILibary
@@ -215,8 +243,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.Split.SplitIndex
   type: Property
   source:
+    remote:
+      path: Models/Activities/Split.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SplitIndex
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\Split.cs
+    path: Models/Activities/Split.cs
     startLine: 40
   assemblies:
   - StravaAPILibary

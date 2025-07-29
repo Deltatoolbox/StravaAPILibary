@@ -30,8 +30,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment
   type: Class
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SummarySegment
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 8
   assemblies:
   - StravaAPILibary
@@ -63,8 +67,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.Id
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 13
   assemblies:
   - StravaAPILibary
@@ -90,8 +98,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.Name
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 18
   assemblies:
   - StravaAPILibary
@@ -117,8 +129,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.ActivityType
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ActivityType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 23
   assemblies:
   - StravaAPILibary
@@ -144,8 +160,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.Distance
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 28
   assemblies:
   - StravaAPILibary
@@ -171,8 +191,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.AverageGrade
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AverageGrade
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 33
   assemblies:
   - StravaAPILibary
@@ -198,8 +222,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.MaximumGrade
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MaximumGrade
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 38
   assemblies:
   - StravaAPILibary
@@ -225,8 +253,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.ElevationHigh
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElevationHigh
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 43
   assemblies:
   - StravaAPILibary
@@ -252,8 +284,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.ElevationLow
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElevationLow
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 48
   assemblies:
   - StravaAPILibary
@@ -279,8 +315,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.StartLatLng
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartLatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 53
   assemblies:
   - StravaAPILibary
@@ -306,8 +346,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.EndLatLng
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: EndLatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 58
   assemblies:
   - StravaAPILibary
@@ -333,8 +377,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.ClimbCategory
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ClimbCategory
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 63
   assemblies:
   - StravaAPILibary
@@ -360,8 +408,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.City
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: City
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 68
   assemblies:
   - StravaAPILibary
@@ -387,8 +439,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.State
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: State
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 73
   assemblies:
   - StravaAPILibary
@@ -414,8 +470,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.Country
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Country
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 78
   assemblies:
   - StravaAPILibary
@@ -441,8 +501,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.Private
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Private
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 83
   assemblies:
   - StravaAPILibary
@@ -468,8 +532,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.AthletePrEffort
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AthletePrEffort
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 88
   assemblies:
   - StravaAPILibary
@@ -495,8 +563,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummarySegment.AthleteSegmentStats
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummarySegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AthleteSegmentStats
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummarySegment.cs
+    path: Models/Segments/SummarySegment.cs
     startLine: 93
   assemblies:
   - StravaAPILibary

@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.PowerStream
   type: Class
   source:
+    remote:
+      path: Models/Streams/PowerStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PowerStream
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\PowerStream.cs
+    path: Models/Streams/PowerStream.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -51,8 +55,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.PowerStream.Data
   type: Property
   source:
+    remote:
+      path: Models/Streams/PowerStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Data
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\PowerStream.cs
+    path: Models/Streams/PowerStream.cs
     startLine: 12
   assemblies:
   - StravaAPILibary

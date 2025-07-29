@@ -17,8 +17,12 @@ items:
   fullName: StravaAPILibary.API.Routes
   type: Class
   source:
+    remote:
+      path: API/Routes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Routes
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Routes.cs
+    path: API/Routes.cs
     startLine: 36
   assemblies:
   - StravaAPILibary
@@ -77,8 +81,12 @@ items:
   fullName: StravaAPILibary.API.Routes.GetRouteByIdAsync(string, long)
   type: Method
   source:
+    remote:
+      path: API/Routes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetRouteByIdAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Routes.cs
+    path: API/Routes.cs
     startLine: 56
   assemblies:
   - StravaAPILibary
@@ -127,8 +135,12 @@ items:
   fullName: StravaAPILibary.API.Routes.GetRoutesByAthleteIdAsync(string, long, int, int)
   type: Method
   source:
+    remote:
+      path: API/Routes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetRoutesByAthleteIdAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Routes.cs
+    path: API/Routes.cs
     startLine: 105
   assemblies:
   - StravaAPILibary
@@ -186,8 +198,12 @@ items:
   fullName: StravaAPILibary.API.Routes.GetRouteGpxExportAsync(string, long)
   type: Method
   source:
+    remote:
+      path: API/Routes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetRouteGpxExportAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Routes.cs
+    path: API/Routes.cs
     startLine: 152
   assemblies:
   - StravaAPILibary
@@ -233,8 +249,12 @@ items:
   fullName: StravaAPILibary.API.Routes.GetRouteTcxExportAsync(string, long)
   type: Method
   source:
+    remote:
+      path: API/Routes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetRouteTcxExportAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Routes.cs
+    path: API/Routes.cs
     startLine: 192
   assemblies:
   - StravaAPILibary

@@ -17,8 +17,12 @@ items:
   fullName: StravaAPILibary.API.Athletes
   type: Class
   source:
+    remote:
+      path: API/Athletes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Athletes
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Athletes.cs
+    path: API/Athletes.cs
     startLine: 44
   assemblies:
   - StravaAPILibary
@@ -80,8 +84,12 @@ items:
   fullName: StravaAPILibary.API.Athletes.GetAuthenticatedAthleteProfileAsync(string)
   type: Method
   source:
+    remote:
+      path: API/Athletes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetAuthenticatedAthleteProfileAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Athletes.cs
+    path: API/Athletes.cs
     startLine: 63
   assemblies:
   - StravaAPILibary
@@ -127,8 +135,12 @@ items:
   fullName: StravaAPILibary.API.Athletes.GetAuthenticatedAthleteStatsAsync(string, string)
   type: Method
   source:
+    remote:
+      path: API/Athletes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetAuthenticatedAthleteStatsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Athletes.cs
+    path: API/Athletes.cs
     startLine: 105
   assemblies:
   - StravaAPILibary
@@ -180,8 +192,12 @@ items:
   fullName: StravaAPILibary.API.Athletes.GetAuthenticatedAthleteZonesAsync(string)
   type: Method
   source:
+    remote:
+      path: API/Athletes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetAuthenticatedAthleteZonesAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Athletes.cs
+    path: API/Athletes.cs
     startLine: 150
   assemblies:
   - StravaAPILibary
@@ -227,8 +243,12 @@ items:
   fullName: StravaAPILibary.API.Athletes.UpdateAuthenticatedAthleteAsync(string, float)
   type: Method
   source:
+    remote:
+      path: API/Athletes.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UpdateAuthenticatedAthleteAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Athletes.cs
+    path: API/Athletes.cs
     startLine: 186
   assemblies:
   - StravaAPILibary

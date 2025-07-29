@@ -15,8 +15,12 @@ items:
   fullName: StravaAPILibary.Models.Zones.HeartRateZoneRanges
   type: Class
   source:
+    remote:
+      path: Models/Zones/HeartRateZoneRanges.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: HeartRateZoneRanges
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Zones\HeartRateZoneRanges.cs
+    path: Models/Zones/HeartRateZoneRanges.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -48,8 +52,12 @@ items:
   fullName: StravaAPILibary.Models.Zones.HeartRateZoneRanges.CustomZones
   type: Property
   source:
+    remote:
+      path: Models/Zones/HeartRateZoneRanges.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: CustomZones
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Zones\HeartRateZoneRanges.cs
+    path: Models/Zones/HeartRateZoneRanges.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -75,8 +83,12 @@ items:
   fullName: StravaAPILibary.Models.Zones.HeartRateZoneRanges.Zones
   type: Property
   source:
+    remote:
+      path: Models/Zones/HeartRateZoneRanges.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Zones
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Zones\HeartRateZoneRanges.cs
+    path: Models/Zones/HeartRateZoneRanges.cs
     startLine: 15
   assemblies:
   - StravaAPILibary

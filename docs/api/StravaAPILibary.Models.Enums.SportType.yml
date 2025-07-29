@@ -63,8 +63,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType
   type: Enum
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SportType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 8
   assemblies:
   - StravaAPILibary
@@ -89,8 +93,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.AlpineSki
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AlpineSki
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 11
   assemblies:
   - StravaAPILibary
@@ -113,8 +121,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.BackcountrySki
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: BackcountrySki
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 14
   assemblies:
   - StravaAPILibary
@@ -137,8 +149,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Badminton
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Badminton
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 17
   assemblies:
   - StravaAPILibary
@@ -161,8 +177,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Canoeing
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Canoeing
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 20
   assemblies:
   - StravaAPILibary
@@ -185,8 +205,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Crossfit
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Crossfit
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 23
   assemblies:
   - StravaAPILibary
@@ -209,8 +233,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.EBikeRide
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: EBikeRide
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 26
   assemblies:
   - StravaAPILibary
@@ -233,8 +261,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Elliptical
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Elliptical
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 29
   assemblies:
   - StravaAPILibary
@@ -257,8 +289,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.EMountainBikeRide
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: EMountainBikeRide
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 32
   assemblies:
   - StravaAPILibary
@@ -281,8 +317,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Golf
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Golf
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 35
   assemblies:
   - StravaAPILibary
@@ -305,8 +345,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.GravelRide
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GravelRide
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 38
   assemblies:
   - StravaAPILibary
@@ -329,8 +373,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Handcycle
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Handcycle
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 41
   assemblies:
   - StravaAPILibary
@@ -353,8 +401,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.HighIntensityIntervalTraining
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: HighIntensityIntervalTraining
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 44
   assemblies:
   - StravaAPILibary
@@ -377,8 +429,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Hike
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Hike
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 47
   assemblies:
   - StravaAPILibary
@@ -401,8 +457,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.IceSkate
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: IceSkate
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 50
   assemblies:
   - StravaAPILibary
@@ -425,8 +485,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.InlineSkate
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: InlineSkate
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 53
   assemblies:
   - StravaAPILibary
@@ -449,8 +513,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Kayaking
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Kayaking
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 56
   assemblies:
   - StravaAPILibary
@@ -473,8 +541,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Kitesurf
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Kitesurf
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 59
   assemblies:
   - StravaAPILibary
@@ -497,8 +569,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.MountainBikeRide
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MountainBikeRide
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 62
   assemblies:
   - StravaAPILibary
@@ -521,8 +597,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.NordicSki
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: NordicSki
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 65
   assemblies:
   - StravaAPILibary
@@ -545,8 +625,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Pickleball
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Pickleball
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 68
   assemblies:
   - StravaAPILibary
@@ -569,8 +653,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Pilates
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Pilates
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 71
   assemblies:
   - StravaAPILibary
@@ -593,8 +681,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Racquetball
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Racquetball
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 74
   assemblies:
   - StravaAPILibary
@@ -617,8 +709,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Ride
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Ride
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 77
   assemblies:
   - StravaAPILibary
@@ -641,8 +737,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.RockClimbing
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: RockClimbing
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 80
   assemblies:
   - StravaAPILibary
@@ -665,8 +765,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.RollerSki
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: RollerSki
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 83
   assemblies:
   - StravaAPILibary
@@ -689,8 +793,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Rowing
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Rowing
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 86
   assemblies:
   - StravaAPILibary
@@ -713,8 +821,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Run
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Run
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 89
   assemblies:
   - StravaAPILibary
@@ -737,8 +849,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Sail
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Sail
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 92
   assemblies:
   - StravaAPILibary
@@ -761,8 +877,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Skateboard
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Skateboard
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 95
   assemblies:
   - StravaAPILibary
@@ -785,8 +905,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Snowboard
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Snowboard
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 98
   assemblies:
   - StravaAPILibary
@@ -809,8 +933,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Snowshoe
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Snowshoe
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 101
   assemblies:
   - StravaAPILibary
@@ -833,8 +961,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Soccer
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Soccer
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 104
   assemblies:
   - StravaAPILibary
@@ -857,8 +989,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Squash
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Squash
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 107
   assemblies:
   - StravaAPILibary
@@ -881,8 +1017,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.StairStepper
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StairStepper
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 110
   assemblies:
   - StravaAPILibary
@@ -905,8 +1045,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.StandUpPaddling
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StandUpPaddling
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 113
   assemblies:
   - StravaAPILibary
@@ -929,8 +1073,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Surfing
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Surfing
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 116
   assemblies:
   - StravaAPILibary
@@ -953,8 +1101,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Swim
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Swim
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 119
   assemblies:
   - StravaAPILibary
@@ -977,8 +1129,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.TableTennis
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TableTennis
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 122
   assemblies:
   - StravaAPILibary
@@ -1001,8 +1157,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Tennis
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Tennis
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 125
   assemblies:
   - StravaAPILibary
@@ -1025,8 +1185,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.TrailRun
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TrailRun
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 128
   assemblies:
   - StravaAPILibary
@@ -1049,8 +1213,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Velomobile
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Velomobile
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 131
   assemblies:
   - StravaAPILibary
@@ -1073,8 +1241,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.VirtualRide
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: VirtualRide
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 134
   assemblies:
   - StravaAPILibary
@@ -1097,8 +1269,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.VirtualRow
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: VirtualRow
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 137
   assemblies:
   - StravaAPILibary
@@ -1121,8 +1297,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.VirtualRun
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: VirtualRun
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 140
   assemblies:
   - StravaAPILibary
@@ -1145,8 +1325,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Walk
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Walk
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 143
   assemblies:
   - StravaAPILibary
@@ -1169,8 +1353,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.WeightTraining
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: WeightTraining
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 146
   assemblies:
   - StravaAPILibary
@@ -1193,8 +1381,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Wheelchair
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Wheelchair
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 149
   assemblies:
   - StravaAPILibary
@@ -1217,8 +1409,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Windsurf
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Windsurf
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 152
   assemblies:
   - StravaAPILibary
@@ -1241,8 +1437,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Workout
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Workout
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 155
   assemblies:
   - StravaAPILibary
@@ -1265,8 +1465,12 @@ items:
   fullName: StravaAPILibary.Models.Enums.SportType.Yoga
   type: Field
   source:
+    remote:
+      path: Models/Enums/SportType.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Yoga
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Enums\SportType.cs
+    path: Models/Enums/SportType.cs
     startLine: 158
   assemblies:
   - StravaAPILibary

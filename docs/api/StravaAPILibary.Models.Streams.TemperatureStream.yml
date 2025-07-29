@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.TemperatureStream
   type: Class
   source:
+    remote:
+      path: Models/Streams/TemperatureStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TemperatureStream
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\TemperatureStream.cs
+    path: Models/Streams/TemperatureStream.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -51,8 +55,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.TemperatureStream.Data
   type: Property
   source:
+    remote:
+      path: Models/Streams/TemperatureStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Data
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\TemperatureStream.cs
+    path: Models/Streams/TemperatureStream.cs
     startLine: 12
   assemblies:
   - StravaAPILibary

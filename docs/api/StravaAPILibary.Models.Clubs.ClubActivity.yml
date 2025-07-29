@@ -22,8 +22,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity
   type: Class
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ClubActivity
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 8
   assemblies:
   - StravaAPILibary
@@ -55,8 +59,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.Athlete
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Athlete
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 13
   assemblies:
   - StravaAPILibary
@@ -82,8 +90,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.Name
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 18
   assemblies:
   - StravaAPILibary
@@ -109,8 +121,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.Distance
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 23
   assemblies:
   - StravaAPILibary
@@ -136,8 +152,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.MovingTime
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MovingTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 28
   assemblies:
   - StravaAPILibary
@@ -163,8 +183,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.ElapsedTime
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElapsedTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 33
   assemblies:
   - StravaAPILibary
@@ -190,8 +214,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.TotalElevationGain
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TotalElevationGain
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 38
   assemblies:
   - StravaAPILibary
@@ -217,8 +245,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.Type
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Type
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 43
   assemblies:
   - StravaAPILibary
@@ -244,8 +276,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.SportType
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SportType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 48
   assemblies:
   - StravaAPILibary
@@ -271,8 +307,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.ClubActivity.WorkoutType
   type: Property
   source:
+    remote:
+      path: Models/Clubs/ClubActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: WorkoutType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\ClubActivity.cs
+    path: Models/Clubs/ClubActivity.cs
     startLine: 53
   assemblies:
   - StravaAPILibary

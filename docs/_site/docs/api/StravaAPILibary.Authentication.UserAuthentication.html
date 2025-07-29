@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/Deltatoolbox/StravaAPILibary/new/master/apiSpec/new?filename=StravaAPILibary_Authentication_UserAuthentication.md&amp;value=---%0Auid%3A%20StravaAPILibary.Authentication.UserAuthentication%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="StravaAPILibary_Authentication_UserAuthentication" data-uid="StravaAPILibary.Authentication.UserAuthentication" class="text-break">
-Class UserAuthentication  
+Class UserAuthentication  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -222,7 +222,7 @@ Refer to the official Strava API documentation for authentication:
 
   <h3 id="StravaAPILibary_Authentication_UserAuthentication__ctor_StravaAPILibary_Authentication_Credentials_System_String_System_String_" data-uid="StravaAPILibary.Authentication.UserAuthentication.#ctor(StravaAPILibary.Authentication.Credentials,System.String,System.String)">
   UserAuthentication(Credentials, string, string)
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L130"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="StravaAPILibary.Authentication.UserAuthentication.html">UserAuthentication</a> class with the specified credentials and configuration.</p>
@@ -276,7 +276,7 @@ Refer to the official Strava API documentation for authentication:
 
   <h3 id="StravaAPILibary_Authentication_UserAuthentication_BuildAuthorizationUrl" data-uid="StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl">
   BuildAuthorizationUrl()
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L202"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Builds the Strava OAuth authorization URL with the configured parameters.</p>
@@ -319,7 +319,7 @@ Console.WriteLine(authUrl);
 
   <h3 id="StravaAPILibary_Authentication_UserAuthentication_ExchangeCodeForTokenAsync_System_String_" data-uid="StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(System.String)">
   ExchangeCodeForTokenAsync(string)
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Exchanges an authorization code for an access token and refresh token.</p>
@@ -393,7 +393,7 @@ If successful, the access token, refresh token, and expiration time are stored i
 
   <h3 id="StravaAPILibary_Authentication_UserAuthentication_OpenBrowser_System_String_" data-uid="StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(System.String)">
   OpenBrowser(string)
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Opens the specified URL in the default browser.</p>
@@ -430,7 +430,7 @@ On Windows, it uses <code>Process.Start</code> with <code>UseShellExecute = true
 
   <h3 id="StravaAPILibary_Authentication_UserAuthentication_RefreshAccessTokenAsync" data-uid="StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync">
   RefreshAccessTokenAsync()
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L391"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Refreshes the access token using the refresh token.</p>
@@ -499,7 +499,7 @@ In such cases, the user will need to re-authenticate using the full OAuth flow.
 
   <h3 id="StravaAPILibary_Authentication_UserAuthentication_StartAuthorization" data-uid="StravaAPILibary.Authentication.UserAuthentication.StartAuthorization">
   StartAuthorization()
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Starts the authorization process by opening the browser with the Strava OAuth URL.</p>
@@ -543,7 +543,7 @@ The user will be prompted to log in to Strava (if not already logged in) and aut
 
   <h3 id="StravaAPILibary_Authentication_UserAuthentication_WaitForAuthCodeAsync" data-uid="StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync">
   WaitForAuthCodeAsync()
-  
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Waits for the user to authorize the application and returns the authorization code.</p>
@@ -605,6 +605,7 @@ For production applications, consider handling the redirect manually instead of 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/Deltatoolbox/StravaAPILibary/blob/master/Authentication/UserAuthentication.cs/#L106" class="edit-link">Edit this page</a>
         </div>
 
 

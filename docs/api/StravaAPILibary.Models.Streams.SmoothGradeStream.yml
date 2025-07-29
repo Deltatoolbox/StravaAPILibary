@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.SmoothGradeStream
   type: Class
   source:
+    remote:
+      path: Models/Streams/SmoothGradeStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SmoothGradeStream
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\SmoothGradeStream.cs
+    path: Models/Streams/SmoothGradeStream.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -51,8 +55,12 @@ items:
   fullName: StravaAPILibary.Models.Streams.SmoothGradeStream.Data
   type: Property
   source:
+    remote:
+      path: Models/Streams/SmoothGradeStream.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Data
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Streams\SmoothGradeStream.cs
+    path: Models/Streams/SmoothGradeStream.cs
     startLine: 12
   assemblies:
   - StravaAPILibary

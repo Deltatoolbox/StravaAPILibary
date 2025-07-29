@@ -20,8 +20,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityZone
   type: Class
   source:
+    remote:
+      path: Models/ActivityZone.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ActivityZone
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityZone.cs
+    path: Models/ActivityZone.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -53,8 +57,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityZone.Score
   type: Property
   source:
+    remote:
+      path: Models/ActivityZone.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Score
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityZone.cs
+    path: Models/ActivityZone.cs
     startLine: 12
   assemblies:
   - StravaAPILibary
@@ -80,8 +88,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityZone.DistributionBuckets
   type: Property
   source:
+    remote:
+      path: Models/ActivityZone.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: DistributionBuckets
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityZone.cs
+    path: Models/ActivityZone.cs
     startLine: 18
   assemblies:
   - StravaAPILibary
@@ -110,8 +122,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityZone.Type
   type: Property
   source:
+    remote:
+      path: Models/ActivityZone.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Type
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityZone.cs
+    path: Models/ActivityZone.cs
     startLine: 24
   assemblies:
   - StravaAPILibary
@@ -140,8 +156,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityZone.SensorBased
   type: Property
   source:
+    remote:
+      path: Models/ActivityZone.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SensorBased
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityZone.cs
+    path: Models/ActivityZone.cs
     startLine: 29
   assemblies:
   - StravaAPILibary
@@ -167,8 +187,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityZone.Points
   type: Property
   source:
+    remote:
+      path: Models/ActivityZone.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Points
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityZone.cs
+    path: Models/ActivityZone.cs
     startLine: 34
   assemblies:
   - StravaAPILibary
@@ -194,8 +218,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityZone.CustomZones
   type: Property
   source:
+    remote:
+      path: Models/ActivityZone.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: CustomZones
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityZone.cs
+    path: Models/ActivityZone.cs
     startLine: 39
   assemblies:
   - StravaAPILibary
@@ -221,8 +249,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityZone.Max
   type: Property
   source:
+    remote:
+      path: Models/ActivityZone.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Max
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityZone.cs
+    path: Models/ActivityZone.cs
     startLine: 44
   assemblies:
   - StravaAPILibary

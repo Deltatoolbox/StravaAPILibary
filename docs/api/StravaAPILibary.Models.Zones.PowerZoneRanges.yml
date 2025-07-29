@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.Zones.PowerZoneRanges
   type: Class
   source:
+    remote:
+      path: Models/Zones/PowerZoneRanges.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PowerZoneRanges
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Zones\PowerZoneRanges.cs
+    path: Models/Zones/PowerZoneRanges.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -47,8 +51,12 @@ items:
   fullName: StravaAPILibary.Models.Zones.PowerZoneRanges.Zones
   type: Property
   source:
+    remote:
+      path: Models/Zones/PowerZoneRanges.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Zones
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Zones\PowerZoneRanges.cs
+    path: Models/Zones/PowerZoneRanges.cs
     startLine: 10
   assemblies:
   - StravaAPILibary

@@ -20,8 +20,12 @@ items:
   fullName: StravaAPILibary.Authentication.UserAuthentication
   type: Class
   source:
+    remote:
+      path: Authentication/UserAuthentication.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UserAuthentication
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    path: Authentication/UserAuthentication.cs
     startLine: 105
   assemblies:
   - StravaAPILibary
@@ -147,8 +151,12 @@ items:
   fullName: StravaAPILibary.Authentication.UserAuthentication.UserAuthentication(StravaAPILibary.Authentication.Credentials, string, string)
   type: Constructor
   source:
+    remote:
+      path: Authentication/UserAuthentication.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: .ctor
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    path: Authentication/UserAuthentication.cs
     startLine: 129
   assemblies:
   - StravaAPILibary
@@ -194,8 +202,12 @@ items:
   fullName: StravaAPILibary.Authentication.UserAuthentication.StartAuthorization()
   type: Method
   source:
+    remote:
+      path: Authentication/UserAuthentication.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartAuthorization
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    path: Authentication/UserAuthentication.cs
     startLine: 159
   assemblies:
   - StravaAPILibary
@@ -243,8 +255,12 @@ items:
   fullName: StravaAPILibary.Authentication.UserAuthentication.OpenBrowser(string)
   type: Method
   source:
+    remote:
+      path: Authentication/UserAuthentication.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: OpenBrowser
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    path: Authentication/UserAuthentication.cs
     startLine: 173
   assemblies:
   - StravaAPILibary
@@ -278,8 +294,12 @@ items:
   fullName: StravaAPILibary.Authentication.UserAuthentication.BuildAuthorizationUrl()
   type: Method
   source:
+    remote:
+      path: Authentication/UserAuthentication.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: BuildAuthorizationUrl
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    path: Authentication/UserAuthentication.cs
     startLine: 201
   assemblies:
   - StravaAPILibary
@@ -317,8 +337,12 @@ items:
   fullName: StravaAPILibary.Authentication.UserAuthentication.WaitForAuthCodeAsync()
   type: Method
   source:
+    remote:
+      path: Authentication/UserAuthentication.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: WaitForAuthCodeAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    path: Authentication/UserAuthentication.cs
     startLine: 245
   assemblies:
   - StravaAPILibary
@@ -379,8 +403,12 @@ items:
   fullName: StravaAPILibary.Authentication.UserAuthentication.ExchangeCodeForTokenAsync(string)
   type: Method
   source:
+    remote:
+      path: Authentication/UserAuthentication.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ExchangeCodeForTokenAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    path: Authentication/UserAuthentication.cs
     startLine: 328
   assemblies:
   - StravaAPILibary
@@ -456,8 +484,12 @@ items:
   fullName: StravaAPILibary.Authentication.UserAuthentication.RefreshAccessTokenAsync()
   type: Method
   source:
+    remote:
+      path: Authentication/UserAuthentication.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: RefreshAccessTokenAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Authentication\UserAuthentication.cs
+    path: Authentication/UserAuthentication.cs
     startLine: 390
   assemblies:
   - StravaAPILibary

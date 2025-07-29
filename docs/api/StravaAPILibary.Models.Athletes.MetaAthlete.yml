@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.MetaAthlete
   type: Class
   source:
+    remote:
+      path: Models/Athletes/MetaAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MetaAthlete
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\MetaAthlete.cs
+    path: Models/Athletes/MetaAthlete.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -47,8 +51,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.MetaAthlete.Id
   type: Property
   source:
+    remote:
+      path: Models/Athletes/MetaAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\MetaAthlete.cs
+    path: Models/Athletes/MetaAthlete.cs
     startLine: 10
   assemblies:
   - StravaAPILibary

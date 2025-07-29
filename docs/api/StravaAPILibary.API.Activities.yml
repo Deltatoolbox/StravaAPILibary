@@ -21,8 +21,12 @@ items:
   fullName: StravaAPILibary.API.Activities
   type: Class
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Activities
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 46
   assemblies:
   - StravaAPILibary
@@ -86,8 +90,12 @@ items:
   fullName: StravaAPILibary.API.Activities.GetAthletesActivitiesAsync(string, int, int, int, int)
   type: Method
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetAthletesActivitiesAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 147
   assemblies:
   - StravaAPILibary
@@ -231,8 +239,12 @@ items:
   fullName: StravaAPILibary.API.Activities.GetActivityByIdAsync(string, string)
   type: Method
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetActivityByIdAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 203
   assemblies:
   - StravaAPILibary
@@ -281,8 +293,12 @@ items:
   fullName: StravaAPILibary.API.Activities.GetActivityLapsAsync(string, string)
   type: Method
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetActivityLapsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 245
   assemblies:
   - StravaAPILibary
@@ -331,8 +347,12 @@ items:
   fullName: StravaAPILibary.API.Activities.GetActivityZonesAsync(string, string)
   type: Method
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetActivityZonesAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 287
   assemblies:
   - StravaAPILibary
@@ -381,8 +401,12 @@ items:
   fullName: StravaAPILibary.API.Activities.GetActivityCommentsAsync(string, string)
   type: Method
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetActivityCommentsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 329
   assemblies:
   - StravaAPILibary
@@ -431,8 +455,12 @@ items:
   fullName: StravaAPILibary.API.Activities.GetActivityKudosAsync(string, string)
   type: Method
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetActivityKudosAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 371
   assemblies:
   - StravaAPILibary
@@ -481,8 +509,12 @@ items:
   fullName: StravaAPILibary.API.Activities.PostActivityAsync(string, string, string, string, string?, bool, bool, string?, string?)
   type: Method
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PostActivityAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 420
   assemblies:
   - StravaAPILibary
@@ -552,8 +584,12 @@ items:
   fullName: StravaAPILibary.API.Activities.UpdateActivityAsync(string, long, string?, string?, bool?, bool?, string?, string?)
   type: Method
   source:
+    remote:
+      path: API/Activities.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UpdateActivityAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Activities.cs
+    path: API/Activities.cs
     startLine: 489
   assemblies:
   - StravaAPILibary

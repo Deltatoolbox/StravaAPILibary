@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.API.Gears
   type: Class
   source:
+    remote:
+      path: API/Gears.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Gears
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Gears.cs
+    path: API/Gears.cs
     startLine: 31
   assemblies:
   - StravaAPILibary
@@ -69,8 +73,12 @@ items:
   fullName: StravaAPILibary.API.Gears.GetGearByIdAsync(string, string)
   type: Method
   source:
+    remote:
+      path: API/Gears.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetGearByIdAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Gears.cs
+    path: API/Gears.cs
     startLine: 51
   assemblies:
   - StravaAPILibary

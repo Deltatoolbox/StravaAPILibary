@@ -29,8 +29,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub
   type: Class
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SummaryClub
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -62,8 +66,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.Id
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 12
   assemblies:
   - StravaAPILibary
@@ -89,8 +97,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.ResourceState
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ResourceState
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 18
   assemblies:
   - StravaAPILibary
@@ -119,8 +131,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.Name
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 23
   assemblies:
   - StravaAPILibary
@@ -146,8 +162,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.ProfileMedium
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ProfileMedium
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 28
   assemblies:
   - StravaAPILibary
@@ -173,8 +193,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.CoverPhoto
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: CoverPhoto
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 33
   assemblies:
   - StravaAPILibary
@@ -200,8 +224,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.CoverPhotoSmall
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: CoverPhotoSmall
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 38
   assemblies:
   - StravaAPILibary
@@ -227,8 +255,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.SportType
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SportType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 44
   assemblies:
   - StravaAPILibary
@@ -257,8 +289,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.ActivityTypes
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ActivityTypes
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 49
   assemblies:
   - StravaAPILibary
@@ -284,8 +320,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.City
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: City
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 54
   assemblies:
   - StravaAPILibary
@@ -311,8 +351,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.State
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: State
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 59
   assemblies:
   - StravaAPILibary
@@ -338,8 +382,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.Country
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Country
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 64
   assemblies:
   - StravaAPILibary
@@ -365,8 +413,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.Private
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Private
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 69
   assemblies:
   - StravaAPILibary
@@ -392,8 +444,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.MemberCount
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MemberCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 74
   assemblies:
   - StravaAPILibary
@@ -419,8 +475,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.Featured
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Featured
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 79
   assemblies:
   - StravaAPILibary
@@ -446,8 +506,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.Verified
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Verified
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 84
   assemblies:
   - StravaAPILibary
@@ -473,8 +537,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.SummaryClub.Url
   type: Property
   source:
+    remote:
+      path: Models/Clubs/SummaryClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Url
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\SummaryClub.cs
+    path: Models/Clubs/SummaryClub.cs
     startLine: 89
   assemblies:
   - StravaAPILibary

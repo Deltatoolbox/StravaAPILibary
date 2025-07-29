@@ -17,8 +17,12 @@ items:
   fullName: StravaAPILibary.Models.Photos.PhotosSummaryPrimary
   type: Class
   source:
+    remote:
+      path: Models/Photos/PhotosSummaryPrimary.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PhotosSummaryPrimary
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummaryPrimary.cs
+    path: Models/Photos/PhotosSummaryPrimary.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -50,8 +54,12 @@ items:
   fullName: StravaAPILibary.Models.Photos.PhotosSummaryPrimary.Id
   type: Property
   source:
+    remote:
+      path: Models/Photos/PhotosSummaryPrimary.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummaryPrimary.cs
+    path: Models/Photos/PhotosSummaryPrimary.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -77,8 +85,12 @@ items:
   fullName: StravaAPILibary.Models.Photos.PhotosSummaryPrimary.Source
   type: Property
   source:
+    remote:
+      path: Models/Photos/PhotosSummaryPrimary.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Source
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummaryPrimary.cs
+    path: Models/Photos/PhotosSummaryPrimary.cs
     startLine: 15
   assemblies:
   - StravaAPILibary
@@ -104,8 +116,12 @@ items:
   fullName: StravaAPILibary.Models.Photos.PhotosSummaryPrimary.UniqueId
   type: Property
   source:
+    remote:
+      path: Models/Photos/PhotosSummaryPrimary.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UniqueId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummaryPrimary.cs
+    path: Models/Photos/PhotosSummaryPrimary.cs
     startLine: 20
   assemblies:
   - StravaAPILibary
@@ -131,8 +147,12 @@ items:
   fullName: StravaAPILibary.Models.Photos.PhotosSummaryPrimary.Urls
   type: Property
   source:
+    remote:
+      path: Models/Photos/PhotosSummaryPrimary.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Urls
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummaryPrimary.cs
+    path: Models/Photos/PhotosSummaryPrimary.cs
     startLine: 25
   assemblies:
   - StravaAPILibary

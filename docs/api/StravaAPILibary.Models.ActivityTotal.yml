@@ -19,8 +19,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityTotal
   type: Class
   source:
+    remote:
+      path: Models/ActivityTotal.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ActivityTotal
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityTotal.cs
+    path: Models/ActivityTotal.cs
     startLine: 8
   assemblies:
   - StravaAPILibary
@@ -55,8 +59,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityTotal.Count
   type: Property
   source:
+    remote:
+      path: Models/ActivityTotal.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Count
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityTotal.cs
+    path: Models/ActivityTotal.cs
     startLine: 13
   assemblies:
   - StravaAPILibary
@@ -94,8 +102,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityTotal.Distance
   type: Property
   source:
+    remote:
+      path: Models/ActivityTotal.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityTotal.cs
+    path: Models/ActivityTotal.cs
     startLine: 19
   assemblies:
   - StravaAPILibary
@@ -133,8 +145,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityTotal.MovingTime
   type: Property
   source:
+    remote:
+      path: Models/ActivityTotal.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MovingTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityTotal.cs
+    path: Models/ActivityTotal.cs
     startLine: 25
   assemblies:
   - StravaAPILibary
@@ -172,8 +188,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityTotal.ElapsedTime
   type: Property
   source:
+    remote:
+      path: Models/ActivityTotal.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElapsedTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityTotal.cs
+    path: Models/ActivityTotal.cs
     startLine: 31
   assemblies:
   - StravaAPILibary
@@ -211,8 +231,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityTotal.ElevationGain
   type: Property
   source:
+    remote:
+      path: Models/ActivityTotal.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElevationGain
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityTotal.cs
+    path: Models/ActivityTotal.cs
     startLine: 37
   assemblies:
   - StravaAPILibary
@@ -250,8 +274,12 @@ items:
   fullName: StravaAPILibary.Models.ActivityTotal.AchievementCount
   type: Property
   source:
+    remote:
+      path: Models/ActivityTotal.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AchievementCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\ActivityTotal.cs
+    path: Models/ActivityTotal.cs
     startLine: 43
   assemblies:
   - StravaAPILibary

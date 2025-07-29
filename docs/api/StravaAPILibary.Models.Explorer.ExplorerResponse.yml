@@ -14,8 +14,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerResponse
   type: Class
   source:
+    remote:
+      path: Models/Explorer/ExplorerResponse.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ExplorerResponse
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerResponse.cs
+    path: Models/Explorer/ExplorerResponse.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -47,8 +51,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerResponse.Segments
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerResponse.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Segments
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerResponse.cs
+    path: Models/Explorer/ExplorerResponse.cs
     startLine: 12
   assemblies:
   - StravaAPILibary

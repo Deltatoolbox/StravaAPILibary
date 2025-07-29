@@ -17,8 +17,12 @@ items:
   fullName: StravaAPILibary.API.Streams
   type: Class
   source:
+    remote:
+      path: API/Streams.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Streams
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    path: API/Streams.cs
     startLine: 36
   assemblies:
   - StravaAPILibary
@@ -76,8 +80,12 @@ items:
   fullName: StravaAPILibary.API.Streams.GetActivityStreamsAsync(string, long, string?, bool)
   type: Method
   source:
+    remote:
+      path: API/Streams.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetActivityStreamsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    path: API/Streams.cs
     startLine: 58
   assemblies:
   - StravaAPILibary
@@ -132,8 +140,12 @@ items:
   fullName: StravaAPILibary.API.Streams.GetSegmentStreamsAsync(string, long, string?, bool)
   type: Method
   source:
+    remote:
+      path: API/Streams.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetSegmentStreamsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    path: API/Streams.cs
     startLine: 116
   assemblies:
   - StravaAPILibary
@@ -188,8 +200,12 @@ items:
   fullName: StravaAPILibary.API.Streams.GetRouteStreamsAsync(string, long, string?, bool)
   type: Method
   source:
+    remote:
+      path: API/Streams.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetRouteStreamsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    path: API/Streams.cs
     startLine: 174
   assemblies:
   - StravaAPILibary
@@ -244,8 +260,12 @@ items:
   fullName: StravaAPILibary.API.Streams.GetSegmentEffortStreamsAsync(string, long, string?, bool)
   type: Method
   source:
+    remote:
+      path: API/Streams.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GetSegmentEffortStreamsAsync
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\API\Streams.cs
+    path: API/Streams.cs
     startLine: 232
   assemblies:
   - StravaAPILibary

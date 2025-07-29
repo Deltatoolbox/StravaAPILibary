@@ -17,8 +17,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort
   type: Class
   source:
+    remote:
+      path: Models/Segments/SummaryPRSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SummaryPRSegmentEffort
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummaryPRSegmentEffort.cs
+    path: Models/Segments/SummaryPRSegmentEffort.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -50,8 +54,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.PrActivityId
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummaryPRSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PrActivityId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummaryPRSegmentEffort.cs
+    path: Models/Segments/SummaryPRSegmentEffort.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -77,8 +85,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.PrElapsedTime
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummaryPRSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PrElapsedTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummaryPRSegmentEffort.cs
+    path: Models/Segments/SummaryPRSegmentEffort.cs
     startLine: 15
   assemblies:
   - StravaAPILibary
@@ -104,8 +116,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.PrDate
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummaryPRSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PrDate
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummaryPRSegmentEffort.cs
+    path: Models/Segments/SummaryPRSegmentEffort.cs
     startLine: 20
   assemblies:
   - StravaAPILibary
@@ -131,8 +147,12 @@ items:
   fullName: StravaAPILibary.Models.Segments.SummaryPRSegmentEffort.EffortCount
   type: Property
   source:
+    remote:
+      path: Models/Segments/SummaryPRSegmentEffort.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: EffortCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Segments\SummaryPRSegmentEffort.cs
+    path: Models/Segments/SummaryPRSegmentEffort.cs
     startLine: 25
   assemblies:
   - StravaAPILibary

@@ -55,8 +55,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity
   type: Class
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SummaryActivity
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 11
   assemblies:
   - StravaAPILibary
@@ -88,8 +92,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Id
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 16
   assemblies:
   - StravaAPILibary
@@ -115,8 +123,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.ExternalId
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ExternalId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 21
   assemblies:
   - StravaAPILibary
@@ -142,8 +154,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.UploadId
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UploadId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 26
   assemblies:
   - StravaAPILibary
@@ -169,8 +185,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Athlete
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Athlete
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 31
   assemblies:
   - StravaAPILibary
@@ -196,8 +216,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Name
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 36
   assemblies:
   - StravaAPILibary
@@ -223,8 +247,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Distance
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 41
   assemblies:
   - StravaAPILibary
@@ -250,8 +278,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.MovingTime
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MovingTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 46
   assemblies:
   - StravaAPILibary
@@ -277,8 +309,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.ElapsedTime
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElapsedTime
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 51
   assemblies:
   - StravaAPILibary
@@ -304,8 +340,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.TotalElevationGain
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TotalElevationGain
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 56
   assemblies:
   - StravaAPILibary
@@ -331,8 +371,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.ElevHigh
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElevHigh
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 61
   assemblies:
   - StravaAPILibary
@@ -358,8 +402,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.ElevLow
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElevLow
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 66
   assemblies:
   - StravaAPILibary
@@ -385,8 +433,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Type
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Type
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 71
   assemblies:
   - StravaAPILibary
@@ -412,8 +464,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.SportType
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SportType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 76
   assemblies:
   - StravaAPILibary
@@ -439,8 +495,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.StartDate
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartDate
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 81
   assemblies:
   - StravaAPILibary
@@ -466,8 +526,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.StartDateLocal
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartDateLocal
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 86
   assemblies:
   - StravaAPILibary
@@ -493,8 +557,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Timezone
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Timezone
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 91
   assemblies:
   - StravaAPILibary
@@ -520,8 +588,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.StartLatLng
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartLatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 96
   assemblies:
   - StravaAPILibary
@@ -547,8 +619,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.EndLatLng
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: EndLatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 101
   assemblies:
   - StravaAPILibary
@@ -574,8 +650,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.AchievementCount
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AchievementCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 106
   assemblies:
   - StravaAPILibary
@@ -601,8 +681,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.KudosCount
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: KudosCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 111
   assemblies:
   - StravaAPILibary
@@ -628,8 +712,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.CommentCount
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: CommentCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 116
   assemblies:
   - StravaAPILibary
@@ -655,8 +743,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.AthleteCount
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AthleteCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 121
   assemblies:
   - StravaAPILibary
@@ -682,8 +774,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.PhotoCount
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PhotoCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 126
   assemblies:
   - StravaAPILibary
@@ -709,8 +805,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.TotalPhotoCount
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: TotalPhotoCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 131
   assemblies:
   - StravaAPILibary
@@ -736,8 +836,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Map
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Map
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 136
   assemblies:
   - StravaAPILibary
@@ -763,8 +867,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Trainer
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Trainer
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 141
   assemblies:
   - StravaAPILibary
@@ -790,8 +898,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Commute
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Commute
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 146
   assemblies:
   - StravaAPILibary
@@ -817,8 +929,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Manual
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Manual
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 151
   assemblies:
   - StravaAPILibary
@@ -844,8 +960,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Private
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Private
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 156
   assemblies:
   - StravaAPILibary
@@ -871,8 +991,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Flagged
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Flagged
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 161
   assemblies:
   - StravaAPILibary
@@ -898,8 +1022,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.WorkoutType
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: WorkoutType
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 166
   assemblies:
   - StravaAPILibary
@@ -925,8 +1053,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.UploadIdStr
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UploadIdStr
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 171
   assemblies:
   - StravaAPILibary
@@ -952,8 +1084,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.AverageSpeed
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AverageSpeed
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 176
   assemblies:
   - StravaAPILibary
@@ -979,8 +1115,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.MaxSpeed
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MaxSpeed
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 181
   assemblies:
   - StravaAPILibary
@@ -1006,8 +1146,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.HasKudoed
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: HasKudoed
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 186
   assemblies:
   - StravaAPILibary
@@ -1033,8 +1177,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.HideFromHome
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: HideFromHome
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 191
   assemblies:
   - StravaAPILibary
@@ -1060,8 +1208,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.GearId
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: GearId
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 196
   assemblies:
   - StravaAPILibary
@@ -1087,8 +1239,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.Kilojoules
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Kilojoules
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 201
   assemblies:
   - StravaAPILibary
@@ -1114,8 +1270,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.AverageWatts
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AverageWatts
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 206
   assemblies:
   - StravaAPILibary
@@ -1141,8 +1301,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.DeviceWatts
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: DeviceWatts
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 211
   assemblies:
   - StravaAPILibary
@@ -1168,8 +1332,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.MaxWatts
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MaxWatts
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 216
   assemblies:
   - StravaAPILibary
@@ -1195,8 +1363,12 @@ items:
   fullName: StravaAPILibary.Models.Activities.SummaryActivity.WeightedAverageWatts
   type: Property
   source:
+    remote:
+      path: Models/Activities/SummaryActivity.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: WeightedAverageWatts
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Activities\SummaryActivity.cs
+    path: Models/Activities/SummaryActivity.cs
     startLine: 221
   assemblies:
   - StravaAPILibary

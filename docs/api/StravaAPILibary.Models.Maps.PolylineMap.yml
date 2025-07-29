@@ -16,8 +16,12 @@ items:
   fullName: StravaAPILibary.Models.Maps.PolylineMap
   type: Class
   source:
+    remote:
+      path: Models/Maps/PolylineMap.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PolylineMap
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Maps\PolylineMap.cs
+    path: Models/Maps/PolylineMap.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -49,8 +53,12 @@ items:
   fullName: StravaAPILibary.Models.Maps.PolylineMap.Id
   type: Property
   source:
+    remote:
+      path: Models/Maps/PolylineMap.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Maps\PolylineMap.cs
+    path: Models/Maps/PolylineMap.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -76,8 +84,12 @@ items:
   fullName: StravaAPILibary.Models.Maps.PolylineMap.Polyline
   type: Property
   source:
+    remote:
+      path: Models/Maps/PolylineMap.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Polyline
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Maps\PolylineMap.cs
+    path: Models/Maps/PolylineMap.cs
     startLine: 15
   assemblies:
   - StravaAPILibary
@@ -103,8 +115,12 @@ items:
   fullName: StravaAPILibary.Models.Maps.PolylineMap.SummaryPolyline
   type: Property
   source:
+    remote:
+      path: Models/Maps/PolylineMap.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SummaryPolyline
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Maps\PolylineMap.cs
+    path: Models/Maps/PolylineMap.cs
     startLine: 20
   assemblies:
   - StravaAPILibary

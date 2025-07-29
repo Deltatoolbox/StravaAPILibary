@@ -18,8 +18,12 @@ items:
   fullName: StravaAPILibary.Models.Gears.SummaryGear
   type: Class
   source:
+    remote:
+      path: Models/Gears/SummaryGear.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: SummaryGear
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\SummaryGear.cs
+    path: Models/Gears/SummaryGear.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -51,8 +55,12 @@ items:
   fullName: StravaAPILibary.Models.Gears.SummaryGear.Id
   type: Property
   source:
+    remote:
+      path: Models/Gears/SummaryGear.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\SummaryGear.cs
+    path: Models/Gears/SummaryGear.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -78,8 +86,12 @@ items:
   fullName: StravaAPILibary.Models.Gears.SummaryGear.ResourceState
   type: Property
   source:
+    remote:
+      path: Models/Gears/SummaryGear.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ResourceState
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\SummaryGear.cs
+    path: Models/Gears/SummaryGear.cs
     startLine: 16
   assemblies:
   - StravaAPILibary
@@ -108,8 +120,12 @@ items:
   fullName: StravaAPILibary.Models.Gears.SummaryGear.Primary
   type: Property
   source:
+    remote:
+      path: Models/Gears/SummaryGear.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Primary
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\SummaryGear.cs
+    path: Models/Gears/SummaryGear.cs
     startLine: 21
   assemblies:
   - StravaAPILibary
@@ -135,8 +151,12 @@ items:
   fullName: StravaAPILibary.Models.Gears.SummaryGear.Name
   type: Property
   source:
+    remote:
+      path: Models/Gears/SummaryGear.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\SummaryGear.cs
+    path: Models/Gears/SummaryGear.cs
     startLine: 26
   assemblies:
   - StravaAPILibary
@@ -162,8 +182,12 @@ items:
   fullName: StravaAPILibary.Models.Gears.SummaryGear.Distance
   type: Property
   source:
+    remote:
+      path: Models/Gears/SummaryGear.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Gears\SummaryGear.cs
+    path: Models/Gears/SummaryGear.cs
     startLine: 31
   assemblies:
   - StravaAPILibary

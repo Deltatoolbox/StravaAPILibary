@@ -35,8 +35,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete
   type: Class
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: DetailedAthlete
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 8
   assemblies:
   - StravaAPILibary
@@ -68,8 +72,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Id
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 13
   assemblies:
   - StravaAPILibary
@@ -95,8 +103,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.ResourceState
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ResourceState
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 18
   assemblies:
   - StravaAPILibary
@@ -122,8 +134,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.FirstName
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: FirstName
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 23
   assemblies:
   - StravaAPILibary
@@ -149,8 +165,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.LastName
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: LastName
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 28
   assemblies:
   - StravaAPILibary
@@ -176,8 +196,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.ProfileMedium
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ProfileMedium
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 33
   assemblies:
   - StravaAPILibary
@@ -203,8 +227,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Profile
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Profile
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 38
   assemblies:
   - StravaAPILibary
@@ -230,8 +258,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.City
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: City
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 43
   assemblies:
   - StravaAPILibary
@@ -257,8 +289,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.State
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: State
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 48
   assemblies:
   - StravaAPILibary
@@ -284,8 +320,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Country
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Country
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 53
   assemblies:
   - StravaAPILibary
@@ -311,8 +351,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Sex
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Sex
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 58
   assemblies:
   - StravaAPILibary
@@ -338,8 +382,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Premium
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Premium
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 63
   assemblies:
   - StravaAPILibary
@@ -365,8 +413,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Summit
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Summit
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 68
   assemblies:
   - StravaAPILibary
@@ -392,8 +444,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.CreatedAt
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: CreatedAt
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 73
   assemblies:
   - StravaAPILibary
@@ -419,8 +475,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.UpdatedAt
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: UpdatedAt
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 78
   assemblies:
   - StravaAPILibary
@@ -446,8 +506,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.FollowerCount
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: FollowerCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 83
   assemblies:
   - StravaAPILibary
@@ -473,8 +537,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.FriendCount
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: FriendCount
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 88
   assemblies:
   - StravaAPILibary
@@ -500,8 +568,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.MeasurementPreference
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MeasurementPreference
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 93
   assemblies:
   - StravaAPILibary
@@ -527,8 +599,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Ftp
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Ftp
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 98
   assemblies:
   - StravaAPILibary
@@ -554,8 +630,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Weight
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Weight
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 103
   assemblies:
   - StravaAPILibary
@@ -581,8 +661,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Clubs
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Clubs
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 108
   assemblies:
   - StravaAPILibary
@@ -608,8 +692,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Bikes
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Bikes
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 113
   assemblies:
   - StravaAPILibary
@@ -635,8 +723,12 @@ items:
   fullName: StravaAPILibary.Models.Athletes.DetailedAthlete.Shoes
   type: Property
   source:
+    remote:
+      path: Models/Athletes/DetailedAthlete.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Shoes
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Athletes\DetailedAthlete.cs
+    path: Models/Athletes/DetailedAthlete.cs
     startLine: 118
   assemblies:
   - StravaAPILibary

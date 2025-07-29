@@ -16,8 +16,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.MetaClub
   type: Class
   source:
+    remote:
+      path: Models/Clubs/MetaClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: MetaClub
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\MetaClub.cs
+    path: Models/Clubs/MetaClub.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -49,8 +53,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.MetaClub.Id
   type: Property
   source:
+    remote:
+      path: Models/Clubs/MetaClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\MetaClub.cs
+    path: Models/Clubs/MetaClub.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -76,8 +84,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.MetaClub.ResourceState
   type: Property
   source:
+    remote:
+      path: Models/Clubs/MetaClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ResourceState
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\MetaClub.cs
+    path: Models/Clubs/MetaClub.cs
     startLine: 19
   assemblies:
   - StravaAPILibary
@@ -112,8 +124,12 @@ items:
   fullName: StravaAPILibary.Models.Clubs.MetaClub.Name
   type: Property
   source:
+    remote:
+      path: Models/Clubs/MetaClub.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Clubs\MetaClub.cs
+    path: Models/Clubs/MetaClub.cs
     startLine: 24
   assemblies:
   - StravaAPILibary

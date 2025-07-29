@@ -23,8 +23,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment
   type: Class
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ExplorerSegment
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 7
   assemblies:
   - StravaAPILibary
@@ -56,8 +60,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Id
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Id
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 12
   assemblies:
   - StravaAPILibary
@@ -83,8 +91,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Name
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Name
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 17
   assemblies:
   - StravaAPILibary
@@ -110,8 +122,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategory
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ClimbCategory
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 23
   assemblies:
   - StravaAPILibary
@@ -140,8 +156,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ClimbCategoryDesc
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ClimbCategoryDesc
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 28
   assemblies:
   - StravaAPILibary
@@ -167,8 +187,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.AvgGrade
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: AvgGrade
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 33
   assemblies:
   - StravaAPILibary
@@ -194,8 +218,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.StartLatLng
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: StartLatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 38
   assemblies:
   - StravaAPILibary
@@ -221,8 +249,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.EndLatLng
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: EndLatLng
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 43
   assemblies:
   - StravaAPILibary
@@ -248,8 +280,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.ElevDifference
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ElevDifference
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 48
   assemblies:
   - StravaAPILibary
@@ -275,8 +311,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Distance
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Distance
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 53
   assemblies:
   - StravaAPILibary
@@ -302,8 +342,12 @@ items:
   fullName: StravaAPILibary.Models.Explorer.ExplorerSegment.Points
   type: Property
   source:
+    remote:
+      path: Models/Explorer/ExplorerSegment.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Points
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Explorer\ExplorerSegment.cs
+    path: Models/Explorer/ExplorerSegment.cs
     startLine: 58
   assemblies:
   - StravaAPILibary

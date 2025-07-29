@@ -15,8 +15,12 @@ items:
   fullName: StravaAPILibary.Models.Zones.ZoneRange
   type: Class
   source:
+    remote:
+      path: Models/Zones/ZoneRange.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: ZoneRange
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Zones\ZoneRange.cs
+    path: Models/Zones/ZoneRange.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -48,8 +52,12 @@ items:
   fullName: StravaAPILibary.Models.Zones.ZoneRange.Min
   type: Property
   source:
+    remote:
+      path: Models/Zones/ZoneRange.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Min
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Zones\ZoneRange.cs
+    path: Models/Zones/ZoneRange.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -75,8 +83,12 @@ items:
   fullName: StravaAPILibary.Models.Zones.ZoneRange.Max
   type: Property
   source:
+    remote:
+      path: Models/Zones/ZoneRange.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Max
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Zones\ZoneRange.cs
+    path: Models/Zones/ZoneRange.cs
     startLine: 15
   assemblies:
   - StravaAPILibary

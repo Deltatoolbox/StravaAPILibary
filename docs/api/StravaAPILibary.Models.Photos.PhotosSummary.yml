@@ -15,8 +15,12 @@ items:
   fullName: StravaAPILibary.Models.Photos.PhotosSummary
   type: Class
   source:
+    remote:
+      path: Models/Photos/PhotosSummary.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: PhotosSummary
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummary.cs
+    path: Models/Photos/PhotosSummary.cs
     startLine: 5
   assemblies:
   - StravaAPILibary
@@ -48,8 +52,12 @@ items:
   fullName: StravaAPILibary.Models.Photos.PhotosSummary.Count
   type: Property
   source:
+    remote:
+      path: Models/Photos/PhotosSummary.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Count
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummary.cs
+    path: Models/Photos/PhotosSummary.cs
     startLine: 10
   assemblies:
   - StravaAPILibary
@@ -75,8 +83,12 @@ items:
   fullName: StravaAPILibary.Models.Photos.PhotosSummary.Primary
   type: Property
   source:
+    remote:
+      path: Models/Photos/PhotosSummary.cs
+      branch: master
+      repo: https://github.com/Deltatoolbox/StravaAPILibary.git
     id: Primary
-    path: C:\Users\torn\source\repos\Strava\StravaAPILibary\Models\Photos\PhotosSummary.cs
+    path: Models/Photos/PhotosSummary.cs
     startLine: 15
   assemblies:
   - StravaAPILibary
