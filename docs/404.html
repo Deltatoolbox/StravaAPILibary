@@ -1,0 +1,104 @@
+---
+layout: default
+title: Page Not Found
+---
+
+<div class="error-page">
+  <div class="error-content">
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    
+    <div class="error-actions">
+      <a href="{{ '/' | relative_url }}" class="btn">Go Home</a>
+      <a href="{{ '/api/' | relative_url }}" class="btn">API Reference</a>
+    </div>
+    
+    <div class="error-search">
+      <h3>Looking for something specific?</h3>
+      <input type="text" class="search-input" placeholder="Search documentation..." id="search-input">
+    </div>
+  </div>
+</div>
+
+<style>
+.error-page {
+  text-align: center;
+  padding: 4rem 2rem;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content h1 {
+  font-size: 6rem;
+  margin: 0;
+  color: var(--accent-color);
+  text-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+}
+
+.error-content h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(--text-primary);
+}
+
+.error-content p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin: 1rem 0 2rem 0;
+}
+
+.error-actions {
+  margin: 2rem 0;
+}
+
+.error-actions .btn {
+  margin: 0 0.5rem;
+}
+
+.error-search {
+  margin-top: 3rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-search h3 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--code-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('search-input');
+  
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      const query = this.value.trim();
+      if (query) {
+        // Simple search redirect - you can enhance this
+        window.location.href = '{{ "/api/" | relative_url }}?search=' + encodeURIComponent(query);
+      }
+    }
+  });
+});
+</script> 

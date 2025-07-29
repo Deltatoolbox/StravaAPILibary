@@ -43,13 +43,17 @@ jobs:
         dotnet build
         docfx docfx.json
         
+    - name: Copy documentation to root
+      run: |
+        cp -r docs/_site/* ../docs/
+        
     - name: Setup Pages
       uses: actions/configure-pages@v4
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: './docs/_site/docs'
+        path: './docs'
 
   deploy:
     environment:

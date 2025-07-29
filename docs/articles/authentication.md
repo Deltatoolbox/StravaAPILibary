@@ -1,381 +1,343 @@
+---
+layout: default
+title: Authentication Guide
+description: Comprehensive guide to OAuth 2.0 authentication with Strava API
+---
+
 # Authentication Guide
 
-This guide covers authentication with the Strava API using the StravaAPILibary, including OAuth 2.0 flow, token management, and best practices.
+This guide covers the complete OAuth 2.0 authentication flow for the Strava API using StravaAPILibary.
 
-## OAuth 2.0 Flow Overview
+## 🔐 OAuth 2.0 Overview
 
-The StravaAPILibary implements the standard OAuth 2.0 authorization code flow:
+Strava uses OAuth 2.0 for secure API access. The library implements the **Authorization Code Flow**, which is the most secure method for web applications.
 
-```mermaid
-sequenceDiagram
-    participant App as Your App
-    participant User as User
-    participant Strava as Strava API
-    
-    App->>User: Start authorization
-    User->>Strava: Authorize application
-    Strava->>App: Authorization code
-    App->>Strava: Exchange code for tokens
-    Strava->>App: Access token + Refresh token
-    App->>Strava: Make API calls with token
-```
+### Flow Steps
 
-## Setting Up Authentication
+1. **Authorization Request** - Redirect user to Strava
+2. **User Authorization** - User grants permissions
+3. **Authorization Code** - Strava returns code to your app
+4. **Token Exchange** - Exchange code for access token
+5. **API Access** - Use token for API calls
 
-### 1. Create Strava Application
+## 🚀 Basic Authentication
 
-First, create a Strava application to get your credentials:
-
-1. Visit [Strava API Settings](https://www.strava.com/settings/api)
-2. Click **Create Application**
-3. Fill in the required fields:
-   - **Application Name**: Your app name
-   - **Category**: Choose appropriate category
-   - **Website**: Your website URL
-   - **Authorization Callback Domain**: `localhost` (for development)
-4. Click **Create**
-5. Note your **Client ID** and **Client Secret**
-
-### 2. Configure Credentials
+### Step 1: Initialize Credentials
 
 ```csharp
 using StravaAPILibary.Authentication;
 
 var credentials = new Credentials(
-    "your_client_id",
-    "your_client_secret",
-    "read,activity:read_all"
+    clientId: "your_client_id",
+    clientSecret: "your_client_secret",
+    scopes: "read,activity:read_all"
 );
 ```
 
-### 3. Initialize Authentication
+### Step 2: Create Authentication Instance
 
 ```csharp
 var userAuth = new UserAuthentication(
-    credentials,
-    "http://localhost:8080/callback",
-    "read,activity:read_all"
+    credentials: credentials,
+    redirectUri: "http://localhost:8080/callback",
+    scopes: "read,activity:read_all"
 );
 ```
 
-## Complete Authentication Flow
-
-### Step 1: Start Authorization
+### Step 3: Start Authorization
 
 ```csharp
-// This opens the browser for user authorization
+// This opens the user's browser to Strava authorization page
 userAuth.StartAuthorization();
 ```
 
-The user will be redirected to Strava's authorization page where they can:
-- Review the requested permissions
-- Authorize or deny the application
-- Be redirected back to your callback URL
+### Step 4: Handle the Callback
 
-### Step 2: Handle Authorization Code
-
-After authorization, Strava redirects to your callback URL with an authorization code:
+After user authorization, Strava redirects to your callback URL with an authorization code:
 
 ```
-http://localhost:8080/callback?state=&code=YOUR_AUTHORIZATION_CODE
+http://localhost:8080/callback?state=&code=YOUR_AUTH_CODE
 ```
 
-Extract the code from the URL and exchange it for tokens:
+### Step 5: Exchange Code for Token
 
 ```csharp
-string authCode = "YOUR_AUTHORIZATION_CODE";
+// Extract the authorization code from the callback URL
+string authCode = "YOUR_AUTH_CODE";
+
+// Exchange the code for an access token
 bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
 
 if (success)
 {
     string accessToken = credentials.AccessToken;
     string refreshToken = credentials.RefreshToken;
-    DateTime tokenExpiry = credentials.TokenExpiration;
     
     Console.WriteLine("✅ Authentication successful!");
+    Console.WriteLine($"Access Token: {accessToken[..10]}...");
 }
 ```
 
-### Step 3: Use Access Token
-
-```csharp
-// Make API calls with the access token
-var activities = await Activities.GetAthletesActivitiesAsync(accessToken);
-var profile = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
-```
-
-## Token Management
+## 🔑 Token Management
 
 ### Access Tokens
 
 - **Lifetime**: 6 hours
-- **Usage**: Required for all API calls
-- **Storage**: Store securely (environment variables, secure storage)
+- **Usage**: API requests
+- **Storage**: Store securely (encrypted)
 
 ### Refresh Tokens
 
 - **Lifetime**: Indefinite (until revoked)
-- **Usage**: Get new access tokens when they expire
-- **Storage**: Store securely alongside access tokens
+- **Usage**: Get new access tokens
+- **Storage**: Store securely (encrypted)
 
 ### Automatic Token Refresh
 
-The library can automatically refresh expired tokens:
-
 ```csharp
-// Check if token needs refresh
-if (credentials.TokenExpiration <= DateTime.UtcNow.AddMinutes(5))
+// The library automatically handles token refresh
+if (credentials.IsTokenExpired())
 {
-    bool refreshSuccess = await userAuth.RefreshAccessTokenAsync();
-    if (refreshSuccess)
+    bool refreshed = await userAuth.RefreshTokenAsync();
+    if (refreshed)
     {
-        // Token refreshed successfully
-        accessToken = credentials.AccessToken;
+        // Token automatically updated in credentials
+        string newAccessToken = credentials.AccessToken;
     }
 }
 ```
 
-## Scopes and Permissions
+## 📋 Scopes
 
-### Available Scopes
+Request only the scopes your application needs:
 
-| Scope | Description | Required for |
+| Scope | Description | Access Level |
 |-------|-------------|--------------|
-| `read` | Basic profile access | Profile information |
-| `activity:read_all` | Read all activities | Activity data |
-| `activity:write` | Upload activities | Activity upload |
-| `profile:read_all` | Detailed profile access | Detailed profile |
-| `profile:write` | Update profile | Profile updates |
+| `read` | Basic profile access | Public profile |
+| `activity:read_all` | Read all activities | Private activities |
+| `activity:write` | Upload activities | Create activities |
+| `profile:read_all` | Detailed profile | Private profile data |
+| `profile:write` | Update profile | Modify profile |
 
-### Requesting Scopes
+### Multiple Scopes
 
 ```csharp
-// Minimal scope for basic functionality
-var credentials = new Credentials(clientId, clientSecret, "read");
-
-// Full scope for complete functionality
-var credentials = new Credentials(clientId, clientSecret, "read,activity:read_all,activity:write,profile:read_all");
+var scopes = "read,activity:read_all,activity:write";
+var userAuth = new UserAuthentication(credentials, redirectUri, scopes);
 ```
 
-### Scope Best Practices
+## 🛡️ Security Best Practices
 
-- **Request minimal scopes** - Only request what you need
-- **Explain permissions** - Tell users why you need each scope
-- **Handle denied scopes** - Gracefully handle when users deny permissions
+### 1. Secure Storage
 
-## Advanced Authentication Patterns
+```csharp
+// Store tokens encrypted
+public class SecureTokenStorage
+{
+    public async Task SaveTokensAsync(string accessToken, string refreshToken)
+    {
+        var encryptedAccess = await EncryptAsync(accessToken);
+        var encryptedRefresh = await EncryptAsync(refreshToken);
+        
+        await File.WriteAllTextAsync("tokens.json", JsonSerializer.Serialize(new
+        {
+            AccessToken = encryptedAccess,
+            RefreshToken = encryptedRefresh,
+            ExpiresAt = DateTime.UtcNow.AddHours(6)
+        }));
+    }
+}
+```
 
-### 1. Persistent Token Storage
+### 2. Environment Variables
+
+```bash
+# .env file
+STRAVA_CLIENT_ID=your_client_id
+STRAVA_CLIENT_SECRET=your_client_secret
+STRAVA_REDIRECT_URI=http://localhost:8080/callback
+```
+
+### 3. HTTPS in Production
+
+Always use HTTPS for production applications:
+
+```csharp
+var redirectUri = Environment.GetEnvironmentVariable("ENVIRONMENT") == "Production" 
+    ? "https://yourapp.com/callback"
+    : "http://localhost:8080/callback";
+```
+
+## 🔄 Token Refresh Strategy
+
+### Automatic Refresh
 
 ```csharp
 public class TokenManager
 {
-    private readonly string _tokenFilePath = "tokens.json";
-    
-    public async Task SaveTokensAsync(Credentials credentials)
-    {
-        var tokenData = new
-        {
-            AccessToken = credentials.AccessToken,
-            RefreshToken = credentials.RefreshToken,
-            TokenExpiration = credentials.TokenExpiration,
-            Scope = credentials.Scope
-        };
-        
-        string json = JsonSerializer.Serialize(tokenData);
-        await File.WriteAllTextAsync(_tokenFilePath, json);
-    }
-    
-    public async Task<Credentials?> LoadTokensAsync(string clientId, string clientSecret)
-    {
-        if (!File.Exists(_tokenFilePath))
-            return null;
-            
-        string json = await File.ReadAllTextAsync(_tokenFilePath);
-        var tokenData = JsonSerializer.Deserialize<TokenData>(json);
-        
-        if (tokenData == null)
-            return null;
-            
-        var credentials = new Credentials(clientId, clientSecret, tokenData.Scope)
-        {
-            AccessToken = tokenData.AccessToken,
-            RefreshToken = tokenData.RefreshToken,
-            TokenExpiration = tokenData.TokenExpiration
-        };
-        
-        return credentials;
-    }
-}
-```
-
-### 2. Automatic Token Refresh
-
-```csharp
-public class StravaClient
-{
     private readonly Credentials _credentials;
     private readonly UserAuthentication _userAuth;
-    
-    public StravaClient(string clientId, string clientSecret, string scope)
-    {
-        _credentials = new Credentials(clientId, clientSecret, scope);
-        _userAuth = new UserAuthentication(_credentials, "http://localhost:8080/callback", scope);
-    }
     
     public async Task<string> GetValidAccessTokenAsync()
     {
         // Check if token is expired or will expire soon
-        if (_credentials.TokenExpiration <= DateTime.UtcNow.AddMinutes(5))
+        if (_credentials.IsTokenExpired() || _credentials.WillExpireSoon())
         {
-            bool refreshSuccess = await _userAuth.RefreshAccessTokenAsync();
-            if (!refreshSuccess)
+            bool refreshed = await _userAuth.RefreshTokenAsync();
+            if (!refreshed)
             {
-                throw new InvalidOperationException("Failed to refresh access token");
+                throw new InvalidOperationException("Failed to refresh token");
             }
         }
         
         return _credentials.AccessToken;
     }
+}
+```
+
+### Manual Refresh
+
+```csharp
+// Force token refresh
+bool success = await userAuth.RefreshTokenAsync();
+
+if (success)
+{
+    string newAccessToken = credentials.AccessToken;
+    string newRefreshToken = credentials.RefreshToken;
     
-    public async Task<JsonArray> GetActivitiesAsync()
+    // Update stored tokens
+    await UpdateStoredTokensAsync(newAccessToken, newRefreshToken);
+}
+```
+
+## 🚨 Error Handling
+
+### Common Authentication Errors
+
+```csharp
+try
+{
+    bool success = await userAuth.ExchangeCodeForTokenAsync(authCode);
+}
+catch (StravaApiException ex)
+{
+    switch (ex.StatusCode)
     {
-        string accessToken = await GetValidAccessTokenAsync();
-        return await Activities.GetAthletesActivitiesAsync(accessToken);
+        case 400:
+            Console.WriteLine("Invalid authorization code or redirect URI");
+            break;
+        case 401:
+            Console.WriteLine("Invalid client credentials");
+            break;
+        case 403:
+            Console.WriteLine("Insufficient scopes");
+            break;
+        default:
+            Console.WriteLine($"API Error: {ex.Message}");
+            break;
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Unexpected error: {ex.Message}");
+}
+```
+
+### Token Validation
+
+```csharp
+public async Task<bool> ValidateTokenAsync(string accessToken)
+{
+    try
+    {
+        var athlete = await Athletes.GetAuthenticatedAthleteProfileAsync(accessToken);
+        return athlete != null;
+    }
+    catch (StravaApiException ex) when (ex.StatusCode == 401)
+    {
+        return false; // Token is invalid
     }
 }
 ```
 
-### 3. Error Handling
+## 🔧 Advanced Configuration
+
+### Custom HTTP Client
 
 ```csharp
-public async Task<bool> AuthenticateWithRetryAsync()
+var httpClient = new HttpClient();
+httpClient.Timeout = TimeSpan.FromSeconds(30);
+
+var userAuth = new UserAuthentication(
+    credentials: credentials,
+    redirectUri: redirectUri,
+    scopes: scopes,
+    httpClient: httpClient
+);
+```
+
+### Custom Token Storage
+
+```csharp
+public class CustomTokenStorage : ITokenStorage
 {
-    int maxRetries = 3;
-    int retryCount = 0;
-    
-    while (retryCount < maxRetries)
+    public async Task SaveTokensAsync(string accessToken, string refreshToken)
     {
-        try
-        {
-            // Try to refresh token first
-            if (!string.IsNullOrEmpty(_credentials.RefreshToken))
-            {
-                bool refreshSuccess = await _userAuth.RefreshAccessTokenAsync();
-                if (refreshSuccess)
-                {
-                    return true;
-                }
-            }
-            
-            // If refresh fails, start new authorization
-            _userAuth.StartAuthorization();
-            
-            Console.WriteLine("Please complete authorization in browser...");
-            Console.Write("Enter authorization code: ");
-            
-            string authCode = Console.ReadLine() ?? string.Empty;
-            
-            if (!string.IsNullOrEmpty(authCode))
-            {
-                bool success = await _userAuth.ExchangeCodeForTokenAsync(authCode);
-                if (success)
-                {
-                    return true;
-                }
-            }
-            
-            retryCount++;
-            Console.WriteLine($"Authentication failed. Retry {retryCount}/{maxRetries}");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Authentication error: {ex.Message}");
-            retryCount++;
-        }
+        // Custom storage implementation
+        await Database.SaveTokensAsync(accessToken, refreshToken);
     }
     
-    return false;
+    public async Task<(string AccessToken, string RefreshToken)> LoadTokensAsync()
+    {
+        // Custom loading implementation
+        return await Database.LoadTokensAsync();
+    }
 }
 ```
 
-## Security Best Practices
+## 📱 Mobile Applications
 
-### 1. Secure Token Storage
-
-```csharp
-// ❌ Don't store tokens in plain text
-File.WriteAllText("tokens.txt", accessToken);
-
-// ✅ Use secure storage
-await SecureStorage.SaveAsync("strava_access_token", accessToken);
-await SecureStorage.SaveAsync("strava_refresh_token", refreshToken);
-```
-
-### 2. Environment Variables
+For mobile apps, use a custom URL scheme:
 
 ```csharp
-// Load credentials from environment variables
-string clientId = Environment.GetEnvironmentVariable("STRAVA_CLIENT_ID") 
-    ?? throw new InvalidOperationException("STRAVA_CLIENT_ID not set");
-    
-string clientSecret = Environment.GetEnvironmentVariable("STRAVA_CLIENT_SECRET") 
-    ?? throw new InvalidOperationException("STRAVA_CLIENT_SECRET not set");
+// iOS/Android deep link
+var redirectUri = "myapp://strava-callback";
+
+var userAuth = new UserAuthentication(credentials, redirectUri, scopes);
 ```
 
-### 3. Token Validation
+## 🔍 Debugging Authentication
+
+### Enable Debug Logging
 
 ```csharp
-public bool IsTokenValid(Credentials credentials)
-{
-    return !string.IsNullOrEmpty(credentials.AccessToken) &&
-           credentials.TokenExpiration > DateTime.UtcNow.AddMinutes(5);
-}
+// Set up logging to see detailed authentication flow
+var userAuth = new UserAuthentication(credentials, redirectUri, scopes);
+userAuth.DebugMode = true; // Enable detailed logging
 ```
-
-## Troubleshooting
 
 ### Common Issues
 
-**"Invalid authorization code"**
-- Authorization codes expire quickly (usually within 10 minutes)
-- Ensure the code is copied correctly from the URL
-- Check that your redirect URI matches your Strava app settings
+1. **Invalid Redirect URI**
+   - Ensure redirect URI matches Strava app settings
+   - Check for trailing slashes
 
-**"Access token is invalid"**
-- Access tokens expire after 6 hours
-- Use the refresh token to get a new access token
-- Verify the token hasn't been revoked by the user
+2. **Expired Authorization Code**
+   - Codes expire quickly (usually 10 minutes)
+   - Request new authorization if code expires
 
-**"Refresh token is invalid"**
-- Refresh tokens can be revoked by users
-- Users can revoke access in their Strava settings
-- You'll need to re-authenticate the user
+3. **Scope Mismatch**
+   - Ensure requested scopes match Strava app settings
+   - Check for typos in scope names
 
-**"Insufficient scope"**
-- The requested operation requires a scope not granted
-- Check the required scopes for the API call
-- Request the appropriate scope during authorization
+## 📚 Related Resources
 
-### Debug Information
-
-```csharp
-public void LogTokenInfo(Credentials credentials)
-{
-    Console.WriteLine($"Access Token: {credentials.AccessToken[..10]}...");
-    Console.WriteLine($"Refresh Token: {credentials.RefreshToken[..10]}...");
-    Console.WriteLine($"Token Expires: {credentials.TokenExpiration}");
-    Console.WriteLine($"Scope: {credentials.Scope}");
-    Console.WriteLine($"Is Expired: {credentials.TokenExpiration <= DateTime.UtcNow}");
-}
-```
-
-## Next Steps
-
-- **[API Reference](~/docs/api/)** - Complete API documentation
-- **[Examples](examples.md)** - Authentication examples
-- **[Best Practices](best-practices.md)** - Security and performance tips
+- **[Getting Started]({{ '/articles/getting-started/' | relative_url }})** - Basic setup guide
+- **[Examples]({{ '/articles/examples/' | relative_url }})** - Authentication examples
+- **[API Reference]({{ '/api/' | relative_url }})** - Complete API documentation
+- **[Strava API Docs](https://developers.strava.com/docs/authentication/)** - Official documentation
 
 ---
 
-**Secure authentication is the foundation of great Strava applications! 🔐** 
+**Need help with authentication? Check our examples or create an issue on GitHub! 🆘** 

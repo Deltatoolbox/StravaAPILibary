@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+description: Comprehensive .NET library for Strava API integration
+---
+
 # StravaAPILibary Documentation
 
 Welcome to the comprehensive documentation for **StravaAPILibary**, a powerful .NET library for interacting with the Strava API.
@@ -32,17 +38,25 @@ if (success)
 
 ## 📚 Documentation Sections
 
-### [Getting Started](articles/getting-started.md)
-Complete setup guide with step-by-step instructions for installing and configuring the library.
+<div class="card">
+  <h3><a href="{{ '/articles/getting-started/' | relative_url }}">🚀 Getting Started</a></h3>
+  <p>Complete setup guide with step-by-step instructions for installing and configuring the library.</p>
+</div>
 
-### [Authentication Guide](articles/authentication.md)
-Comprehensive guide to OAuth 2.0 flow, token management, and security best practices.
+<div class="card">
+  <h3><a href="{{ '/articles/authentication/' | relative_url }}">🔐 Authentication Guide</a></h3>
+  <p>Comprehensive guide to OAuth 2.0 flow, token management, and security best practices.</p>
+</div>
 
-### [Examples](articles/examples.md)
-Practical examples and real-world scenarios showing how to use the library effectively.
+<div class="card">
+  <h3><a href="{{ '/articles/examples/' | relative_url }}">💡 Examples</a></h3>
+  <p>Practical examples and real-world scenarios showing how to use the library effectively.</p>
+</div>
 
-### [API Reference](api/)
-Complete API documentation with detailed method descriptions, parameters, and examples.
+<div class="card">
+  <h3><a href="{{ '/api/' | relative_url }}">📚 API Reference</a></h3>
+  <p>Complete API documentation with detailed method descriptions, parameters, and examples.</p>
+</div>
 
 ## 🔧 Features
 

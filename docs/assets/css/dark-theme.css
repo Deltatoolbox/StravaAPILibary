@@ -1,0 +1,303 @@
+/* Dark Theme for StravaAPILibary Documentation */
+
+:root {
+  --primary-bg: #0a0a0a;
+  --secondary-bg: #1a1a1a;
+  --tertiary-bg: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  --accent-color: #ff6b35;
+  --accent-hover: #ff8c5a;
+  --border-color: #333333;
+  --code-bg: #1e1e1e;
+  --code-border: #404040;
+  --link-color: #4a9eff;
+  --link-hover: #6bb3ff;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+}
+
+/* Header */
+.page-header {
+  background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--tertiary-bg) 100%);
+  border-bottom: 2px solid var(--accent-color);
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.2);
+}
+
+.page-header h1,
+.page-header h2 {
+  color: var(--text-primary);
+}
+
+.page-header h1 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+.main-content {
+  background-color: var(--primary-bg);
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3em;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb-nav a {
+  color: var(--link-color);
+}
+
+.breadcrumb-nav .separator {
+  color: var(--text-muted);
+}
+
+/* Code Blocks */
+.highlight {
+  background-color: var(--code-bg);
+  border: 1px solid var(--code-border);
+}
+
+.highlight pre {
+  color: var(--text-primary);
+}
+
+code {
+  background-color: var(--code-bg);
+  color: var(--accent-color);
+}
+
+/* Tables */
+table {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--tertiary-bg);
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent-color);
+  font-weight: 600;
+}
+
+td {
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+tr:hover {
+  background-color: var(--tertiary-bg);
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn:hover {
+  background-color: var(--accent-hover);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+/* Cards */
+.card {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+}
+
+.card:hover {
+  border-color: var(--accent-color);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--secondary-bg);
+  border-right: 1px solid var(--border-color);
+}
+
+.sidebar-nav {
+  background-color: var(--secondary-bg);
+}
+
+.sidebar-nav a {
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-nav a:hover {
+  background-color: var(--tertiary-bg);
+  color: var(--text-primary);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--secondary-bg);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+.footer-section a {
+  color: var(--link-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+/* Search */
+.search-input {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.search-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+}
+
+/* Syntax Highlighting */
+.highlight .hll { background-color: var(--code-bg); }
+.highlight .c { color: var(--text-muted); }
+.highlight .err { color: var(--error-color); }
+.highlight .k { color: var(--accent-color); }
+.highlight .o { color: var(--text-primary); }
+.highlight .cm { color: var(--text-muted); }
+.highlight .cp { color: var(--text-muted); }
+.highlight .c1 { color: var(--text-muted); }
+.highlight .cs { color: var(--text-muted); }
+.highlight .gd { color: var(--error-color); }
+.highlight .ge { font-style: italic; }
+.highlight .gr { color: var(--error-color); }
+.highlight .gh { color: var(--text-primary); }
+.highlight .gi { color: var(--success-color); }
+.highlight .go { color: var(--text-muted); }
+.highlight .gp { color: var(--text-muted); }
+.highlight .gs { font-weight: bold; }
+.highlight .gu { color: var(--text-muted); }
+.highlight .gt { color: var(--error-color); }
+.highlight .kc { color: var(--accent-color); }
+.highlight .kd { color: var(--accent-color); }
+.highlight .kn { color: var(--accent-color); }
+.highlight .kp { color: var(--accent-color); }
+.highlight .kr { color: var(--accent-color); }
+.highlight .kt { color: var(--accent-color); }
+.highlight .m { color: var(--text-primary); }
+.highlight .s { color: var(--success-color); }
+.highlight .na { color: var(--link-color); }
+.highlight .nb { color: var(--text-primary); }
+.highlight .nc { color: var(--accent-color); }
+.highlight .no { color: var(--text-primary); }
+.highlight .nd { color: var(--text-primary); }
+.highlight .ni { color: var(--text-primary); }
+.highlight .ne { color: var(--error-color); }
+.highlight .nf { color: var(--text-primary); }
+.highlight .nl { color: var(--text-primary); }
+.highlight .nn { color: var(--text-primary); }
+.highlight .nx { color: var(--text-primary); }
+.highlight .py { color: var(--text-primary); }
+.highlight .nt { color: var(--accent-color); }
+.highlight .nv { color: var(--text-primary); }
+.highlight .ow { color: var(--accent-color); }
+.highlight .w { color: var(--text-primary); }
+.highlight .mf { color: var(--text-primary); }
+.highlight .mh { color: var(--text-primary); }
+.highlight .mi { color: var(--text-primary); }
+.highlight .mo { color: var(--text-primary); }
+.highlight .sb { color: var(--success-color); }
+.highlight .sc { color: var(--success-color); }
+.highlight .sd { color: var(--success-color); }
+.highlight .s2 { color: var(--success-color); }
+.highlight .se { color: var(--success-color); }
+.highlight .sh { color: var(--success-color); }
+.highlight .si { color: var(--success-color); }
+.highlight .sx { color: var(--success-color); }
+.highlight .sr { color: var(--success-color); }
+.highlight .s1 { color: var(--success-color); }
+.highlight .ss { color: var(--success-color); }
+.highlight .bp { color: var(--text-primary); }
+.highlight .vc { color: var(--text-primary); }
+.highlight .vg { color: var(--text-primary); }
+.highlight .vi { color: var(--text-primary); }
+.highlight .il { color: var(--text-primary); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1em;
+  }
+  
+  .card {
+    margin: 0.5em 0;
+    padding: 1em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.main-content {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+} 
